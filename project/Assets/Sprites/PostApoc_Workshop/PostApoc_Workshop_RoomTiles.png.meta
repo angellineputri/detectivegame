@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 5e2502cd323b24a2eaf30227a91e7a46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9098468295206533193
+    second: PostApoc_Workshop_RoomTiles_0
+  - first:
+      213: -3772817123701919543
+    second: PostApoc_Workshop_RoomTiles_1
+  - first:
+      213: 8850369966198852471
+    second: PostApoc_Workshop_RoomTiles_2
+  - first:
+      213: -3955141783530744617
+    second: PostApoc_Workshop_RoomTiles_3
+  - first:
+      213: -657812182265078485
+    second: PostApoc_Workshop_RoomTiles_4
+  - first:
+      213: 4579219454896926949
+    second: PostApoc_Workshop_RoomTiles_5
+  - first:
+      213: -7463409577009512985
+    second: PostApoc_Workshop_RoomTiles_6
+  - first:
+      213: 119941946739915754
+    second: PostApoc_Workshop_RoomTiles_7
+  - first:
+      213: 9140748004789740258
+    second: PostApoc_Workshop_RoomTiles_8
+  - first:
+      213: 4828577740022035305
+    second: PostApoc_Workshop_RoomTiles_9
+  - first:
+      213: -5598894816536782880
+    second: PostApoc_Workshop_RoomTiles_10
+  - first:
+      213: -1143364879935561051
+    second: PostApoc_Workshop_RoomTiles_11
+  - first:
+      213: 4751248741804058641
+    second: PostApoc_Workshop_RoomTiles_12
+  - first:
+      213: 8214368466212564486
+    second: PostApoc_Workshop_RoomTiles_13
+  - first:
+      213: -3585773815462058918
+    second: PostApoc_Workshop_RoomTiles_14
+  - first:
+      213: 2365290088594738476
+    second: PostApoc_Workshop_RoomTiles_15
+  - first:
+      213: -7282767834221489718
+    second: PostApoc_Workshop_RoomTiles_16
+  - first:
+      213: -3256013349312018649
+    second: PostApoc_Workshop_RoomTiles_17
+  - first:
+      213: -4776920764262025402
+    second: PostApoc_Workshop_RoomTiles_18
+  - first:
+      213: -9892291957909902
+    second: PostApoc_Workshop_RoomTiles_19
+  - first:
+      213: -6513414661434023664
+    second: PostApoc_Workshop_RoomTiles_20
+  - first:
+      213: -4779502297144869075
+    second: PostApoc_Workshop_RoomTiles_21
+  - first:
+      213: 5100923795570570247
+    second: PostApoc_Workshop_RoomTiles_22
+  - first:
+      213: -533361393978486418
+    second: PostApoc_Workshop_RoomTiles_23
+  - first:
+      213: -3702907971194545745
+    second: PostApoc_Workshop_RoomTiles_24
+  - first:
+      213: 8412856727792904672
+    second: PostApoc_Workshop_RoomTiles_25
+  - first:
+      213: 7908346445753514843
+    second: PostApoc_Workshop_RoomTiles_26
+  - first:
+      213: 3201750396202722946
+    second: PostApoc_Workshop_RoomTiles_27
+  - first:
+      213: 5200879374282896573
+    second: PostApoc_Workshop_RoomTiles_28
+  - first:
+      213: 6609858814769091447
+    second: PostApoc_Workshop_RoomTiles_29
+  - first:
+      213: 6536125785925381985
+    second: PostApoc_Workshop_RoomTiles_30
+  - first:
+      213: -1895507104548476431
+    second: PostApoc_Workshop_RoomTiles_31
+  - first:
+      213: -2604522824449431411
+    second: PostApoc_Workshop_RoomTiles_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94870ff65b0444e70800000000000000
+      internalID: 9098468295206533193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c07c33b0d244abc0800000000000000
+      internalID: -3772817123701919543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77b811ec794d2da70800000000000000
+      internalID: 8850369966198852471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4585cc0838c19c0800000000000000
+      internalID: -3955141783530744617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 255
+        width: 34
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2d5a233e4bfed6f0800000000000000
+      internalID: -657812182265078485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 319
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e070bd15d7ac8f30800000000000000
+      internalID: 4579219454896926949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_6
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 316
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ed79155884ac6890800000000000000
+      internalID: -7463409577009512985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebf919a09e1aa100800000000000000
+      internalID: 119941946739915754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e26ade61e57ade70800000000000000
+      internalID: 9140748004789740258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 287
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9633f542fdd820340800000000000000
+      internalID: 4828577740022035305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e79c8d14dabc42b0800000000000000
+      internalID: -5598894816536782880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a2a8c213b3f120f0800000000000000
+      internalID: -1143364879935561051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118a0c6be83dfe140800000000000000
+      internalID: 4751248741804058641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 281
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e25c2399c4ff170800000000000000
+      internalID: 8214368466212564486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 281
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54ac7c86b5cc3ec0800000000000000
+      internalID: -3585773815462058918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 316
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2d0171cdc233d020800000000000000
+      internalID: 2365290088594738476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_16
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac156939d396eea90800000000000000
+      internalID: -7282767834221489718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727c3522c1150d2d0800000000000000
+      internalID: -3256013349312018649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_18
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 194
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64779f5cfd7f4bdb0800000000000000
+      internalID: -4776920764262025402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_19
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27695db430bdcdff0800000000000000
+      internalID: -9892291957909902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_20
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011676effd3bb95a0800000000000000
+      internalID: -6513414661434023664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2f348fcbfbcbadb0800000000000000
+      internalID: -4779502297144869075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 159
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704325d8a2f1ac640800000000000000
+      internalID: 5100923795570570247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_23
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 95
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61510753ae1998f0800000000000000
+      internalID: -533361393978486418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_24
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 223
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa99cfca1d0ac9cc0800000000000000
+      internalID: -3702907971194545745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_25
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 188
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e9e956ee9870c470800000000000000
+      internalID: 8412856727792904672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_26
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 201
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5b7cd3313710cd60800000000000000
+      internalID: 7908346445753514843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_27
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28621219507ee6c20800000000000000
+      internalID: 3201750396202722946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_28
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 153
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4b9c74c3c3d2840800000000000000
+      internalID: 5200879374282896573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_29
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 127
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773dbcd429feabb50800000000000000
+      internalID: 6609858814769091447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_30
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 121
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f6a5db5cbf4ba50800000000000000
+      internalID: 6536125785925381985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 161
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9a82cc45ec1b5e0800000000000000
+      internalID: -1895507104548476431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_RoomTiles_32
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 31
+        width: 322
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d886b4f5a40eadbd0800000000000000
+      internalID: -2604522824449431411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PostApoc_Workshop_RoomTiles_0: 9098468295206533193
+      PostApoc_Workshop_RoomTiles_1: -3772817123701919543
+      PostApoc_Workshop_RoomTiles_10: -5598894816536782880
+      PostApoc_Workshop_RoomTiles_11: -1143364879935561051
+      PostApoc_Workshop_RoomTiles_12: 4751248741804058641
+      PostApoc_Workshop_RoomTiles_13: 8214368466212564486
+      PostApoc_Workshop_RoomTiles_14: -3585773815462058918
+      PostApoc_Workshop_RoomTiles_15: 2365290088594738476
+      PostApoc_Workshop_RoomTiles_16: -7282767834221489718
+      PostApoc_Workshop_RoomTiles_17: -3256013349312018649
+      PostApoc_Workshop_RoomTiles_18: -4776920764262025402
+      PostApoc_Workshop_RoomTiles_19: -9892291957909902
+      PostApoc_Workshop_RoomTiles_2: 8850369966198852471
+      PostApoc_Workshop_RoomTiles_20: -6513414661434023664
+      PostApoc_Workshop_RoomTiles_21: -4779502297144869075
+      PostApoc_Workshop_RoomTiles_22: 5100923795570570247
+      PostApoc_Workshop_RoomTiles_23: -533361393978486418
+      PostApoc_Workshop_RoomTiles_24: -3702907971194545745
+      PostApoc_Workshop_RoomTiles_25: 8412856727792904672
+      PostApoc_Workshop_RoomTiles_26: 7908346445753514843
+      PostApoc_Workshop_RoomTiles_27: 3201750396202722946
+      PostApoc_Workshop_RoomTiles_28: 5200879374282896573
+      PostApoc_Workshop_RoomTiles_29: 6609858814769091447
+      PostApoc_Workshop_RoomTiles_3: -3955141783530744617
+      PostApoc_Workshop_RoomTiles_30: 6536125785925381985
+      PostApoc_Workshop_RoomTiles_31: -1895507104548476431
+      PostApoc_Workshop_RoomTiles_32: -2604522824449431411
+      PostApoc_Workshop_RoomTiles_4: -657812182265078485
+      PostApoc_Workshop_RoomTiles_5: 4579219454896926949
+      PostApoc_Workshop_RoomTiles_6: -7463409577009512985
+      PostApoc_Workshop_RoomTiles_7: 119941946739915754
+      PostApoc_Workshop_RoomTiles_8: 9140748004789740258
+      PostApoc_Workshop_RoomTiles_9: 4828577740022035305
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

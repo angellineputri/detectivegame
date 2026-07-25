@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: cc75c5b9378e34299afbcf840e79e4c8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3755788518877391898
+    second: 50sdiner_room_door_tiles3_0
+  - first:
+      213: -928780217177294655
+    second: 50sdiner_room_door_tiles3_1
+  - first:
+      213: -7217702999937785052
+    second: 50sdiner_room_door_tiles3_2
+  - first:
+      213: -5468676625490106162
+    second: 50sdiner_room_door_tiles3_3
+  - first:
+      213: -2185826646191081964
+    second: 50sdiner_room_door_tiles3_4
+  - first:
+      213: -2004590005913021728
+    second: 50sdiner_room_door_tiles3_5
+  - first:
+      213: 3727848638066866497
+    second: 50sdiner_room_door_tiles3_6
+  - first:
+      213: -5989938261064160222
+    second: 50sdiner_room_door_tiles3_7
+  - first:
+      213: -7384095066251059653
+    second: 50sdiner_room_door_tiles3_8
+  - first:
+      213: 5130921312166455046
+    second: 50sdiner_room_door_tiles3_9
+  - first:
+      213: 347957329960961637
+    second: 50sdiner_room_door_tiles3_10
+  - first:
+      213: 4311529369404942064
+    second: 50sdiner_room_door_tiles3_11
+  - first:
+      213: -4957847471848619316
+    second: 50sdiner_room_door_tiles3_12
+  - first:
+      213: 7993953338019535560
+    second: 50sdiner_room_door_tiles3_13
+  - first:
+      213: -4270651003006657170
+    second: 50sdiner_room_door_tiles3_14
+  - first:
+      213: 7366456331994550958
+    second: 50sdiner_room_door_tiles3_15
+  - first:
+      213: 7878812839041320634
+    second: 50sdiner_room_door_tiles3_16
+  - first:
+      213: -2506042507216730879
+    second: 50sdiner_room_door_tiles3_17
+  - first:
+      213: 183189907049044088
+    second: 50sdiner_room_door_tiles3_18
+  - first:
+      213: 2844027695536907824
+    second: 50sdiner_room_door_tiles3_19
+  - first:
+      213: 3564971934973273341
+    second: 50sdiner_room_door_tiles3_20
+  - first:
+      213: 4740203023918469852
+    second: 50sdiner_room_door_tiles3_21
+  - first:
+      213: -5417349858719318086
+    second: 50sdiner_room_door_tiles3_22
+  - first:
+      213: -1496703219103593981
+    second: 50sdiner_room_door_tiles3_23
+  - first:
+      213: 7236915268286595321
+    second: 50sdiner_room_door_tiles3_24
+  - first:
+      213: -2610152994302720758
+    second: 50sdiner_room_door_tiles3_25
+  - first:
+      213: 2279871638448422476
+    second: 50sdiner_room_door_tiles3_26
+  - first:
+      213: -7339906888598137020
+    second: 50sdiner_room_door_tiles3_27
+  - first:
+      213: 700513025295255823
+    second: 50sdiner_room_door_tiles3_28
+  - first:
+      213: 7217727959455085560
+    second: 50sdiner_room_door_tiles3_29
+  - first:
+      213: 749015268820748806
+    second: 50sdiner_room_door_tiles3_30
+  - first:
+      213: -4552543491423785080
+    second: 50sdiner_room_door_tiles3_31
+  - first:
+      213: -4252656199939340402
+    second: 50sdiner_room_door_tiles3_32
+  - first:
+      213: -8818816236843831797
+    second: 50sdiner_room_door_tiles3_33
+  - first:
+      213: 3964089360008952074
+    second: 50sdiner_room_door_tiles3_34
+  - first:
+      213: -5897633501435168047
+    second: 50sdiner_room_door_tiles3_35
+  - first:
+      213: -4150295099677044867
+    second: 50sdiner_room_door_tiles3_36
+  - first:
+      213: -5082133163752661321
+    second: 50sdiner_room_door_tiles3_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1c6d2742cd3f1430800000000000000
+      internalID: 3755788518877391898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8bcb8305f4c13f0800000000000000
+      internalID: -928780217177294655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_2
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423ef62dc5195db90800000000000000
+      internalID: -7217702999937785052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_3
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 351
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec82e2a559b5b14b0800000000000000
+      internalID: -5468676625490106162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 255
+        width: 34
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 416723d0f326aa1e0800000000000000
+      internalID: -2185826646191081964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_5
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 319
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e29149a2044e24e0800000000000000
+      internalID: -2004590005913021728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_6
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 316
+        width: 66
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1493668d59afbb330800000000000000
+      internalID: 3727848638066866497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22cefba33e67fdca0800000000000000
+      internalID: -5989938261064160222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 335
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e146ce8ac668990800000000000000
+      internalID: -7384095066251059653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_9
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 287
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 607a926afb1b43740800000000000000
+      internalID: 5130921312166455046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5660159195134d400800000000000000
+      internalID: 347957329960961637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_11
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 313
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6ab063e11a5db30800000000000000
+      internalID: 4311529369404942064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc205edfdff223bb0800000000000000
+      internalID: -4957847471848619316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_13
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 281
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cad3b7053a30fe60800000000000000
+      internalID: 7993953338019535560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_14
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 281
+        width: 34
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d5f162a899bb4c0800000000000000
+      internalID: -4270651003006657170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 316
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea256f93109ea3660800000000000000
+      internalID: 7366456331994550958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_16
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 287
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab648da888a275d60800000000000000
+      internalID: 7878812839041320634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 217
+        width: 78
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10541550e9fb83dd0800000000000000
+      internalID: -2506042507216730879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8785818ff32da8200800000000000000
+      internalID: 183189907049044088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 223
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 036a9dbee14087720800000000000000
+      internalID: 2844027695536907824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 223
+        width: 8
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4a15a3613597130800000000000000
+      internalID: 3564971934973273341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_21
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 159
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd294eb198598c140800000000000000
+      internalID: 4740203023918469852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 159
+        width: 40
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abfb50f7105b1d4b0800000000000000
+      internalID: -5417349858719318086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_23
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 95
+        width: 72
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30a85232a54aa3be0800000000000000
+      internalID: -1496703219103593981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_24
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 223
+        width: 130
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0c2dbf710be6460800000000000000
+      internalID: 7236915268286595321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_25
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 188
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a050a2d4eafd6cbd0800000000000000
+      internalID: -2610152994302720758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_26
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 201
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4eb4370d2bb3af10800000000000000
+      internalID: 2279871638448422476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_27
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 201
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4475aa4c299632a90800000000000000
+      internalID: -7339906888598137020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_28
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09024192e8b8b900800000000000000
+      internalID: 700513025295255823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_29
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3b9b486558a2460800000000000000
+      internalID: 7217727959455085560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a87652b69056a00800000000000000
+      internalID: 749015268820748806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_31
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 185
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88f2b21a0dd12d0c0800000000000000
+      internalID: -4552543491423785080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_32
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 153
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87c0cab7b78bf4c0800000000000000
+      internalID: -4252656199939340402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_33
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 98
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ee97f4b554d9580800000000000000
+      internalID: -8818816236843831797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_34
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 127
+        width: 72
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a093d313546430730800000000000000
+      internalID: 3964089360008952074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_35
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 121
+        width: 34
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da7383d395672ea0800000000000000
+      internalID: -5897633501435168047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 22
+        width: 161
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7f84b698903766c0800000000000000
+      internalID: -4150295099677044867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 50sdiner_room_door_tiles3_37
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 22
+        width: 322
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be5a4950d2a879b0800000000000000
+      internalID: -5082133163752661321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      50sdiner_room_door_tiles3_0: 3755788518877391898
+      50sdiner_room_door_tiles3_1: -928780217177294655
+      50sdiner_room_door_tiles3_10: 347957329960961637
+      50sdiner_room_door_tiles3_11: 4311529369404942064
+      50sdiner_room_door_tiles3_12: -4957847471848619316
+      50sdiner_room_door_tiles3_13: 7993953338019535560
+      50sdiner_room_door_tiles3_14: -4270651003006657170
+      50sdiner_room_door_tiles3_15: 7366456331994550958
+      50sdiner_room_door_tiles3_16: 7878812839041320634
+      50sdiner_room_door_tiles3_17: -2506042507216730879
+      50sdiner_room_door_tiles3_18: 183189907049044088
+      50sdiner_room_door_tiles3_19: 2844027695536907824
+      50sdiner_room_door_tiles3_2: -7217702999937785052
+      50sdiner_room_door_tiles3_20: 3564971934973273341
+      50sdiner_room_door_tiles3_21: 4740203023918469852
+      50sdiner_room_door_tiles3_22: -5417349858719318086
+      50sdiner_room_door_tiles3_23: -1496703219103593981
+      50sdiner_room_door_tiles3_24: 7236915268286595321
+      50sdiner_room_door_tiles3_25: -2610152994302720758
+      50sdiner_room_door_tiles3_26: 2279871638448422476
+      50sdiner_room_door_tiles3_27: -7339906888598137020
+      50sdiner_room_door_tiles3_28: 700513025295255823
+      50sdiner_room_door_tiles3_29: 7217727959455085560
+      50sdiner_room_door_tiles3_3: -5468676625490106162
+      50sdiner_room_door_tiles3_30: 749015268820748806
+      50sdiner_room_door_tiles3_31: -4552543491423785080
+      50sdiner_room_door_tiles3_32: -4252656199939340402
+      50sdiner_room_door_tiles3_33: -8818816236843831797
+      50sdiner_room_door_tiles3_34: 3964089360008952074
+      50sdiner_room_door_tiles3_35: -5897633501435168047
+      50sdiner_room_door_tiles3_36: -4150295099677044867
+      50sdiner_room_door_tiles3_37: -5082133163752661321
+      50sdiner_room_door_tiles3_4: -2185826646191081964
+      50sdiner_room_door_tiles3_5: -2004590005913021728
+      50sdiner_room_door_tiles3_6: 3727848638066866497
+      50sdiner_room_door_tiles3_7: -5989938261064160222
+      50sdiner_room_door_tiles3_8: -7384095066251059653
+      50sdiner_room_door_tiles3_9: 5130921312166455046
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

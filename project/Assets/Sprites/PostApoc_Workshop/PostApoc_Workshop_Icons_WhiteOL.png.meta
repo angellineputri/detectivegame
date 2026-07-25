@@ -1,0 +1,2366 @@
+fileFormatVersion: 2
+guid: ea913dff99e5043d895e5ae128b91f97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5958939364834160206
+    second: PostApoc_Workshop_Icons_WhiteOL_0
+  - first:
+      213: -8594269081792359191
+    second: PostApoc_Workshop_Icons_WhiteOL_1
+  - first:
+      213: -4981319809480981428
+    second: PostApoc_Workshop_Icons_WhiteOL_2
+  - first:
+      213: -4740257415807392213
+    second: PostApoc_Workshop_Icons_WhiteOL_3
+  - first:
+      213: 7286778585162307167
+    second: PostApoc_Workshop_Icons_WhiteOL_4
+  - first:
+      213: 892633869095342967
+    second: PostApoc_Workshop_Icons_WhiteOL_5
+  - first:
+      213: 4996711543075224770
+    second: PostApoc_Workshop_Icons_WhiteOL_6
+  - first:
+      213: -595135785742914614
+    second: PostApoc_Workshop_Icons_WhiteOL_7
+  - first:
+      213: -7926652096168430740
+    second: PostApoc_Workshop_Icons_WhiteOL_8
+  - first:
+      213: -705697159582985210
+    second: PostApoc_Workshop_Icons_WhiteOL_9
+  - first:
+      213: -2692731707152278355
+    second: PostApoc_Workshop_Icons_WhiteOL_10
+  - first:
+      213: 8246897499222591285
+    second: PostApoc_Workshop_Icons_WhiteOL_11
+  - first:
+      213: 3313373290702065554
+    second: PostApoc_Workshop_Icons_WhiteOL_12
+  - first:
+      213: -3626559493187638543
+    second: PostApoc_Workshop_Icons_WhiteOL_13
+  - first:
+      213: 1251747978089285749
+    second: PostApoc_Workshop_Icons_WhiteOL_14
+  - first:
+      213: 3843043655389496888
+    second: PostApoc_Workshop_Icons_WhiteOL_15
+  - first:
+      213: -7991939308737980643
+    second: PostApoc_Workshop_Icons_WhiteOL_16
+  - first:
+      213: -8023358149413056363
+    second: PostApoc_Workshop_Icons_WhiteOL_17
+  - first:
+      213: 7878630390787020340
+    second: PostApoc_Workshop_Icons_WhiteOL_18
+  - first:
+      213: 6244205491277305318
+    second: PostApoc_Workshop_Icons_WhiteOL_19
+  - first:
+      213: 7147498086993096859
+    second: PostApoc_Workshop_Icons_WhiteOL_20
+  - first:
+      213: -2325982294366642137
+    second: PostApoc_Workshop_Icons_WhiteOL_21
+  - first:
+      213: 5072872343131998060
+    second: PostApoc_Workshop_Icons_WhiteOL_22
+  - first:
+      213: 5265303465167265761
+    second: PostApoc_Workshop_Icons_WhiteOL_23
+  - first:
+      213: 3471617874274796746
+    second: PostApoc_Workshop_Icons_WhiteOL_24
+  - first:
+      213: -8179671302015681900
+    second: PostApoc_Workshop_Icons_WhiteOL_25
+  - first:
+      213: 6504788006177738555
+    second: PostApoc_Workshop_Icons_WhiteOL_26
+  - first:
+      213: 845241235811349007
+    second: PostApoc_Workshop_Icons_WhiteOL_27
+  - first:
+      213: -8056315318792150240
+    second: PostApoc_Workshop_Icons_WhiteOL_28
+  - first:
+      213: 5326357100914478633
+    second: PostApoc_Workshop_Icons_WhiteOL_29
+  - first:
+      213: 845206378448104776
+    second: PostApoc_Workshop_Icons_WhiteOL_30
+  - first:
+      213: 4162826695523144060
+    second: PostApoc_Workshop_Icons_WhiteOL_31
+  - first:
+      213: 5451109381915192751
+    second: PostApoc_Workshop_Icons_WhiteOL_32
+  - first:
+      213: 7653315886146254315
+    second: PostApoc_Workshop_Icons_WhiteOL_33
+  - first:
+      213: 4394169394839610870
+    second: PostApoc_Workshop_Icons_WhiteOL_34
+  - first:
+      213: -4203634448964085503
+    second: PostApoc_Workshop_Icons_WhiteOL_35
+  - first:
+      213: 6883157163474001005
+    second: PostApoc_Workshop_Icons_WhiteOL_36
+  - first:
+      213: -4692095124494112347
+    second: PostApoc_Workshop_Icons_WhiteOL_37
+  - first:
+      213: -7571594677270945756
+    second: PostApoc_Workshop_Icons_WhiteOL_38
+  - first:
+      213: 8639611481426959255
+    second: PostApoc_Workshop_Icons_WhiteOL_39
+  - first:
+      213: -2846825134398733055
+    second: PostApoc_Workshop_Icons_WhiteOL_40
+  - first:
+      213: 1137457570312526222
+    second: PostApoc_Workshop_Icons_WhiteOL_41
+  - first:
+      213: -2606018805903867040
+    second: PostApoc_Workshop_Icons_WhiteOL_42
+  - first:
+      213: 5227006696578955238
+    second: PostApoc_Workshop_Icons_WhiteOL_43
+  - first:
+      213: -7835064157701764665
+    second: PostApoc_Workshop_Icons_WhiteOL_44
+  - first:
+      213: -514900847419775895
+    second: PostApoc_Workshop_Icons_WhiteOL_45
+  - first:
+      213: 4600758438960072866
+    second: PostApoc_Workshop_Icons_WhiteOL_46
+  - first:
+      213: 3214642384273632244
+    second: PostApoc_Workshop_Icons_WhiteOL_47
+  - first:
+      213: -5100983128230714483
+    second: PostApoc_Workshop_Icons_WhiteOL_48
+  - first:
+      213: 525230542995318319
+    second: PostApoc_Workshop_Icons_WhiteOL_49
+  - first:
+      213: 6643531454749402349
+    second: PostApoc_Workshop_Icons_WhiteOL_50
+  - first:
+      213: -5038138901194571440
+    second: PostApoc_Workshop_Icons_WhiteOL_51
+  - first:
+      213: -3528270055018659038
+    second: PostApoc_Workshop_Icons_WhiteOL_52
+  - first:
+      213: -1669402550453182913
+    second: PostApoc_Workshop_Icons_WhiteOL_53
+  - first:
+      213: -5941688344706666838
+    second: PostApoc_Workshop_Icons_WhiteOL_54
+  - first:
+      213: 4545844278393884578
+    second: PostApoc_Workshop_Icons_WhiteOL_55
+  - first:
+      213: 5868800205121170990
+    second: PostApoc_Workshop_Icons_WhiteOL_56
+  - first:
+      213: -8670543186072721209
+    second: PostApoc_Workshop_Icons_WhiteOL_57
+  - first:
+      213: 7754427825891850905
+    second: PostApoc_Workshop_Icons_WhiteOL_58
+  - first:
+      213: 6861761458580833240
+    second: PostApoc_Workshop_Icons_WhiteOL_59
+  - first:
+      213: -6911902281016160639
+    second: PostApoc_Workshop_Icons_WhiteOL_60
+  - first:
+      213: 5694066560141843498
+    second: PostApoc_Workshop_Icons_WhiteOL_61
+  - first:
+      213: -6345185352888584236
+    second: PostApoc_Workshop_Icons_WhiteOL_62
+  - first:
+      213: 6192294956829114446
+    second: PostApoc_Workshop_Icons_WhiteOL_63
+  - first:
+      213: -1144712873226644463
+    second: PostApoc_Workshop_Icons_WhiteOL_64
+  - first:
+      213: 3669919833262466215
+    second: PostApoc_Workshop_Icons_WhiteOL_65
+  - first:
+      213: -1971345939227304442
+    second: PostApoc_Workshop_Icons_WhiteOL_66
+  - first:
+      213: -1619932176898595581
+    second: PostApoc_Workshop_Icons_WhiteOL_67
+  - first:
+      213: -7309413077340765423
+    second: PostApoc_Workshop_Icons_WhiteOL_68
+  - first:
+      213: 386290746231599646
+    second: PostApoc_Workshop_Icons_WhiteOL_69
+  - first:
+      213: 3860890726224012997
+    second: PostApoc_Workshop_Icons_WhiteOL_70
+  - first:
+      213: 3141148286638658316
+    second: PostApoc_Workshop_Icons_WhiteOL_71
+  - first:
+      213: 8636430224351956727
+    second: PostApoc_Workshop_Icons_WhiteOL_72
+  - first:
+      213: 983156184232421656
+    second: PostApoc_Workshop_Icons_WhiteOL_73
+  - first:
+      213: 1109788649412687931
+    second: PostApoc_Workshop_Icons_WhiteOL_74
+  - first:
+      213: -550516836323341816
+    second: PostApoc_Workshop_Icons_WhiteOL_75
+  - first:
+      213: -2142827242664956831
+    second: PostApoc_Workshop_Icons_WhiteOL_76
+  - first:
+      213: -8813033404598013499
+    second: PostApoc_Workshop_Icons_WhiteOL_77
+  - first:
+      213: -4619137895430757
+    second: PostApoc_Workshop_Icons_WhiteOL_78
+  - first:
+      213: 5953595470095724383
+    second: PostApoc_Workshop_Icons_WhiteOL_79
+  - first:
+      213: 2146552922412680593
+    second: PostApoc_Workshop_Icons_WhiteOL_80
+  - first:
+      213: -3591007684705770393
+    second: PostApoc_Workshop_Icons_WhiteOL_81
+  - first:
+      213: 3712868394875470970
+    second: PostApoc_Workshop_Icons_WhiteOL_82
+  - first:
+      213: -2995117951377644023
+    second: PostApoc_Workshop_Icons_WhiteOL_83
+  - first:
+      213: -4532181001109829608
+    second: PostApoc_Workshop_Icons_WhiteOL_84
+  - first:
+      213: -118531521465235336
+    second: PostApoc_Workshop_Icons_WhiteOL_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 48
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1d7f038389d4da0800000000000000
+      internalID: -5958939364834160206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 191
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e4d4a3fdc50bb880800000000000000
+      internalID: -8594269081792359191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_2
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 193
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c440543860ccedab0800000000000000
+      internalID: -4981319809480981428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b26a3eacef8373eb0800000000000000
+      internalID: -4740257415807392213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 208
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56d5852486df1560800000000000000
+      internalID: 7286778585162307167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77319e946c5436c00800000000000000
+      internalID: 892633869095342967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 208
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ccb71abca2e75540800000000000000
+      internalID: 4996711543075224770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 191
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbaba1f727adb7f0800000000000000
+      internalID: -595135785742914614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 207
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6376cd6aefdef190800000000000000
+      internalID: -7926652096168430740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 604dd0c1c2cd436f0800000000000000
+      internalID: -705697159582985210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_10
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 208
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dacd1cf67ce71aad0800000000000000
+      internalID: -2692731707152278355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 207
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5374834e49dd27270800000000000000
+      internalID: 8246897499222591285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 207
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f4090f3777bfd20800000000000000
+      internalID: 3313373290702065554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 193
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1faeab3fa5fdbadc0800000000000000
+      internalID: -3626559493187638543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_14
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 208
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578435e672a1f5110800000000000000
+      internalID: 1251747978089285749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_15
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 193
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8364fcfd7db355530800000000000000
+      internalID: 3843043655389496888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 207
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d171134ba8de61190800000000000000
+      internalID: -7991939308737980643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590df7ec54e47a090800000000000000
+      internalID: -8023358149413056363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_18
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 207
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436157ff894865d60800000000000000
+      internalID: 7878630390787020340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_19
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 192
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e59024afcfd7a650800000000000000
+      internalID: 6244205491277305318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 175
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90f10c14a3013360800000000000000
+      internalID: 7147498086993096859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720ad664d6378bfd0800000000000000
+      internalID: -2325982294366642137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 175
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c674943d486766640800000000000000
+      internalID: 5072872343131998060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 143
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ef9de3da9d121940800000000000000
+      internalID: 5265303465167265761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_24
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4cb00301aad2030800000000000000
+      internalID: 3471617874274796746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_25
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 143
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49af5efd948fb7e80800000000000000
+      internalID: -8179671302015681900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_26
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 159
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f027f4a36a54a50800000000000000
+      internalID: 6504788006177738555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_27
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 144
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f023c0afc66eabb00800000000000000
+      internalID: 845241235811349007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_28
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 159
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0232bd8d6e7323090800000000000000
+      internalID: -8056315318792150240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_29
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 143
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92e03e220950be940800000000000000
+      internalID: 5326357100914478633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_30
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 159
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84d2b4d19b6cabb00800000000000000
+      internalID: 845206378448104776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_31
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c719b20f2d455c930800000000000000
+      internalID: 4162826695523144060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_32
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fadaad40a1b36ab40800000000000000
+      internalID: 5451109381915192751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_33
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be5f99bdf3a063a60800000000000000
+      internalID: 7653315886146254315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_34
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5ee4688c93bfc30800000000000000
+      internalID: 4394169394839610870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_35
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 127
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10996ef8db0b9a5c0800000000000000
+      internalID: -4203634448964085503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 144
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6c9d0eb8f2e58f50800000000000000
+      internalID: 6883157163474001005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_37
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9af24185452eeb0800000000000000
+      internalID: -4692095124494112347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 145
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 420e60ec1ca4ce690800000000000000
+      internalID: -7571594677270945756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b17d32ed016e770800000000000000
+      internalID: 8639611481426959255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_40
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10582869f9b0e78d0800000000000000
+      internalID: -2846825134398733055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e899e8932af09cf00800000000000000
+      internalID: 1137457570312526222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_42
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 111
+        width: 50
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063cc1c04bf85dbd0800000000000000
+      internalID: -2606018805903867040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_43
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 95
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e73d2c85ee0a8840800000000000000
+      internalID: 5227006696578955238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 111
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c98ac719a2444390800000000000000
+      internalID: -7835064157701764665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9642ff64864bad8f0800000000000000
+      internalID: -514900847419775895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_46
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a88893ac6d29df30800000000000000
+      internalID: 4600758438960072866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_47
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fb6b827734bc9c20800000000000000
+      internalID: 3214642384273632244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_48
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 63
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d832c8cfedaa539b0800000000000000
+      internalID: -5100983128230714483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_49
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26eb64656ef94700800000000000000
+      internalID: 525230542995318319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_50
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 96
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de4e87eb8a0923c50800000000000000
+      internalID: 6643531454749402349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_51
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 80
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0518831dc5fe41ab0800000000000000
+      internalID: -5038138901194571440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_52
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22307fa1411190fc0800000000000000
+      internalID: -3528270055018659038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e5b19a93715d8e0800000000000000
+      internalID: -1669402550453182913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 81
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aae2eaf4ee1ea8da0800000000000000
+      internalID: -5941688344706666838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_55
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 63
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afc8e94945161f30800000000000000
+      internalID: 4545844278393884578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_56
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 63
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2eacfb31ba227150800000000000000
+      internalID: 5868800205121170990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_57
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8a37829ea0ca780800000000000000
+      internalID: -8670543186072721209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 49
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99a30bed5034d9b60800000000000000
+      internalID: 7754427825891850905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_59
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d34d2001bfd93f50800000000000000
+      internalID: 6861761458580833240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_60
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ec1d90f7df310a0800000000000000
+      internalID: -6911902281016160639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_61
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2c5fa43e53650f40800000000000000
+      internalID: 5694066560141843498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_62
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7701f2a8f51f7a0800000000000000
+      internalID: -6345185352888584236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_63
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e400e3e74737fe550800000000000000
+      internalID: 6192294956829114446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_64
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114528de4b92d10f0800000000000000
+      internalID: -1144712873226644463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_65
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a425cfe4ac2ee230800000000000000
+      internalID: 3669919833262466215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_66
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e92fa105f54a4e0800000000000000
+      internalID: -1971345939227304442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_67
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 48
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305ebb39448d489e0800000000000000
+      internalID: -1619932176898595581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 49
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1134288788fbf8a90800000000000000
+      internalID: -7309413077340765423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_69
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12b72513616c5500800000000000000
+      internalID: 386290746231599646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_70
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6ae2dd8a3a49530800000000000000
+      internalID: 3860890726224012997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_71
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c039ce369b9979b20800000000000000
+      internalID: 3141148286638658316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_72
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe02f10883cad770800000000000000
+      internalID: 8636430224351956727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_73
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 15
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819e6ef275fd4ad00800000000000000
+      internalID: 983156184232421656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_74
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b38f00095e2c66f00800000000000000
+      internalID: 1109788649412687931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_75
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 16
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a4318aadb2c58f0800000000000000
+      internalID: -550516836323341816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_76
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 17
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cece9d9f52342e0800000000000000
+      internalID: -2142827242664956831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 16
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c1b84ddfc0d1b580800000000000000
+      internalID: -8813033404598013499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_78
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9503962be69feff0800000000000000
+      internalID: -4619137895430757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_79
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f2e6b598b6f9250800000000000000
+      internalID: 5953595470095724383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_80
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1950cff82861acd10800000000000000
+      internalID: 2146552922412680593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_81
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7642a67698d2a2ec0800000000000000
+      internalID: -3591007684705770393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_82
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a74c35e2222c68330800000000000000
+      internalID: 3712868394875470970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_83
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9066dbf87143f66d0800000000000000
+      internalID: -2995117951377644023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_84
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 818031b54657a11c0800000000000000
+      internalID: -4532181001109829608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PostApoc_Workshop_Icons_WhiteOL_85
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 2
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 878c0609534ea5ef0800000000000000
+      internalID: -118531521465235336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PostApoc_Workshop_Icons_WhiteOL_0: -5958939364834160206
+      PostApoc_Workshop_Icons_WhiteOL_1: -8594269081792359191
+      PostApoc_Workshop_Icons_WhiteOL_10: -2692731707152278355
+      PostApoc_Workshop_Icons_WhiteOL_11: 8246897499222591285
+      PostApoc_Workshop_Icons_WhiteOL_12: 3313373290702065554
+      PostApoc_Workshop_Icons_WhiteOL_13: -3626559493187638543
+      PostApoc_Workshop_Icons_WhiteOL_14: 1251747978089285749
+      PostApoc_Workshop_Icons_WhiteOL_15: 3843043655389496888
+      PostApoc_Workshop_Icons_WhiteOL_16: -7991939308737980643
+      PostApoc_Workshop_Icons_WhiteOL_17: -8023358149413056363
+      PostApoc_Workshop_Icons_WhiteOL_18: 7878630390787020340
+      PostApoc_Workshop_Icons_WhiteOL_19: 6244205491277305318
+      PostApoc_Workshop_Icons_WhiteOL_2: -4981319809480981428
+      PostApoc_Workshop_Icons_WhiteOL_20: 7147498086993096859
+      PostApoc_Workshop_Icons_WhiteOL_21: -2325982294366642137
+      PostApoc_Workshop_Icons_WhiteOL_22: 5072872343131998060
+      PostApoc_Workshop_Icons_WhiteOL_23: 5265303465167265761
+      PostApoc_Workshop_Icons_WhiteOL_24: 3471617874274796746
+      PostApoc_Workshop_Icons_WhiteOL_25: -8179671302015681900
+      PostApoc_Workshop_Icons_WhiteOL_26: 6504788006177738555
+      PostApoc_Workshop_Icons_WhiteOL_27: 845241235811349007
+      PostApoc_Workshop_Icons_WhiteOL_28: -8056315318792150240
+      PostApoc_Workshop_Icons_WhiteOL_29: 5326357100914478633
+      PostApoc_Workshop_Icons_WhiteOL_3: -4740257415807392213
+      PostApoc_Workshop_Icons_WhiteOL_30: 845206378448104776
+      PostApoc_Workshop_Icons_WhiteOL_31: 4162826695523144060
+      PostApoc_Workshop_Icons_WhiteOL_32: 5451109381915192751
+      PostApoc_Workshop_Icons_WhiteOL_33: 7653315886146254315
+      PostApoc_Workshop_Icons_WhiteOL_34: 4394169394839610870
+      PostApoc_Workshop_Icons_WhiteOL_35: -4203634448964085503
+      PostApoc_Workshop_Icons_WhiteOL_36: 6883157163474001005
+      PostApoc_Workshop_Icons_WhiteOL_37: -4692095124494112347
+      PostApoc_Workshop_Icons_WhiteOL_38: -7571594677270945756
+      PostApoc_Workshop_Icons_WhiteOL_39: 8639611481426959255
+      PostApoc_Workshop_Icons_WhiteOL_4: 7286778585162307167
+      PostApoc_Workshop_Icons_WhiteOL_40: -2846825134398733055
+      PostApoc_Workshop_Icons_WhiteOL_41: 1137457570312526222
+      PostApoc_Workshop_Icons_WhiteOL_42: -2606018805903867040
+      PostApoc_Workshop_Icons_WhiteOL_43: 5227006696578955238
+      PostApoc_Workshop_Icons_WhiteOL_44: -7835064157701764665
+      PostApoc_Workshop_Icons_WhiteOL_45: -514900847419775895
+      PostApoc_Workshop_Icons_WhiteOL_46: 4600758438960072866
+      PostApoc_Workshop_Icons_WhiteOL_47: 3214642384273632244
+      PostApoc_Workshop_Icons_WhiteOL_48: -5100983128230714483
+      PostApoc_Workshop_Icons_WhiteOL_49: 525230542995318319
+      PostApoc_Workshop_Icons_WhiteOL_5: 892633869095342967
+      PostApoc_Workshop_Icons_WhiteOL_50: 6643531454749402349
+      PostApoc_Workshop_Icons_WhiteOL_51: -5038138901194571440
+      PostApoc_Workshop_Icons_WhiteOL_52: -3528270055018659038
+      PostApoc_Workshop_Icons_WhiteOL_53: -1669402550453182913
+      PostApoc_Workshop_Icons_WhiteOL_54: -5941688344706666838
+      PostApoc_Workshop_Icons_WhiteOL_55: 4545844278393884578
+      PostApoc_Workshop_Icons_WhiteOL_56: 5868800205121170990
+      PostApoc_Workshop_Icons_WhiteOL_57: -8670543186072721209
+      PostApoc_Workshop_Icons_WhiteOL_58: 7754427825891850905
+      PostApoc_Workshop_Icons_WhiteOL_59: 6861761458580833240
+      PostApoc_Workshop_Icons_WhiteOL_6: 4996711543075224770
+      PostApoc_Workshop_Icons_WhiteOL_60: -6911902281016160639
+      PostApoc_Workshop_Icons_WhiteOL_61: 5694066560141843498
+      PostApoc_Workshop_Icons_WhiteOL_62: -6345185352888584236
+      PostApoc_Workshop_Icons_WhiteOL_63: 6192294956829114446
+      PostApoc_Workshop_Icons_WhiteOL_64: -1144712873226644463
+      PostApoc_Workshop_Icons_WhiteOL_65: 3669919833262466215
+      PostApoc_Workshop_Icons_WhiteOL_66: -1971345939227304442
+      PostApoc_Workshop_Icons_WhiteOL_67: -1619932176898595581
+      PostApoc_Workshop_Icons_WhiteOL_68: -7309413077340765423
+      PostApoc_Workshop_Icons_WhiteOL_69: 386290746231599646
+      PostApoc_Workshop_Icons_WhiteOL_7: -595135785742914614
+      PostApoc_Workshop_Icons_WhiteOL_70: 3860890726224012997
+      PostApoc_Workshop_Icons_WhiteOL_71: 3141148286638658316
+      PostApoc_Workshop_Icons_WhiteOL_72: 8636430224351956727
+      PostApoc_Workshop_Icons_WhiteOL_73: 983156184232421656
+      PostApoc_Workshop_Icons_WhiteOL_74: 1109788649412687931
+      PostApoc_Workshop_Icons_WhiteOL_75: -550516836323341816
+      PostApoc_Workshop_Icons_WhiteOL_76: -2142827242664956831
+      PostApoc_Workshop_Icons_WhiteOL_77: -8813033404598013499
+      PostApoc_Workshop_Icons_WhiteOL_78: -4619137895430757
+      PostApoc_Workshop_Icons_WhiteOL_79: 5953595470095724383
+      PostApoc_Workshop_Icons_WhiteOL_8: -7926652096168430740
+      PostApoc_Workshop_Icons_WhiteOL_80: 2146552922412680593
+      PostApoc_Workshop_Icons_WhiteOL_81: -3591007684705770393
+      PostApoc_Workshop_Icons_WhiteOL_82: 3712868394875470970
+      PostApoc_Workshop_Icons_WhiteOL_83: -2995117951377644023
+      PostApoc_Workshop_Icons_WhiteOL_84: -4532181001109829608
+      PostApoc_Workshop_Icons_WhiteOL_85: -118531521465235336
+      PostApoc_Workshop_Icons_WhiteOL_9: -705697159582985210
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

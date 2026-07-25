@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: c130f907a451b4184bc6ca7293e6ced5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5610422265893827224
+    second: Office_Exterior_16x16_Shadow_0
+  - first:
+      213: -4418757820541829204
+    second: Office_Exterior_16x16_Shadow_1
+  - first:
+      213: 1333424855649646122
+    second: Office_Exterior_16x16_Shadow_2
+  - first:
+      213: 4869570123440925826
+    second: Office_Exterior_16x16_Shadow_3
+  - first:
+      213: -6143133098049842619
+    second: Office_Exterior_16x16_Shadow_4
+  - first:
+      213: -3383184671098275111
+    second: Office_Exterior_16x16_Shadow_5
+  - first:
+      213: 2147882025977487710
+    second: Office_Exterior_16x16_Shadow_6
+  - first:
+      213: -1887408422460142011
+    second: Office_Exterior_16x16_Shadow_7
+  - first:
+      213: 2671303262729368049
+    second: Office_Exterior_16x16_Shadow_8
+  - first:
+      213: -3581336120017635884
+    second: Office_Exterior_16x16_Shadow_9
+  - first:
+      213: 4527975626572091253
+    second: Office_Exterior_16x16_Shadow_10
+  - first:
+      213: -7605996698352100058
+    second: Office_Exterior_16x16_Shadow_11
+  - first:
+      213: 3744634317628782438
+    second: Office_Exterior_16x16_Shadow_12
+  - first:
+      213: -7299279073814241865
+    second: Office_Exterior_16x16_Shadow_13
+  - first:
+      213: 3744750604500209484
+    second: Office_Exterior_16x16_Shadow_14
+  - first:
+      213: 5887926665387801615
+    second: Office_Exterior_16x16_Shadow_15
+  - first:
+      213: -222718507721256521
+    second: Office_Exterior_16x16_Shadow_16
+  - first:
+      213: 4532079312620130645
+    second: Office_Exterior_16x16_Shadow_17
+  - first:
+      213: -4592750558474082783
+    second: Office_Exterior_16x16_Shadow_18
+  - first:
+      213: -4916065278791755037
+    second: Office_Exterior_16x16_Shadow_19
+  - first:
+      213: 8907978818285088172
+    second: Office_Exterior_16x16_Shadow_20
+  - first:
+      213: -4858018893064711567
+    second: Office_Exterior_16x16_Shadow_21
+  - first:
+      213: 1128083841713371916
+    second: Office_Exterior_16x16_Shadow_22
+  - first:
+      213: -2747033567634541902
+    second: Office_Exterior_16x16_Shadow_23
+  - first:
+      213: -2976991506795501487
+    second: Office_Exterior_16x16_Shadow_24
+  - first:
+      213: -9189520617618925104
+    second: Office_Exterior_16x16_Shadow_25
+  - first:
+      213: 4672660815219249593
+    second: Office_Exterior_16x16_Shadow_26
+  - first:
+      213: 4268402565695395622
+    second: Office_Exterior_16x16_Shadow_27
+  - first:
+      213: 1662175365030639333
+    second: Office_Exterior_16x16_Shadow_28
+  - first:
+      213: 4879525584244071751
+    second: Office_Exterior_16x16_Shadow_29
+  - first:
+      213: -3508864139110248663
+    second: Office_Exterior_16x16_Shadow_30
+  - first:
+      213: -3910080761618859782
+    second: Office_Exterior_16x16_Shadow_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 191
+        width: 182
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8923b8653593cdd40800000000000000
+      internalID: 5610422265893827224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 335
+        width: 63
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cafff1e7c2b6da2c0800000000000000
+      internalID: -4418757820541829204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_2
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 271
+        width: 98
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a267ca767d6418210800000000000000
+      internalID: 1333424855649646122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_3
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 338
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c2d882a30349340800000000000000
+      internalID: 4869570123440925826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_4
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 328
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5425bcabef43fbaa0800000000000000
+      internalID: -6143133098049842619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_5
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 325
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9daf3ad67738c01d0800000000000000
+      internalID: -3383184671098275111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 323
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e51a5d9925fcecd10800000000000000
+      internalID: 2147882025977487710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_7
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 322
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ece292a049ec5e0800000000000000
+      internalID: -1887408422460142011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 191
+        width: 98
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f1735e0a20621520800000000000000
+      internalID: 2671303262729368049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_9
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 256
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5b21906c98c4ec0800000000000000
+      internalID: -3581336120017635884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 255
+        width: 31
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fc47597d996de30800000000000000
+      internalID: 4527975626572091253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_11
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 223
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ddde71d42127690800000000000000
+      internalID: -7605996698352100058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_12
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 223
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667300c621d97f330800000000000000
+      internalID: 3744634317628782438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_13
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 129
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd1cd80b50c3ba90800000000000000
+      internalID: -7299279073814241865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_14
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 191
+        width: 28
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4f0aa195d608f330800000000000000
+      internalID: 3744750604500209484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_15
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 191
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c7df94b1e16b150800000000000000
+      internalID: 5887926665387801615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 79
+        width: 270
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b19e5e72beb8ecf0800000000000000
+      internalID: -222718507721256521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_17
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 160
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5519e927f1e25ee30800000000000000
+      internalID: 4532079312620130645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 128
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126ec2453b54340c0800000000000000
+      internalID: -4592750558474082783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_19
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 95
+        width: 33
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea5cf4eca0a6cbb0800000000000000
+      internalID: -4916065278791755037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_20
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 99
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad269ae98f7f9b70800000000000000
+      internalID: 8907978818285088172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 71
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 172ddbe3e89d49cb0800000000000000
+      internalID: -4858018893064711567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_22
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 65
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bfe26f642c7af00800000000000000
+      internalID: 1128083841713371916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_23
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 85
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b2b11f468390e9d0800000000000000
+      internalID: -2747033567634541902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_24
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 64
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15869125ff99fa6d0800000000000000
+      internalID: -2976991506795501487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_25
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 85
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d912babfa3487080800000000000000
+      internalID: -9189520617618925104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_26
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 50
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b1d70f2140a8d040800000000000000
+      internalID: 4672660815219249593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_27
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 160
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 627d3aeb4896c3b30800000000000000
+      internalID: 4268402565695395622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 30
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e67e0b10bb311710800000000000000
+      internalID: 1662175365030639333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 31
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74d5c418aae87b340800000000000000
+      internalID: 4879525584244071751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_30
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 33
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92f0a3ff7a20e4fc0800000000000000
+      internalID: -3508864139110248663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Exterior_16x16_Shadow_31
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 57
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af87e98834a9cb9c0800000000000000
+      internalID: -3910080761618859782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Office_Exterior_16x16_Shadow_0: 5610422265893827224
+      Office_Exterior_16x16_Shadow_1: -4418757820541829204
+      Office_Exterior_16x16_Shadow_10: 4527975626572091253
+      Office_Exterior_16x16_Shadow_11: -7605996698352100058
+      Office_Exterior_16x16_Shadow_12: 3744634317628782438
+      Office_Exterior_16x16_Shadow_13: -7299279073814241865
+      Office_Exterior_16x16_Shadow_14: 3744750604500209484
+      Office_Exterior_16x16_Shadow_15: 5887926665387801615
+      Office_Exterior_16x16_Shadow_16: -222718507721256521
+      Office_Exterior_16x16_Shadow_17: 4532079312620130645
+      Office_Exterior_16x16_Shadow_18: -4592750558474082783
+      Office_Exterior_16x16_Shadow_19: -4916065278791755037
+      Office_Exterior_16x16_Shadow_2: 1333424855649646122
+      Office_Exterior_16x16_Shadow_20: 8907978818285088172
+      Office_Exterior_16x16_Shadow_21: -4858018893064711567
+      Office_Exterior_16x16_Shadow_22: 1128083841713371916
+      Office_Exterior_16x16_Shadow_23: -2747033567634541902
+      Office_Exterior_16x16_Shadow_24: -2976991506795501487
+      Office_Exterior_16x16_Shadow_25: -9189520617618925104
+      Office_Exterior_16x16_Shadow_26: 4672660815219249593
+      Office_Exterior_16x16_Shadow_27: 4268402565695395622
+      Office_Exterior_16x16_Shadow_28: 1662175365030639333
+      Office_Exterior_16x16_Shadow_29: 4879525584244071751
+      Office_Exterior_16x16_Shadow_3: 4869570123440925826
+      Office_Exterior_16x16_Shadow_30: -3508864139110248663
+      Office_Exterior_16x16_Shadow_31: -3910080761618859782
+      Office_Exterior_16x16_Shadow_4: -6143133098049842619
+      Office_Exterior_16x16_Shadow_5: -3383184671098275111
+      Office_Exterior_16x16_Shadow_6: 2147882025977487710
+      Office_Exterior_16x16_Shadow_7: -1887408422460142011
+      Office_Exterior_16x16_Shadow_8: 2671303262729368049
+      Office_Exterior_16x16_Shadow_9: -3581336120017635884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

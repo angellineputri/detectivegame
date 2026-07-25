@@ -1,0 +1,832 @@
+fileFormatVersion: 2
+guid: f121f1e1522a8421198e948fd2970cd2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3150029308508511450
+    second: Office_Terrain_32x32_0
+  - first:
+      213: 6129508483451839099
+    second: Office_Terrain_32x32_1
+  - first:
+      213: 4106076105405995355
+    second: Office_Terrain_32x32_2
+  - first:
+      213: -4889133908939366163
+    second: Office_Terrain_32x32_3
+  - first:
+      213: -6065791094302825410
+    second: Office_Terrain_32x32_4
+  - first:
+      213: 543611429688003895
+    second: Office_Terrain_32x32_5
+  - first:
+      213: 2297663949749323859
+    second: Office_Terrain_32x32_6
+  - first:
+      213: 3505765172858810718
+    second: Office_Terrain_32x32_7
+  - first:
+      213: 6193758250350927721
+    second: Office_Terrain_32x32_8
+  - first:
+      213: -4082721112864240072
+    second: Office_Terrain_32x32_9
+  - first:
+      213: -7456223454123453538
+    second: Office_Terrain_32x32_10
+  - first:
+      213: 7689023775029691615
+    second: Office_Terrain_32x32_11
+  - first:
+      213: 8605340641128933694
+    second: Office_Terrain_32x32_12
+  - first:
+      213: 7297504743468267288
+    second: Office_Terrain_32x32_13
+  - first:
+      213: -8573481341322712616
+    second: Office_Terrain_32x32_14
+  - first:
+      213: -3679131557270778193
+    second: Office_Terrain_32x32_15
+  - first:
+      213: -8622738702228544047
+    second: Office_Terrain_32x32_16
+  - first:
+      213: -6069011443080906043
+    second: Office_Terrain_32x32_17
+  - first:
+      213: 215436465499642428
+    second: Office_Terrain_32x32_18
+  - first:
+      213: -1784585679952596003
+    second: Office_Terrain_32x32_19
+  - first:
+      213: -659715006051198942
+    second: Office_Terrain_32x32_20
+  - first:
+      213: -3677203577709142199
+    second: Office_Terrain_32x32_21
+  - first:
+      213: -2809674347813619191
+    second: Office_Terrain_32x32_22
+  - first:
+      213: -3328420024202209784
+    second: Office_Terrain_32x32_23
+  - first:
+      213: 5566196541813655212
+    second: Office_Terrain_32x32_24
+  - first:
+      213: -5812073480923330967
+    second: Office_Terrain_32x32_25
+  - first:
+      213: 192048176342519363
+    second: Office_Terrain_32x32_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 175
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc18bd67f627bb20800000000000000
+      internalID: 3150029308508511450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_1
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 95
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b72e3eb7d73601550800000000000000
+      internalID: 6129508483451839099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 171
+        width: 96
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5991738676bbf830800000000000000
+      internalID: 4106076105405995355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 159
+        width: 65
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de02a521d9e462cb0800000000000000
+      internalID: -4889133908939366163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 144
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e342a5e332bf1dba0800000000000000
+      internalID: -6065791094302825410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_5
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 131
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d456217bb4b8700800000000000000
+      internalID: 543611429688003895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 139
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35887025031f2ef10800000000000000
+      internalID: 2297663949749323859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_7
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 137
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e517f22b9daf6a030800000000000000
+      internalID: 3505765172858810718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_8
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 142
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96fdfc01056a4f550800000000000000
+      internalID: 6193758250350927721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_9
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 138
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e4dbe67c24757c0800000000000000
+      internalID: -4082721112864240072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 139
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e931903f54c268890800000000000000
+      internalID: -7456223454123453538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 144
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd48d2c9266e4ba60800000000000000
+      internalID: 7689023775029691615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_12
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 134
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e39e8b558bf4c6770800000000000000
+      internalID: 8605340641128933694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_13
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 135
+        width: 29
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817772d76e1f54560800000000000000
+      internalID: 7297504743468267288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 130
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d92502f420e40980800000000000000
+      internalID: -8573481341322712616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_15
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae02fe675911fcc0800000000000000
+      internalID: -3679131557270778193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_16
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d5a7a6e5d0e55880800000000000000
+      internalID: -8622738702228544047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_17
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cab16d5f3a86cba0800000000000000
+      internalID: -6069011443080906043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_18
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 16
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a95cde2526df200800000000000000
+      internalID: 215436465499642428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_19
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 3
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd33d2b77c0eb37e0800000000000000
+      internalID: -1784585679952596003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_20
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 11
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228d25382b838d6f0800000000000000
+      internalID: -659715006051198942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 10
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fd9d724d2f7fcc0800000000000000
+      internalID: -3677203577709142199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_22
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 3
+        width: 28
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90aba0421180209d0800000000000000
+      internalID: -2809674347813619191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_23
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 19
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806512a6f931fc1d0800000000000000
+      internalID: -3328420024202209784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_24
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 15
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca68fc8834a1f3d40800000000000000
+      internalID: 5566196541813655212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_25
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 2
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 966c81976fd575fa0800000000000000
+      internalID: -5812073480923330967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Terrain_32x32_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 3
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e48a28cca4aa200800000000000000
+      internalID: 192048176342519363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Office_Terrain_32x32_0: 3150029308508511450
+      Office_Terrain_32x32_1: 6129508483451839099
+      Office_Terrain_32x32_10: -7456223454123453538
+      Office_Terrain_32x32_11: 7689023775029691615
+      Office_Terrain_32x32_12: 8605340641128933694
+      Office_Terrain_32x32_13: 7297504743468267288
+      Office_Terrain_32x32_14: -8573481341322712616
+      Office_Terrain_32x32_15: -3679131557270778193
+      Office_Terrain_32x32_16: -8622738702228544047
+      Office_Terrain_32x32_17: -6069011443080906043
+      Office_Terrain_32x32_18: 215436465499642428
+      Office_Terrain_32x32_19: -1784585679952596003
+      Office_Terrain_32x32_2: 4106076105405995355
+      Office_Terrain_32x32_20: -659715006051198942
+      Office_Terrain_32x32_21: -3677203577709142199
+      Office_Terrain_32x32_22: -2809674347813619191
+      Office_Terrain_32x32_23: -3328420024202209784
+      Office_Terrain_32x32_24: 5566196541813655212
+      Office_Terrain_32x32_25: -5812073480923330967
+      Office_Terrain_32x32_26: 192048176342519363
+      Office_Terrain_32x32_3: -4889133908939366163
+      Office_Terrain_32x32_4: -6065791094302825410
+      Office_Terrain_32x32_5: 543611429688003895
+      Office_Terrain_32x32_6: 2297663949749323859
+      Office_Terrain_32x32_7: 3505765172858810718
+      Office_Terrain_32x32_8: 6193758250350927721
+      Office_Terrain_32x32_9: -4082721112864240072
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
