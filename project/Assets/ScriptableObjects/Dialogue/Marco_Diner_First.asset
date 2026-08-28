@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CoroutineID: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: Marco_Diner_First
+  m_EditorClassIdentifier:
+  lines:
+  - speaker: Marco
+    text: "Who are you and what’s your business with Vivian?"
+  - speaker: Detective
+    text: "I’m the detective on this case, don’t worry I’m just out here investigating. You run the kitchen here?"
+  - speaker: Marco
+    text: "Since day one. She built this place, I made sure the food matched it and do her justice."
+  - speaker: Detective
+    text: "Close with her, I assume?"
+  - speaker: Marco
+    text: "Well someone’s got to look out for her."
+  - speaker: Detective
+    text: "Permission to further inspect the kitchen?"
+  - speaker: Marco
+    text: "Follow me."

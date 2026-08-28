@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CoroutineID: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: Vivian_Diner_First
+  m_EditorClassIdentifier:
+  lines:
+  - speaker: Detective
+    text: "Ms. Vivian? I got a few questions about Julian."
+  - speaker: Vivian
+    text: "Figured someone would come by. We broke up the night before he died, he has nothing to do with me anymore."
+  - speaker: Detective
+    text: "What happened?"
+  - speaker: Vivian
+    text: "He said things were ‘getting complicated’. Wouldn’t explain. I didn’t push it, should’ve though."
+  - speaker: Detective
+    text: "Seems like it’s a busy afternoon, where can I reach you if I have more questions?"
+  - speaker: Vivian
+    text: "I live above the bakery two blocks from here. Door’s always open for the police, I suppose. Stop by when I reach home, here’s the full address."

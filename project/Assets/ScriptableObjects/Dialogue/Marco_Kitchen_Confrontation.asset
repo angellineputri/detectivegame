@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: Marco_Kitchen_Confrontation
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speaker: Player
+    text: This was in your walk-in fridge. Your knife rack seems to be missing a
+      piece too. Care to elaborate?
+  - speaker: Head Chef
+    text: I-I didn't put that there. I swear.
+  - speaker: Player
+    text: Then who did? This is your kitchen, you are in charge.
+  - speaker: Head Chef
+    text: "I don't know! I found it this morning and panicked, I hid it, I didn't
+      know what else to do\u2013"
+  - speaker: Player
+    text: Hiding evidence makes you look more guilty, not less
+  - speaker: Head Chef
+    text: I wasn't protecting myself. I was protecting her.
+  - speaker: Player
+    text: Her?
+  - speaker: Head Chef
+    text: ...
+  - speaker: Player
+    text: Where do you stay?
