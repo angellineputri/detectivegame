@@ -6,6 +6,10 @@ public class HeadChefBedroomSceneController : MonoBehaviour
     [Header("Scene")]
     [SerializeField] ClueOutcomeTable bedroomOutcomeTable;
 
+    [Header("Marcus Commentary")]
+    [Tooltip("Played when the player uses Head Chef's Address while already in this scene.")]
+    [SerializeField] DialogueData marcusAlreadyHereDialogue;
+
     [Header("Head Chef Walk")]
     [Tooltip("The HeadChef NPC Transform in this scene.")]
     [SerializeField] Transform headChef;
@@ -31,6 +35,7 @@ public class HeadChefBedroomSceneController : MonoBehaviour
     void OnEnable()
     {
         ItemSelectionUI.PreDialogueWalkHandler = HandlePreDialogueWalk;
+        ItemSelectionUI.SceneLoadInterceptHandler = HandleSceneLoadIntercept;
     }
 
     void OnDisable()
@@ -38,6 +43,37 @@ public class HeadChefBedroomSceneController : MonoBehaviour
         if (ItemSelectionUI.PreDialogueWalkHandler == HandlePreDialogueWalk)
         {
             ItemSelectionUI.PreDialogueWalkHandler = null;
+        }
+        if (ItemSelectionUI.SceneLoadInterceptHandler == HandleSceneLoadIntercept)
+        {
+            ItemSelectionUI.SceneLoadInterceptHandler = null;
+        }
+    }
+
+    void HandleSceneLoadIntercept(string clueID, System.Action proceedWithLoad)
+    {
+        if (clueID == "paper_headchef_address")
+        {
+            StartCoroutine(PlayAlreadyHere());
+        }
+        else
+        {
+            proceedWithLoad?.Invoke();
+        }
+    }
+
+    IEnumerator PlayAlreadyHere()
+    {
+        if (marcusAlreadyHereDialogue != null && DialogueRunner.Instance != null)
+        {
+            bool done = false;
+            DialogueRunner.Instance.Play(marcusAlreadyHereDialogue, () => done = true);
+            yield return new WaitUntil(() => done);
+        }
+
+        if (PlayerController.Instance != null)
+        {
+            PlayerController.Instance.CanMove = true;
         }
     }
 

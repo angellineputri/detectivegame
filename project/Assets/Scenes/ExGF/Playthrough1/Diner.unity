@@ -202,6 +202,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &212421456 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 746129664185917811, guid: 5e99a6c6b81b74dbba9c4506949f30dc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1051667907385421145}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &273554023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1033,7 @@ MonoBehaviour:
   - {fileID: 1898457686}
   - {fileID: 390941474}
   - {fileID: 1349660387}
+  - {fileID: 212421456}
   obstacleRadius: 0.8
   chefWalkInStart: {fileID: 273554025}
   chefStandOffset: {x: 0, y: 1}

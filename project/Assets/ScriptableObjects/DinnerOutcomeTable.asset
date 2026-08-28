@@ -15,8 +15,12 @@ MonoBehaviour:
   outcomes:
   - clueID: paper_vivian_address
     outcomeType: 2
-    targetScene: ExGFBedroom
+    targetScene: ExGFRoom
     dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
     flagKey: 
     flagValue: 0
     popupText: 
@@ -24,6 +28,10 @@ MonoBehaviour:
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
     flagKey: 
     flagValue: 0
     popupText: 
@@ -31,6 +39,10 @@ MonoBehaviour:
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
     flagKey: 
     flagValue: 0
     popupText: 
@@ -38,6 +50,10 @@ MonoBehaviour:
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
     flagKey: 
     flagValue: 0
     popupText: 
@@ -45,6 +61,10 @@ MonoBehaviour:
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
     flagKey: 
     flagValue: 0
     popupText: 
