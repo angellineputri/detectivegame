@@ -48,7 +48,7 @@ MonoBehaviour:
     popupText: 
   - clueID: paper_headchef_address
     outcomeType: 2
-    targetScene: HeadChefRoom
+    targetScene: ExGF_ChefRoom_P1
     dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
       objectID: 
@@ -59,7 +59,7 @@ MonoBehaviour:
     popupText: 
   - clueID: paper_vivian_address
     outcomeType: 2
-    targetScene: ExGFRoom
+    targetScene: ExGF_ExRoom_P1
     dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
       objectID: 

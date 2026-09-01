@@ -10,24 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: adf7e1f96c25a4fc5b7e68dfe4ebca67, type: 3}
-  m_Name: ExGFBedroomOutcomeTable
+  m_Name: DinnerOutcomeTable
   m_EditorClassIdentifier: Assembly-CSharp::ClueOutcomeTable
   outcomes:
-  - clueID: paper_headchef_address
-    outcomeType: 2
-    targetScene: HeadChefRoom
-    dialogue: {fileID: 0}
-    itemToGrantAfterDialogue:
-      objectID: 
-      displayName: 
-      clueDescription: 
-    flagKey: 
-    flagValue: 0
-    popupText: 
   - clueID: paper_vivian_address
     outcomeType: 2
-    targetScene: ExGFRoom
-    dialogue: {fileID: 11400000, guid: 81bb354531eb4253a12ea40910325d5d, type: 2}
+    targetScene: ExGF_ExRoom_P1
+    dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
       objectID: 
       displayName: 
@@ -35,7 +24,7 @@ MonoBehaviour:
     flagKey: 
     flagValue: 0
     popupText: 
-  - clueID: exgf_bed
+  - clueID: diner_corner_photo
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
@@ -46,7 +35,7 @@ MonoBehaviour:
     flagKey: 
     flagValue: 0
     popupText: 
-  - clueID: exgf_nightstand
+  - clueID: diner_reservation_book
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
@@ -57,7 +46,7 @@ MonoBehaviour:
     flagKey: 
     flagValue: 0
     popupText: 
-  - clueID: exgf_wardrobe
+  - clueID: diner_jukebox
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}
@@ -68,7 +57,7 @@ MonoBehaviour:
     flagKey: 
     flagValue: 0
     popupText: 
-  - clueID: exgf_vanity
+  - clueID: diner_trashbin
     outcomeType: 1
     targetScene: 
     dialogue: {fileID: 0}

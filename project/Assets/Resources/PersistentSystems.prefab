@@ -1686,6 +1686,7 @@ GameObject:
   - component: {fileID: 1307154255622178363}
   - component: {fileID: 1307154255622178364}
   - component: {fileID: 1307154255622178365}
+  - component: {fileID: 8815083451532471061}
   m_Layer: 0
   m_Name: PersistentSystems
   m_TagString: Untagged
@@ -1748,6 +1749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db004c25235a4ffc9dedc206d80fb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bagHud: {fileID: 1307154255842328354}
   bagButton: {fileID: 1307154256115372673}
   badgeText: {fileID: 1307154256833427495}
   makeAMoveButton: {fileID: 1307154254980486286}
@@ -1807,6 +1809,18 @@ MonoBehaviour:
   buttonContainer: {fileID: 1307154255367855330}
   buttonPrefab: {fileID: 4004279458475091504, guid: 39f03aada4cfd4914ad66918f77f0006,
     type: 3}
+--- !u!114 &8815083451532471061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307154255622178366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ea683b3559a24db89630c78dc971669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1307154255626637017
 GameObject:
   m_ObjectHideFlags: 0

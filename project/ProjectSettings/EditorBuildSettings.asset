@@ -6,21 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ExGF/Playthrough1/Diner.unity
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough1/ExGF_Diner_P1.unity
     guid: cf3708c285f6c4586b713ffcb211525d
   - enabled: 1
-    path: Assets/Scenes/ExGF/Playthrough1/Kitchen.unity
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough1/ExGF_Kitchen_P1.unity
     guid: c24324030832e4bbeb0c9df6cb024d46
   - enabled: 1
-    path: Assets/Scenes/ExGF/Playthrough1/ExGFRoom.unity
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough1/ExGF_ExRoom_P1.unity
     guid: 92a524e9ea0d9465682a1df399ec5c39
   - enabled: 1
-    path: Assets/Scenes/ExGF/Playthrough1/HeadChefRoom.unity
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough1/ExGF_ChefRoom_P1.unity
     guid: f5d7954138587432f9e96f963e971d12
   - enabled: 1
-    path: Assets/Scenes/ExGF/Playthrough1/ExGFCourtScene.unity
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough1/ExGF_Court_P1.unity
     guid: 24f932bebb0c64ff9b96bed88ea890e4
   - enabled: 1
-    path: Assets/Scenes/ExGF/Playthrough2/ExGFRoomP2.unity
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough2/ExGF_ExRoom_P2.unity
     guid: eaf20c0308aef4687b18bdf4bcda5c14
+  - enabled: 1
+    path: Assets/Scenes/Core/MainMenu.unity
+    guid: ad39c8751fdb645599a129c36dbb71f6
+  - enabled: 1
+    path: Assets/Scenes/Core/SelectCaseScreen.unity
+    guid: ed9f615230f6249d09e183908102118a
   m_configObjects: {}

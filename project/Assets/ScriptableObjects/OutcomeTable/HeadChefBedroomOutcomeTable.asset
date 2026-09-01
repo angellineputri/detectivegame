@@ -15,7 +15,7 @@ MonoBehaviour:
   outcomes:
   - clueID: chef_computer
     outcomeType: 3
-    targetScene: ExGFCourtScene
+    targetScene: ExGF_Court_P1
     dialogue: {fileID: 11400000, guid: 10bfb5fba52d42809554edfb3e2e739f, type: 2}
     itemToGrantAfterDialogue:
       objectID: 
@@ -81,7 +81,7 @@ MonoBehaviour:
     popupText: 
   - clueID: paper_vivian_address
     outcomeType: 2
-    targetScene: ExGFRoom
+    targetScene: ExGF_ExRoom_P1
     dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
       objectID: 
@@ -92,7 +92,7 @@ MonoBehaviour:
     popupText: 
   - clueID: paper_headchef_address
     outcomeType: 2
-    targetScene: HeadChefRoom
+    targetScene: ExGF_ChefRoom_P1
     dialogue: {fileID: 11400000, guid: 81bb354531eb4253a12ea40910325d5d, type: 2}
     itemToGrantAfterDialogue:
       objectID: 

@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     public int CurrentPlaythrough { get; private set; } = 1;
 
+    public string SelectedCaseID { get; private set; }
+
     public event System.Action<string> OnClueAdded;
     public event System.Action OnPlaythroughAdvanced;
 
@@ -26,6 +28,19 @@ public class GameManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    public void SelectCase(string caseID)
+    {
+        SelectedCaseID = caseID;
+        CurrentPlaythrough = 1;
+        FoundClues.Clear();
+        _flags.Clear();
+        Debug.Log("[GameManager] Case selected: " + caseID);
+        // TODO: path selection (exgf / assistant) within City of Lies still needs a home.
+        // The player picks which suspect angle to investigate somewhere after Diner loads —
+        // not on the Select Case screen. Decide where that choice lives and store it here
+        // (e.g. a SelectedPathID string, similar to SelectedCaseID).
     }
 
     public void AdvancePlaythrough()

@@ -7,7 +7,8 @@ public class BagUI : MonoBehaviour
 {
     public static BagUI Instance { get; private set; }
 
-    [Header("Bag HUD (always visible)")]
+    [Header("Bag HUD")]
+    [SerializeField] GameObject bagHud;
     [SerializeField] Button bagButton;
     [SerializeField] TMP_Text badgeText;
     [SerializeField] Button makeAMoveButton;
@@ -21,9 +22,9 @@ public class BagUI : MonoBehaviour
     [SerializeField] Button closeButton;
     [SerializeField] Button keepExploringButton;
 
-    readonly Dictionary<string, string> _displayNames = new Dictionary<string, string>();
-    readonly HashSet<string> _spawnedClueIDs = new HashSet<string>();
-    readonly List<GameObject> _spawnedEntries = new List<GameObject>();
+    Dictionary<string, string> _displayNames = new Dictionary<string, string>();
+    HashSet<string> _spawnedClueIDs = new HashSet<string>();
+    List<GameObject> _spawnedEntries = new List<GameObject>();
 
     ClueOutcomeTable _currentTable;
 
@@ -38,9 +39,11 @@ public class BagUI : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
+        SetHudVisible(false);
         reviewPanel.SetActive(false);
         bagButton.onClick.AddListener(OnBagButtonClicked);
         closeButton.onClick.AddListener(CloseReviewPanel);
@@ -113,6 +116,22 @@ public class BagUI : MonoBehaviour
         _currentTable = table;
     }
 
+    public void SetHudVisible(bool visible)
+    {
+        if (bagHud != null)
+        {
+            bagHud.SetActive(visible);
+        }
+
+        if (!visible)
+        {
+            if (reviewPanel != null)
+            {
+                reviewPanel.SetActive(false);
+            }
+        }
+    }
+
     public void ForceOpenForDecision(string title, System.Action onKeepExploring)
     {
         _forcedDecisionMode = true;
@@ -168,9 +187,17 @@ public class BagUI : MonoBehaviour
 
     void HandleClueAdded(string clueID)
     {
-        if (!_displayNames.TryGetValue(clueID, out string displayName)) return;
-        if (_spawnedClueIDs.Contains(clueID)) return;
+        if (!_displayNames.ContainsKey(clueID))
+        {
+            return;
+        }
 
+        if (_spawnedClueIDs.Contains(clueID))
+        {
+            return;
+        }
+
+        string displayName = _displayNames[clueID];
         _spawnedClueIDs.Add(clueID);
         SpawnEntry(clueID, displayName);
         UpdateBadge();
@@ -178,9 +205,20 @@ public class BagUI : MonoBehaviour
 
     void OnBagButtonClicked()
     {
-        if (_forcedDecisionMode) return;
-        if (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying) return;
-        if (UIManager.Instance != null && UIManager.Instance.IsPopupVisible) return;
+        if (_forcedDecisionMode)
+        {
+            return;
+        }
+
+        if (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
+        {
+            return;
+        }
+
+        if (UIManager.Instance != null && UIManager.Instance.IsPopupVisible)
+        {
+            return;
+        }
 
         reviewPanel.SetActive(!reviewPanel.activeSelf);
     }
@@ -206,7 +244,10 @@ public class BagUI : MonoBehaviour
             PlayerController.Instance.CanMove = true;
         }
 
-        cb?.Invoke();
+        if (cb != null)
+        {
+            cb();
+        }
     }
 
     void SpawnEntry(string clueID, string displayName)
@@ -220,37 +261,40 @@ public class BagUI : MonoBehaviour
 
     void OnClueEntryClicked(string clueID)
     {
-        if (!_forcedDecisionMode) return;
+        if (!_forcedDecisionMode)
+        {
+            return;
+        }
 
         if (_currentTable == null)
         {
             Debug.LogWarning("[BagUI] No outcome table set for this scene.");
-            if (_forcedDecisionMode)
-            {
-                ExitForcedDecision();
-            }
+            ExitForcedDecision();
             return;
         }
 
         ClueOutcome outcome = _currentTable.GetOutcome(clueID);
+
         if (outcome == null)
         {
             CloseReviewPanel();
-            if (_forcedDecisionMode)
+            ExitForcedDecision();
+
+            if (GameOverScreen.Instance != null)
             {
-                ExitForcedDecision();
+                GameOverScreen.Instance.Show();
             }
-            GameOverScreen.Instance?.Show();
+
             return;
         }
 
         CloseReviewPanel();
-        if (_forcedDecisionMode)
-        {
-            ExitForcedDecision();
-        }
+        ExitForcedDecision();
 
-        ItemSelectionUI.Instance?.ExecuteOutcome(outcome);
+        if (ItemSelectionUI.Instance != null)
+        {
+            ItemSelectionUI.Instance.ExecuteOutcome(outcome);
+        }
     }
 
     public void ClearBag()
@@ -259,6 +303,7 @@ public class BagUI : MonoBehaviour
         {
             Destroy(go);
         }
+
         _spawnedEntries.Clear();
         _spawnedClueIDs.Clear();
         _displayNames.Clear();
