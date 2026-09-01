@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float moveSpeed = 4f;
 
     Rigidbody2D _rb;
+    Animator _animator;
     Vector2 _input;
 
     public bool CanMove { get; set; } = true;
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         Instance = this;
         _rb = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -23,20 +25,27 @@ public class PlayerController : MonoBehaviour
         if (!CanMove)
         {
             _input = Vector2.zero;
-            return;
+        }
+        else
+        {
+            _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                bool uiConsumed = (UIManager.Instance != null && (UIManager.Instance.IsPopupVisible || UIManager.Instance.WasJustClosed))
+                               || (DialogueRunner.Instance != null && (DialogueRunner.Instance.IsPlaying || DialogueRunner.Instance.WasJustClosed));
+
+                if (!uiConsumed)
+                {
+                    TryInteractWithNearest();
+                }
+            }
         }
 
-        _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (_animator != null)
         {
-            bool uiConsumed = (UIManager.Instance != null && (UIManager.Instance.IsPopupVisible || UIManager.Instance.WasJustClosed))
-                           || (DialogueRunner.Instance != null && (DialogueRunner.Instance.IsPlaying || DialogueRunner.Instance.WasJustClosed));
-
-            if (!uiConsumed)
-            {
-                TryInteractWithNearest();
-            }
+            _animator.SetFloat("MoveX", _input.x);
+            _animator.SetFloat("MoveY", _input.y);
         }
     }
 
