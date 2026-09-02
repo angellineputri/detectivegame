@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public static class CharacterMover
@@ -43,6 +44,27 @@ public static class CharacterMover
         obj.gameObject.SetActive(false);
     }
 
+    public static IEnumerator WalkPath(Transform obj, List<Vector2> path, float speed)
+    {
+        if (path == null || path.Count < 2)
+            yield break;
+
+        Vector3[] waypoints = new Vector3[path.Count];
+        for (int i = 0; i < path.Count; i++)
+            waypoints[i] = new Vector3(path[i].x, path[i].y, obj.position.z);
+
+        float startDelta = Vector2.Distance((Vector2)obj.position, path[0]);
+        Debug.Log("[CharacterMover] WalkPath '" + obj.name + "': actual=" + (Vector2)obj.position + " first waypoint=" + path[0] + " delta=" + startDelta.ToString("F3") + "u");
+
+        yield return ExecutePath(obj, waypoints, speed);
+    }
+
+    public static IEnumerator WalkPathAndDeactivate(Transform obj, List<Vector2> path, float speed)
+    {
+        yield return WalkPath(obj, path, speed);
+        obj.gameObject.SetActive(false);
+    }
+
     public static Obstacle[] FromTransforms(Transform[] transforms, float radius)
     {
         if (transforms == null) return new Obstacle[0];
@@ -59,6 +81,9 @@ public static class CharacterMover
     {
         Debug.Log("[CharacterMover] ExecutePath '" + obj.name + "' — " + (waypoints.Length - 1) + " segment(s)");
 
+        Animator animator = obj.GetComponent<Animator>();
+        Vector2 lastDirection = Vector2.zero;
+
         for (int i = 0; i < waypoints.Length - 1; i++)
         {
             Vector3 from = waypoints[i];
@@ -67,6 +92,9 @@ public static class CharacterMover
 
             if (dist < 0.001f) continue;
 
+            Vector2 direction = ((Vector2)(to - from)).normalized;
+            lastDirection = direction;
+
             float dur     = Mathf.Max(dist / speed, MinSegDuration);
             float elapsed = 0f;
 
@@ -74,10 +102,26 @@ public static class CharacterMover
             {
                 elapsed += Time.deltaTime;
                 obj.position = Vector3.Lerp(from, to, Mathf.Clamp01(elapsed / dur));
+                if (animator != null)
+                {
+                    animator.SetFloat("MoveX", direction.x);
+                    animator.SetFloat("MoveY", direction.y);
+                    animator.SetFloat("Speed", 1f);
+                }
                 yield return null;
             }
 
             obj.position = to;
+        }
+
+        if (animator != null)
+        {
+            if (lastDirection != Vector2.zero)
+            {
+                animator.SetFloat("MoveX", lastDirection.x);
+                animator.SetFloat("MoveY", lastDirection.y);
+            }
+            animator.SetFloat("Speed", 0f);
         }
 
         Debug.Log("[CharacterMover] ExecutePath '" + obj.name + "' done.");

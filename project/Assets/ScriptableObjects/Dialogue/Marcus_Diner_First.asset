@@ -15,3 +15,5 @@ MonoBehaviour:
   lines:
   - speaker: Chief Inspector Marcus
     text: Don't just go off kid, search this place. You may find something unexpected.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

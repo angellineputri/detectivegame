@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class DinerSceneController : MonoBehaviour
@@ -36,6 +37,9 @@ public class DinerSceneController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float characterWalkSpeed = 3f;
 
+    [Header("Door")]
+    public Door door;
+
     [Header("Debug")]
     public bool useWalkAnimations = true;
 
@@ -47,9 +51,9 @@ public class DinerSceneController : MonoBehaviour
         "diner_trashbin",
     };
 
-    const string AllCluesFlag  = "allDinerCluesFound";
-    const string ExGFFlag      = "hasSpokenToExGF";
-    const string HeadChefFlag  = "hasSpokenToHeadChef";
+    const string AllCluesFlag = "allDinerCluesFound";
+    const string ExGFFlag     = "hasSpokenToExGF";
+    const string HeadChefFlag = "hasSpokenToHeadChef";
 
     bool _allCluesUnlocked;
     bool _marcusSequenceStarted;
@@ -57,7 +61,10 @@ public class DinerSceneController : MonoBehaviour
 
     void Start()
     {
-        BagUI.Instance?.SetOutcomeTable(dinerOutcomeTable);
+        if (BagUI.Instance != null)
+        {
+            BagUI.Instance.SetOutcomeTable(dinerOutcomeTable);
+        }
 
         if (headChef != null)
         {
@@ -104,7 +111,11 @@ public class DinerSceneController : MonoBehaviour
 
         _allCluesUnlocked = true;
         GameManager.Instance.SetFlag(AllCluesFlag, true);
-        exGF?.RefreshActiveState();
+
+        if (exGF != null)
+        {
+            exGF.RefreshActiveState();
+        }
     }
 
     void Update()
@@ -120,13 +131,20 @@ public class DinerSceneController : MonoBehaviour
         if (_marcusSequenceStarted && !_exitSequenceStarted && GameManager.Instance.GetFlag(HeadChefFlag))
         {
             _exitSequenceStarted = true;
+            if (door != null)
+            {
+                door.Open();
+            }
             StartCoroutine(ExitSequence());
         }
     }
 
     void StartVivianDecision()
     {
-        BagUI.Instance?.ForceOpenForDecision(vivianDecisionTitle, () => StartCoroutine(MarcusAndChefSequence()));
+        if (BagUI.Instance != null)
+        {
+            BagUI.Instance.ForceOpenForDecision(vivianDecisionTitle, () => StartCoroutine(MarcusAndChefSequence()));
+        }
     }
 
     IEnumerator MarcusAndChefSequence()
@@ -160,7 +178,10 @@ public class DinerSceneController : MonoBehaviour
         Vector3 chefDestination;
         if (PlayerController.Instance != null)
         {
-            chefDestination = PlayerController.Instance.transform.position + (Vector3)chefStandOffset;
+            Vector3 playerPos = PlayerController.Instance.transform.position;
+            Vector3 chefStart = chefWalkInStart != null ? chefWalkInStart.position : playerPos;
+            Vector3 approachDir = (playerPos - chefStart).normalized;
+            chefDestination = playerPos - approachDir;
         }
         else if (chefWalkInStart != null)
         {
@@ -190,7 +211,20 @@ public class DinerSceneController : MonoBehaviour
         {
             if (useWalkAnimations)
             {
-                yield return StartCoroutine(CharacterMover.Walk(headChef.transform, chefDestination, characterWalkSpeed, sceneObstacles, obstacleRadius));
+                if (GridPathfinder.Instance != null)
+                {
+                    Vector2? playerPos2D = null;
+                    if (PlayerController.Instance != null)
+                    {
+                        playerPos2D = PlayerController.Instance.transform.position;
+                    }
+                    List<Vector2> chefPath = GridPathfinder.Instance.FindPath(headChef.transform.position, chefDestination, playerPos2D);
+                    yield return StartCoroutine(CharacterMover.WalkPath(headChef.transform, chefPath, characterWalkSpeed));
+                }
+                else
+                {
+                    yield return StartCoroutine(CharacterMover.Walk(headChef.transform, chefDestination, characterWalkSpeed, sceneObstacles, obstacleRadius));
+                }
             }
             else
             {
@@ -198,12 +232,23 @@ public class DinerSceneController : MonoBehaviour
             }
         }
 
+        if (PlayerController.Instance != null && headChef != null)
+        {
+            Vector2 toChef = (Vector2)(headChef.transform.position - PlayerController.Instance.transform.position);
+            PlayerController.Instance.FaceDirection(toChef);
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
         if (chefCollider != null)
         {
             chefCollider.enabled = true;
         }
 
-        headChef?.TriggerInteract();
+        if (headChef != null)
+        {
+            headChef.TriggerInteract();
+        }
     }
 
     IEnumerator ExitSequence()
@@ -223,49 +268,97 @@ public class DinerSceneController : MonoBehaviour
         }
         else if (useWalkAnimations)
         {
+            Collider2D chefExitCollider = headChef != null ? headChef.GetComponent<Collider2D>() : null;
+            Collider2D playerExitCollider = PlayerController.Instance != null ? PlayerController.Instance.GetComponent<Collider2D>() : null;
+            if (chefExitCollider != null && playerExitCollider != null)
+            {
+                Physics2D.IgnoreCollision(chefExitCollider, playerExitCollider, true);
+            }
+
+            bool chefExited = (headChef == null);
+            bool playerExited = (PlayerController.Instance == null);
+
             if (headChef != null)
             {
-                StartCoroutine(CharacterMover.WalkAndDeactivate(headChef.transform, doorExitPoint.position, characterWalkSpeed));
+                StartCoroutine(ExitWalkAndDeactivate(headChef.transform, headChef.gameObject, () => chefExited = true));
             }
 
             yield return new WaitForSeconds(exitWalkStaggerDelay);
 
             if (PlayerController.Instance != null)
             {
-                yield return StartCoroutine(CharacterMover.Walk(PlayerController.Instance.transform, doorExitPoint.position, characterWalkSpeed));
+                StartCoroutine(ExitWalkAndDeactivate(PlayerController.Instance.transform, PlayerController.Instance.gameObject, () => playerExited = true));
             }
+
+            yield return new WaitUntil(() => chefExited && playerExited);
         }
         else
         {
             if (headChef != null)
             {
                 headChef.transform.position = doorExitPoint.position;
+                headChef.gameObject.SetActive(false);
             }
             if (PlayerController.Instance != null)
             {
                 PlayerController.Instance.transform.position = doorExitPoint.position;
+                PlayerController.Instance.gameObject.SetActive(false);
             }
         }
 
-        if (headChef != null)
+        if (GameManager.Instance != null)
         {
-            headChef.gameObject.SetActive(false);
+            GameManager.Instance.LoadScene("ExGF_Kitchen_P1");
         }
-        if (PlayerController.Instance != null)
-        {
-            PlayerController.Instance.gameObject.SetActive(false);
-        }
+    }
 
-        GameManager.Instance?.LoadScene("Kitchen");
+    IEnumerator ExitWalkAndDeactivate(Transform obj, GameObject go, System.Action onDone)
+    {
+        if (GridPathfinder.Instance != null)
+        {
+            List<Vector2> path = GridPathfinder.Instance.FindPath(obj.position, doorExitPoint.position);
+            yield return StartCoroutine(CharacterMover.WalkPath(obj, path, characterWalkSpeed));
+        }
+        else
+        {
+            yield return StartCoroutine(CharacterMover.Walk(obj, doorExitPoint.position, characterWalkSpeed));
+        }
+        go.SetActive(false);
+        if (onDone != null)
+        {
+            onDone();
+        }
     }
 
     IEnumerator ExGFExitWalk()
     {
-        CharacterMover.Obstacle[] sceneObs = CharacterMover.FromTransforms(sceneObstacles, obstacleRadius);
-        CharacterMover.Obstacle[] allObs = new CharacterMover.Obstacle[sceneObs.Length + 1];
-        sceneObs.CopyTo(allObs, 0);
-        allObs[sceneObs.Length] = CharacterMover.Obstacle.FromTransform(PlayerController.Instance?.transform, exGFPlayerAvoidanceRadius);
+        Collider2D exGFCollider = exGF.GetComponent<Collider2D>();
+        Collider2D playerCollider = PlayerController.Instance != null ? PlayerController.Instance.GetComponent<Collider2D>() : null;
+        if (exGFCollider != null && playerCollider != null)
+        {
+            Physics2D.IgnoreCollision(exGFCollider, playerCollider, true);
+        }
 
-        yield return StartCoroutine(CharacterMover.Walk(exGF.transform, exGFExitPoint.position, characterWalkSpeed, allObs));
+        if (GridPathfinder.Instance != null)
+        {
+            List<Vector2> exGFPath = GridPathfinder.Instance.FindPath(exGF.transform.position, exGFExitPoint.position);
+            yield return StartCoroutine(CharacterMover.WalkPath(exGF.transform, exGFPath, characterWalkSpeed));
+        }
+        else
+        {
+            CharacterMover.Obstacle[] sceneObs = CharacterMover.FromTransforms(sceneObstacles, obstacleRadius);
+            CharacterMover.Obstacle[] allObs = new CharacterMover.Obstacle[sceneObs.Length + 1];
+            sceneObs.CopyTo(allObs, 0);
+            Transform playerTransform = PlayerController.Instance != null ? PlayerController.Instance.transform : null;
+            allObs[sceneObs.Length] = CharacterMover.Obstacle.FromTransform(playerTransform, exGFPlayerAvoidanceRadius);
+            yield return StartCoroutine(CharacterMover.Walk(exGF.transform, exGFExitPoint.position, characterWalkSpeed, allObs));
+        }
+
+        yield return new WaitForSeconds(0.5f);
+
+        if (exGFCollider != null && playerCollider != null)
+        {
+            Physics2D.IgnoreCollision(exGFCollider, playerCollider, false);
+        }
     }
 }

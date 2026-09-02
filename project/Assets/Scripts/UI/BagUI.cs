@@ -16,6 +16,7 @@ public class BagUI : MonoBehaviour
 
     [Header("Review Panel")]
     [SerializeField] GameObject reviewPanel;
+    [SerializeField] GameObject bagReviewDimOverlay;
     [SerializeField] TMP_Text panelTitleText;
     [SerializeField] Transform clueListContainer;
     [SerializeField] GameObject clueEntryPrefab;
@@ -45,6 +46,10 @@ public class BagUI : MonoBehaviour
 
         SetHudVisible(false);
         reviewPanel.SetActive(false);
+        if (bagReviewDimOverlay != null)
+        {
+            bagReviewDimOverlay.SetActive(false);
+        }
         bagButton.onClick.AddListener(OnBagButtonClicked);
         closeButton.onClick.AddListener(CloseReviewPanel);
 
@@ -129,6 +134,21 @@ public class BagUI : MonoBehaviour
             {
                 reviewPanel.SetActive(false);
             }
+            if (bagReviewDimOverlay != null)
+            {
+                bagReviewDimOverlay.SetActive(false);
+            }
+        }
+    }
+
+    public void RefreshBagHudVisibility()
+    {
+        bool anyOpen = reviewPanel.activeSelf
+            || (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
+            || (UIManager.Instance != null && UIManager.Instance.IsPopupVisible);
+        if (bagHud != null)
+        {
+            bagHud.SetActive(!anyOpen);
         }
     }
 
@@ -154,7 +174,12 @@ public class BagUI : MonoBehaviour
             makeAMoveButton.gameObject.SetActive(false);
         }
 
+        if (bagReviewDimOverlay != null)
+        {
+            bagReviewDimOverlay.SetActive(true);
+        }
         reviewPanel.SetActive(true);
+        RefreshBagHudVisibility();
 
         if (PlayerController.Instance != null)
         {
@@ -220,12 +245,23 @@ public class BagUI : MonoBehaviour
             return;
         }
 
-        reviewPanel.SetActive(!reviewPanel.activeSelf);
+        bool newState = !reviewPanel.activeSelf;
+        if (bagReviewDimOverlay != null)
+        {
+            bagReviewDimOverlay.SetActive(newState);
+        }
+        reviewPanel.SetActive(newState);
+        RefreshBagHudVisibility();
     }
 
     void CloseReviewPanel()
     {
+        if (bagReviewDimOverlay != null)
+        {
+            bagReviewDimOverlay.SetActive(false);
+        }
         reviewPanel.SetActive(false);
+        RefreshBagHudVisibility();
     }
 
     void OnMakeAMoveClicked()

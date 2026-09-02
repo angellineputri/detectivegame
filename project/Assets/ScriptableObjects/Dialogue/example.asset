@@ -15,3 +15,4 @@ MonoBehaviour:
   lines:
   - speaker: hi
     text: hi
+    speakerPortrait: {fileID: 0}

@@ -16,20 +16,38 @@ MonoBehaviour:
   - speaker: Player
     text: This was in your walk-in fridge. Your knife rack seems to be missing a
       piece too. Care to elaborate?
-  - speaker: Head Chef
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
     text: I-I didn't put that there. I swear.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Player
     text: Then who did? This is your kitchen, you are in charge.
-  - speaker: Head Chef
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
     text: "I don't know! I found it this morning and panicked, I hid it, I didn't
       know what else to do\u2013"
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Player
     text: Hiding evidence makes you look more guilty, not less
-  - speaker: Head Chef
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
     text: I wasn't protecting myself. I was protecting her.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Player
     text: Her?
-  - speaker: Head Chef
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
     text: ...
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Player
     text: Where do you stay?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

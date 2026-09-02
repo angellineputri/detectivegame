@@ -1,9 +1,9 @@
-using System;
 using UnityEngine;
 
-[Serializable]
+[System.Serializable]
 public class DialogueLine
 {
     public string speaker;
-    [TextArea(2, 5)] public string text;
+    [TextArea] public string text;
+    public Sprite speakerPortrait;
 }

@@ -12,12 +12,15 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] TMP_Text speakerText;
     [SerializeField] TMP_Text bodyText;
     [SerializeField] Button advanceButton;
+    [SerializeField] GameObject dialogueDimOverlay;
+    [SerializeField] Image speakerPortraitImage;
 
     DialogueLine[] _lines;
     int _index;
     Action _onComplete;
     bool _justOpened;
     bool _justClosed;
+    Sprite _currentPortrait;
 
     public bool IsPlaying
     {
@@ -40,6 +43,10 @@ public class DialogueRunner : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         dialoguePanel.SetActive(false);
+        if (dialogueDimOverlay != null)
+        {
+            dialogueDimOverlay.SetActive(false);
+        }
         advanceButton?.onClick.AddListener(Advance);
     }
 
@@ -73,7 +80,15 @@ public class DialogueRunner : MonoBehaviour
         _index = 0;
         _onComplete = onComplete;
         _justOpened = true;
+        if (dialogueDimOverlay != null)
+        {
+            dialogueDimOverlay.SetActive(true);
+        }
         dialoguePanel.SetActive(true);
+        if (BagUI.Instance != null)
+        {
+            BagUI.Instance.RefreshBagHudVisibility();
+        }
         ShowLine();
     }
 
@@ -82,6 +97,18 @@ public class DialogueRunner : MonoBehaviour
         DialogueLine line = _lines[_index];
         speakerText.text = line.speaker;
         bodyText.text = line.text;
+        if (speakerPortraitImage != null)
+        {
+            if (line.speakerPortrait != null)
+            {
+                speakerPortraitImage.sprite = line.speakerPortrait;
+                speakerPortraitImage.gameObject.SetActive(true);
+            }
+            else
+            {
+                speakerPortraitImage.gameObject.SetActive(false);
+            }
+        }
     }
 
     void Advance()
@@ -93,7 +120,15 @@ public class DialogueRunner : MonoBehaviour
         }
         else
         {
+            if (dialogueDimOverlay != null)
+            {
+                dialogueDimOverlay.SetActive(false);
+            }
             dialoguePanel.SetActive(false);
+            if (BagUI.Instance != null)
+            {
+                BagUI.Instance.RefreshBagHudVisibility();
+            }
             _justClosed = true;
             _onComplete?.Invoke();
         }

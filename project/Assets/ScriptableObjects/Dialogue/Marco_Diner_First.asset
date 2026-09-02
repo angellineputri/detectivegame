@@ -3,27 +3,43 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CoroutineID: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
   m_Name: Marco_Diner_First
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
   lines:
   - speaker: Marco
-    text: "Who are you and what’s your business with Vivian?"
-  - speaker: Detective
-    text: "I’m the detective on this case, don’t worry I’m just out here investigating. You run the kitchen here?"
+    text: "Who are you and what\u2019s your business with Vivian?"
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: "I\u2019m the detective on this case, don\u2019t worry I\u2019m just out
+      here investigating. You run the kitchen here?"
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Marco
-    text: "Since day one. She built this place, I made sure the food matched it and do her justice."
-  - speaker: Detective
-    text: "Close with her, I assume?"
+    text: Since day one. She built this place, I made sure the food matched it and
+      do her justice.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Close with her, I assume?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Marco
-    text: "Well someone’s got to look out for her."
-  - speaker: Detective
-    text: "Permission to further inspect the kitchen?"
+    text: "Well someone\u2019s got to look out for her."
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Permission to further inspect the kitchen?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Marco
-    text: "Follow me."
+    text: Follow me.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

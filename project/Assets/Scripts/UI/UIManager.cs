@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject cluePanel;
     [SerializeField] TMP_Text clueText;
     [SerializeField] Button closeButton;
+    [SerializeField] GameObject clueDimOverlay;
 
     string _revealText;
     System.Action _onComplete;
@@ -38,6 +39,10 @@ public class UIManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         cluePanel.SetActive(false);
+        if (clueDimOverlay != null)
+        {
+            clueDimOverlay.SetActive(false);
+        }
         closeButton?.onClick.AddListener(HideCluePopup);
     }
 
@@ -66,7 +71,15 @@ public class UIManager : MonoBehaviour
         _onComplete = onComplete;
         _showingReveal = false;
         _justOpened = true;
+        if (clueDimOverlay != null)
+        {
+            clueDimOverlay.SetActive(true);
+        }
         cluePanel.SetActive(true);
+        if (BagUI.Instance != null)
+        {
+            BagUI.Instance.RefreshBagHudVisibility();
+        }
         if (PlayerController.Instance != null)
         {
             PlayerController.Instance.CanMove = false;
@@ -93,7 +106,15 @@ public class UIManager : MonoBehaviour
 
     public void HideCluePopup()
     {
+        if (clueDimOverlay != null)
+        {
+            clueDimOverlay.SetActive(false);
+        }
         cluePanel.SetActive(false);
+        if (BagUI.Instance != null)
+        {
+            BagUI.Instance.RefreshBagHudVisibility();
+        }
         _showingReveal = false;
         _onComplete = null;
         if (PlayerController.Instance != null)

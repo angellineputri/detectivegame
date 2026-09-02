@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D _rb;
     Animator _animator;
     Vector2 _input;
+    float _lastMoveX = 0f;
+    float _lastMoveY = -1f;
 
     public bool CanMove { get; set; } = true;
 
@@ -42,10 +44,18 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        float inputMagnitude = _input.magnitude;
+        if (inputMagnitude > 0f)
+        {
+            _lastMoveX = _input.x;
+            _lastMoveY = _input.y;
+        }
+
         if (_animator != null)
         {
-            _animator.SetFloat("MoveX", _input.x);
-            _animator.SetFloat("MoveY", _input.y);
+            _animator.SetFloat("MoveX", _lastMoveX);
+            _animator.SetFloat("MoveY", _lastMoveY);
+            _animator.SetFloat("Speed", inputMagnitude);
         }
     }
 
@@ -66,7 +76,24 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        nearest?.TriggerInteract();
+        if (nearest != null)
+        {
+            nearest.TriggerInteract();
+        }
+    }
+
+    public void FaceDirection(Vector2 direction)
+    {
+        if (direction == Vector2.zero) return;
+        Vector2 norm = direction.normalized;
+        _lastMoveX = norm.x;
+        _lastMoveY = norm.y;
+        if (_animator != null)
+        {
+            _animator.SetFloat("MoveX", _lastMoveX);
+            _animator.SetFloat("MoveY", _lastMoveY);
+            _animator.SetFloat("Speed", 0f);
+        }
     }
 
     void FixedUpdate()
