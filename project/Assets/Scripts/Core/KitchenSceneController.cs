@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class KitchenSceneController : MonoBehaviour
@@ -9,9 +10,6 @@ public class KitchenSceneController : MonoBehaviour
     [Header("Head Chef Walk")]
     [Tooltip("The HeadChef NPC Transform in this Kitchen scene.")]
     [SerializeField] Transform headChef;
-
-    [Tooltip("How many units above or below HeadChef the player stops.")]
-    [SerializeField] float headChefStandOffset = 1f;
 
     [Tooltip("Walk speed in units per second.")]
     [SerializeField] float characterWalkSpeed = 3f;
@@ -29,16 +27,13 @@ public class KitchenSceneController : MonoBehaviour
     [Tooltip("Title shown in the forced bag panel after Marcus's commentary closes.")]
     [SerializeField] string kitchenDecisionTitle = "Make Your Move.";
 
-    [Header("Scene Obstacles")]
-    [Tooltip("Scene objects the player should route around when walking to HeadChef.")]
-    [SerializeField] Transform[] sceneObstacles;
-
-    [Tooltip("Avoidance clearance radius around each scene obstacle.")]
-    [SerializeField] float obstacleRadius = 0.8f;
-
     void Start()
     {
-        BagUI.Instance?.SetOutcomeTable(kitchenOutcomeTable);
+        if (BagUI.Instance != null)
+        {
+            BagUI.Instance.SetOutcomeTable(kitchenOutcomeTable);
+        }
+
         if (GameManager.Instance != null)
         {
             GameManager.Instance.OnClueAdded += OnClueAdded;
@@ -116,7 +111,10 @@ public class KitchenSceneController : MonoBehaviour
 
             if (!hasRackClue)
             {
-                GameOverScreen.Instance?.Show();
+                if (GameOverScreen.Instance != null)
+                {
+                    GameOverScreen.Instance.Show();
+                }
             }
             else if (headChef != null && PlayerController.Instance != null)
             {
@@ -124,12 +122,18 @@ public class KitchenSceneController : MonoBehaviour
             }
             else
             {
-                onContinue?.Invoke();
+                if (onContinue != null)
+                {
+                    onContinue();
+                }
             }
         }
         else
         {
-            onContinue?.Invoke();
+            if (onContinue != null)
+            {
+                onContinue();
+            }
         }
     }
 
@@ -138,27 +142,37 @@ public class KitchenSceneController : MonoBehaviour
         PlayerController player = PlayerController.Instance;
         player.CanMove = false;
 
-        float playerY = player.transform.position.y;
-        float yAbove  = headChef.position.y + headChefStandOffset;
-        float yBelow  = headChef.position.y - headChefStandOffset;
+        Vector3 playerPos = player.transform.position;
+        Vector3 chefPos = headChef.position;
+        Vector3 direction = (chefPos - playerPos).normalized;
+        Vector3 destination = chefPos - direction * 1f;
+        destination.z = playerPos.z;
 
-        float destY;
-        if (Mathf.Abs(playerY - yAbove) <= Mathf.Abs(playerY - yBelow))
+        if (GridPathfinder.Instance != null)
         {
-            destY = yAbove;
+            List<Vector2> path = GridPathfinder.Instance.FindPath(playerPos, destination);
+            yield return StartCoroutine(CharacterMover.WalkPath(player.transform, path, characterWalkSpeed));
         }
         else
         {
-            destY = yBelow;
+            yield return StartCoroutine(CharacterMover.Walk(player.transform, destination, characterWalkSpeed));
         }
 
-        Vector3 destination = new Vector3(headChef.position.x, destY, player.transform.position.z);
+        Vector2 playerToChef = ((Vector2)headChef.position - (Vector2)player.transform.position).normalized;
+        player.FaceDirection(playerToChef);
 
-        Debug.Log("[KitchenSceneController] Walking player to HeadChef at " + destination);
+        Animator chefAnimator = headChef.GetComponent<Animator>();
+        if (chefAnimator != null)
+        {
+            Vector2 chefToPlayer = -playerToChef;
+            chefAnimator.SetFloat("MoveX", chefToPlayer.x);
+            chefAnimator.SetFloat("MoveY", chefToPlayer.y);
+            chefAnimator.SetFloat("Speed", 0f);
+        }
 
-        yield return StartCoroutine(CharacterMover.Walk(player.transform, destination, characterWalkSpeed, sceneObstacles, obstacleRadius));
-
-        Debug.Log("[KitchenSceneController] Walk complete.");
-        onArrived?.Invoke();
+        if (onArrived != null)
+        {
+            onArrived();
+        }
     }
 }

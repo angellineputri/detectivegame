@@ -159,8 +159,55 @@ public class GridPathfinder : MonoBehaviour
             Debug.Log("[GridPathfinder] WalkablePath overrode " + overrideCount + " cells to walkable.");
         }
 
+        PunchCollisionHoles(obstacleMaps);
+
         _ready = true;
         Debug.Log("[GridPathfinder] Grid built: " + _gridWidth + "x" + _gridHeight + " cells, origin (" + _originX + ", " + _originY + "). Effective blocked: " + (tileBlockedCount - overrideCount) + " / " + (_gridWidth * _gridHeight));
+    }
+
+    void PunchCollisionHoles(List<Tilemap> obstacleMaps)
+    {
+        HashSet<CompositeCollider2D> compositesToRebake = new HashSet<CompositeCollider2D>();
+
+        foreach (Tilemap tm in obstacleMaps)
+        {
+            TilemapCollider2D tilemapCollider = tm.GetComponent<TilemapCollider2D>();
+            if (tilemapCollider == null || !tilemapCollider.usedByComposite) continue;
+
+            CompositeCollider2D composite = tm.GetComponent<CompositeCollider2D>();
+
+            int holesCount = 0;
+            for (int x = 0; x < _gridWidth; x++)
+            {
+                for (int y = 0; y < _gridHeight; y++)
+                {
+                    if (!_walkableOverridden[x, y]) continue;
+
+                    Vector3Int cellPos = new Vector3Int(x + _originX, y + _originY, 0);
+                    if (tm.GetTile(cellPos) == null) continue;
+
+                    Tile visualOnly = ScriptableObject.CreateInstance<Tile>();
+                    visualOnly.sprite = tm.GetSprite(cellPos);
+                    visualOnly.color = tm.GetColor(cellPos);
+                    visualOnly.transform = tm.GetTransformMatrix(cellPos);
+                    visualOnly.colliderType = Tile.ColliderType.None;
+
+                    tm.SetTile(cellPos, visualOnly);
+                    holesCount++;
+                }
+            }
+
+            if (holesCount > 0 && composite != null)
+            {
+                compositesToRebake.Add(composite);
+                Debug.Log("[GridPathfinder] Punched " + holesCount + " collision holes in '" + tm.gameObject.name + "'.");
+            }
+        }
+
+        foreach (CompositeCollider2D composite in compositesToRebake)
+        {
+            composite.GenerateGeometry();
+        }
     }
 
     public List<Vector2> FindPath(Vector2 start, Vector2 end, Vector2? dynamicObstacle = null)

@@ -35,12 +35,46 @@ public class Interactable : MonoBehaviour
     [Tooltip("Optional child GameObject to hide when this object is inactive.")]
     [SerializeField] GameObject visualRoot;
 
+    SpriteRenderer _spriteRenderer;
+    Color _originalColor;
+    bool _isHighlighted;
+
     protected virtual void Start()
     {
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>(true);
+        if (_spriteRenderer != null)
+        {
+            _originalColor = _spriteRenderer.color;
+        }
+
         RefreshActiveState();
+
         if (addToBag && !string.IsNullOrEmpty(objectID))
         {
-            BagUI.Instance?.RegisterClueDisplayName(objectID, displayName);
+            if (BagUI.Instance != null)
+            {
+                BagUI.Instance.RegisterClueDisplayName(objectID, displayName);
+            }
+        }
+    }
+
+    void Update()
+    {
+        if (_spriteRenderer == null) return;
+
+        bool shouldHighlight = IsActiveThisPlaythrough() && InRange();
+
+        if (shouldHighlight && !_isHighlighted)
+        {
+            _spriteRenderer.color = Color.Lerp(_originalColor, Color.red, 0.6f);
+            _isHighlighted = true;
+            Debug.Log("Highlight ON: " + gameObject.name);
+        }
+        else if (!shouldHighlight && _isHighlighted)
+        {
+            _spriteRenderer.color = _originalColor;
+            _isHighlighted = false;
+            Debug.Log("Highlight OFF: " + gameObject.name);
         }
     }
 
@@ -57,6 +91,12 @@ public class Interactable : MonoBehaviour
         if (visualRoot != null)
         {
             visualRoot.SetActive(active);
+        }
+
+        if (!active && _isHighlighted && _spriteRenderer != null)
+        {
+            _spriteRenderer.color = _originalColor;
+            _isHighlighted = false;
         }
     }
 
@@ -98,7 +138,10 @@ public class Interactable : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(noticeText))
         {
-            UIManager.Instance?.ShowCluePopup(noticeText, revealText, OnRevealComplete);
+            if (UIManager.Instance != null)
+            {
+                UIManager.Instance.ShowCluePopup(noticeText, revealText, OnRevealComplete);
+            }
         }
     }
 
@@ -106,7 +149,10 @@ public class Interactable : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(objectID))
         {
-            GameManager.Instance?.AddClue(objectID);
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.AddClue(objectID);
+            }
         }
     }
 }
