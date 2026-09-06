@@ -10,51 +10,51 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
-  m_Name: ChiefInspector_LabCall_P2
+  m_Name: HeadChef_P2_PhoneCall
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Chief Inspector Marcus
-    text: Uh kid the results have came in.
+  - speaker: Player
+    text: Hello, who's this?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: "I need to tell you something. That night … I followed her. I was
+      worried, after everything with the breakup."
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
   - speaker: Player
-    text: What does it say there chief?
+    text: You followed her?
     speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Chief Inspector Marcus
-    text: "It in fact has the blood of Julian and \u2026"
+  - speaker: Marco
+    text: "I saw her pick something up near his building. Didn't get a good look.
+      Then I heard the scream."
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
   - speaker: Player
-    text: Yes?
+    text: "And?"
     speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Chief Inspector Marcus
-    text: "There\u2019s 2 fingerprint marks found on it. Marco and Vivian."
+  - speaker: Marco
+    text: "She ran. Still had it on her. When I caught up, she made me swear not
+      to say anything… Especially not to the police. Said no one would believe
+      her over a cop."
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
   - speaker: Player
-    text: "Vivian? But she has no business in the kitchen or even touching the knife,
-      she told me she can\u2019t cook."
+    text: A cop?
     speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Chief Inspector Marcus
-    text: "Exactly, one of them must take part in the killing, but if you\u2019re
-      very sure that it wasn\u2019t Marco, then it only puts Vivian in the equation..
-      No other fingerprint were found."
+  - speaker: Marco
+    text: "That's all she said. Wouldn't look at me after that."
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
   - speaker: Player
-    text: This mission is successful, we caught the real culprit.
+    text: Why tell me now?
     speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Chief Inspector Marcus
-    text: "I\u2019d say don\u2019t straightaway jump to conclusion.. Try confronting
-      her first see what she has to say.. Perhaps it is Marco who did this. But you
-      know better kid. Good luck."
+  - speaker: Marco
+    text: "Because she's the one locked up. Not me. She wouldn't have gotten rid
+      of something with her prints on it, she's probably still got it. Check her room."
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: Thanks for that chief.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}

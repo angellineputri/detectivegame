@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Playthrough 2 — kitchen transition scene.
-// The player finds the bagged knife and submits it to the lab via the outcome table
-// (TriggerDialogue → grants lab_results). Instead of loading ExGF_Diner_P2 directly,
-// the door auto-opens, the player auto-walks to it, and the door loads the scene.
 public class KitchenP2SceneController : MonoBehaviour
 {
     [Header("Scene")]
     [SerializeField] ClueOutcomeTable kitchenP2OutcomeTable;
+
+    [Header("Thinking Dialogue")]
+    [SerializeField] DialogueData thinkingDialogue;
+    [SerializeField] float thinkingDelay = 0.5f;
 
     [Header("Door")]
     [SerializeField] SilentDoor kitchenDoor;
@@ -17,13 +17,34 @@ public class KitchenP2SceneController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] float characterWalkSpeed = 3f;
 
+    const string KnifeClueID    = "bloody_knife_bagged";
+    const string LabResultsID   = "lab_results";
+    const string LabResultsName = "Lab Results";
+
+    bool _exitStarted;
+
     void Start()
     {
+        Debug.Log($"[KitchenP2] Start — CurrentPlaythrough={GameManager.Instance?.CurrentPlaythrough}");
+
         BagUI.Instance?.SetOutcomeTable(kitchenP2OutcomeTable);
 
         foreach (Interactable i in FindObjectsOfType<Interactable>())
         {
             i.RefreshActiveState();
+        }
+
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnClueAdded += OnClueAdded;
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (GameManager.Instance != null)
+        {
+            GameManager.Instance.OnClueAdded -= OnClueAdded;
         }
     }
 
@@ -40,9 +61,40 @@ public class KitchenP2SceneController : MonoBehaviour
         }
     }
 
+    void OnClueAdded(string clueID)
+    {
+        if (clueID == KnifeClueID && !_exitStarted)
+        {
+            _exitStarted = true;
+            StartCoroutine(ThinkingAndExit());
+        }
+    }
+
+    IEnumerator ThinkingAndExit()
+    {
+        if (PlayerController.Instance != null)
+        {
+            PlayerController.Instance.CanMove = false;
+        }
+
+        yield return new WaitForSeconds(thinkingDelay);
+
+        if (thinkingDialogue != null && DialogueRunner.Instance != null)
+        {
+            bool done = false;
+            DialogueRunner.Instance.Play(thinkingDialogue, () => done = true);
+            yield return new WaitUntil(() => done);
+        }
+
+        BagUI.Instance?.RegisterClueDisplayName(LabResultsID, LabResultsName);
+        GameManager.Instance?.AddClue(LabResultsID);
+
+        yield return StartCoroutine(WalkToDoorAndExit());
+    }
+
     void HandleSceneLoadIntercept(string clueID, System.Action loadScene)
     {
-        if (clueID == "bloody_knife_bagged" && kitchenDoor != null)
+        if (clueID == KnifeClueID && kitchenDoor != null)
         {
             StartCoroutine(WalkToDoorAndExit());
         }
@@ -60,14 +112,21 @@ public class KitchenP2SceneController : MonoBehaviour
         player.CanMove = false;
         kitchenDoor.OpenVisual();
 
+        Collider2D doorCol = kitchenDoor.GetComponent<Collider2D>();
+        Vector2 doorTarget = doorCol != null
+            ? doorCol.ClosestPoint(player.transform.position)
+            : (Vector2)kitchenDoor.transform.position;
+
+        Debug.Log($"[KitchenP2] WalkToDoorAndExit — player={player.transform.position}, doorCenter={kitchenDoor.transform.position}, doorTarget={doorTarget}");
+
         if (GridPathfinder.Instance != null)
         {
-            List<Vector2> path = GridPathfinder.Instance.FindPath(player.transform.position, kitchenDoor.transform.position);
+            List<Vector2> path = GridPathfinder.Instance.FindPath(player.transform.position, doorTarget);
             yield return StartCoroutine(CharacterMover.WalkPath(player.transform, path, characterWalkSpeed));
         }
         else
         {
-            yield return StartCoroutine(CharacterMover.Walk(player.transform, kitchenDoor.transform.position, characterWalkSpeed));
+            yield return StartCoroutine(CharacterMover.Walk(player.transform, doorTarget, characterWalkSpeed));
         }
 
         kitchenDoor.Interact();

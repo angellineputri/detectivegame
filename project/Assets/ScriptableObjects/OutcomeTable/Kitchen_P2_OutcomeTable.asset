@@ -24,17 +24,6 @@ MonoBehaviour:
     flagKey:
     flagValue: 0
     popupText:
-  - clueID: kitchen_knife_rack
-    outcomeType: 1
-    targetScene:
-    dialogue: {fileID: 0}
-    itemToGrantAfterDialogue:
-      objectID:
-      displayName:
-      clueDescription:
-    flagKey:
-    flagValue: 0
-    popupText:
   - clueID: kitchen_apron
     outcomeType: 1
     targetScene:

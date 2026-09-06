@@ -2,18 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// Playthrough 2 — diner confrontation, two phases.
-//
-// Phase 1 (no lab results yet):
-//   Player auto-walks to Vivian Phase 1. Her NPCInteractable sets flag
-//   "p2_vivianConfrontedAboutNote" on complete and deactivates itself.
-//   This controller then plays Marcus's thinking dialogue and returns control
-//   to the player. The player can inspect the four diner clues and use the
-//   SilentDoor to navigate to ExGF_Kitchen_P2.
-//
-// Phase 2 (returning from kitchen with lab_results in bag):
-//   Player auto-walks to Vivian Phase 2. Her NPC dialogue plays, then the
-//   chief inspector call fires, then the arrest decision panel opens.
 public class DinerP2SceneController : MonoBehaviour
 {
     [Header("Scene")]
@@ -21,32 +9,29 @@ public class DinerP2SceneController : MonoBehaviour
 
     [Header("NPCs")]
     [SerializeField] NPCInteractable vivianPhase1;
+    [SerializeField] NPCInteractable vivianPhase2Confirm;
     [SerializeField] NPCInteractable vivianPhase2;
 
-    [Header("Phase 1 — Auto-Walk Entry")]
-    [Tooltip("Seconds to wait after scene load before auto-walking to Vivian.")]
+    [Header("Entry Delay")]
     [SerializeField] float autoWalkEntryDelay = 0.5f;
 
-    [Header("Phase 1 — Thinking Dialogue")]
-    [Tooltip("Optional Marcus line after Vivian deflects. Plays before returning control.")]
+    [Header("Phase 1 Thinking Dialogue")]
     [SerializeField] DialogueData marcusPostConfrontDialogue;
     [SerializeField] float postConfrontDelay = 1f;
 
-    [Header("Chief Inspector Phone Call")]
-    [Tooltip("Auto-triggered when lab results arrive — plays before the arrest panel opens.")]
-    [SerializeField] DialogueData chiefInspectorCallDialogue;
-
-    [Header("Phase 2 Decision Panel")]
-    [SerializeField] string phase2DecisionTitle = "You have everything. Make your move.";
-    [SerializeField] float phase2OpenDelay = 1f;
+    [Header("Kitchen Door Entry")]
+    [SerializeField] Transform kitchenDoorEntryPoint;
+    [SerializeField] Vector2 kitchenDoorEntryFacing = new Vector2(0f, -1f);
 
     [Header("Movement")]
     [SerializeField] float characterWalkSpeed = 3f;
 
-    const string ConfrontedNoteFlag = "p2_vivianConfrontedAboutNote";
-    const string LabResultsClue     = "lab_results";
+    const string ConfrontedNoteFlag     = "p2_vivianConfrontedAboutNote";
+    const string PhoneCallCompletedFlag = "p2_phoneCallCompleted";
+    const string LabResultsClue         = "lab_results";
 
     bool _phase1PanelOpened;
+    bool _confirmPhaseActive;
     bool _phase2Started;
 
     void Start()
@@ -58,31 +43,63 @@ public class DinerP2SceneController : MonoBehaviour
             i.RefreshActiveState();
         }
 
+        if (kitchenDoorEntryPoint != null
+            && GameManager.Instance != null
+            && GameManager.Instance.LastScene == "ExGF_Kitchen_P2"
+            && PlayerController.Instance != null)
+        {
+            PlayerController.Instance.transform.position = kitchenDoorEntryPoint.position;
+            PlayerController.Instance.FaceDirection(kitchenDoorEntryFacing);
+        }
+
         if (vivianPhase1 != null)
         {
             vivianPhase1.deactivateSelfOnComplete = false;
         }
 
         bool hasLabResults = GameManager.Instance != null && GameManager.Instance.HasClue(LabResultsClue);
+        bool isConfronted  = GameManager.Instance != null && GameManager.Instance.GetFlag(ConfrontedNoteFlag);
+        bool phoneCallDone = GameManager.Instance != null && GameManager.Instance.GetFlag(PhoneCallCompletedFlag);
+
+        Debug.Log($"[DinerP2] Start — hasLabResults={hasLabResults}, confronted={isConfronted}, phoneCallDone={phoneCallDone} | vivianPhase2Confirm={(vivianPhase2Confirm == null ? "NULL" : vivianPhase2Confirm.name)}, vivianPhase2={(vivianPhase2 == null ? "NULL" : vivianPhase2.name)}");
+
+        if (isConfronted && vivianPhase1 != null)
+        {
+            vivianPhase1.interactionLocked = true;
+        }
+
+        if (vivianPhase2Confirm != null)
+        {
+            vivianPhase2Confirm.gameObject.SetActive(hasLabResults && !phoneCallDone);
+        }
 
         if (vivianPhase2 != null)
         {
-            vivianPhase2.gameObject.SetActive(hasLabResults);
+            vivianPhase2.gameObject.SetActive(phoneCallDone);
         }
 
-        if (hasLabResults)
+        if (phoneCallDone)
         {
+            Debug.Log("[DinerP2] BRANCH: Phase 2B (arrest) — AutoWalkToVivianPhase2");
             _phase2Started     = true;
             _phase1PanelOpened = true;
             StartCoroutine(AutoWalkToVivianPhase2());
         }
-        else if (GameManager.Instance != null && GameManager.Instance.GetFlag(ConfrontedNoteFlag))
+        else if (hasLabResults)
         {
-            // Phase 1 confrontation already done — free roam, player uses door to kitchen.
+            Debug.Log($"[DinerP2] BRANCH: Phase 2A (confirm) — AutoWalkToVivianPhase2Confirm | vivianPhase2Confirm is {(vivianPhase2Confirm == null ? "NULL — NPC not in scene, coroutine will immediately yield break" : "assigned")}");
+            _confirmPhaseActive = true;
+            _phase1PanelOpened  = true;
+            StartCoroutine(AutoWalkToVivianPhase2Confirm());
+        }
+        else if (isConfronted)
+        {
+            Debug.Log("[DinerP2] BRANCH: Phase 1 free-roam (already confronted, player explores diner / uses kitchen door)");
             _phase1PanelOpened = true;
         }
         else
         {
+            Debug.Log("[DinerP2] BRANCH: Phase 1 entry — AutoWalkToVivianPhase1");
             StartCoroutine(AutoWalkToVivianPhase1());
         }
 
@@ -126,17 +143,17 @@ public class DinerP2SceneController : MonoBehaviour
 
     void OnClueAdded(string clueID)
     {
-        if (!_phase2Started && clueID == LabResultsClue)
+        if (clueID == LabResultsClue && !_phase2Started && !_confirmPhaseActive)
         {
-            _phase2Started     = true;
-            _phase1PanelOpened = true;
+            _confirmPhaseActive = true;
+            _phase1PanelOpened  = true;
 
-            if (vivianPhase2 != null)
+            if (vivianPhase2Confirm != null)
             {
-                vivianPhase2.gameObject.SetActive(true);
+                vivianPhase2Confirm.gameObject.SetActive(true);
             }
 
-            StartCoroutine(AutoWalkToVivianPhase2());
+            StartCoroutine(AutoWalkToVivianPhase2Confirm());
         }
     }
 
@@ -171,11 +188,29 @@ public class DinerP2SceneController : MonoBehaviour
             vivianPhase1.interactionLocked = true;
         }
 
-        // Return control — player explores diner freely and uses the door to reach the kitchen.
         if (PlayerController.Instance != null)
         {
             PlayerController.Instance.CanMove = true;
         }
+    }
+
+    IEnumerator AutoWalkToVivianPhase2Confirm()
+    {
+        if (vivianPhase2Confirm == null || PlayerController.Instance == null) yield break;
+
+        PlayerController.Instance.CanMove = false;
+        yield return new WaitForSeconds(autoWalkEntryDelay);
+
+        yield return StartCoroutine(WalkToNPC(vivianPhase2Confirm.transform, () => { }));
+
+        if (vivianPhase2Confirm.dialogue != null && DialogueRunner.Instance != null)
+        {
+            bool done = false;
+            DialogueRunner.Instance.Play(vivianPhase2Confirm.dialogue, () => done = true);
+            yield return new WaitUntil(() => done);
+        }
+
+        GameManager.Instance?.LoadScene("ExGF_PhoneCallScene_P2");
     }
 
     IEnumerator AutoWalkToVivianPhase2()
@@ -194,32 +229,25 @@ public class DinerP2SceneController : MonoBehaviour
             yield return new WaitUntil(() => done);
         }
 
-        StartCoroutine(OpenPhase2Panel());
+        GameManager.Instance?.LoadScene("ExGF_Court_P2");
     }
 
-    IEnumerator OpenPhase2Panel()
-    {
-        if (PlayerController.Instance != null)
-        {
-            PlayerController.Instance.CanMove = false;
-        }
-
-        yield return new WaitForSeconds(phase2OpenDelay);
-
-        if (chiefInspectorCallDialogue != null && DialogueRunner.Instance != null)
-        {
-            bool done = false;
-            DialogueRunner.Instance.Play(chiefInspectorCallDialogue, () => done = true);
-            yield return new WaitUntil(() => done);
-        }
-
-        BagUI.Instance?.ForceOpenForDecision(phase2DecisionTitle, null);
-    }
-
-    // Walk player toward the active Vivian NPC before any TriggerDialogue outcome fires.
     void HandlePreDialogueWalk(string clueID, System.Action onContinue)
     {
-        NPCInteractable target = _phase2Started ? vivianPhase2 : vivianPhase1;
+        NPCInteractable target;
+
+        if (_phase2Started)
+        {
+            target = vivianPhase2;
+        }
+        else if (_confirmPhaseActive)
+        {
+            target = vivianPhase2Confirm;
+        }
+        else
+        {
+            target = vivianPhase1;
+        }
 
         if (target != null && PlayerController.Instance != null)
         {

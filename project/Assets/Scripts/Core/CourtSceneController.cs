@@ -6,7 +6,6 @@ public class CourtSceneController : MonoBehaviour
     [SerializeField] DialogueData marcusClosingDialogue;
     [SerializeField] DialogueData headChefRevealDialogue;
 
-    [Tooltip("Seconds of silence between the Marcus/Player exchange and the Head Chef reveal.")]
     [SerializeField] float pauseBeforeReveal = 1f;
 
     void Start()
@@ -52,6 +51,6 @@ public class CourtSceneController : MonoBehaviour
         }
 
         GameManager.Instance?.AdvancePlaythrough();
-        GameManager.Instance?.LoadScene("ExGF_ChefRoom_P1");
+        GameManager.Instance?.LoadScene("ExGF_ExRoom_P2");
     }
 }

@@ -22,7 +22,9 @@ public class PersistentSystemsBootstrapper : MonoBehaviour
 
     static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        bool isMenuScene = scene.name == "MainMenu" || scene.name == "SelectCaseScreen" || scene.name == "SampleScene";
+        bool isMenuScene = scene.name == "MainMenu" || scene.name == "SelectCaseScreen" || scene.name == "SampleScene"
+                        || scene.name == "ExGF_PhoneCallScene_P2"
+                        || scene.name == "ExGF_Court_P2";
 
         Debug.Log("[Bootstrapper] Scene loaded: " + scene.name + " | isMenuScene: " + isMenuScene);
 
