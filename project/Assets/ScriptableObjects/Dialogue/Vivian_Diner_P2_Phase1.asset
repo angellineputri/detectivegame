@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: Vivian_Diner_P2_Phase1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speaker: Player
+    text: You told me you were home all night. But I found this note in your room.
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Vivian
+    text: "...where did you \u2026 that's private."
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Private or not, it puts you somewhere other than home. Care to explain?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Vivian
+    text: "Fine. I went. I wanted to talk to him, one last time, before it was really
+      over. That's all. I didn\u2019t like the fact that I didn\u2019t try to keep
+      us \u2026"
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: You didn't think that was worth mentioning?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Vivian
+    text: "Don\u2019t you think I look stupid for going after him after he dump me?
+      I looked very desperate, is it something worth admitting?"
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: It's looking worse now that you hid it.
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Vivian
+    text: ... I know.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Anyways, hows everything going around here, after Marco is gone?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Vivian
+    text: Not great, no one here knows how to cook like he did.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: "You opened the diner, why didn\u2019t you take over?"
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Vivian
+    text: "I can\u2019t cook, I just simply love foods."
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Well thats new. Good luck around here!
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

@@ -2707,19 +2707,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 175478361}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 463b5b0cde75c43298ddcb7caf040278, type: 3}
+  m_Script: {fileID: 11500000, guid: b8e5186d49ca404485df331b6eaef314, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: 
-  kitchenOutcomeTable: {fileID: 11400000, guid: 0b1591effe8c7450784ee9cfb58df9d1,
-    type: 2}
-  headChef: {fileID: 538586294}
-  characterWalkSpeed: 3
-  marcusBloodyKnifeDialogue: {fileID: 11400000, guid: c2edde79821de4ab9bfdc3f8fe0da454,
-    type: 2}
-  marcusKnifeRackDialogue: {fileID: 11400000, guid: 9f37531c8d07f46989eb312890e07f12,
-    type: 2}
-  marcusCommentaryDelay: 1
-  kitchenDecisionTitle: Make Your Move.
+  m_EditorClassIdentifier: Assembly-CSharp::KitchenP2SceneController
+  kitchenP2OutcomeTable: {fileID: 11400000, guid: 012c9ae88cab46488d6a6b4b5230a3d7, type: 2}
 --- !u!4 &175478363
 Transform:
   m_ObjectHideFlags: 0
@@ -13271,17 +13262,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2061139281}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4aa9db1ead1f481397d702bf77f4406, type: 3}
+  m_Script: {fileID: 11500000, guid: 8fb292cc2b0b431cbd8e5cf2fbfcc68a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectID: kitchen_walkin_fridge
-  displayName: Bloody Knife
-  noticeText: "The walk-in fridge door is slightly ajar \u2014 it wasn't closed properly,
-    or someone left in a hurry."
-  revealText: 'On the lowest shelf, half-hidden behind a rack of produce: a chef''s
-    knife with dried blood on the blade. This is the murder weapon.'
+  objectID: bloody_knife_bagged
+  displayName: Bagged Knife
+  noticeText: "The walk-in fridge door is sealed with police tape \u2014 someone flagged
+    it as a crime scene. Through the gap the chef's knife is visible, wrapped in an
+    evidence bag."
+  revealText: The knife is bagged but hasn't been tested yet. Take it to the lab before
+    Vivian realises what you have.
   addToBag: 1
-  requiredPlaythrough: 0
+  requiredPlaythrough: 2
   requiredFlag: 
   interactRange: 3
   visualRoot: {fileID: 0}

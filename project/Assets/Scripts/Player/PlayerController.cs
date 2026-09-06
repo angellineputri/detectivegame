@@ -68,7 +68,11 @@ public class PlayerController : MonoBehaviour
         {
             if (!interactable.IsActiveThisPlaythrough()) continue;
 
-            float dist = Vector2.Distance(transform.position, interactable.transform.position);
+            Collider2D col = interactable.GetComponent<Collider2D>();
+            float dist = col != null
+                ? Vector2.Distance(transform.position, col.ClosestPoint(transform.position))
+                : Vector2.Distance(transform.position, interactable.transform.position);
+
             if (dist <= interactable.interactRange && dist < nearestDist)
             {
                 nearest = interactable;

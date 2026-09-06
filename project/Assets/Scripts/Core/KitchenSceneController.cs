@@ -158,17 +158,7 @@ public class KitchenSceneController : MonoBehaviour
             yield return StartCoroutine(CharacterMover.Walk(player.transform, destination, characterWalkSpeed));
         }
 
-        Vector2 playerToChef = ((Vector2)headChef.position - (Vector2)player.transform.position).normalized;
-        player.FaceDirection(playerToChef);
-
-        Animator chefAnimator = headChef.GetComponent<Animator>();
-        if (chefAnimator != null)
-        {
-            Vector2 chefToPlayer = -playerToChef;
-            chefAnimator.SetFloat("MoveX", chefToPlayer.x);
-            chefAnimator.SetFloat("MoveY", chefToPlayer.y);
-            chefAnimator.SetFloat("Speed", 0f);
-        }
+        CharacterMover.FaceEachOther(player.transform, headChef);
 
         if (onArrived != null)
         {

@@ -66,6 +66,6 @@ public class ChefComputer : Interactable
             Debug.LogWarning("[ChefComputer] p2ThinkingDialogue is not assigned or DialogueRunner is missing.");
         }
 
-        GameManager.Instance?.LoadScene("ExGFRoomP2");
+        GameManager.Instance?.LoadScene("ExGF_ExRoom_P2");
     }
 }

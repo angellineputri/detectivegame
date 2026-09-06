@@ -27,6 +27,35 @@ public static class CharacterMover
         }
     }
 
+    public static void FaceEachOther(Transform a, Transform b)
+    {
+        Vector2 posA = (Vector2)a.position;
+        Vector2 posB = (Vector2)b.position;
+        Vector2 aToB = (posB - posA).normalized;
+        Debug.Log($"[FaceEachOther] '{a.name}' @ {posA}  '{b.name}' @ {posB}  aToB={aToB}");
+        if (aToB == Vector2.zero) return;
+        FaceToward(a,  aToB);
+        FaceToward(b, -aToB);
+    }
+
+    static void FaceToward(Transform t, Vector2 direction)
+    {
+        PlayerController player = PlayerController.Instance;
+        if (player != null && t == player.transform)
+        {
+            player.FaceDirection(direction);
+            return;
+        }
+
+        Animator animator = t.GetComponent<Animator>();
+        if (animator != null)
+        {
+            animator.SetFloat("MoveX", direction.x);
+            animator.SetFloat("MoveY", direction.y);
+            animator.SetFloat("Speed", 0f);
+        }
+    }
+
     public static IEnumerator Walk(Transform obj, Vector3 destination, float speed, params Obstacle[] obstacles)
     {
         Vector3[] path = ComputePath(obj.position, destination, obstacles);

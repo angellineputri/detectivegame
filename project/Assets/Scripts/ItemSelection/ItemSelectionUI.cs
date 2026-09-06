@@ -241,7 +241,10 @@ public class ItemSelectionUI : MonoBehaviour
 
                 if (!string.IsNullOrEmpty(outcome.targetScene))
                 {
-                    GameManager.Instance?.LoadScene(outcome.targetScene);
+                    if (SceneLoadInterceptHandler != null)
+                        SceneLoadInterceptHandler.Invoke(outcome.clueID, () => GameManager.Instance?.LoadScene(outcome.targetScene));
+                    else
+                        GameManager.Instance?.LoadScene(outcome.targetScene);
                 }
                 else if (PlayerController.Instance != null)
                 {

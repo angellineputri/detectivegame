@@ -234,8 +234,7 @@ public class DinerSceneController : MonoBehaviour
 
         if (PlayerController.Instance != null && headChef != null)
         {
-            Vector2 toChef = (Vector2)(headChef.transform.position - PlayerController.Instance.transform.position);
-            PlayerController.Instance.FaceDirection(toChef);
+            CharacterMover.FaceEachOther(PlayerController.Instance.transform, headChef.transform);
         }
 
         yield return new WaitForSeconds(0.5f);

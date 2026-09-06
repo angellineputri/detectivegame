@@ -122,6 +122,7 @@ public class HeadChefBedroomSceneController : MonoBehaviour
         yield return StartCoroutine(CharacterMover.Walk(player.transform, destination, characterWalkSpeed, sceneObstacles, obstacleRadius));
 
         Debug.Log("[HeadChefBedroomSceneController] Walk complete.");
+        CharacterMover.FaceEachOther(player.transform, headChef);
         onArrived?.Invoke();
     }
 }

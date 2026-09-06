@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -35,6 +36,9 @@ public class Interactable : MonoBehaviour
     [Tooltip("Optional child GameObject to hide when this object is inactive.")]
     [SerializeField] GameObject visualRoot;
 
+    // Set true at runtime to suppress highlight and block clicks without deactivating the object.
+    [NonSerialized] public bool interactionLocked;
+
     SpriteRenderer _spriteRenderer;
     Color _originalColor;
     bool _isHighlighted;
@@ -62,7 +66,8 @@ public class Interactable : MonoBehaviour
     {
         if (_spriteRenderer == null) return;
 
-        bool shouldHighlight = IsActiveThisPlaythrough() && InRange();
+        bool playerInControl = PlayerController.Instance == null || PlayerController.Instance.CanMove;
+        bool shouldHighlight = playerInControl && !interactionLocked && IsActiveThisPlaythrough() && InRange();
 
         if (shouldHighlight && !_isHighlighted)
         {
@@ -115,6 +120,7 @@ public class Interactable : MonoBehaviour
         if (EventSystem.current != null && EventSystem.current.IsPointerOverGameObject()) return;
         if (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying) return;
         if (UIManager.Instance != null && UIManager.Instance.IsPopupVisible) return;
+        if (interactionLocked) return;
         if (!IsActiveThisPlaythrough()) return;
         if (!InRange()) return;
 
