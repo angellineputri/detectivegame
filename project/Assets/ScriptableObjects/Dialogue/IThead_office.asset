@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: IThead_office
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: Detective
+    text: are you the head of the IT department?
+  - speaker: IT head
+    text: who's asking?
+  - speaker: Detective
+    text: i'm a detective and i'm investigating the death of Julian Reyes.
+  - speaker: IT head
+    text: I see... Understood sir, how may I help?
+  - speaker: Detective
+    text: I need access to his assistant, Dennis's computer
+  - speaker: IT head
+    text: Very well, here you go.

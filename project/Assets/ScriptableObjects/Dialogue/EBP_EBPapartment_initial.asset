@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: EBP_EBPapartment_initial
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: 
+    text: '*knock knock*'
+  - speaker: Henry
+    text: hello?
+  - speaker: Detective
+    text: Mr Voss, i'm with the police and i'm investigating the murder of an ex-acquaintance
+      of yours, Julian Reyes.
+  - speaker: Henry
+    text: Ah yes Julian. Horrible thing, we had a falling out but it still doesn't
+      sit right with me knowing he's been murdered.
+  - speaker: Detective
+    text: My condolences, but i have reason to suspect you might be involved somehow.
+      Would you mind if i came in to take a look around.
+  - speaker: Henry
+    text: '.... '
+  - speaker: Henry
+    text: Of course, anything to help with the investigation please come in.
