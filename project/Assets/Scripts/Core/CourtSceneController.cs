@@ -51,6 +51,6 @@ public class CourtSceneController : MonoBehaviour
         }
 
         GameManager.Instance?.AdvancePlaythrough();
-        GameManager.Instance?.LoadScene("ExGF_ExRoom_P2");
+        GameManager.Instance?.LoadScene("ExGF_ChefRoom_P1");
     }
 }

@@ -17,5 +17,5 @@ MonoBehaviour:
   description: "Julian Reyes is dead, and everyone close to him has something to
     hide. \nInvestigator: You. \nGuided by Chief Inspector Marcus Doyle, uncover
     the truth behind the murder. One suspect, one lie at a time."
-  startingScene: ExGF_Diner_P1
+  startingScene: Start
   isUnlocked: 1

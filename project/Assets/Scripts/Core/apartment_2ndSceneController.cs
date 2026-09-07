@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using UnityEngine;
 
 public class apartment_2ndSceneController : MonoBehaviour

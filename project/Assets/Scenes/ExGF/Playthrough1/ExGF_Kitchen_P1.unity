@@ -2774,6 +2774,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 4
   visualRoot: {fileID: 0}
 --- !u!61 &392700269
@@ -8466,6 +8467,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 2
   visualRoot: {fileID: 0}
 --- !u!61 &1667330087
@@ -13283,6 +13285,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 3
   visualRoot: {fileID: 0}
 --- !u!61 &2061139283

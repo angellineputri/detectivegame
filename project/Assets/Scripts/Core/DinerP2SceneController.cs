@@ -203,10 +203,10 @@ public class DinerP2SceneController : MonoBehaviour
 
         yield return StartCoroutine(WalkToNPC(vivianPhase2Confirm.transform, () => { }));
 
-        if (vivianPhase2Confirm.dialogue != null && DialogueRunner.Instance != null)
+        if (vivianPhase2Confirm.dialogueAfterRequirement != null && DialogueRunner.Instance != null)
         {
             bool done = false;
-            DialogueRunner.Instance.Play(vivianPhase2Confirm.dialogue, () => done = true);
+            DialogueRunner.Instance.Play(vivianPhase2Confirm.dialogueAfterRequirement, () => done = true);
             yield return new WaitUntil(() => done);
         }
 
@@ -222,10 +222,10 @@ public class DinerP2SceneController : MonoBehaviour
 
         yield return StartCoroutine(WalkToNPC(vivianPhase2.transform, () => { }));
 
-        if (vivianPhase2.dialogue != null && DialogueRunner.Instance != null)
+        if (vivianPhase2.dialogueAfterRequirement != null && DialogueRunner.Instance != null)
         {
             bool done = false;
-            DialogueRunner.Instance.Play(vivianPhase2.dialogue, () => done = true);
+            DialogueRunner.Instance.Play(vivianPhase2.dialogueAfterRequirement, () => done = true);
             yield return new WaitUntil(() => done);
         }
 
