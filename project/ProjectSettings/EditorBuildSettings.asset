@@ -41,4 +41,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Core/SelectCaseScreen.unity
     guid: ed9f615230f6249d09e183908102118a
+  - enabled: 1
+    path: Assets/Scenes/assistant/1st/apartment.unity
+    guid: 36aa113d1f702344c89294228e39a91a
+  - enabled: 1
+    path: Assets/Scenes/assistant/1st/office.unity
+    guid: 88f0574bba604ac4799eee325c5fcdfa
+  - enabled: 1
+    path: Assets/Scenes/assistant/2nd/apartment_2nd.unity
+    guid: 582f7d14a3c0b234f8946cec67e8164a
+  - enabled: 1
+    path: Assets/Scenes/assistant/2nd/EBPapartment.unity
+    guid: a0040d02a1858c542bc4498fb71e9782
   m_configObjects: {}
