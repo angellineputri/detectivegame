@@ -35,6 +35,7 @@ public class BagUI : MonoBehaviour
     Dictionary<string, string> _displayNames = new Dictionary<string, string>();
     HashSet<string> _spawnedClueIDs = new HashSet<string>();
     List<GameObject> _spawnedRows = new List<GameObject>();
+    List<Button> _spawnedButtons = new List<Button>();
     int _itemCount;
 
     ClueOutcomeTable _currentTable;
@@ -49,6 +50,9 @@ public class BagUI : MonoBehaviour
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        TMP_FontAsset ps2p = Resources.Load<TMP_FontAsset>("Fonts & Materials/PressStart2P SDF");
+        if (ps2p != null && badgeText != null) { badgeText.font = ps2p; badgeText.fontSize = 14; }
 
         SetHudVisible(false);
         if (reviewPanel != null) reviewPanel.SetActive(false);
@@ -150,6 +154,7 @@ public class BagUI : MonoBehaviour
         keepExploringButton?.gameObject.SetActive(true);
         makeAMoveButton?.gameObject.SetActive(false);
 
+        foreach (Button b in _spawnedButtons) b.interactable = true;
         if (bagReviewDimOverlay != null) bagReviewDimOverlay.SetActive(true);
         if (reviewPanel != null) reviewPanel.SetActive(true);
         if (clueGridRoot != null) LayoutRebuilder.ForceRebuildLayoutImmediate(clueGridRoot);
@@ -165,6 +170,7 @@ public class BagUI : MonoBehaviour
 
         if (panelTitleText != null) panelTitleText.text = _defaultTitle;
 
+        foreach (Button b in _spawnedButtons) b.interactable = false;
         closeButton?.gameObject.SetActive(true);
         keepExploringButton?.gameObject.SetActive(false);
         if (!_tutorialCloseOnly)
@@ -232,6 +238,7 @@ public class BagUI : MonoBehaviour
         foreach (GameObject row in _spawnedRows)
             if (row != null) Destroy(row);
         _spawnedRows.Clear();
+        _spawnedButtons.Clear();
         _spawnedClueIDs.Clear();
         _displayNames.Clear();
         _itemCount = 0;
@@ -309,13 +316,16 @@ public class BagUI : MonoBehaviour
 
         Button btn = outer.AddComponent<Button>();
         btn.targetGraphic = inner.GetComponent<Image>();
+        btn.interactable = false;
         ColorBlock cb = ColorBlock.defaultColorBlock;
         cb.normalColor = CellBg;
         cb.highlightedColor = new Color32(0xd0, 0xd3, 0xd6, 0xff);
         cb.pressedColor = new Color32(0xb8, 0xbb, 0xbe, 0xff);
+        cb.disabledColor = CellBg;
         cb.fadeDuration = 0.05f;
         btn.colors = cb;
         btn.onClick.AddListener(() => OnClueEntryClicked(clueID));
+        _spawnedButtons.Add(btn);
     }
 
     void OnClueEntryClicked(string clueID)

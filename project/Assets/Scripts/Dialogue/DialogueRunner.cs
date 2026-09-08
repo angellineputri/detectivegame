@@ -15,6 +15,7 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] GameObject dialogueDimOverlay;
     [SerializeField] Image speakerPortraitImage;
 
+
     DialogueLine[] _lines;
     int _index;
     Action _onComplete;
@@ -52,12 +53,26 @@ public class DialogueRunner : MonoBehaviour
         if (dialogueDimOverlay != null)
         {
             dialogueDimOverlay.SetActive(false);
-
             dialogueDimOverlay.transform.SetAsLastSibling();
         }
 
         dialoguePanel.transform.SetAsLastSibling();
         advanceButton?.onClick.AddListener(Advance);
+
+        TMP_FontAsset ps2p = Resources.Load<TMP_FontAsset>("Fonts & Materials/PressStart2P SDF");
+        TMP_FontAsset vt323 = Resources.Load<TMP_FontAsset>("Fonts & Materials/VT323 SDF");
+        if (ps2p != null && speakerText != null)
+        {
+            speakerText.font = ps2p;
+            speakerText.fontSize = 22;
+            RectTransform speakerRT = speakerText.GetComponent<RectTransform>();
+            if (speakerRT != null)
+            {
+                Vector2 sd = speakerRT.sizeDelta;
+                speakerRT.sizeDelta = new Vector2(600f, sd.y);
+            }
+        }
+        if (vt323 != null && bodyText != null) { bodyText.font = vt323; bodyText.fontSize = 30; }
     }
 
     void Update()

@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button closeButton;
     [SerializeField] GameObject clueDimOverlay;
 
+
     string _revealText;
     System.Action _onComplete;
     bool _showingReveal;
@@ -44,6 +45,9 @@ public class UIManager : MonoBehaviour
             clueDimOverlay.SetActive(false);
         }
         closeButton?.onClick.AddListener(HideCluePopup);
+
+        TMP_FontAsset vt323 = Resources.Load<TMP_FontAsset>("Fonts & Materials/VT323 SDF");
+        if (vt323 != null && clueText != null) { clueText.font = vt323; clueText.fontSize = 30; }
     }
 
     void Update()

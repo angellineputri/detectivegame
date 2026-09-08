@@ -54,6 +54,27 @@ public class CaseBoardUI : MonoBehaviour
             boardOverlay.blocksRaycasts = false;
         }
         closeButton?.onClick.AddListener(DismissBoard);
+
+        if (closeButton != null)
+        {
+            TMP_FontAsset ps2p = Resources.Load<TMP_FontAsset>("Fonts & Materials/PressStart2P SDF");
+            TMP_Text closeLbl = closeButton.GetComponentInChildren<TMP_Text>();
+            if (closeLbl == null)
+            {
+                GameObject lblGO = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI));
+                lblGO.transform.SetParent(closeButton.transform, false);
+                RectTransform rt = lblGO.GetComponent<RectTransform>();
+                rt.anchorMin = Vector2.zero;
+                rt.anchorMax = Vector2.one;
+                rt.offsetMin = rt.offsetMax = Vector2.zero;
+                closeLbl = lblGO.GetComponent<TextMeshProUGUI>();
+                closeLbl.alignment = TextAlignmentOptions.Center;
+            }
+            closeLbl.text = "X";
+            closeLbl.fontSize = 16;
+            if (ps2p != null) closeLbl.font = ps2p;
+        }
+
         BuildDiagram();
     }
 
@@ -188,6 +209,8 @@ public class CaseBoardUI : MonoBehaviour
             _merged.ShowMerged(revealed, revealed ? bm.culpritName : "???");
             if (!wasMerged) yield return StartCoroutine(Reveal(_merged.cg));
         }
+
+        RecenterDiagram(sA, sB, sFinal);
     }
 
     void DismissBoard()
@@ -239,6 +262,19 @@ public class CaseBoardUI : MonoBehaviour
         rt.localScale = Vector3.one;
     }
 
+    void RecenterDiagram(int sA, int sB, int sFinal)
+    {
+        if (diagramRoot == null) return;
+        bool merged = sFinal >= 1;
+        bool slot3  = (sA >= 5 || sB >= 5) && !merged;
+        bool slot2  = sA >= 3 || sB >= 3;
+        float rightEdge = merged ? 1506f : slot3 ? 1236f : slot2 ? 921f : 561f;
+        float scale = diagramRoot.localScale.x;
+        float cx = (30f + rightEdge) * 0.5f * scale;
+        float cy = 300f * scale;
+        diagramRoot.anchoredPosition = new Vector2(-cx, cy);
+    }
+
     void BuildDiagram()
     {
         if (diagramRoot == null)
@@ -246,6 +282,10 @@ public class CaseBoardUI : MonoBehaviour
             Debug.LogWarning("[CaseBoardUI] diagramRoot not assigned — run Tools → City of Lies UI → Build Case Board.");
             return;
         }
+
+        diagramRoot.anchorMin = diagramRoot.anchorMax = new Vector2(0.5f, 0.5f);
+        diagramRoot.pivot     = new Vector2(0f, 1f);
+
         if (diagramRoot.childCount > 0) return;
 
         var head = TryLoadFont("Fonts & Materials/PressStart2P SDF");
@@ -283,6 +323,7 @@ public class CaseBoardUI : MonoBehaviour
         _lnMergeA.Set(false, false); _lnMergeB.Set(false, false);
 
         diagramRoot.localScale = new Vector3(1.1f, 1.1f, 1f);
+        RecenterDiagram(0, 0, 0);
     }
 
     NodeCard MakeNodeCard(string name, float x, float y, float w, float h, float cssRotateDeg,
