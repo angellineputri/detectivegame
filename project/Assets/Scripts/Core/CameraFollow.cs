@@ -20,7 +20,6 @@ public class CameraFollow : MonoBehaviour
 
     void OnEnable()
     {
-        // Reset so the first LateUpdate after this scene's camera activates snaps immediately.
         _hasSnapped = false;
     }
 
@@ -32,9 +31,6 @@ public class CameraFollow : MonoBehaviour
 
         if (!_hasSnapped)
         {
-            // Snap on the first frame — Start() has already run by this point, so the player
-            // is at their correct spawn position. No lerp slide from wherever the camera sat
-            // in the scene file.
             transform.position = desiredPosition;
             _hasSnapped = true;
         }

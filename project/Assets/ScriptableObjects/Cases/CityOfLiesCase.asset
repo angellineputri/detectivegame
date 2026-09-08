@@ -15,7 +15,7 @@ MonoBehaviour:
   caseID: cityoflies
   caseName: City of Lies
   description: "Julian Reyes is dead, and everyone close to him has something to
-    hide. \nInvestigator: You. \nGuided by Chief Inspector Marcus Doyle, uncover
-    the truth behind the murder. One suspect, one lie at a time."
-  startingScene: Start
+    hide. As Chief Inspector Marcus Doyle, uncover the truth behind the murder \u2014
+    one suspect, one lie at a time."
+  startingScene: ExGF_Diner_P1
   isUnlocked: 1

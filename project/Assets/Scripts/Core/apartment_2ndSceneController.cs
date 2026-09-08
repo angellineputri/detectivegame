@@ -10,18 +10,13 @@ public class apartment_2ndSceneController : MonoBehaviour
     [Tooltip("Optional flag that must be set before the player can leave.")]
     public string requiredFlagToLeave;
 
-    /// <summary>
-    /// Checks whether the player is allowed to leave the apartment.
-    /// </summary>
     public bool CanLeave()
     {
-        // If no flag is required, the player can leave at any time.
         if (string.IsNullOrEmpty(requiredFlagToLeave))
         {
             return true;
         }
 
-        // Make sure GameManager exists.
         if (GameManager.Instance == null)
         {
             UnityEngine.Debug.LogWarning(
@@ -34,9 +29,6 @@ public class apartment_2ndSceneController : MonoBehaviour
         return GameManager.Instance.GetFlag(requiredFlagToLeave);
     }
 
-    /// <summary>
-    /// Loads the next scene.
-    /// </summary>
     public void GoToNextScene()
     {
         if (!CanLeave())

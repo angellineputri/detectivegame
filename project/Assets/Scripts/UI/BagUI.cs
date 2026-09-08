@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
@@ -31,6 +32,8 @@ public class BagUI : MonoBehaviour
 
     System.Action _onKeepExploring;
     bool _forcedDecisionMode;
+    bool _hudPinned;
+    bool _suppressHudAutoReveal;
     string _defaultTitle;
 
     void Awake()
@@ -116,9 +119,29 @@ public class BagUI : MonoBehaviour
         return clueID;
     }
 
+    public bool IsReviewPanelOpen => reviewPanel != null && reviewPanel.activeSelf;
+
     public void SetOutcomeTable(ClueOutcomeTable table)
     {
         _currentTable = table;
+    }
+
+    public void EnterTutorialCloseOnly()
+    {
+        if (makeAMoveButton != null)
+            makeAMoveButton.gameObject.SetActive(false);
+    }
+
+    public void ExitTutorialCloseOnly()
+    {
+        if (makeAMoveButton != null)
+            makeAMoveButton.gameObject.SetActive(true);
+    }
+
+    public void SetHudPinned(bool pinned)
+    {
+        _hudPinned = pinned;
+        if (pinned) SetHudVisible(true);
     }
 
     public void SetHudVisible(bool visible)
@@ -126,6 +149,11 @@ public class BagUI : MonoBehaviour
         if (bagHud != null)
         {
             bagHud.SetActive(visible);
+        }
+
+        if (visible && EventSystem.current != null)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
         }
 
         if (!visible)
@@ -143,6 +171,7 @@ public class BagUI : MonoBehaviour
 
     public void RefreshBagHudVisibility()
     {
+        if (_hudPinned) return;
         bool anyOpen = reviewPanel.activeSelf
             || (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
             || (UIManager.Instance != null && UIManager.Instance.IsPopupVisible);
@@ -230,36 +259,34 @@ public class BagUI : MonoBehaviour
 
     void OnBagButtonClicked()
     {
-        if (_forcedDecisionMode)
-        {
-            return;
-        }
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) return;
+
+        if (_forcedDecisionMode) return;
 
         if (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
         {
-            return;
+            if (_hudPinned)
+                DialogueRunner.Instance.ForceComplete();
+            else
+                return;
         }
 
-        if (UIManager.Instance != null && UIManager.Instance.IsPopupVisible)
-        {
-            return;
-        }
+        if (UIManager.Instance != null && UIManager.Instance.IsPopupVisible) return;
 
         bool newState = !reviewPanel.activeSelf;
         if (bagReviewDimOverlay != null)
-        {
             bagReviewDimOverlay.SetActive(newState);
-        }
         reviewPanel.SetActive(newState);
         RefreshBagHudVisibility();
     }
 
     void CloseReviewPanel()
     {
+        if (_hudPinned && DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
+            DialogueRunner.Instance.ForceComplete();
+
         if (bagReviewDimOverlay != null)
-        {
             bagReviewDimOverlay.SetActive(false);
-        }
         reviewPanel.SetActive(false);
         RefreshBagHudVisibility();
     }

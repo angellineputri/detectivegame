@@ -21,12 +21,10 @@ public class NPCInteractable : Interactable
     [Tooltip("Dialogue used when the required clue HAS been found.")]
     public DialogueData dialogueAfterRequirement;
 
-
     [Header("Item Grant Requirement")]
 
     [Tooltip("The clue the player must have before this NPC can give the reward. Leave empty to always allow.")]
     public string requiredClueToGrant;
-
 
     [Header("On Dialogue Complete")]
 
@@ -42,15 +40,12 @@ public class NPCInteractable : Interactable
     [Tooltip("If true, the NPC GameObject is disabled after giving the reward.")]
     public bool deactivateSelfOnComplete;
 
-
     protected override void Start()
     {
-        // NPCs are not normal evidence objects.
         addToBag = false;
 
         base.Start();
     }
-
 
     public override void RefreshActiveState()
     {
@@ -63,53 +58,41 @@ public class NPCInteractable : Interactable
         }
     }
 
-
     protected override void OnMouseDown()
     {
-        // Ignore clicks on UI.
         if (EventSystem.current != null &&
             EventSystem.current.IsPointerOverGameObject())
         {
             return;
         }
 
-        // Do not interact while another dialogue is playing.
         if (DialogueRunner.Instance != null &&
             DialogueRunner.Instance.IsPlaying)
         {
             return;
         }
 
-        // Do not interact while a popup is visible.
         if (UIManager.Instance != null &&
             UIManager.Instance.IsPopupVisible)
         {
             return;
         }
 
-        // Check playthrough/flag requirements.
         if (!IsActiveThisPlaythrough())
         {
             return;
         }
 
-        // Check player distance.
         if (!InRange())
         {
             return;
         }
 
-        // IMPORTANT:
-        // NPCs do NOT use the normal Interactable notice/reveal system.
-        // They go directly to their dialogue.
         OnInteract();
     }
 
-
     protected override void OnInteract()
     {
-        // If this NPC has already completed its interaction,
-        // don't allow the reward to be given again.
         if (HasCompletedReward())
         {
             return;
@@ -134,10 +117,8 @@ public class NPCInteractable : Interactable
         );
     }
 
-
     private bool HasRequiredClueForNPC()
     {
-        // No requirement means the requirement is automatically satisfied.
         if (string.IsNullOrEmpty(requiredClueToGrant))
         {
             return true;
@@ -152,7 +133,6 @@ public class NPCInteractable : Interactable
             requiredClueToGrant
         );
     }
-
 
     private bool HasCompletedReward()
     {
@@ -171,7 +151,6 @@ public class NPCInteractable : Interactable
         );
     }
 
-
     private void PlayDialogue(
         DialogueData selectedDialogue,
         bool hasRequiredClue)
@@ -184,7 +163,6 @@ public class NPCInteractable : Interactable
             return;
         }
 
-
         if (DialogueRunner.Instance == null)
         {
             UnityEngine.Debug.LogWarning(
@@ -196,12 +174,10 @@ public class NPCInteractable : Interactable
             return;
         }
 
-
         if (PlayerController.Instance != null)
         {
             PlayerController.Instance.CanMove = false;
         }
-
 
         DialogueRunner.Instance.Play(
             selectedDialogue,
@@ -209,10 +185,8 @@ public class NPCInteractable : Interactable
         );
     }
 
-
     private void OnDialogueComplete(bool hasRequiredClue)
     {
-        // Only give the reward if the required clue was found.
         if (hasRequiredClue)
         {
             GiveReward();
@@ -225,8 +199,6 @@ public class NPCInteractable : Interactable
             }
         }
 
-
-        // Load another scene if specified.
         if (!string.IsNullOrEmpty(sceneToLoadOnComplete))
         {
             GameManager.Instance?.LoadScene(
@@ -242,7 +214,6 @@ public class NPCInteractable : Interactable
         }
     }
 
-
     private void GiveReward()
     {
         if (itemToGrantOnComplete == null)
@@ -256,18 +227,15 @@ public class NPCInteractable : Interactable
             return;
         }
 
-
         BagUI.Instance?.RegisterClueDisplayName(
             itemToGrantOnComplete.objectID,
             itemToGrantOnComplete.displayName
         );
 
-
         GameManager.Instance?.AddClue(
             itemToGrantOnComplete.objectID
         );
     }
-
 
     private void SetCompletionFlag()
     {

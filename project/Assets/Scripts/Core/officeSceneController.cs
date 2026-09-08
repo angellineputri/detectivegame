@@ -26,6 +26,11 @@ public class officeSceneController : MonoBehaviour
         return GameManager.Instance.GetFlag(requiredFlagToLeave);
     }
 
+    void Start()
+    {
+        CaseBoardManager.Instance?.Assistant_P1_Pin();
+    }
+
     public void GoToNextScene()
     {
         if (!CanLeave())
@@ -40,6 +45,7 @@ public class officeSceneController : MonoBehaviour
             return;
         }
 
+        CaseBoardManager.Instance?.Assistant_P1_Arrest();
         GameManager.Instance?.LoadScene(nextSceneName);
     }
 }

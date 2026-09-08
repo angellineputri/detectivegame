@@ -59,11 +59,19 @@ public class DinerSceneController : MonoBehaviour
     bool _marcusSequenceStarted;
     bool _exitSequenceStarted;
 
+    void Awake()
+    {
+        BagUI.Instance?.ClearBag();
+    }
+
     void Start()
     {
+        CaseBoardManager.Instance?.ExGf_P1_Pin();
+
         if (BagUI.Instance != null)
         {
             BagUI.Instance.SetOutcomeTable(dinerOutcomeTable);
+            BagUI.Instance.SetHudVisible(true);
         }
 
         if (headChef != null)

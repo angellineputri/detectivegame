@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: VA_Chief_BothFound
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speaker: Chief Inspector Marcus
+    text: Sharp eye kid! Now among the two which one are u leaning more towards suspecting?
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Chief Inspector Marcus
+    text: 'The professional assistant who knows the victim''s every move, or... '
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Chief Inspector Marcus
+    text: 'the girl- i mean ex-girlfriend of his which he has just broken up with
+      the night before the accident.. '
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Chief Inspector Marcus
+    text: Think about it and make a move when ur ready!
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Chief Inspector Marcus
+    text: U do know how to make a move right...?
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Chief Inspector Marcus
+    text: Just open your bag, press make a move, and pick an object!
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Chief Inspector Marcus
+    text: Pretty simple right? Its available anytime ur ready kiddo!
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

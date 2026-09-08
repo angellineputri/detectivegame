@@ -50,7 +50,8 @@ public class KitchenSceneController : MonoBehaviour
 
     void OnEnable()
     {
-        ItemSelectionUI.PreDialogueWalkHandler = HandlePreDialogueWalk;
+        ItemSelectionUI.PreDialogueWalkHandler    = HandlePreDialogueWalk;
+        ItemSelectionUI.SceneLoadInterceptHandler = HandleSceneLoadIntercept;
     }
 
     void OnDisable()
@@ -59,6 +60,15 @@ public class KitchenSceneController : MonoBehaviour
         {
             ItemSelectionUI.PreDialogueWalkHandler = null;
         }
+        if (ItemSelectionUI.SceneLoadInterceptHandler == HandleSceneLoadIntercept)
+        {
+            ItemSelectionUI.SceneLoadInterceptHandler = null;
+        }
+    }
+
+    void HandleSceneLoadIntercept(string clueID, System.Action proceedWithLoad)
+    {
+        proceedWithLoad?.Invoke();
     }
 
     void OnClueAdded(string clueID)

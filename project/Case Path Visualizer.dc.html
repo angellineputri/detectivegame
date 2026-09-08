@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1c2024; }
+  @keyframes fadeInUp { from { opacity: 0; transform: translateY(6px) rotate(var(--r,0deg)); } to { opacity: 1; transform: translateY(0) rotate(var(--r,0deg)); } }
+  a { color: #c0503a; }
+  a:hover { color: #d97355; }
+</style>
+</helmet>
+<div style="display:flex; width:100%; min-height:700px; height:100vh; background:#1c2024; font-family:'VT323',monospace; color:#e4e7ea; overflow:hidden;">
+
+  <div style="width:280px; flex-shrink:0; background:#22262b; border-right:1px solid #33383e; padding:24px 20px; overflow-y:auto; display:flex; flex-direction:column; gap:28px;">
+    <div>
+      <div style="font-family:'Press Start 2P',monospace; font-size:18px; letter-spacing:0.06em; color:#e4e7ea;">Case Board</div>
+      <div style="font-family:monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:#8a94a0; margin-top:4px;">Dev Controls</div>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:10px; border-top:1px solid #33383e; padding-top:16px;">
+      <div style="font-family:monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#a53f34;">Branch A — Ex-GF</div>
+      <div style="font-family:monospace; font-size:10px; color:#8a94a0;">Stage {{ stageA }} / 5</div>
+      <button onClick="{{ advanceA }}" disabled="{{ stageA5 }}" style="font-family:monospace; font-size:12px; text-align:left; padding:10px 12px; background:#262b31; border:1px solid #3a4046; color:#e4e7ea; cursor:pointer; opacity:{{ branchAOpacity }};" style-hover="background:#2e333a;">{{ nextLabelA }}</button>
+      <button onClick="{{ resetA }}" style="font-family:monospace; font-size:10px; text-align:left; padding:6px 10px; background:transparent; border:1px solid #33383e; color:#7a8590; cursor:pointer;" style-hover="color:#e4e7ea;">Reset Branch A</button>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:10px; border-top:1px solid #33383e; padding-top:16px;">
+      <div style="font-family:monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#a53f34;">Branch B — Assistant</div>
+      <div style="font-family:monospace; font-size:10px; color:#8a94a0;">Stage {{ stageB }} / 5</div>
+      <button onClick="{{ advanceB }}" disabled="{{ stageB5 }}" style="font-family:monospace; font-size:12px; text-align:left; padding:10px 12px; background:#262b31; border:1px solid #3a4046; color:#e4e7ea; cursor:pointer; opacity:{{ branchBOpacity }};" style-hover="background:#2e333a;">{{ nextLabelB }}</button>
+      <button onClick="{{ resetB }}" style="font-family:monospace; font-size:10px; text-align:left; padding:6px 10px; background:transparent; border:1px solid #33383e; color:#7a8590; cursor:pointer;" style-hover="color:#e4e7ea;">Reset Branch B</button>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:10px; border-top:1px solid #33383e; padding-top:16px;">
+      <div style="font-family:monospace; font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:#7a8fa8;">Case Resolution</div>
+      <button onClick="{{ advanceFinal }}" disabled="{{ finalDisabled }}" style="font-family:monospace; font-size:12px; text-align:left; padding:10px 12px; background:#262b31; border:1px solid #3a4046; color:#e4e7ea; cursor:pointer; opacity:{{ finalOpacity }};" style-hover="background:#2e333a;">{{ nextLabelFinal }}</button>
+    </div>
+
+    <button onClick="{{ resetAll }}" style="margin-top:auto; font-family:monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; padding:10px; background:transparent; border:1px solid #4a3038; color:#a53f34; cursor:pointer;" style-hover="background:#2a1512;">Reset Whole Case</button>
+  </div>
+
+  <div style="flex:1; overflow:auto; padding:40px; display:flex; align-items:flex-start; justify-content:flex-start; background-image:radial-gradient(circle at 15px 15px, rgba(255,255,255,0.05) 1.5px, transparent 1.6px), radial-gradient(circle at 45px 40px, rgba(255,255,255,0.035) 1.5px, transparent 1.6px), radial-gradient(circle at 30px 55px, rgba(0,0,0,0.15) 1.5px, transparent 1.6px); background-size:60px 60px; background-color:#1c2024;">
+    <div style="position:relative; width:{{ diagramWidth }}px; height:420px; flex-shrink:0; margin:auto; transition:width 0.6s ease;">
+
+      <svg width="1000" height="420" style="position:absolute; left:0; top:0; overflow:visible;">
+        <path d="M 130 210 Q 175 155 240 110" fill="none" stroke="{{ lineColor.startA }}" stroke-width="{{ lineWidth.startA }}" stroke-dasharray="{{ lineDash.startA }}" stroke-linecap="round"></path>
+        <path d="M 130 210 Q 175 265 240 290" fill="none" stroke="{{ lineColor.startB }}" stroke-width="{{ lineWidth.startB }}" stroke-dasharray="{{ lineDash.startB }}" stroke-linecap="round"></path>
+
+        <sc-if value="{{ stageA2 }}"><path d="M 370 100 Q 425 92 480 100" fill="none" stroke="{{ lineColor.a12 }}" stroke-width="{{ lineWidth.a12 }}" stroke-dasharray="{{ lineDash.a12 }}" stroke-linecap="round"></path></sc-if>
+        <sc-if value="{{ stageB2 }}"><path d="M 370 290 Q 425 298 480 290" fill="none" stroke="{{ lineColor.b12 }}" stroke-width="{{ lineWidth.b12 }}" stroke-dasharray="{{ lineDash.b12 }}" stroke-linecap="round"></path></sc-if>
+
+        <sc-if value="{{ slot3AVisible }}"><path d="M 610 100 Q 665 88 720 100" fill="none" stroke="{{ lineColor.a23 }}" stroke-width="{{ lineWidth.a23 }}" stroke-dasharray="{{ lineDash.a23 }}" stroke-linecap="round"></path></sc-if>
+        <sc-if value="{{ slot3BVisible }}"><path d="M 610 290 Q 665 302 720 290" fill="none" stroke="{{ lineColor.b23 }}" stroke-width="{{ lineWidth.b23 }}" stroke-dasharray="{{ lineDash.b23 }}" stroke-linecap="round"></path></sc-if>
+
+        <sc-if value="{{ mergedVisible }}">
+          <path d="M 610 100 Q 760 130 860 205" fill="none" stroke="#a53f34" stroke-width="3"></path>
+          <path d="M 610 290 Q 760 260 860 210" fill="none" stroke="#a53f34" stroke-width="3"></path>
+        </sc-if>
+      </svg>
+
+      <div style="position:absolute; left:20px; top:180px; width:110px; height:64px; --r:-1deg; transform:rotate(-1deg); display:flex; align-items:center; justify-content:center; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); font-family:'Special Elite',monospace; font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:#3a352e;">
+        <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, #d9584a, #7e2318); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+        Start
+      </div>
+
+      <div style="position:absolute; left:240px; top:78px; width:140px;">
+        <sc-if value="{{ stageA0 }}" hint-placeholder-val="{{ false }}">
+          <div style="--r:1.5deg; transform:rotate(1.5deg); width:104px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; font-family:'Special Elite',monospace; font-size:20px; color:#8a7f68;">???</div>
+        </sc-if>
+        <sc-if value="{{ slot1A.visible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.4s ease; --r:-1.5deg; transform:rotate(-1.5deg); position:relative; width:134px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; gap:8px; padding:0 10px;">
+            <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, {{ slot1A.pinLight }}, {{ slot1A.pinDark }}); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            <sc-if value="{{ slot1A.tick }}"><svg width="16" height="16" viewBox="0 0 14 14" style="flex-shrink:0;"><path d="M2,7 L5,10 L12,3" stroke="#7e2318" stroke-width="2" fill="none"></path></svg></sc-if>
+            <div style="font-size:11px; line-height:1.3; font-family:'Special Elite',monospace; color:#3a352e;"><div style="font-family:'Press Start 2P',monospace; font-size:8px; text-transform:uppercase; letter-spacing:0.06em; color:#8a7f68;">{{ slot1A.line1 }}</div><div style="font-weight:700; font-size:13px;">{{ slot1A.line2 }}</div></div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="position:absolute; left:480px; top:78px; width:140px;">
+        <sc-if value="{{ slot2A.visible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.4s ease; --r:1.5deg; transform:rotate(1.5deg); position:relative; width:134px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; gap:8px; padding:0 10px;">
+            <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, {{ slot2A.pinLight }}, {{ slot2A.pinDark }}); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            <sc-if value="{{ slot2A.tick }}"><svg width="16" height="16" viewBox="0 0 14 14" style="flex-shrink:0;"><path d="M2,7 L5,10 L12,3" stroke="#7e2318" stroke-width="2" fill="none"></path></svg></sc-if>
+            <div style="font-size:11px; line-height:1.3; font-family:'Special Elite',monospace; color:#3a352e;"><div style="font-family:'Press Start 2P',monospace; font-size:8px; text-transform:uppercase; letter-spacing:0.06em; color:#8a7f68;">{{ slot2A.line1 }}</div><div style="font-weight:700; font-size:13px;">{{ slot2A.line2 }}</div></div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="position:absolute; left:720px; top:78px; width:130px;">
+        <sc-if value="{{ slot3AVisible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.4s ease; --r:-1deg; transform:rotate(-1deg); position:relative; width:104px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; font-family:'Special Elite',monospace; font-size:20px; color:#8a7f68;">
+            <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, #8a94a0, #4a4f58); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            ???
+          </div>
+          <sc-if value="{{ deadEndA }}">
+            <div style="animation:fadeInUp 0.5s ease; margin-top:16px; width:220px; background:#2a2620; border:1px solid #4a4038; padding:10px 12px; font-family:'Special Elite',monospace; font-size:13px; line-height:1.5; color:#c9bfa0; font-style:italic; box-shadow:2px 3px 6px rgba(0,0,0,0.4);">"{{ deadEndText }}"</div>
+          </sc-if>
+        </sc-if>
+      </div>
+
+      <div style="position:absolute; left:240px; top:258px; width:140px;">
+        <sc-if value="{{ stageB0 }}" hint-placeholder-val="{{ false }}">
+          <div style="--r:-1.5deg; transform:rotate(-1.5deg); width:104px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; font-family:'Special Elite',monospace; font-size:20px; color:#8a7f68;">???</div>
+        </sc-if>
+        <sc-if value="{{ slot1B.visible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.4s ease; --r:1.5deg; transform:rotate(1.5deg); position:relative; width:134px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; gap:8px; padding:0 10px;">
+            <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, {{ slot1B.pinLight }}, {{ slot1B.pinDark }}); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            <sc-if value="{{ slot1B.tick }}"><svg width="16" height="16" viewBox="0 0 14 14" style="flex-shrink:0;"><path d="M2,7 L5,10 L12,3" stroke="#7e2318" stroke-width="2" fill="none"></path></svg></sc-if>
+            <div style="font-size:11px; line-height:1.3; font-family:'Special Elite',monospace; color:#3a352e;"><div style="font-family:'Press Start 2P',monospace; font-size:8px; text-transform:uppercase; letter-spacing:0.06em; color:#8a7f68;">{{ slot1B.line1 }}</div><div style="font-weight:700; font-size:13px;">{{ slot1B.line2 }}</div></div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="position:absolute; left:480px; top:258px; width:140px;">
+        <sc-if value="{{ slot2B.visible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.4s ease; --r:-1.5deg; transform:rotate(-1.5deg); position:relative; width:134px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; gap:8px; padding:0 10px;">
+            <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, {{ slot2B.pinLight }}, {{ slot2B.pinDark }}); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            <sc-if value="{{ slot2B.tick }}"><svg width="16" height="16" viewBox="0 0 14 14" style="flex-shrink:0;"><path d="M2,7 L5,10 L12,3" stroke="#7e2318" stroke-width="2" fill="none"></path></svg></sc-if>
+            <div style="font-size:11px; line-height:1.3; font-family:'Special Elite',monospace; color:#3a352e;"><div style="font-family:'Press Start 2P',monospace; font-size:8px; text-transform:uppercase; letter-spacing:0.06em; color:#8a7f68;">{{ slot2B.line1 }}</div><div style="font-weight:700; font-size:13px;">{{ slot2B.line2 }}</div></div>
+          </div>
+        </sc-if>
+      </div>
+
+      <div style="position:absolute; left:720px; top:258px; width:130px;">
+        <sc-if value="{{ slot3BVisible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.4s ease; --r:1deg; transform:rotate(1deg); position:relative; width:104px; height:64px; background:#e8dcc0; box-shadow:2px 3px 6px rgba(0,0,0,0.4); display:flex; align-items:center; justify-content:center; font-family:'Special Elite',monospace; font-size:20px; color:#8a7f68;">
+            <div style="position:absolute; top:-8px; left:50%; transform:translateX(-50%); width:14px; height:14px; border-radius:50%; background:radial-gradient(circle at 35% 35%, #8a94a0, #4a4f58); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            ???
+          </div>
+          <sc-if value="{{ deadEndB }}">
+            <div style="animation:fadeInUp 0.5s ease; margin-top:16px; width:220px; background:#2a2620; border:1px solid #4a4038; padding:10px 12px; font-family:'Special Elite',monospace; font-size:13px; line-height:1.5; color:#c9bfa0; font-style:italic; box-shadow:2px 3px 6px rgba(0,0,0,0.4);">"{{ deadEndText }}"</div>
+          </sc-if>
+        </sc-if>
+      </div>
+
+      <div style="position:absolute; left:860px; top:170px; width:150px;">
+        <sc-if value="{{ mergedVisible }}" hint-placeholder-val="{{ false }}">
+          <div style="animation:fadeInUp 0.5s ease; --r:-1deg; transform:rotate(-1deg); position:relative; width:144px; min-height:72px; background:#e8dcc0; box-shadow:3px 4px 8px rgba(0,0,0,0.45); display:flex; align-items:center; gap:8px; padding:12px;">
+            <div style="position:absolute; top:-9px; left:50%; transform:translateX(-50%); width:16px; height:16px; border-radius:50%; background:radial-gradient(circle at 35% 35%, {{ finalPinLight }}, {{ finalPinDark }}); box-shadow:0 1px 3px rgba(0,0,0,0.5);"></div>
+            <sc-if value="{{ finalTick }}"><svg width="18" height="18" viewBox="0 0 14 14" style="flex-shrink:0;"><path d="M2,7 L5,10 L12,3" stroke="#7e2318" stroke-width="2" fill="none"></path></svg></sc-if>
+            <div style="font-size:11px; line-height:1.3; font-family:'Special Elite',monospace; color:#3a352e;"><div style="font-family:'Press Start 2P',monospace; font-size:8px; text-transform:uppercase; letter-spacing:0.06em; color:#8a7f68;">The Real Culprit</div><div style="font-weight:700; font-size:15px;">{{ finalLabel }}</div></div>
+          </div>
+        </sc-if>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { stageA: 0, stageB: 0, stageFinal: 0 };
+
+  componentDidUpdate() {
+    var s = this.state;
+    if (s.stageA >= 5 && s.stageB >= 5 && s.stageFinal === 0) {
+      this.setState({ stageFinal: 1 });
+    }
+  }
+
+  advanceA = () => this.setState(s => ({ stageA: Math.min(5, s.stageA + 1) }));
+  advanceB = () => this.setState(s => ({ stageB: Math.min(5, s.stageB + 1) }));
+  advanceFinal = () => this.setState(s => ({ stageFinal: Math.min(2, s.stageFinal + 1) }));
+  resetA = () => this.setState({ stageA: 0, stageFinal: 0 });
+  resetB = () => this.setState({ stageB: 0, stageFinal: 0 });
+  resetAll = () => this.setState({ stageA: 0, stageB: 0, stageFinal: 0 });
+
+  branchSlots(stage, suspectName, arrest1Name, arrest2Name) {
+    var resolved1 = stage >= 2, resolved2 = stage >= 4;
+    var slot1 = {
+      visible: stage >= 1,
+      tick: resolved1,
+      pinLight: resolved1 ? '#e07862' : '#6fa0c9', pinDark: resolved1 ? '#7e2318' : '#2f5a7a',
+      line1: resolved1 ? 'Arrested:' : 'Suspect:',
+      line2: resolved1 ? arrest1Name : suspectName
+    };
+    var slot2 = {
+      visible: stage >= 3,
+      tick: resolved2,
+      pinLight: resolved2 ? '#e07862' : '#6fa0c9', pinDark: resolved2 ? '#7e2318' : '#2f5a7a',
+      line1: resolved2 ? 'Arrested:' : 'Suspect:',
+      line2: resolved2 ? arrest2Name : suspectName
+    };
+    return { slot1: slot1, slot2: slot2 };
+  }
+
+  lineStyle(resolved) {
+    return {
+      color: resolved ? '#a53f34' : '#7a7160',
+      width: resolved ? '3' : '2',
+      dash: resolved ? '0' : '1,7'
+    };
+  }
+
+  renderVals() {
+    var stageA = this.state.stageA, stageB = this.state.stageB, stageFinal = this.state.stageFinal;
+    var a = this.branchSlots(stageA, 'ex-gf', 'head chef', 'ex-gf');
+    var b = this.branchSlots(stageB, 'assistant', 'assistant', 'ebp');
+
+    var mergeReady = stageA >= 5 && stageB >= 5;
+    var mergedVisible = stageFinal >= 1;
+    var slot3AVisible = stageA >= 5 && !mergedVisible;
+    var slot3BVisible = stageB >= 5 && !mergedVisible;
+
+    var nextLabels = [
+      "Choose Ex-GF's Necklace", 'Complete Playthrough 1', 'Run Court Scene',
+      'Complete Playthrough 2', 'Run Court Scene', 'Branch Resolved'
+    ];
+    var nextLabelsB = [
+      "Choose Assistant's Alibi", 'Complete Playthrough 1', 'Run Court Scene',
+      'Complete Playthrough 2', 'Run Court Scene', 'Branch Resolved'
+    ];
+    var finalLabels = ['Merging Paths...', 'Resolve Case (Playthrough 3)', 'Case Closed'];
+
+    var lA1 = this.lineStyle(stageA >= 1);
+    var lB1 = this.lineStyle(stageB >= 1);
+    var lA12 = this.lineStyle(stageA >= 3);
+    var lB12 = this.lineStyle(stageB >= 3);
+    var lA23 = this.lineStyle(stageA >= 5);
+    var lB23 = this.lineStyle(stageB >= 5);
+
+    return {
+      stageA: stageA, stageB: stageB, stageA5: stageA >= 5, stageB5: stageB >= 5,
+      stageA0: stageA === 0, stageB0: stageB === 0, stageA2: stageA >= 3, stageB2: stageB >= 3,
+      branchAOpacity: stageA >= 5 ? 0.4 : 1, branchBOpacity: stageB >= 5 ? 0.4 : 1,
+      advanceA: this.advanceA, advanceB: this.advanceB, advanceFinal: this.advanceFinal,
+      resetA: this.resetA, resetB: this.resetB, resetAll: this.resetAll,
+      nextLabelA: nextLabels[stageA], nextLabelB: nextLabelsB[stageB], nextLabelFinal: finalLabels[stageFinal],
+      finalDisabled: stageFinal < 1 || stageFinal >= 2,
+      finalOpacity: (stageFinal < 1 || stageFinal >= 2) ? 0.4 : 1,
+      slot1A: a.slot1, slot2A: a.slot2, slot1B: b.slot1, slot2B: b.slot2,
+      slot3AVisible: slot3AVisible, slot3BVisible: slot3BVisible, mergedVisible: mergedVisible,
+      deadEndA: slot3AVisible && stageB < 5,
+      deadEndB: slot3BVisible && stageA < 5,
+      deadEndText: "Hmm, I've reached a dead end. I should go back to the victim's apartment and look from another perspective.",
+      finalTick: stageFinal >= 2,
+      finalPinLight: stageFinal >= 2 ? '#e07862' : '#6fa0c9', finalPinDark: stageFinal >= 2 ? '#7e2318' : '#2f5a7a',
+      finalLabel: stageFinal >= 2 ? 'chief' : '???',
+      lineColor: { startA: lA1.color, startB: lB1.color, a12: lA12.color, b12: lB12.color, a23: lA23.color, b23: lB23.color },
+      lineWidth: { startA: lA1.width, startB: lB1.width, a12: lA12.width, b12: lB12.width, a23: lA23.width, b23: lB23.width },
+      lineDash: { startA: lA1.dash, startB: lB1.dash, a12: lA12.dash, b12: lB12.dash, a23: lA23.dash, b23: lB23.dash },
+      diagramWidth: mergedVisible ? 1040 : (slot3AVisible || slot3BVisible) ? 900 : (Math.max(stageA, stageB) >= 3) ? 660 : 400
+    };
+  }
+}
+</script>
+</body>
+</html>

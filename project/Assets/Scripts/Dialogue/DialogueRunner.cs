@@ -20,7 +20,13 @@ public class DialogueRunner : MonoBehaviour
     Action _onComplete;
     bool _justOpened;
     bool _justClosed;
+    bool _dimOverlayEnabled = true;
+    bool _keyboardAdvanceDisabled;
     Sprite _currentPortrait;
+
+    public void SetDimOverlayEnabled(bool enabled) => _dimOverlayEnabled = enabled;
+
+    public void SetKeyboardAdvanceDisabled(bool disabled) => _keyboardAdvanceDisabled = disabled;
 
     public bool IsPlaying
     {
@@ -46,7 +52,11 @@ public class DialogueRunner : MonoBehaviour
         if (dialogueDimOverlay != null)
         {
             dialogueDimOverlay.SetActive(false);
+
+            dialogueDimOverlay.transform.SetAsLastSibling();
         }
+
+        dialoguePanel.transform.SetAsLastSibling();
         advanceButton?.onClick.AddListener(Advance);
     }
 
@@ -62,7 +72,8 @@ public class DialogueRunner : MonoBehaviour
             return;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0))
+        if (!_keyboardAdvanceDisabled &&
+            (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)))
         {
             Advance();
         }
@@ -81,9 +92,7 @@ public class DialogueRunner : MonoBehaviour
         _onComplete = onComplete;
         _justOpened = true;
         if (dialogueDimOverlay != null)
-        {
-            dialogueDimOverlay.SetActive(true);
-        }
+            dialogueDimOverlay.SetActive(_dimOverlayEnabled);
         dialoguePanel.SetActive(true);
         if (BagUI.Instance != null)
         {
@@ -120,17 +129,26 @@ public class DialogueRunner : MonoBehaviour
         }
         else
         {
-            if (dialogueDimOverlay != null)
-            {
-                dialogueDimOverlay.SetActive(false);
-            }
-            dialoguePanel.SetActive(false);
-            if (BagUI.Instance != null)
-            {
-                BagUI.Instance.RefreshBagHudVisibility();
-            }
-            _justClosed = true;
-            _onComplete?.Invoke();
+            CloseDialogue();
         }
+    }
+
+    public void ForceComplete()
+    {
+        if (!IsPlaying) return;
+        CloseDialogue();
+    }
+
+    void CloseDialogue()
+    {
+        if (dialogueDimOverlay != null)
+            dialogueDimOverlay.SetActive(false);
+        _dimOverlayEnabled = true;
+        _keyboardAdvanceDisabled = false;
+        dialoguePanel.SetActive(false);
+        if (BagUI.Instance != null)
+            BagUI.Instance.RefreshBagHudVisibility();
+        _justClosed = true;
+        _onComplete?.Invoke();
     }
 }

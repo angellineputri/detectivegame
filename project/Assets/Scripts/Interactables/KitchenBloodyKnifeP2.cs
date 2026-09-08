@@ -1,9 +1,5 @@
 using UnityEngine;
 
-// P2 knife-rack evidence. The bloody knife has been recovered by police and sealed
-// in an evidence bag on its hook — but never sent to the lab. Collecting it lets
-// the player submit it via the Kitchen_P2 outcome table (TriggerDialogue →
-// grants lab_results → loads ExGF_Diner_P2).
 public class KitchenBloodyKnifeP2 : Interactable
 {
     void Reset()

@@ -1,27 +1,33 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-// Attach to any persistent GameObject in MainMenu.unity (e.g. the Canvas root).
-//
-// WHY THIS EXISTS: Unity serializes button OnClick() references to a specific
-// GameObject instance. If that instance is destroyed on scene reload (which happens
-// to the GameManager duplicate in Awake), the reference goes dead and the button
-// silently does nothing. This script lives in the MainMenu hierarchy so it IS
-// recreated on reload — and it looks up GameManager.Instance fresh at call time
-// rather than holding a stale serialized reference.
-//
-// WIRING: In the Inspector, point every MainMenu button's OnClick() at this
-// component's methods, NOT at the GameManager GameObject directly.
 public class MainMenuController : MonoBehaviour
 {
-    public void OnStartClicked()
+    [Header("Scene names")]
+    [SerializeField] string caseBriefingScene = "SelectCaseScreen";
+    [SerializeField] string endingsScene      = "Endings";
+    [SerializeField] string settingsScene     = "Settings";
+    [SerializeField] string creditsScene      = "Credits";
+
+    [Header("Buttons (wired by setup tool)")]
+    [SerializeField] Button startButton;
+    [SerializeField] Button endingsButton;
+    [SerializeField] Button settingsButton;
+    [SerializeField] Button creditsButton;
+
+    void Start()
     {
-        if (GameManager.Instance == null)
-        {
-            Debug.LogWarning("[MainMenuController] GameManager.Instance is null — cannot load SelectCaseScreen.");
-            return;
-        }
-        GameManager.Instance.LoadScene("SelectCaseScreen");
+        startButton?.onClick.AddListener(OnStartClicked);
+        endingsButton?.onClick.AddListener(OnEndings);
+        settingsButton?.onClick.AddListener(OnSettings);
+        creditsButton?.onClick.AddListener(OnCredits);
     }
+
+    public void OnStartClicked()  => Load(caseBriefingScene);
+    public void OnEndings()       => Load(endingsScene);
+    public void OnSettings()      => Load(settingsScene);
+    public void OnCredits()       => Load(creditsScene);
 
     public void OnQuitClicked()
     {
@@ -30,5 +36,14 @@ public class MainMenuController : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    void Load(string scene)
+    {
+        if (string.IsNullOrEmpty(scene)) return;
+        if (GameManager.Instance != null)
+            GameManager.Instance.LoadScene(scene);
+        else
+            SceneManager.LoadScene(scene);
     }
 }

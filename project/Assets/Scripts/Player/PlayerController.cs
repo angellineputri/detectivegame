@@ -24,23 +24,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!CanMove)
-        {
-            _input = Vector2.zero;
-        }
-        else
-        {
-            _input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        _input = CanMove
+            ? new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized
+            : Vector2.zero;
 
-            if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            bool uiConsumed = (UIManager.Instance != null && (UIManager.Instance.IsPopupVisible || UIManager.Instance.WasJustClosed))
+                           || (DialogueRunner.Instance != null && (DialogueRunner.Instance.IsPlaying || DialogueRunner.Instance.WasJustClosed));
+
+            if (!uiConsumed && !Interactable.GlobalInteractionLocked)
             {
-                bool uiConsumed = (UIManager.Instance != null && (UIManager.Instance.IsPopupVisible || UIManager.Instance.WasJustClosed))
-                               || (DialogueRunner.Instance != null && (DialogueRunner.Instance.IsPlaying || DialogueRunner.Instance.WasJustClosed));
-
-                if (!uiConsumed)
-                {
-                    TryInteractWithNearest();
-                }
+                TryInteractWithNearest();
             }
         }
 

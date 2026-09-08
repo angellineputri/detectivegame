@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ComingSoonSlot1
   m_EditorClassIdentifier: 
   caseID: 
-  caseName: '?'
+  caseName: Coming Soon
   description: 
   startingScene: 
   isUnlocked: 0

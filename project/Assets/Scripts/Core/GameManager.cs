@@ -19,6 +19,20 @@ public class GameManager : MonoBehaviour
 
     public string LastScene { get; private set; }
 
+    public Vector2 PendingSpawnPosition { get; private set; }
+    public bool    HasPendingSpawn      { get; private set; }
+
+    public void SetPendingSpawn(Vector2 position)
+    {
+        PendingSpawnPosition = position;
+        HasPendingSpawn      = true;
+    }
+
+    public void ConsumePendingSpawn()
+    {
+        HasPendingSpawn = false;
+    }
+
     void Awake()
     {
         if (Instance != null && Instance != this)
@@ -37,10 +51,6 @@ public class GameManager : MonoBehaviour
         FoundClues.Clear();
         _flags.Clear();
         Debug.Log("[GameManager] Case selected: " + caseID);
-        // TODO: path selection (exgf / assistant) within City of Lies still needs a home.
-        // The player picks which suspect angle to investigate somewhere after Diner loads —
-        // not on the Select Case screen. Decide where that choice lives and store it here
-        // (e.g. a SelectedPathID string, similar to SelectedCaseID).
     }
 
     public void AdvancePlaythrough()

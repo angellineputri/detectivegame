@@ -23,7 +23,6 @@ public class Interactable : MonoBehaviour
     [Tooltip("Whether this clue appears in the evidence bag.")]
     public bool addToBag = true;
 
-
     [Header("Gating")]
 
     [Tooltip("0 = visible in any playthrough. Set to 1 or 2 to restrict.")]
@@ -38,14 +37,16 @@ public class Interactable : MonoBehaviour
     [Tooltip("Maximum distance from the player required to interact.")]
     public float interactRange = 2f;
 
-
     [Header("Visuals")]
 
     [Tooltip("Optional child GameObject to hide when this object is inactive.")]
     [SerializeField] GameObject visualRoot;
 
-    // Set true at runtime to suppress highlight and block clicks without deactivating the object.
     [NonSerialized] public bool interactionLocked;
+
+    public static bool GlobalHighlightOverride;
+
+    public static bool GlobalInteractionLocked;
 
     SpriteRenderer _spriteRenderer;
     Color _originalColor;
@@ -74,7 +75,9 @@ public class Interactable : MonoBehaviour
     {
         if (_spriteRenderer == null) return;
 
-        bool playerInControl = PlayerController.Instance == null || PlayerController.Instance.CanMove;
+        bool playerInControl = GlobalHighlightOverride ||
+                               PlayerController.Instance == null ||
+                               PlayerController.Instance.CanMove;
         bool shouldHighlight = playerInControl && !interactionLocked && IsActiveThisPlaythrough() && InRange();
 
         if (shouldHighlight && !_isHighlighted)
@@ -90,7 +93,6 @@ public class Interactable : MonoBehaviour
             Debug.Log("Highlight OFF: " + gameObject.name);
         }
     }
-
 
     public virtual void RefreshActiveState()
     {
@@ -115,7 +117,6 @@ public class Interactable : MonoBehaviour
         }
     }
 
-
     public bool IsActiveThisPlaythrough()
     {
         if (GameManager.Instance == null)
@@ -134,10 +135,8 @@ public class Interactable : MonoBehaviour
         return playthroughOk && flagOk;
     }
 
-
     protected bool HasRequiredClue()
     {
-        // No clue requirement means the object can be interacted with.
         if (string.IsNullOrEmpty(requiredClue))
         {
             return true;
@@ -151,7 +150,6 @@ public class Interactable : MonoBehaviour
         return GameManager.Instance.HasClue(requiredClue);
     }
 
-
     protected void ShowMissingClueMessage()
     {
         UIManager.Instance?.ShowCluePopup(
@@ -159,7 +157,6 @@ public class Interactable : MonoBehaviour
             ""
         );
     }
-
 
     protected virtual void OnMouseDown()
     {
@@ -205,7 +202,6 @@ public class Interactable : MonoBehaviour
         OnInteract();
     }
 
-
     public void TriggerInteract()
     {
         if (!IsActiveThisPlaythrough())
@@ -222,7 +218,6 @@ public class Interactable : MonoBehaviour
         OnInteract();
     }
 
-
     protected bool InRange()
     {
         if (PlayerController.Instance == null)
@@ -238,7 +233,6 @@ public class Interactable : MonoBehaviour
         return dist <= interactRange;
     }
 
-
     protected virtual void OnInteract()
     {
         if (!string.IsNullOrEmpty(noticeText))
@@ -250,7 +244,6 @@ public class Interactable : MonoBehaviour
             );
         }
     }
-
 
     protected void OnRevealComplete()
     {

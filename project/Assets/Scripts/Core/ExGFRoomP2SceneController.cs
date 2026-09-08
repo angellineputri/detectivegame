@@ -1,16 +1,6 @@
 using System.Collections;
 using UnityEngine;
 
-// Playthrough 2 — Vivian's bedroom.
-// Collect-first, resolve-later pattern (same as Diner/Kitchen P1 transitions):
-//   1. Player explores and picks up all 4 objects — each just adds its clue to the bag.
-//   2. Once all 4 are in the bag, a "thinking" Marcus dialogue plays automatically.
-//   3. After that dialogue, ForceOpenForDecision opens the bag panel.
-//   4. Player picks one item — outcome table resolves it:
-//        bed / nightstand / wardrobe → GameOver
-//        sticky note → TriggerDialogue (reaction line) → LoadScene ExGF_Diner_P2
-//
-// Bag starts empty — AdvancePlaythrough() cleared it at the end of P1.
 public class ExGFRoomP2SceneController : MonoBehaviour
 {
     [Header("Scene")]
@@ -33,13 +23,13 @@ public class ExGFRoomP2SceneController : MonoBehaviour
     };
 
     bool _allCluesFound;
-    bool _decisionOpened;
 
     void Start()
     {
+        CaseBoardManager.Instance?.ExGf_P2_Pin();
+
         BagUI.Instance?.SetOutcomeTable(bedroomP2OutcomeTable);
 
-        // Activate any P2-gated interactables (sticky note has requiredPlaythrough = 2).
         foreach (Interactable i in FindObjectsOfType<Interactable>())
         {
             i.RefreshActiveState();
@@ -50,11 +40,9 @@ public class ExGFRoomP2SceneController : MonoBehaviour
             GameManager.Instance.OnClueAdded += OnClueAdded;
         }
 
-        // If the player re-enters this scene after already collecting everything, open the panel.
         if (AllCluesCollected())
         {
             _allCluesFound   = true;
-            _decisionOpened  = true;
             BagUI.Instance?.ForceOpenForDecision(decisionTitle, null);
         }
     }
@@ -102,7 +90,6 @@ public class ExGFRoomP2SceneController : MonoBehaviour
             yield return new WaitUntil(() => done);
         }
 
-        _decisionOpened = true;
         BagUI.Instance?.ForceOpenForDecision(decisionTitle, null);
     }
 }

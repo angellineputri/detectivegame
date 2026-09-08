@@ -3,33 +3,30 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// Scene-specific controller — attach to a single empty GameObject in SelectCaseScreen.unity.
-// Not persistent (no DontDestroyOnLoad); relies on GameManager for state handoff.
 public class CaseSelectionManager : MonoBehaviour
 {
     [Header("Cases")]
-    // Drag your CaseData ScriptableObject assets here, one per tab, in display order.
+
     public CaseData[] cases;
 
     [Header("Tabs")]
-    // The TabStack RectTransform — parent for instantiated CaseEntryUI tab prefabs.
+
     public Transform caseListParent;
-    // Prefab with a CaseEntryUI component, a rotated TMP label, and a Button.
+
     public GameObject caseEntryPrefab;
 
     [Header("Ticket Detail Panel")]
-    // Optional: a TMP label that updates with the selected case name (e.g. a subtitle below the title).
-    // Can be left unassigned if there is no dedicated case-name label in the ticket.
+
     public TextMeshProUGUI detailCaseName;
-    // InfoText TMP inside the left column — shows CaseData.description.
+
     public TextMeshProUGUI detailDescription;
-    // ObjectivesText TMP inside the right column — shows objectives placeholder.
+
     public TextMeshProUGUI objectivesText;
-    // "Coming Soon" or locked notice object inside the ticket, hidden when unlocked case is selected.
+
     public GameObject lockedNotice;
 
     [Header("Buttons")]
-    // Wire OnConfirmClicked() and OnBackClicked() via Inspector onClick events.
+
     public Button confirmButton;
 
     CaseData _selectedCase;
@@ -43,7 +40,6 @@ public class CaseSelectionManager : MonoBehaviour
 
         PopulateTabs();
 
-        // Auto-select the first unlocked case so the ticket isn't blank on open.
         foreach (CaseData c in cases)
         {
             if (c.isUnlocked)
@@ -79,7 +75,7 @@ public class CaseSelectionManager : MonoBehaviour
             detailDescription.text = caseData.description;
 
         if (objectivesText != null)
-            objectivesText.text = caseData.description; // placeholder — replace with a dedicated field later
+            objectivesText.text = caseData.description;
 
         if (lockedNotice != null)
             lockedNotice.SetActive(!caseData.isUnlocked);

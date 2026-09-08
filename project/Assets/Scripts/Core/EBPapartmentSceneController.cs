@@ -26,6 +26,11 @@ public class EBPapartmentSceneController : MonoBehaviour
         return GameManager.Instance.GetFlag(requiredFlagToLeave);
     }
 
+    void Start()
+    {
+        CaseBoardManager.Instance?.Assistant_P2_Pin();
+    }
+
     public void GoToNextScene()
     {
         if (!CanLeave())
@@ -40,6 +45,7 @@ public class EBPapartmentSceneController : MonoBehaviour
             return;
         }
 
+        CaseBoardManager.Instance?.Assistant_P2_Arrest();
         GameManager.Instance?.LoadScene(nextSceneName);
     }
 }
