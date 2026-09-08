@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  body { margin: 0; background: #1c2024; }
+  a { color: #6f8f52; }
+  a:hover { color: #63a39d; }
+</style>
+</helmet>
+
+<div style="position:relative; width:100%; min-height:100vh; background:#1c2024; font-family:'VT323',monospace; display:flex; align-items:center; justify-content:center; overflow:hidden; padding:24px; box-sizing:border-box;">
+
+  <!-- placeholder game scene behind the popup -->
+  <div style="position:absolute; inset:0; background:#2a2f35;">
+    <image-slot id="scene-bg" shape="rect" placeholder="Game scene behind popup" style="width:100%; height:100%; opacity:0.55;"></image-slot>
+  </div>
+  <div style="position:absolute; inset:0; background:rgba(14,17,20,0.35);"></div>
+
+  <div style="position:relative; width:min(92vw,760px); background:#e4e7ea; border:6px solid #0e1114; box-shadow:10px 10px 0 rgba(0,0,0,0.5); padding:28px 32px 32px; box-sizing:border-box; display:flex; flex-direction:column; gap:22px;">
+
+    <!-- header: evidences mode has close button, next mode does not -->
+    <sc-if value="{{ isEvidences }}" hint-placeholder-val="{{ true }}">
+      <div style="display:flex; align-items:center; gap:16px;">
+        <button style="font-family:'Press Start 2P',monospace; font-size:16px; width:40px; height:40px; background:#ccd2d8; border:4px solid #0e1114; color:#242a30; cursor:pointer; flex:0 0 auto;" style-hover="background:#c3cad1;">X</button>
+        <div style="font-family:'Press Start 2P',monospace; font-size:20px; letter-spacing:0.03em; color:#242a30;">EVIDENCES</div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ isNext }}" hint-placeholder-val="{{ false }}">
+      <div style="font-family:'Press Start 2P',monospace; font-size:20px; letter-spacing:0.03em; color:#242a30;">WHERE TO NEXT?</div>
+    </sc-if>
+
+    <!-- evidence list -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; min-height:60px; max-height:min(50vh,420px); overflow-y:auto; padding-right:6px;">
+      <sc-for list="{{ items }}" as="item" hint-placeholder-count="4">
+        <div style="background:#f4f5f6; border:4px solid #0e1114; padding:12px 18px; font-family:'VT323',monospace; font-size:22px; color:#242a30;">{{ item.name }}</div>
+      </sc-for>
+    </div>
+
+    <!-- footer action -->
+    <div style="display:flex; justify-content:flex-end; margin-top:4px;">
+      <sc-if value="{{ isEvidences }}" hint-placeholder-val="{{ true }}">
+        <button style="font-family:'Press Start 2P',monospace; font-size:14px; padding:16px 28px; background:#4f8a86; border:4px solid #0e1114; color:#e4e7ea; cursor:pointer;" style-hover="background:#63a39d;">MAKE A MOVE</button>
+      </sc-if>
+      <sc-if value="{{ isNext }}" hint-placeholder-val="{{ false }}">
+        <button style="font-family:'Press Start 2P',monospace; font-size:14px; padding:16px 28px; background:#4f8a86; border:4px solid #0e1114; color:#e4e7ea; cursor:pointer;" style-hover="background:#63a39d;">KEEP EXPLORING</button>
+      </sc-if>
+    </div>
+
+  </div>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:900,&quot;height&quot;:700},&quot;mode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;evidences&quot;,&quot;options&quot;:[&quot;evidences&quot;,&quot;next&quot;],&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const mode = this.props.mode ?? 'evidences';
+    const allItems = [
+      'Meeting Note', 'Scribbled Photo', 'Torn Letter', 'Hotel Receipt', 'Spare Key',
+      'Bloodied Glove', 'Witness Statement', 'Pawn Ticket', 'Burner Phone', 'Threatening Note',
+      'Photograph', 'Diary Page', 'Business Card', 'Train Ticket', 'Locket',
+    ].map((name, i) => ({ name }));
+    const items = mode === 'evidences' ? allItems : allItems.slice(0, 1);
+    return {
+      isEvidences: mode === 'evidences',
+      isNext: mode === 'next',
+      items,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -19,62 +19,49 @@ public class BagUI : MonoBehaviour
     [SerializeField] GameObject reviewPanel;
     [SerializeField] GameObject bagReviewDimOverlay;
     [SerializeField] TMP_Text panelTitleText;
-    [SerializeField] Transform clueListContainer;
-    [SerializeField] GameObject clueEntryPrefab;
+    [SerializeField] RectTransform clueGridRoot;
     [SerializeField] Button closeButton;
     [SerializeField] Button keepExploringButton;
 
+    [Header("Cell Font")]
+    [SerializeField] TMP_FontAsset vt323;
+
+    static readonly Color32 CellBg = new Color32(0xf4, 0xf5, 0xf6, 0xff);
+    static readonly Color32 CellInk = new Color32(0x24, 0x2a, 0x30, 0xff);
+    static readonly Color32 BorderColor = new Color32(0x0e, 0x11, 0x14, 0xff);
+    const float CellHeight = 68f;
+    const float BorderWidth = 4f;
+
     Dictionary<string, string> _displayNames = new Dictionary<string, string>();
     HashSet<string> _spawnedClueIDs = new HashSet<string>();
-    List<GameObject> _spawnedEntries = new List<GameObject>();
+    List<GameObject> _spawnedRows = new List<GameObject>();
+    int _itemCount;
 
     ClueOutcomeTable _currentTable;
-
     System.Action _onKeepExploring;
     bool _forcedDecisionMode;
     bool _hudPinned;
-    bool _suppressHudAutoReveal;
+    bool _tutorialCloseOnly;
     string _defaultTitle;
 
     void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
+        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
         SetHudVisible(false);
-        reviewPanel.SetActive(false);
-        if (bagReviewDimOverlay != null)
-        {
-            bagReviewDimOverlay.SetActive(false);
-        }
-        bagButton.onClick.AddListener(OnBagButtonClicked);
-        closeButton.onClick.AddListener(CloseReviewPanel);
+        if (reviewPanel != null) reviewPanel.SetActive(false);
+        if (bagReviewDimOverlay != null) bagReviewDimOverlay.SetActive(false);
 
-        if (panelTitleText != null)
-        {
-            _defaultTitle = panelTitleText.text;
-        }
-        else
-        {
-            _defaultTitle = "";
-        }
+        bagButton?.onClick.AddListener(OnBagButtonClicked);
+        closeButton?.onClick.AddListener(CloseReviewPanel);
+        keepExploringButton?.onClick.AddListener(OnKeepExploringClicked);
+        makeAMoveButton?.onClick.AddListener(OnMakeAMoveClicked);
 
-        if (keepExploringButton != null)
-        {
-            keepExploringButton.onClick.AddListener(OnKeepExploringClicked);
-            keepExploringButton.gameObject.SetActive(false);
-        }
+        if (keepExploringButton != null) keepExploringButton.gameObject.SetActive(false);
 
-        if (makeAMoveButton != null)
-        {
-            makeAMoveButton.onClick.AddListener(OnMakeAMoveClicked);
-        }
+        _defaultTitle = panelTitleText != null ? panelTitleText.text : "";
 
         UpdateBadge();
     }
@@ -99,42 +86,29 @@ public class BagUI : MonoBehaviour
 
     public void RegisterClueDisplayName(string clueID, string name)
     {
-        if (string.IsNullOrEmpty(name))
-        {
-            _displayNames[clueID] = clueID;
-        }
-        else
-        {
-            _displayNames[clueID] = name;
-        }
+        _displayNames[clueID] = string.IsNullOrEmpty(name) ? clueID : name;
     }
 
     public string GetDisplayName(string clueID)
     {
         string name;
-        if (_displayNames.TryGetValue(clueID, out name))
-        {
-            return name;
-        }
-        return clueID;
+        return _displayNames.TryGetValue(clueID, out name) ? name : clueID;
     }
+
+    public void SetOutcomeTable(ClueOutcomeTable table) => _currentTable = table;
 
     public bool IsReviewPanelOpen => reviewPanel != null && reviewPanel.activeSelf;
 
-    public void SetOutcomeTable(ClueOutcomeTable table)
-    {
-        _currentTable = table;
-    }
-
     public void EnterTutorialCloseOnly()
     {
-        if (makeAMoveButton != null)
-            makeAMoveButton.gameObject.SetActive(false);
+        _tutorialCloseOnly = true;
+        if (makeAMoveButton != null) makeAMoveButton.gameObject.SetActive(false);
     }
 
     public void ExitTutorialCloseOnly()
     {
-        if (makeAMoveButton != null)
+        _tutorialCloseOnly = false;
+        if (!_forcedDecisionMode && makeAMoveButton != null)
             makeAMoveButton.gameObject.SetActive(true);
     }
 
@@ -146,39 +120,23 @@ public class BagUI : MonoBehaviour
 
     public void SetHudVisible(bool visible)
     {
-        if (bagHud != null)
-        {
-            bagHud.SetActive(visible);
-        }
-
+        if (bagHud != null) bagHud.SetActive(visible);
         if (visible && EventSystem.current != null)
-        {
             EventSystem.current.SetSelectedGameObject(null);
-        }
-
         if (!visible)
         {
-            if (reviewPanel != null)
-            {
-                reviewPanel.SetActive(false);
-            }
-            if (bagReviewDimOverlay != null)
-            {
-                bagReviewDimOverlay.SetActive(false);
-            }
+            if (reviewPanel != null) reviewPanel.SetActive(false);
+            if (bagReviewDimOverlay != null) bagReviewDimOverlay.SetActive(false);
         }
     }
 
     public void RefreshBagHudVisibility()
     {
         if (_hudPinned) return;
-        bool anyOpen = reviewPanel.activeSelf
+        bool anyOpen = (reviewPanel != null && reviewPanel.activeSelf)
             || (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
             || (UIManager.Instance != null && UIManager.Instance.IsPopupVisible);
-        if (bagHud != null)
-        {
-            bagHud.SetActive(!anyOpen);
-        }
+        if (bagHud != null) bagHud.SetActive(!anyOpen);
     }
 
     public void ForceOpenForDecision(string title, System.Action onKeepExploring)
@@ -186,34 +144,18 @@ public class BagUI : MonoBehaviour
         _forcedDecisionMode = true;
         _onKeepExploring = onKeepExploring;
 
-        if (panelTitleText != null)
-        {
-            panelTitleText.text = title;
-        }
+        if (panelTitleText != null) panelTitleText.text = title;
 
-        closeButton.gameObject.SetActive(false);
+        closeButton?.gameObject.SetActive(false);
+        keepExploringButton?.gameObject.SetActive(true);
+        makeAMoveButton?.gameObject.SetActive(false);
 
-        if (keepExploringButton != null)
-        {
-            keepExploringButton.gameObject.SetActive(true);
-        }
-
-        if (makeAMoveButton != null)
-        {
-            makeAMoveButton.gameObject.SetActive(false);
-        }
-
-        if (bagReviewDimOverlay != null)
-        {
-            bagReviewDimOverlay.SetActive(true);
-        }
-        reviewPanel.SetActive(true);
+        if (bagReviewDimOverlay != null) bagReviewDimOverlay.SetActive(true);
+        if (reviewPanel != null) reviewPanel.SetActive(true);
+        if (clueGridRoot != null) LayoutRebuilder.ForceRebuildLayoutImmediate(clueGridRoot);
         RefreshBagHudVisibility();
 
-        if (PlayerController.Instance != null)
-        {
-            PlayerController.Instance.CanMove = false;
-        }
+        if (PlayerController.Instance != null) PlayerController.Instance.CanMove = false;
     }
 
     void ExitForcedDecision()
@@ -221,62 +163,32 @@ public class BagUI : MonoBehaviour
         _forcedDecisionMode = false;
         _onKeepExploring = null;
 
-        if (panelTitleText != null)
-        {
-            panelTitleText.text = _defaultTitle;
-        }
+        if (panelTitleText != null) panelTitleText.text = _defaultTitle;
 
-        closeButton.gameObject.SetActive(true);
-
-        if (keepExploringButton != null)
-        {
-            keepExploringButton.gameObject.SetActive(false);
-        }
-
-        if (makeAMoveButton != null)
-        {
-            makeAMoveButton.gameObject.SetActive(true);
-        }
-    }
-
-    void HandleClueAdded(string clueID)
-    {
-        if (!_displayNames.ContainsKey(clueID))
-        {
-            return;
-        }
-
-        if (_spawnedClueIDs.Contains(clueID))
-        {
-            return;
-        }
-
-        string displayName = _displayNames[clueID];
-        _spawnedClueIDs.Add(clueID);
-        SpawnEntry(clueID, displayName);
-        UpdateBadge();
+        closeButton?.gameObject.SetActive(true);
+        keepExploringButton?.gameObject.SetActive(false);
+        if (!_tutorialCloseOnly)
+            makeAMoveButton?.gameObject.SetActive(true);
     }
 
     void OnBagButtonClicked()
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) return;
-
         if (_forcedDecisionMode) return;
 
         if (DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
         {
-            if (_hudPinned)
-                DialogueRunner.Instance.ForceComplete();
-            else
-                return;
+            if (_hudPinned) DialogueRunner.Instance.ForceComplete();
+            else return;
         }
 
         if (UIManager.Instance != null && UIManager.Instance.IsPopupVisible) return;
 
-        bool newState = !reviewPanel.activeSelf;
-        if (bagReviewDimOverlay != null)
-            bagReviewDimOverlay.SetActive(newState);
-        reviewPanel.SetActive(newState);
+        bool newState = reviewPanel != null && !reviewPanel.activeSelf;
+        if (bagReviewDimOverlay != null) bagReviewDimOverlay.SetActive(newState);
+        if (reviewPanel != null) reviewPanel.SetActive(newState);
+        if (newState && clueGridRoot != null)
+            LayoutRebuilder.ForceRebuildLayoutImmediate(clueGridRoot);
         RefreshBagHudVisibility();
     }
 
@@ -285,9 +197,8 @@ public class BagUI : MonoBehaviour
         if (_hudPinned && DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
             DialogueRunner.Instance.ForceComplete();
 
-        if (bagReviewDimOverlay != null)
-            bagReviewDimOverlay.SetActive(false);
-        reviewPanel.SetActive(false);
+        if (bagReviewDimOverlay != null) bagReviewDimOverlay.SetActive(false);
+        if (reviewPanel != null) reviewPanel.SetActive(false);
         RefreshBagHudVisibility();
     }
 
@@ -301,33 +212,115 @@ public class BagUI : MonoBehaviour
         System.Action cb = _onKeepExploring;
         ExitForcedDecision();
         CloseReviewPanel();
+        if (PlayerController.Instance != null) PlayerController.Instance.CanMove = true;
+        cb?.Invoke();
+    }
 
-        if (PlayerController.Instance != null)
-        {
-            PlayerController.Instance.CanMove = true;
-        }
+    void HandleClueAdded(string clueID)
+    {
+        if (_spawnedClueIDs.Contains(clueID)) return;
+        if (!_displayNames.ContainsKey(clueID))
+            _displayNames[clueID] = clueID;
 
-        if (cb != null)
-        {
-            cb();
-        }
+        _spawnedClueIDs.Add(clueID);
+        SpawnEntry(clueID, _displayNames[clueID]);
+        UpdateBadge();
+    }
+
+    public void ClearBag()
+    {
+        foreach (GameObject row in _spawnedRows)
+            if (row != null) Destroy(row);
+        _spawnedRows.Clear();
+        _spawnedClueIDs.Clear();
+        _displayNames.Clear();
+        _itemCount = 0;
+        CloseReviewPanel();
+        UpdateBadge();
+    }
+
+    void UpdateBadge()
+    {
+        if (badgeText != null)
+            badgeText.text = _spawnedClueIDs.Count > 0 ? _spawnedClueIDs.Count.ToString() : "";
     }
 
     void SpawnEntry(string clueID, string displayName)
     {
-        GameObject go = Instantiate(clueEntryPrefab, clueListContainer);
-        _spawnedEntries.Add(go);
+        if (clueGridRoot == null) return;
 
-        go.GetComponentInChildren<TMP_Text>().text = displayName;
-        go.GetComponent<Button>().onClick.AddListener(() => OnClueEntryClicked(clueID));
+        GameObject row;
+        if (_itemCount % 2 == 0)
+        {
+            row = new GameObject("Row", typeof(RectTransform));
+            row.transform.SetParent(clueGridRoot, false);
+
+            HorizontalLayoutGroup hlg = row.AddComponent<HorizontalLayoutGroup>();
+            hlg.spacing = 10f;
+            hlg.childForceExpandWidth = true;
+            hlg.childForceExpandHeight = true;
+            hlg.childControlWidth = true;
+            hlg.childControlHeight = true;
+
+            LayoutElement le = row.AddComponent<LayoutElement>();
+            le.minHeight = CellHeight;
+            le.preferredHeight = CellHeight;
+
+            _spawnedRows.Add(row);
+        }
+        else
+        {
+            row = _spawnedRows[_spawnedRows.Count - 1];
+        }
+
+        MakeCell(row.transform, clueID, displayName);
+        _itemCount++;
+    }
+
+    void MakeCell(Transform parent, string clueID, string displayName)
+    {
+        GameObject outer = new GameObject("Cell", typeof(RectTransform), typeof(Image));
+        outer.transform.SetParent(parent, false);
+        outer.GetComponent<Image>().color = BorderColor;
+
+        GameObject inner = new GameObject("Fill", typeof(RectTransform), typeof(Image));
+        inner.transform.SetParent(outer.transform, false);
+        inner.GetComponent<Image>().color = CellBg;
+        RectTransform innerRT = inner.GetComponent<RectTransform>();
+        innerRT.anchorMin = Vector2.zero;
+        innerRT.anchorMax = Vector2.one;
+        innerRT.offsetMin = new Vector2(BorderWidth, BorderWidth);
+        innerRT.offsetMax = new Vector2(-BorderWidth, -BorderWidth);
+
+        GameObject labelGO = new GameObject("Label", typeof(RectTransform), typeof(TextMeshProUGUI));
+        labelGO.transform.SetParent(inner.transform, false);
+        TextMeshProUGUI tmp = labelGO.GetComponent<TextMeshProUGUI>();
+        tmp.text = displayName;
+        tmp.fontSize = 22;
+        tmp.color = CellInk;
+        tmp.alignment = TextAlignmentOptions.MidlineLeft;
+        tmp.overflowMode = TextOverflowModes.Ellipsis;
+        if (vt323 != null) tmp.font = vt323;
+        RectTransform textRT = labelGO.GetComponent<RectTransform>();
+        textRT.anchorMin = Vector2.zero;
+        textRT.anchorMax = Vector2.one;
+        textRT.offsetMin = new Vector2(18f, 12f);
+        textRT.offsetMax = new Vector2(-18f, -12f);
+
+        Button btn = outer.AddComponent<Button>();
+        btn.targetGraphic = inner.GetComponent<Image>();
+        ColorBlock cb = ColorBlock.defaultColorBlock;
+        cb.normalColor = CellBg;
+        cb.highlightedColor = new Color32(0xd0, 0xd3, 0xd6, 0xff);
+        cb.pressedColor = new Color32(0xb8, 0xbb, 0xbe, 0xff);
+        cb.fadeDuration = 0.05f;
+        btn.colors = cb;
+        btn.onClick.AddListener(() => OnClueEntryClicked(clueID));
     }
 
     void OnClueEntryClicked(string clueID)
     {
-        if (!_forcedDecisionMode)
-        {
-            return;
-        }
+        if (!_forcedDecisionMode) return;
 
         if (_currentTable == null)
         {
@@ -337,54 +330,16 @@ public class BagUI : MonoBehaviour
         }
 
         ClueOutcome outcome = _currentTable.GetOutcome(clueID);
-
         if (outcome == null)
         {
             CloseReviewPanel();
             ExitForcedDecision();
-
-            if (GameOverScreen.Instance != null)
-            {
-                GameOverScreen.Instance.Show();
-            }
-
+            GameOverScreen.Instance?.Show();
             return;
         }
 
         CloseReviewPanel();
         ExitForcedDecision();
-
-        if (ItemSelectionUI.Instance != null)
-        {
-            ItemSelectionUI.Instance.ExecuteOutcome(outcome);
-        }
-    }
-
-    public void ClearBag()
-    {
-        foreach (GameObject go in _spawnedEntries)
-        {
-            Destroy(go);
-        }
-
-        _spawnedEntries.Clear();
-        _spawnedClueIDs.Clear();
-        _displayNames.Clear();
-        UpdateBadge();
-    }
-
-    void UpdateBadge()
-    {
-        if (badgeText != null)
-        {
-            if (_spawnedClueIDs.Count > 0)
-            {
-                badgeText.text = _spawnedClueIDs.Count.ToString();
-            }
-            else
-            {
-                badgeText.text = "";
-            }
-        }
+        ItemSelectionUI.Instance?.ExecuteOutcome(outcome);
     }
 }

@@ -10,9 +10,7 @@ public class VictimApartmentSceneController : MonoBehaviour
     [SerializeField] ClueOutcomeTable outcomeTable;
 
     [Header("Scene Interactables")]
-    [Tooltip("The 'Notes' GameObject with ApartmentMeetingNote attached.")]
     [SerializeField] Interactable noteInteractable;
-    [Tooltip("The 'Photo' GameObject with ApartmentPhoto attached.")]
     [SerializeField] Interactable photoInteractable;
 
     [Header("Chief Dialogue — Onboarding")]
@@ -28,7 +26,6 @@ public class VictimApartmentSceneController : MonoBehaviour
     [SerializeField] DialogueData chiefPickedExGF;
 
     [Header("Assistant Branch")]
-    [Tooltip("Scene to load when the player picks the meeting note. Position is saved so the apartment can restore it.")]
     [SerializeField] string assistantSceneName = "apartment";
 
     [Header("Decision Panel")]
@@ -58,6 +55,7 @@ public class VictimApartmentSceneController : MonoBehaviour
         {
             BagUI.Instance.SetOutcomeTable(outcomeTable);
             BagUI.Instance.SetHudVisible(false);
+            BagUI.Instance.EnterTutorialCloseOnly();
         }
 
         if (GameManager.Instance != null)
@@ -113,13 +111,11 @@ public class VictimApartmentSceneController : MonoBehaviour
 
         SetOverlay(true);
         BagUI.Instance?.SetHudPinned(true);
-        BagUI.Instance?.EnterTutorialCloseOnly();
         DialogueRunner.Instance?.SetDimOverlayEnabled(false);
         DialogueRunner.Instance?.SetKeyboardAdvanceDisabled(true);
         yield return PlayDialogue(chiefBagLine2);
         BagUI.Instance?.SetHudPinned(false);
         SetOverlay(false);
-        BagUI.Instance?.ExitTutorialCloseOnly();
 
         yield return PlayDialogue(chiefFindSecond);
         if (PlayerController.Instance != null) PlayerController.Instance.CanMove = true;
@@ -129,6 +125,7 @@ public class VictimApartmentSceneController : MonoBehaviour
 
         if (PlayerController.Instance != null) PlayerController.Instance.CanMove = false;
         yield return PlayDialogue(chiefBothFound);
+        BagUI.Instance?.ExitTutorialCloseOnly();
         if (PlayerController.Instance != null) PlayerController.Instance.CanMove = true;
 
         ItemSelectionUI.SceneLoadInterceptHandler = (clueID, loadScene) =>
