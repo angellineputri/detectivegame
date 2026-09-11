@@ -1,9 +1,18 @@
 fileFormatVersion: 2
-guid: 9f5f82f835ddacb41ac62f73b1ef4bfc
+guid: 54147ed2cc9623f40b1b2b301a8bcece
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - apartmentOutcomeTable: {fileID: 11400000, guid: c173d86ee21f0ec4bac7bc362964c5fe,
+      type: 2}
+  - exGF: {instanceID: 0}
+  - headChef: {instanceID: 0}
+  - marcusDialogue: {instanceID: 0}
+  - exGFExitPoint: {instanceID: 0}
+  - chefWalkInStart: {instanceID: 0}
+  - doorExitPoint: {instanceID: 0}
+  - door: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -64,5 +64,6 @@ public class GameOverScreen : MonoBehaviour
         GameManager.Instance?.SetFlag("hasSpokenToExGF", false);
         GameManager.Instance?.SetFlag("hasSpokenToHeadChef", false);
         GameManager.Instance?.SetFlag("hasSpokenToVivianBedroom", false);
+        GameManager.Instance?.SetFlag("assistant_keys_given",false);
     }
 }

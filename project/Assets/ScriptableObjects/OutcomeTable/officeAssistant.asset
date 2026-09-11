@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf7e1f96c25a4fc5b7e68dfe4ebca67, type: 3}
+  m_Name: officeAssistant
+  m_EditorClassIdentifier: Assembly-CSharp::ClueOutcomeTable
+  outcomes:
+  - clueID: assistant_computer
+    outcomeType: 3
+    targetScene: 
+    dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
+    flagKey: 
+    flagValue: 0
+    popupText: 
+  - clueID: IT_permission
+    outcomeType: 1
+    targetScene: 
+    dialogue: {fileID: 0}
+    itemToGrantAfterDialogue:
+      objectID: 
+      displayName: 
+      clueDescription: 
+    flagKey: 
+    flagValue: 0
+    popupText: 

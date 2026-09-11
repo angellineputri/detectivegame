@@ -2797,11 +2797,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 145924953}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f5f82f835ddacb41ac62f73b1ef4bfc, type: 3}
+  m_Script: {fileID: 11500000, guid: 54147ed2cc9623f40b1b2b301a8bcece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  apartmentOutcomeTable: {fileID: 11400000, guid: c173d86ee21f0ec4bac7bc362964c5fe,
+    type: 2}
+  assistant: {fileID: 2110234121}
+  decisionTitle: What do you want to investigate?
+  openingDialogue: {fileID: 0}
+  openingDialogueDelay: 0.5
   nextSceneName: office
-  requiredFlagToLeave: assistant_keys_given
+  debugLogs: 1
 --- !u!1 &235974176
 GameObject:
   m_ObjectHideFlags: 0
@@ -6933,7 +6939,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.625, y: 1.9375}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6981,7 +6987,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7c5bfc48c9a2d46a181a99dab5cdea80, type: 3}
+  m_Sprite: {fileID: -8559651868928043438, guid: 3b9d0f29241ec4ad0ad6e2f70021aca7,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7000,7 +7007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724974409}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7026,7 +7033,7 @@ MonoBehaviour:
   requiredPlaythrough: 0
   requiredFlag: 
   requiredClue: 
-  interactRange: 2
+  interactRange: 1.5
   visualRoot: {fileID: 0}
 --- !u!1 &1771534410
 GameObject:
@@ -7064,7 +7071,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 3.875, y: 3.875}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7112,7 +7119,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7c5bfc48c9a2d46a181a99dab5cdea80, type: 3}
+  m_Sprite: {fileID: -3115800812707324137, guid: 3b9d0f29241ec4ad0ad6e2f70021aca7,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7131,7 +7139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771534410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: -5, z: 0}
+  m_LocalPosition: {x: -5, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7158,7 +7166,7 @@ MonoBehaviour:
   requiredPlaythrough: 0
   requiredFlag: 
   requiredClue: 
-  interactRange: 2
+  interactRange: 1.5
   visualRoot: {fileID: 0}
 --- !u!1 &1775759531
 GameObject:
@@ -8187,8 +8195,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 60b0d9043bb0b4c049d7613092dcaa98, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -2338233574300219304, guid: c85d738b315fd4d10b5c9dd511660ebb,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8207,7 +8216,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110234117}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: -5, z: 0}
+  m_LocalPosition: {x: -6, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8229,8 +8238,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 0.8125, y: 1.0625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8259,7 +8268,7 @@ MonoBehaviour:
   requiredPlaythrough: 0
   requiredFlag: 
   requiredClue: 
-  interactRange: 2
+  interactRange: 1.5
   visualRoot: {fileID: 0}
   dialogueBeforeRequirement: {fileID: 11400000, guid: a6f47a100772ae04485c038378fec732,
     type: 2}

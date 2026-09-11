@@ -1,0 +1,4313 @@
+fileFormatVersion: 2
+guid: 00e40ca47dffe01489be1e04550ce4c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2965337045416516575
+    second: stylish_furnitureset_withshadow_0
+  - first:
+      213: -5672228995419085756
+    second: stylish_furnitureset_withshadow_1
+  - first:
+      213: 3406401040668649731
+    second: stylish_furnitureset_withshadow_2
+  - first:
+      213: -7791461035615008957
+    second: stylish_furnitureset_withshadow_3
+  - first:
+      213: -1840158061035183280
+    second: stylish_furnitureset_withshadow_4
+  - first:
+      213: 8072082333303776580
+    second: stylish_furnitureset_withshadow_5
+  - first:
+      213: -632156315717530649
+    second: stylish_furnitureset_withshadow_6
+  - first:
+      213: 8033306157048434337
+    second: stylish_furnitureset_withshadow_7
+  - first:
+      213: 2208580209434702583
+    second: stylish_furnitureset_withshadow_8
+  - first:
+      213: 5639399563805158260
+    second: stylish_furnitureset_withshadow_9
+  - first:
+      213: 6776773570489473162
+    second: stylish_furnitureset_withshadow_10
+  - first:
+      213: 7390494248399747236
+    second: stylish_furnitureset_withshadow_11
+  - first:
+      213: -9083226438733605096
+    second: stylish_furnitureset_withshadow_12
+  - first:
+      213: 4579769952754819130
+    second: stylish_furnitureset_withshadow_13
+  - first:
+      213: 2292824844467773744
+    second: stylish_furnitureset_withshadow_14
+  - first:
+      213: -2034178596861799562
+    second: stylish_furnitureset_withshadow_15
+  - first:
+      213: 2354515934150345963
+    second: stylish_furnitureset_withshadow_16
+  - first:
+      213: 4437571525970162470
+    second: stylish_furnitureset_withshadow_17
+  - first:
+      213: -605367419969075766
+    second: stylish_furnitureset_withshadow_18
+  - first:
+      213: 7135357225748939696
+    second: stylish_furnitureset_withshadow_19
+  - first:
+      213: 3452148427708291990
+    second: stylish_furnitureset_withshadow_20
+  - first:
+      213: -750559241481181367
+    second: stylish_furnitureset_withshadow_21
+  - first:
+      213: -3846177264565499426
+    second: stylish_furnitureset_withshadow_22
+  - first:
+      213: -4291187931155499022
+    second: stylish_furnitureset_withshadow_23
+  - first:
+      213: 1075320414019946477
+    second: stylish_furnitureset_withshadow_24
+  - first:
+      213: 1941638207677375984
+    second: stylish_furnitureset_withshadow_25
+  - first:
+      213: 4348514898581161735
+    second: stylish_furnitureset_withshadow_26
+  - first:
+      213: 7587895097859020733
+    second: stylish_furnitureset_withshadow_27
+  - first:
+      213: -8870126509483412600
+    second: stylish_furnitureset_withshadow_28
+  - first:
+      213: 9008058457602059878
+    second: stylish_furnitureset_withshadow_29
+  - first:
+      213: 5404576885561486859
+    second: stylish_furnitureset_withshadow_30
+  - first:
+      213: -1343523003120097836
+    second: stylish_furnitureset_withshadow_31
+  - first:
+      213: -3589158353505888319
+    second: stylish_furnitureset_withshadow_32
+  - first:
+      213: -3284641217231144693
+    second: stylish_furnitureset_withshadow_33
+  - first:
+      213: -453253452171200482
+    second: stylish_furnitureset_withshadow_34
+  - first:
+      213: -1716329332961620986
+    second: stylish_furnitureset_withshadow_35
+  - first:
+      213: 4690100382202444139
+    second: stylish_furnitureset_withshadow_36
+  - first:
+      213: 6154339318765530283
+    second: stylish_furnitureset_withshadow_37
+  - first:
+      213: -7748970982835288060
+    second: stylish_furnitureset_withshadow_38
+  - first:
+      213: -1324887250056592792
+    second: stylish_furnitureset_withshadow_39
+  - first:
+      213: -9184761315920739870
+    second: stylish_furnitureset_withshadow_40
+  - first:
+      213: -7380050432297965348
+    second: stylish_furnitureset_withshadow_41
+  - first:
+      213: 2447753182344901363
+    second: stylish_furnitureset_withshadow_42
+  - first:
+      213: 8953451713839449931
+    second: stylish_furnitureset_withshadow_43
+  - first:
+      213: -465040439377349222
+    second: stylish_furnitureset_withshadow_44
+  - first:
+      213: 3922447657547382225
+    second: stylish_furnitureset_withshadow_45
+  - first:
+      213: 7511390891917193669
+    second: stylish_furnitureset_withshadow_46
+  - first:
+      213: 8942408805375550786
+    second: stylish_furnitureset_withshadow_47
+  - first:
+      213: 7708883490054894800
+    second: stylish_furnitureset_withshadow_48
+  - first:
+      213: -6133308814392431031
+    second: stylish_furnitureset_withshadow_49
+  - first:
+      213: 7065669803001780217
+    second: stylish_furnitureset_withshadow_50
+  - first:
+      213: -7784783563698558163
+    second: stylish_furnitureset_withshadow_51
+  - first:
+      213: 2218247351900051951
+    second: stylish_furnitureset_withshadow_52
+  - first:
+      213: 2617030309317836564
+    second: stylish_furnitureset_withshadow_53
+  - first:
+      213: 3033947945851220585
+    second: stylish_furnitureset_withshadow_54
+  - first:
+      213: 7286353835536041893
+    second: stylish_furnitureset_withshadow_55
+  - first:
+      213: 7505676383402716848
+    second: stylish_furnitureset_withshadow_56
+  - first:
+      213: 2994049863392176728
+    second: stylish_furnitureset_withshadow_57
+  - first:
+      213: -4377011573414660396
+    second: stylish_furnitureset_withshadow_58
+  - first:
+      213: 911327233449641764
+    second: stylish_furnitureset_withshadow_59
+  - first:
+      213: -634252889358247929
+    second: stylish_furnitureset_withshadow_60
+  - first:
+      213: -7204547800218404649
+    second: stylish_furnitureset_withshadow_61
+  - first:
+      213: -6520766782339089629
+    second: stylish_furnitureset_withshadow_62
+  - first:
+      213: 4851094615968085000
+    second: stylish_furnitureset_withshadow_63
+  - first:
+      213: 8541060332981450764
+    second: stylish_furnitureset_withshadow_64
+  - first:
+      213: 3867541685012741570
+    second: stylish_furnitureset_withshadow_65
+  - first:
+      213: 1440335197089385066
+    second: stylish_furnitureset_withshadow_66
+  - first:
+      213: -1502515449555136494
+    second: stylish_furnitureset_withshadow_67
+  - first:
+      213: 7167786677256798679
+    second: stylish_furnitureset_withshadow_68
+  - first:
+      213: -6677442128149355109
+    second: stylish_furnitureset_withshadow_69
+  - first:
+      213: -7090548319333721144
+    second: stylish_furnitureset_withshadow_70
+  - first:
+      213: 3457412611311529710
+    second: stylish_furnitureset_withshadow_71
+  - first:
+      213: -1657969335292774185
+    second: stylish_furnitureset_withshadow_72
+  - first:
+      213: -1582371573600547726
+    second: stylish_furnitureset_withshadow_73
+  - first:
+      213: -1817076870191193171
+    second: stylish_furnitureset_withshadow_74
+  - first:
+      213: -7790172760933827660
+    second: stylish_furnitureset_withshadow_75
+  - first:
+      213: 1480395921478113197
+    second: stylish_furnitureset_withshadow_76
+  - first:
+      213: -489297835852964807
+    second: stylish_furnitureset_withshadow_77
+  - first:
+      213: -6897787312805690670
+    second: stylish_furnitureset_withshadow_78
+  - first:
+      213: -8328296592147437926
+    second: stylish_furnitureset_withshadow_79
+  - first:
+      213: 6595650923961244429
+    second: stylish_furnitureset_withshadow_80
+  - first:
+      213: -3504368534317005025
+    second: stylish_furnitureset_withshadow_81
+  - first:
+      213: -1006628674757075421
+    second: stylish_furnitureset_withshadow_82
+  - first:
+      213: -2657096781781096058
+    second: stylish_furnitureset_withshadow_83
+  - first:
+      213: -3128808145239518378
+    second: stylish_furnitureset_withshadow_84
+  - first:
+      213: 5720298630901898600
+    second: stylish_furnitureset_withshadow_85
+  - first:
+      213: 788052903211233599
+    second: stylish_furnitureset_withshadow_86
+  - first:
+      213: -8988916487666204091
+    second: stylish_furnitureset_withshadow_87
+  - first:
+      213: -730081879481358122
+    second: stylish_furnitureset_withshadow_88
+  - first:
+      213: 3783968636674923493
+    second: stylish_furnitureset_withshadow_89
+  - first:
+      213: -4997085099552716501
+    second: stylish_furnitureset_withshadow_90
+  - first:
+      213: -5789733176314786693
+    second: stylish_furnitureset_withshadow_91
+  - first:
+      213: -4548100484094459012
+    second: stylish_furnitureset_withshadow_92
+  - first:
+      213: -4214942167973166855
+    second: stylish_furnitureset_withshadow_93
+  - first:
+      213: 2668389766684056907
+    second: stylish_furnitureset_withshadow_94
+  - first:
+      213: 7360472874915500417
+    second: stylish_furnitureset_withshadow_95
+  - first:
+      213: 60337389551994631
+    second: stylish_furnitureset_withshadow_96
+  - first:
+      213: -1405107462703608035
+    second: stylish_furnitureset_withshadow_97
+  - first:
+      213: 2010491908159585937
+    second: stylish_furnitureset_withshadow_98
+  - first:
+      213: -112405390918145179
+    second: stylish_furnitureset_withshadow_99
+  - first:
+      213: -4040126622385057701
+    second: stylish_furnitureset_withshadow_100
+  - first:
+      213: -4161954198696866936
+    second: stylish_furnitureset_withshadow_101
+  - first:
+      213: -3604960978317348956
+    second: stylish_furnitureset_withshadow_102
+  - first:
+      213: -4963952140227552748
+    second: stylish_furnitureset_withshadow_103
+  - first:
+      213: 6876633675034538779
+    second: stylish_furnitureset_withshadow_104
+  - first:
+      213: 47450997268392064
+    second: stylish_furnitureset_withshadow_105
+  - first:
+      213: 5120582591277958114
+    second: stylish_furnitureset_withshadow_106
+  - first:
+      213: -7989924560129546330
+    second: stylish_furnitureset_withshadow_107
+  - first:
+      213: -3676867201666544693
+    second: stylish_furnitureset_withshadow_108
+  - first:
+      213: 2162639000047518250
+    second: stylish_furnitureset_withshadow_109
+  - first:
+      213: -7687592191012888271
+    second: stylish_furnitureset_withshadow_110
+  - first:
+      213: 643940391684611076
+    second: stylish_furnitureset_withshadow_111
+  - first:
+      213: -7293854872041399187
+    second: stylish_furnitureset_withshadow_112
+  - first:
+      213: -8957688032272315893
+    second: stylish_furnitureset_withshadow_113
+  - first:
+      213: 6271810557337750315
+    second: stylish_furnitureset_withshadow_114
+  - first:
+      213: 9186689913000178410
+    second: stylish_furnitureset_withshadow_115
+  - first:
+      213: -6714399752702998814
+    second: stylish_furnitureset_withshadow_116
+  - first:
+      213: -8880822520826521420
+    second: stylish_furnitureset_withshadow_117
+  - first:
+      213: 6092867685360962859
+    second: stylish_furnitureset_withshadow_118
+  - first:
+      213: -8014879088156487419
+    second: stylish_furnitureset_withshadow_119
+  - first:
+      213: 2108875206422672850
+    second: stylish_furnitureset_withshadow_120
+  - first:
+      213: 6211876630817787301
+    second: stylish_furnitureset_withshadow_121
+  - first:
+      213: -2046997236881271689
+    second: stylish_furnitureset_withshadow_122
+  - first:
+      213: -6429447787916113249
+    second: stylish_furnitureset_withshadow_123
+  - first:
+      213: 7701342403596058034
+    second: stylish_furnitureset_withshadow_124
+  - first:
+      213: -6929780002853846763
+    second: stylish_furnitureset_withshadow_125
+  - first:
+      213: -8043328358623116699
+    second: stylish_furnitureset_withshadow_126
+  - first:
+      213: 4278243270483218815
+    second: stylish_furnitureset_withshadow_127
+  - first:
+      213: -868102632830678283
+    second: stylish_furnitureset_withshadow_128
+  - first:
+      213: 3770816777924225041
+    second: stylish_furnitureset_withshadow_129
+  - first:
+      213: 3405098358247292156
+    second: stylish_furnitureset_withshadow_130
+  - first:
+      213: -2626090293768552693
+    second: stylish_furnitureset_withshadow_131
+  - first:
+      213: -8164756328913923464
+    second: stylish_furnitureset_withshadow_132
+  - first:
+      213: -4586829537895274952
+    second: stylish_furnitureset_withshadow_133
+  - first:
+      213: 5740093493623899384
+    second: stylish_furnitureset_withshadow_134
+  - first:
+      213: 2240800867116319600
+    second: stylish_furnitureset_withshadow_135
+  - first:
+      213: -98485922836842084
+    second: stylish_furnitureset_withshadow_136
+  - first:
+      213: -6690784125326062283
+    second: stylish_furnitureset_withshadow_137
+  - first:
+      213: -2700908034554840744
+    second: stylish_furnitureset_withshadow_138
+  - first:
+      213: -5994926931645326038
+    second: stylish_furnitureset_withshadow_139
+  - first:
+      213: 6216004420048258917
+    second: stylish_furnitureset_withshadow_140
+  - first:
+      213: 8542876177824746675
+    second: stylish_furnitureset_withshadow_141
+  - first:
+      213: -8853591665164954079
+    second: stylish_furnitureset_withshadow_142
+  - first:
+      213: -5547982782111736400
+    second: stylish_furnitureset_withshadow_143
+  - first:
+      213: 9144991026104447421
+    second: stylish_furnitureset_withshadow_144
+  - first:
+      213: -7842448728945224650
+    second: stylish_furnitureset_withshadow_145
+  - first:
+      213: 678620389135395555
+    second: stylish_furnitureset_withshadow_146
+  - first:
+      213: -4780784388790353794
+    second: stylish_furnitureset_withshadow_147
+  - first:
+      213: -4415155186253576941
+    second: stylish_furnitureset_withshadow_148
+  - first:
+      213: -4749168376098315810
+    second: stylish_furnitureset_withshadow_149
+  - first:
+      213: 6608052972507012120
+    second: stylish_furnitureset_withshadow_150
+  - first:
+      213: 1822914138416002626
+    second: stylish_furnitureset_withshadow_151
+  - first:
+      213: -5749081022492447513
+    second: stylish_furnitureset_withshadow_152
+  - first:
+      213: -1463099442077669022
+    second: stylish_furnitureset_withshadow_153
+  - first:
+      213: -5169109376656396989
+    second: stylish_furnitureset_withshadow_154
+  - first:
+      213: -405314130573404745
+    second: stylish_furnitureset_withshadow_155
+  - first:
+      213: 1332448196010575579
+    second: stylish_furnitureset_withshadow_156
+  - first:
+      213: 5448641695675638679
+    second: stylish_furnitureset_withshadow_157
+  - first:
+      213: 2689876272958711386
+    second: stylish_furnitureset_withshadow_158
+  - first:
+      213: 9008518332476432165
+    second: stylish_furnitureset_withshadow_159
+  - first:
+      213: 4595892779223002101
+    second: stylish_furnitureset_withshadow_160
+  - first:
+      213: -6475523699188688435
+    second: stylish_furnitureset_withshadow_161
+  - first:
+      213: 9089567843014098481
+    second: stylish_furnitureset_withshadow_162
+  - first:
+      213: -8545891800033072286
+    second: stylish_furnitureset_withshadow_163
+  - first:
+      213: -4202939277094793983
+    second: stylish_furnitureset_withshadow_164
+  - first:
+      213: -8931675546682075209
+    second: stylish_furnitureset_withshadow_165
+  - first:
+      213: 7936354402206593829
+    second: stylish_furnitureset_withshadow_166
+  - first:
+      213: 2258075604180113954
+    second: stylish_furnitureset_withshadow_167
+  - first:
+      213: -5374333187946100549
+    second: stylish_furnitureset_withshadow_168
+  - first:
+      213: 8941319480190144845
+    second: stylish_furnitureset_withshadow_169
+  - first:
+      213: 4872992027365620196
+    second: stylish_furnitureset_withshadow_170
+  - first:
+      213: -8605439204180786347
+    second: stylish_furnitureset_withshadow_171
+  - first:
+      213: -4349650550788245683
+    second: stylish_furnitureset_withshadow_172
+  - first:
+      213: -3226605219115429184
+    second: stylish_furnitureset_withshadow_173
+  - first:
+      213: -279468137882432325
+    second: stylish_furnitureset_withshadow_174
+  - first:
+      213: -3268217558055983402
+    second: stylish_furnitureset_withshadow_175
+  - first:
+      213: 4944336783115713802
+    second: stylish_furnitureset_withshadow_176
+  - first:
+      213: -8926074953849308420
+    second: stylish_furnitureset_withshadow_177
+  - first:
+      213: -3380384182192564673
+    second: stylish_furnitureset_withshadow_178
+  - first:
+      213: 2118034979068318172
+    second: stylish_furnitureset_withshadow_179
+  - first:
+      213: 654638132819533989
+    second: stylish_furnitureset_withshadow_180
+  - first:
+      213: -3815533229051139848
+    second: stylish_furnitureset_withshadow_181
+  - first:
+      213: 7303394916712081050
+    second: stylish_furnitureset_withshadow_182
+  - first:
+      213: -179434396480053914
+    second: stylish_furnitureset_withshadow_183
+  - first:
+      213: -1822487482049136898
+    second: stylish_furnitureset_withshadow_184
+  - first:
+      213: 9146564589315381007
+    second: stylish_furnitureset_withshadow_185
+  - first:
+      213: 9077703111394254882
+    second: stylish_furnitureset_withshadow_186
+  - first:
+      213: 7006223885328538746
+    second: stylish_furnitureset_withshadow_187
+  - first:
+      213: -2402692940811876849
+    second: stylish_furnitureset_withshadow_188
+  - first:
+      213: 4420945719953817503
+    second: stylish_furnitureset_withshadow_189
+  - first:
+      213: -1477544818632659777
+    second: stylish_furnitureset_withshadow_190
+  - first:
+      213: -1232742400571903189
+    second: stylish_furnitureset_withshadow_191
+  - first:
+      213: -6434238797688496496
+    second: stylish_furnitureset_withshadow_192
+  - first:
+      213: -6681682153491190901
+    second: stylish_furnitureset_withshadow_193
+  - first:
+      213: -29045317229143857
+    second: stylish_furnitureset_withshadow_194
+  - first:
+      213: 4837101702926955117
+    second: stylish_furnitureset_withshadow_195
+  - first:
+      213: -8148661580317976620
+    second: stylish_furnitureset_withshadow_196
+  - first:
+      213: 1663508013870803355
+    second: stylish_furnitureset_withshadow_197
+  - first:
+      213: -2365472807523042002
+    second: stylish_furnitureset_withshadow_198
+  - first:
+      213: 9193071265436817756
+    second: stylish_furnitureset_withshadow_199
+  - first:
+      213: 6363128057449356466
+    second: stylish_furnitureset_withshadow_200
+  - first:
+      213: 5096639852253937294
+    second: stylish_furnitureset_withshadow_201
+  - first:
+      213: 7073731457883768253
+    second: stylish_furnitureset_withshadow_202
+  - first:
+      213: 4795777655919949193
+    second: stylish_furnitureset_withshadow_203
+  - first:
+      213: -356711010624966645
+    second: stylish_furnitureset_withshadow_204
+  - first:
+      213: -6207464145495174606
+    second: stylish_furnitureset_withshadow_205
+  - first:
+      213: 659294566696785859
+    second: stylish_furnitureset_withshadow_206
+  - first:
+      213: 5151978958828480621
+    second: stylish_furnitureset_withshadow_207
+  - first:
+      213: -3108767820118190920
+    second: stylish_furnitureset_withshadow_208
+  - first:
+      213: -1693139226901774506
+    second: stylish_furnitureset_withshadow_209
+  - first:
+      213: 6461576780902406175
+    second: stylish_furnitureset_withshadow_210
+  - first:
+      213: 867571566242039492
+    second: stylish_furnitureset_withshadow_211
+  - first:
+      213: 3419779756755727727
+    second: stylish_furnitureset_withshadow_212
+  - first:
+      213: -3505969297507998566
+    second: stylish_furnitureset_withshadow_213
+  - first:
+      213: 7764416907213747477
+    second: stylish_furnitureset_withshadow_214
+  - first:
+      213: -8270901461000064380
+    second: stylish_furnitureset_withshadow_215
+  - first:
+      213: -8563661395882664135
+    second: stylish_furnitureset_withshadow_216
+  - first:
+      213: -4832991427695532410
+    second: stylish_furnitureset_withshadow_217
+  - first:
+      213: -5147714963574451202
+    second: stylish_furnitureset_withshadow_218
+  - first:
+      213: -7678344377684720413
+    second: stylish_furnitureset_withshadow_219
+  - first:
+      213: -481443945979225873
+    second: stylish_furnitureset_withshadow_220
+  - first:
+      213: -6298114825579613887
+    second: stylish_furnitureset_withshadow_221
+  - first:
+      213: -7765169650559805716
+    second: stylish_furnitureset_withshadow_222
+  - first:
+      213: -8127521451669448933
+    second: stylish_furnitureset_withshadow_223
+  - first:
+      213: -4801878381011791339
+    second: stylish_furnitureset_withshadow_224
+  - first:
+      213: 750294385460004998
+    second: stylish_furnitureset_withshadow_225
+  - first:
+      213: 5568335260696754658
+    second: stylish_furnitureset_withshadow_226
+  - first:
+      213: 5746050892052365159
+    second: stylish_furnitureset_withshadow_227
+  - first:
+      213: -5752818199856400608
+    second: stylish_furnitureset_withshadow_228
+  - first:
+      213: -2008953653049095809
+    second: stylish_furnitureset_withshadow_229
+  - first:
+      213: -8204116297133110432
+    second: stylish_furnitureset_withshadow_230
+  - first:
+      213: 8803030864569846602
+    second: stylish_furnitureset_withshadow_231
+  - first:
+      213: -519041875695897726
+    second: stylish_furnitureset_withshadow_232
+  - first:
+      213: -8061972952962930358
+    second: stylish_furnitureset_withshadow_233
+  - first:
+      213: 3772814073211968801
+    second: stylish_furnitureset_withshadow_234
+  - first:
+      213: 2364244438107447263
+    second: stylish_furnitureset_withshadow_235
+  - first:
+      213: 6245579679842048577
+    second: stylish_furnitureset_withshadow_236
+  - first:
+      213: -4413282941560216482
+    second: stylish_furnitureset_withshadow_237
+  - first:
+      213: 8416817690360746261
+    second: stylish_furnitureset_withshadow_238
+  - first:
+      213: -7390199722475012640
+    second: stylish_furnitureset_withshadow_239
+  - first:
+      213: 6727593417159908140
+    second: stylish_furnitureset_withshadow_240
+  - first:
+      213: 694269255572047391
+    second: stylish_furnitureset_withshadow_241
+  - first:
+      213: 6858441102984507907
+    second: stylish_furnitureset_withshadow_242
+  - first:
+      213: 8640891499813706261
+    second: stylish_furnitureset_withshadow_243
+  - first:
+      213: -4884658353222422994
+    second: stylish_furnitureset_withshadow_244
+  - first:
+      213: -6755863039723852646
+    second: stylish_furnitureset_withshadow_245
+  - first:
+      213: -4348846387651047063
+    second: stylish_furnitureset_withshadow_246
+  - first:
+      213: -1567801017556661281
+    second: stylish_furnitureset_withshadow_247
+  - first:
+      213: 7378730923848150478
+    second: stylish_furnitureset_withshadow_248
+  - first:
+      213: 2767006035841047077
+    second: stylish_furnitureset_withshadow_249
+  - first:
+      213: 1507302584863269340
+    second: stylish_furnitureset_withshadow_250
+  - first:
+      213: -4336414621171515989
+    second: stylish_furnitureset_withshadow_251
+  - first:
+      213: -63297033159064208
+    second: stylish_furnitureset_withshadow_252
+  - first:
+      213: -4824208777455468980
+    second: stylish_furnitureset_withshadow_253
+  - first:
+      213: -4273796492983214717
+    second: stylish_furnitureset_withshadow_254
+  - first:
+      213: -7565418244652274720
+    second: stylish_furnitureset_withshadow_255
+  - first:
+      213: 9077367292805508406
+    second: stylish_furnitureset_withshadow_256
+  - first:
+      213: -8557641066813240624
+    second: stylish_furnitureset_withshadow_257
+  - first:
+      213: -5965159355877580128
+    second: stylish_furnitureset_withshadow_258
+  - first:
+      213: 8476666020197242406
+    second: stylish_furnitureset_withshadow_259
+  - first:
+      213: -1106455299781434012
+    second: stylish_furnitureset_withshadow_260
+  - first:
+      213: 3188910324597419803
+    second: stylish_furnitureset_withshadow_261
+  - first:
+      213: 5395747174136965678
+    second: stylish_furnitureset_withshadow_262
+  - first:
+      213: 9046852362192715840
+    second: stylish_furnitureset_withshadow_263
+  - first:
+      213: -1847804069084795225
+    second: stylish_furnitureset_withshadow_264
+  - first:
+      213: -7878692216573915843
+    second: stylish_furnitureset_withshadow_265
+  - first:
+      213: -1042169609144962461
+    second: stylish_furnitureset_withshadow_266
+  - first:
+      213: 8098657332552754658
+    second: stylish_furnitureset_withshadow_267
+  - first:
+      213: 4353034719298122553
+    second: stylish_furnitureset_withshadow_268
+  - first:
+      213: 5371385751379508352
+    second: stylish_furnitureset_withshadow_269
+  - first:
+      213: 6549067219863790838
+    second: stylish_furnitureset_withshadow_270
+  - first:
+      213: 2615141003237988479
+    second: stylish_furnitureset_withshadow_271
+  - first:
+      213: 1925727878382084875
+    second: stylish_furnitureset_withshadow_272
+  - first:
+      213: 3863574010771264437
+    second: stylish_furnitureset_withshadow_273
+  - first:
+      213: 7500652534942738831
+    second: stylish_furnitureset_withshadow_274
+  - first:
+      213: 1831119452900936520
+    second: stylish_furnitureset_withshadow_275
+  - first:
+      213: -7190048928227100330
+    second: stylish_furnitureset_withshadow_276
+  - first:
+      213: 7539214794566827895
+    second: stylish_furnitureset_withshadow_277
+  - first:
+      213: -5310850862895833333
+    second: stylish_furnitureset_withshadow_278
+  - first:
+      213: 5337293315693954924
+    second: stylish_furnitureset_withshadow_279
+  - first:
+      213: -8094654573320428448
+    second: stylish_furnitureset_withshadow_280
+  - first:
+      213: -4792482959404333760
+    second: stylish_furnitureset_withshadow_281
+  - first:
+      213: 7950314382207537896
+    second: stylish_furnitureset_withshadow_282
+  - first:
+      213: 565655962470339095
+    second: stylish_furnitureset_withshadow_283
+  - first:
+      213: -3172825641568012167
+    second: stylish_furnitureset_withshadow_284
+  - first:
+      213: 3773886736929210134
+    second: stylish_furnitureset_withshadow_285
+  - first:
+      213: -4153271014909092189
+    second: stylish_furnitureset_withshadow_286
+  - first:
+      213: 6788296681531355193
+    second: stylish_furnitureset_withshadow_287
+  - first:
+      213: 8100757445360284805
+    second: stylish_furnitureset_withshadow_288
+  - first:
+      213: -3073001186677818409
+    second: stylish_furnitureset_withshadow_289
+  - first:
+      213: -5155432126805647824
+    second: stylish_furnitureset_withshadow_290
+  - first:
+      213: -6281309049422296200
+    second: stylish_furnitureset_withshadow_291
+  - first:
+      213: -9132655251729355135
+    second: stylish_furnitureset_withshadow_292
+  - first:
+      213: 2894915316850310768
+    second: stylish_furnitureset_withshadow_293
+  - first:
+      213: 2196034465437109205
+    second: stylish_furnitureset_withshadow_294
+  - first:
+      213: -7689187620569168035
+    second: stylish_furnitureset_withshadow_295
+  - first:
+      213: 8882434074504009504
+    second: stylish_furnitureset_withshadow_296
+  - first:
+      213: -1278118767412148527
+    second: stylish_furnitureset_withshadow_297
+  - first:
+      213: -3417099658432706571
+    second: stylish_furnitureset_withshadow_298
+  - first:
+      213: 6380915581931990442
+    second: stylish_furnitureset_withshadow_299
+  - first:
+      213: -1640882803909504946
+    second: stylish_furnitureset_withshadow_300
+  - first:
+      213: 8063202695802571132
+    second: stylish_furnitureset_withshadow_301
+  - first:
+      213: 4589200099084450029
+    second: stylish_furnitureset_withshadow_302
+  - first:
+      213: -7147946717596268163
+    second: stylish_furnitureset_withshadow_303
+  - first:
+      213: -3717829664827394229
+    second: stylish_furnitureset_withshadow_304
+  - first:
+      213: 1670604095099286151
+    second: stylish_furnitureset_withshadow_305
+  - first:
+      213: -1290698673104131744
+    second: stylish_furnitureset_withshadow_306
+  - first:
+      213: 2820337409357632996
+    second: stylish_furnitureset_withshadow_307
+  - first:
+      213: -2072275435657364488
+    second: stylish_furnitureset_withshadow_308
+  - first:
+      213: -2903699219244514781
+    second: stylish_furnitureset_withshadow_309
+  - first:
+      213: -1244989885883848270
+    second: stylish_furnitureset_withshadow_310
+  - first:
+      213: -6497501464890486702
+    second: stylish_furnitureset_withshadow_311
+  - first:
+      213: -5211604571866208765
+    second: stylish_furnitureset_withshadow_312
+  - first:
+      213: 5894999576924848101
+    second: stylish_furnitureset_withshadow_313
+  - first:
+      213: -1912540316483466918
+    second: stylish_furnitureset_withshadow_314
+  - first:
+      213: -2025591870332973743
+    second: stylish_furnitureset_withshadow_315
+  - first:
+      213: -7998216959546800528
+    second: stylish_furnitureset_withshadow_316
+  - first:
+      213: 4341458380103184023
+    second: stylish_furnitureset_withshadow_317
+  - first:
+      213: 6518760192607653950
+    second: stylish_furnitureset_withshadow_318
+  - first:
+      213: -8273437065176082700
+    second: stylish_furnitureset_withshadow_319
+  - first:
+      213: -7120202932190985668
+    second: stylish_furnitureset_withshadow_320
+  - first:
+      213: -6859224603137033120
+    second: stylish_furnitureset_withshadow_321
+  - first:
+      213: 6865948516722001404
+    second: stylish_furnitureset_withshadow_322
+  - first:
+      213: -5732732182312806445
+    second: stylish_furnitureset_withshadow_323
+  - first:
+      213: 4910260703231617174
+    second: stylish_furnitureset_withshadow_324
+  - first:
+      213: -2966376718510816564
+    second: stylish_furnitureset_withshadow_325
+  - first:
+      213: 3318351171527234374
+    second: stylish_furnitureset_withshadow_326
+  - first:
+      213: 8668657148685331294
+    second: stylish_furnitureset_withshadow_327
+  - first:
+      213: -3574335311885574700
+    second: stylish_furnitureset_withshadow_328
+  - first:
+      213: -4233921349275528286
+    second: stylish_furnitureset_withshadow_329
+  - first:
+      213: 3869022564437963821
+    second: stylish_furnitureset_withshadow_330
+  - first:
+      213: -8105721069826498037
+    second: stylish_furnitureset_withshadow_331
+  - first:
+      213: 7988434779867067007
+    second: stylish_furnitureset_withshadow_332
+  - first:
+      213: 6428335345843295279
+    second: stylish_furnitureset_withshadow_333
+  - first:
+      213: 2714561425059294232
+    second: stylish_furnitureset_withshadow_334
+  - first:
+      213: -8272593616258047734
+    second: stylish_furnitureset_withshadow_335
+  - first:
+      213: -4883718078723913903
+    second: stylish_furnitureset_withshadow_336
+  - first:
+      213: -1789930544694318052
+    second: stylish_furnitureset_withshadow_337
+  - first:
+      213: 6447324041587089983
+    second: stylish_furnitureset_withshadow_338
+  - first:
+      213: 7720677421716122045
+    second: stylish_furnitureset_withshadow_339
+  - first:
+      213: 1151378762839705481
+    second: stylish_furnitureset_withshadow_340
+  - first:
+      213: 8937874845141520730
+    second: stylish_furnitureset_withshadow_341
+  - first:
+      213: -7823223064484818306
+    second: stylish_furnitureset_withshadow_342
+  - first:
+      213: -2527121638487676922
+    second: stylish_furnitureset_withshadow_343
+  - first:
+      213: 7794659425615419280
+    second: stylish_furnitureset_withshadow_344
+  - first:
+      213: 3534786618108773523
+    second: stylish_furnitureset_withshadow_345
+  - first:
+      213: 6459406646381970150
+    second: stylish_furnitureset_withshadow_346
+  - first:
+      213: -3319996254842305314
+    second: stylish_furnitureset_withshadow_347
+  - first:
+      213: 7248630673957982968
+    second: stylish_furnitureset_withshadow_348
+  - first:
+      213: 2264920726771218517
+    second: stylish_furnitureset_withshadow_349
+  - first:
+      213: -5886122779989823190
+    second: stylish_furnitureset_withshadow_350
+  - first:
+      213: -138880222934357486
+    second: stylish_furnitureset_withshadow_351
+  - first:
+      213: -4009280272614143152
+    second: stylish_furnitureset_withshadow_352
+  - first:
+      213: -4497977584238288707
+    second: stylish_furnitureset_withshadow_353
+  - first:
+      213: 1954098423066782654
+    second: stylish_furnitureset_withshadow_354
+  - first:
+      213: -8184613145888455949
+    second: stylish_furnitureset_withshadow_355
+  - first:
+      213: 6604485913917207440
+    second: stylish_furnitureset_withshadow_356
+  - first:
+      213: -4174923327065198250
+    second: stylish_furnitureset_withshadow_357
+  - first:
+      213: -3903633423384956871
+    second: stylish_furnitureset_withshadow_358
+  - first:
+      213: 5591876857314049011
+    second: stylish_furnitureset_withshadow_359
+  - first:
+      213: -1083970352777126341
+    second: stylish_furnitureset_withshadow_360
+  - first:
+      213: 1728779370561736808
+    second: stylish_furnitureset_withshadow_361
+  - first:
+      213: 927273707039900429
+    second: stylish_furnitureset_withshadow_362
+  - first:
+      213: -102838553874506929
+    second: stylish_furnitureset_withshadow_363
+  - first:
+      213: -5656514904481156310
+    second: stylish_furnitureset_withshadow_364
+  - first:
+      213: -875035747118862131
+    second: stylish_furnitureset_withshadow_365
+  - first:
+      213: -5321860763240306470
+    second: stylish_furnitureset_withshadow_366
+  - first:
+      213: 2469418952905197350
+    second: stylish_furnitureset_withshadow_367
+  - first:
+      213: -813188321981581241
+    second: stylish_furnitureset_withshadow_368
+  - first:
+      213: 8137207316595858624
+    second: stylish_furnitureset_withshadow_369
+  - first:
+      213: 4094198683561916785
+    second: stylish_furnitureset_withshadow_370
+  - first:
+      213: -1488059175735582028
+    second: stylish_furnitureset_withshadow_371
+  - first:
+      213: -8978767337181268939
+    second: stylish_furnitureset_withshadow_372
+  - first:
+      213: -7652839253963136124
+    second: stylish_furnitureset_withshadow_373
+  - first:
+      213: -7465331651300928804
+    second: stylish_furnitureset_withshadow_374
+  - first:
+      213: 4602266926287622937
+    second: stylish_furnitureset_withshadow_375
+  - first:
+      213: 2488437138640066389
+    second: stylish_furnitureset_withshadow_376
+  - first:
+      213: -7148916900943874120
+    second: stylish_furnitureset_withshadow_377
+  - first:
+      213: 4754197212688860564
+    second: stylish_furnitureset_withshadow_378
+  - first:
+      213: 1827312180938646145
+    second: stylish_furnitureset_withshadow_379
+  - first:
+      213: 655427880200934384
+    second: stylish_furnitureset_withshadow_380
+  - first:
+      213: -5980230962808746232
+    second: stylish_furnitureset_withshadow_381
+  - first:
+      213: 6103131897209549261
+    second: stylish_furnitureset_withshadow_382
+  - first:
+      213: -8054721174338594246
+    second: stylish_furnitureset_withshadow_383
+  - first:
+      213: -2103192278252793194
+    second: stylish_furnitureset_withshadow_384
+  - first:
+      213: 2358456295170897223
+    second: stylish_furnitureset_withshadow_385
+  - first:
+      213: 1657414842897337709
+    second: stylish_furnitureset_withshadow_386
+  - first:
+      213: 3407073646663912186
+    second: stylish_furnitureset_withshadow_387
+  - first:
+      213: -4960287568294671959
+    second: stylish_furnitureset_withshadow_388
+  - first:
+      213: -6327302248882753226
+    second: stylish_furnitureset_withshadow_389
+  - first:
+      213: -7567465857118599017
+    second: stylish_furnitureset_withshadow_390
+  - first:
+      213: 7682709754965617203
+    second: stylish_furnitureset_withshadow_391
+  - first:
+      213: 7431409299722033198
+    second: stylish_furnitureset_withshadow_392
+  - first:
+      213: -8877023325330289020
+    second: stylish_furnitureset_withshadow_393
+  - first:
+      213: 3804494104476783556
+    second: stylish_furnitureset_withshadow_394
+  - first:
+      213: -2948594263940988870
+    second: stylish_furnitureset_withshadow_395
+  - first:
+      213: 4800353177413013390
+    second: stylish_furnitureset_withshadow_396
+  - first:
+      213: -4179450726545330675
+    second: stylish_furnitureset_withshadow_397
+  - first:
+      213: -217322963386492973
+    second: stylish_furnitureset_withshadow_398
+  - first:
+      213: -4195311824319468008
+    second: stylish_furnitureset_withshadow_399
+  - first:
+      213: -4289468779439021533
+    second: stylish_furnitureset_withshadow_400
+  - first:
+      213: 4400317005915366615
+    second: stylish_furnitureset_withshadow_401
+  - first:
+      213: -582400598569306667
+    second: stylish_furnitureset_withshadow_402
+  - first:
+      213: 1382627579203028912
+    second: stylish_furnitureset_withshadow_403
+  - first:
+      213: -1429079525311553387
+    second: stylish_furnitureset_withshadow_404
+  - first:
+      213: -2823513669033673242
+    second: stylish_furnitureset_withshadow_405
+  - first:
+      213: -7937257182697276667
+    second: stylish_furnitureset_withshadow_406
+  - first:
+      213: 1390028830225720510
+    second: stylish_furnitureset_withshadow_407
+  - first:
+      213: -1124965012229774736
+    second: stylish_furnitureset_withshadow_408
+  - first:
+      213: -8607965624573486645
+    second: stylish_furnitureset_withshadow_409
+  - first:
+      213: -6198959183613206846
+    second: stylish_furnitureset_withshadow_410
+  - first:
+      213: 4686157432490268720
+    second: stylish_furnitureset_withshadow_411
+  - first:
+      213: 5351542270552787492
+    second: stylish_furnitureset_withshadow_412
+  - first:
+      213: 2066010257098145897
+    second: stylish_furnitureset_withshadow_413
+  - first:
+      213: -1194749676834005155
+    second: stylish_furnitureset_withshadow_414
+  - first:
+      213: 3023089869068965003
+    second: stylish_furnitureset_withshadow_415
+  - first:
+      213: 2045811575521619467
+    second: stylish_furnitureset_withshadow_416
+  - first:
+      213: 4461264009226919922
+    second: stylish_furnitureset_withshadow_417
+  - first:
+      213: -4523177385319769278
+    second: stylish_furnitureset_withshadow_418
+  - first:
+      213: 8709768874056960455
+    second: stylish_furnitureset_withshadow_419
+  - first:
+      213: 4119360479858886870
+    second: stylish_furnitureset_withshadow_420
+  - first:
+      213: 1530984828903874339
+    second: stylish_furnitureset_withshadow_421
+  - first:
+      213: 1879950632933715359
+    second: stylish_furnitureset_withshadow_422
+  - first:
+      213: 1728518877042801839
+    second: stylish_furnitureset_withshadow_423
+  - first:
+      213: 1529906193078942761
+    second: stylish_furnitureset_withshadow_424
+  - first:
+      213: -8998492538676896606
+    second: stylish_furnitureset_withshadow_425
+  - first:
+      213: 3422901671966758061
+    second: stylish_furnitureset_withshadow_426
+  - first:
+      213: 5870277649608120376
+    second: stylish_furnitureset_withshadow_427
+  - first:
+      213: 7048366855396867029
+    second: stylish_furnitureset_withshadow_428
+  - first:
+      213: -3978348088515960994
+    second: stylish_furnitureset_withshadow_429
+  - first:
+      213: 900015516074751929
+    second: stylish_furnitureset_withshadow_430
+  - first:
+      213: 2992112277423698327
+    second: stylish_furnitureset_withshadow_431
+  - first:
+      213: -5987988143605184817
+    second: stylish_furnitureset_withshadow_432
+  - first:
+      213: 1262169832490634806
+    second: stylish_furnitureset_withshadow_433
+  - first:
+      213: 6515280122131469669
+    second: stylish_furnitureset_withshadow_434
+  - first:
+      213: 5296054890898282104
+    second: stylish_furnitureset_withshadow_435
+  - first:
+      213: -6745061367723603347
+    second: stylish_furnitureset_withshadow_436
+  - first:
+      213: 7553971355329071968
+    second: stylish_furnitureset_withshadow_437
+  - first:
+      213: 4461009446733423327
+    second: stylish_furnitureset_withshadow_438
+  - first:
+      213: -7606615261266961323
+    second: stylish_furnitureset_withshadow_439
+  - first:
+      213: 6861854082088939139
+    second: stylish_furnitureset_withshadow_440
+  - first:
+      213: -4789107825137520656
+    second: stylish_furnitureset_withshadow_441
+  - first:
+      213: -5195592347908618117
+    second: stylish_furnitureset_withshadow_442
+  - first:
+      213: -1820896269769698970
+    second: stylish_furnitureset_withshadow_443
+  - first:
+      213: -1060880678129625304
+    second: stylish_furnitureset_withshadow_444
+  - first:
+      213: 551133366485838963
+    second: stylish_furnitureset_withshadow_445
+  - first:
+      213: 1631244708382827779
+    second: stylish_furnitureset_withshadow_446
+  - first:
+      213: 13387687294700599
+    second: stylish_furnitureset_withshadow_447
+  - first:
+      213: 1986551902913059377
+    second: stylish_furnitureset_withshadow_448
+  - first:
+      213: 1918858172972478495
+    second: stylish_furnitureset_withshadow_449
+  - first:
+      213: -3311725378604236496
+    second: stylish_furnitureset_withshadow_450
+  - first:
+      213: -4632590375068133244
+    second: stylish_furnitureset_withshadow_451
+  - first:
+      213: 1386105144781285538
+    second: stylish_furnitureset_withshadow_452
+  - first:
+      213: 5337748629657398526
+    second: stylish_furnitureset_withshadow_453
+  - first:
+      213: 3428928423523859514
+    second: stylish_furnitureset_withshadow_454
+  - first:
+      213: 2474058731693306255
+    second: stylish_furnitureset_withshadow_455
+  - first:
+      213: -129146676699381321
+    second: stylish_furnitureset_withshadow_456
+  - first:
+      213: 9160555202086814078
+    second: stylish_furnitureset_withshadow_457
+  - first:
+      213: 3931783040644966948
+    second: stylish_furnitureset_withshadow_458
+  - first:
+      213: 7735731600748503131
+    second: stylish_furnitureset_withshadow_459
+  - first:
+      213: 8132654174350905632
+    second: stylish_furnitureset_withshadow_460
+  - first:
+      213: 6670429610484090030
+    second: stylish_furnitureset_withshadow_461
+  - first:
+      213: -6413286249479749590
+    second: stylish_furnitureset_withshadow_462
+  - first:
+      213: 7625335805310007595
+    second: stylish_furnitureset_withshadow_463
+  - first:
+      213: 6563925147296108560
+    second: stylish_furnitureset_withshadow_464
+  - first:
+      213: 594237100436256035
+    second: stylish_furnitureset_withshadow_465
+  - first:
+      213: -8143261116588970090
+    second: stylish_furnitureset_withshadow_466
+  - first:
+      213: 250439806323717792
+    second: stylish_furnitureset_withshadow_467
+  - first:
+      213: 2694511929575460677
+    second: stylish_furnitureset_withshadow_468
+  - first:
+      213: -3317924745474624651
+    second: stylish_furnitureset_withshadow_469
+  - first:
+      213: 1086515449549220978
+    second: stylish_furnitureset_withshadow_470
+  - first:
+      213: -1202907401073220887
+    second: stylish_furnitureset_withshadow_471
+  - first:
+      213: -3275842834423968008
+    second: stylish_furnitureset_withshadow_472
+  - first:
+      213: -1368250702312268053
+    second: stylish_furnitureset_withshadow_473
+  - first:
+      213: -2685253962163910187
+    second: stylish_furnitureset_withshadow_474
+  - first:
+      213: 893282658679987741
+    second: stylish_furnitureset_withshadow_475
+  - first:
+      213: 8558760526815849724
+    second: stylish_furnitureset_withshadow_476
+  - first:
+      213: 211187497947855595
+    second: stylish_furnitureset_withshadow_477
+  - first:
+      213: 1593112753920138858
+    second: stylish_furnitureset_withshadow_478
+  - first:
+      213: 1088277067016653038
+    second: stylish_furnitureset_withshadow_479
+  - first:
+      213: 1252077322331991739
+    second: stylish_furnitureset_withshadow_480
+  - first:
+      213: 4578748038869801463
+    second: stylish_furnitureset_withshadow_481
+  - first:
+      213: 7682800282012991811
+    second: stylish_furnitureset_withshadow_482
+  - first:
+      213: -7392161525458789130
+    second: stylish_furnitureset_withshadow_483
+  - first:
+      213: 4353601865283404044
+    second: stylish_furnitureset_withshadow_484
+  - first:
+      213: 4231362413342161605
+    second: stylish_furnitureset_withshadow_485
+  - first:
+      213: -2317877599458236949
+    second: stylish_furnitureset_withshadow_486
+  - first:
+      213: 3263747825899158271
+    second: stylish_furnitureset_withshadow_487
+  - first:
+      213: 4333739225186529763
+    second: stylish_furnitureset_withshadow_488
+  - first:
+      213: 5230652612528959791
+    second: stylish_furnitureset_withshadow_489
+  - first:
+      213: -3875631950259928747
+    second: stylish_furnitureset_withshadow_490
+  - first:
+      213: 8999258509600929897
+    second: stylish_furnitureset_withshadow_491
+  - first:
+      213: 4866770695724526983
+    second: stylish_furnitureset_withshadow_492
+  - first:
+      213: 7620116575215967625
+    second: stylish_furnitureset_withshadow_493
+  - first:
+      213: -4065717579957230465
+    second: stylish_furnitureset_withshadow_494
+  - first:
+      213: 5800172980838798225
+    second: stylish_furnitureset_withshadow_495
+  - first:
+      213: -7551646247458745755
+    second: stylish_furnitureset_withshadow_496
+  - first:
+      213: 1390168049165850956
+    second: stylish_furnitureset_withshadow_497
+  - first:
+      213: 4161521677668481
+    second: stylish_furnitureset_withshadow_498
+  - first:
+      213: 2789844371903614983
+    second: stylish_furnitureset_withshadow_499
+  - first:
+      213: -3151337468222302692
+    second: stylish_furnitureset_withshadow_500
+  - first:
+      213: 2841079762654491991
+    second: stylish_furnitureset_withshadow_501
+  - first:
+      213: 1164985805621153773
+    second: stylish_furnitureset_withshadow_502
+  - first:
+      213: 3139291170145794582
+    second: stylish_furnitureset_withshadow_503
+  - first:
+      213: -2297025349610649518
+    second: stylish_furnitureset_withshadow_504
+  - first:
+      213: -4005027821186700562
+    second: stylish_furnitureset_withshadow_505
+  - first:
+      213: -1679318335009163728
+    second: stylish_furnitureset_withshadow_506
+  - first:
+      213: 5106454184333412212
+    second: stylish_furnitureset_withshadow_507
+  - first:
+      213: -2856826736776719743
+    second: stylish_furnitureset_withshadow_508
+  - first:
+      213: -3668719803393092418
+    second: stylish_furnitureset_withshadow_509
+  - first:
+      213: 3193842594857746439
+    second: stylish_furnitureset_withshadow_510
+  - first:
+      213: -8512090887131510265
+    second: stylish_furnitureset_withshadow_511
+  - first:
+      213: -4245827514410216731
+    second: stylish_furnitureset_withshadow_512
+  - first:
+      213: -8850029533243849345
+    second: stylish_furnitureset_withshadow_513
+  - first:
+      213: -8658168975542628387
+    second: stylish_furnitureset_withshadow_514
+  - first:
+      213: 570367411409453104
+    second: stylish_furnitureset_withshadow_515
+  - first:
+      213: 5593610565940248072
+    second: stylish_furnitureset_withshadow_516
+  - first:
+      213: -6378749553283803490
+    second: stylish_furnitureset_withshadow_517
+  - first:
+      213: -5642380599721792214
+    second: stylish_furnitureset_withshadow_518
+  - first:
+      213: 7426392149100476560
+    second: stylish_furnitureset_withshadow_519
+  - first:
+      213: 1320349121803484673
+    second: stylish_furnitureset_withshadow_520
+  - first:
+      213: -4214455052669497468
+    second: stylish_furnitureset_withshadow_521
+  - first:
+      213: -3255573984402061145
+    second: stylish_furnitureset_withshadow_522
+  - first:
+      213: 6987824484858832498
+    second: stylish_furnitureset_withshadow_523
+  - first:
+      213: 8655515656817240535
+    second: stylish_furnitureset_withshadow_524
+  - first:
+      213: -1839192019587261228
+    second: stylish_furnitureset_withshadow_525
+  - first:
+      213: -4286244739500146089
+    second: stylish_furnitureset_withshadow_526
+  - first:
+      213: -4224824719637755291
+    second: stylish_furnitureset_withshadow_527
+  - first:
+      213: -7460390930634938216
+    second: stylish_furnitureset_withshadow_528
+  - first:
+      213: -5187023915994766550
+    second: stylish_furnitureset_withshadow_529
+  - first:
+      213: -2655497916045550594
+    second: stylish_furnitureset_withshadow_530
+  - first:
+      213: -6128354372944150575
+    second: stylish_furnitureset_withshadow_531
+  - first:
+      213: 1692731834353968109
+    second: stylish_furnitureset_withshadow_532
+  - first:
+      213: -6789093088359019667
+    second: stylish_furnitureset_withshadow_533
+  - first:
+      213: 5335147734357612
+    second: stylish_furnitureset_withshadow_534
+  - first:
+      213: 3092289083340311027
+    second: stylish_furnitureset_withshadow_535
+  - first:
+      213: 4870131136204468219
+    second: stylish_furnitureset_withshadow_536
+  - first:
+      213: 2475176452420313397
+    second: stylish_furnitureset_withshadow_537
+  - first:
+      213: 5254414468049712264
+    second: stylish_furnitureset_withshadow_538
+  - first:
+      213: -7954795848125142315
+    second: stylish_furnitureset_withshadow_539
+  - first:
+      213: 8811567172661617589
+    second: stylish_furnitureset_withshadow_540
+  - first:
+      213: 9071151496918860445
+    second: stylish_furnitureset_withshadow_541
+  - first:
+      213: -2413598974444569129
+    second: stylish_furnitureset_withshadow_542
+  - first:
+      213: 443952291900101851
+    second: stylish_furnitureset_withshadow_543
+  - first:
+      213: 2539102842247537290
+    second: stylish_furnitureset_withshadow_544
+  - first:
+      213: -3494073073681775777
+    second: stylish_furnitureset_withshadow_545
+  - first:
+      213: 8942639562773647592
+    second: stylish_furnitureset_withshadow_546
+  - first:
+      213: 2582271498758667463
+    second: stylish_furnitureset_withshadow_547
+  - first:
+      213: 6044056691312237244
+    second: stylish_furnitureset_withshadow_548
+  - first:
+      213: -2132956687606495202
+    second: stylish_furnitureset_withshadow_549
+  - first:
+      213: 2908895165922098791
+    second: stylish_furnitureset_withshadow_550
+  - first:
+      213: -2644949905618454963
+    second: stylish_furnitureset_withshadow_551
+  - first:
+      213: 1931816754987419836
+    second: stylish_furnitureset_withshadow_552
+  - first:
+      213: 4531382963207452970
+    second: stylish_furnitureset_withshadow_553
+  - first:
+      213: -499346708733077742
+    second: stylish_furnitureset_withshadow_554
+  - first:
+      213: 8512524088599010350
+    second: stylish_furnitureset_withshadow_555
+  - first:
+      213: 4823939786717431051
+    second: stylish_furnitureset_withshadow_556
+  - first:
+      213: -3644935993079416960
+    second: stylish_furnitureset_withshadow_557
+  - first:
+      213: -9049854829444687206
+    second: stylish_furnitureset_withshadow_558
+  - first:
+      213: 1024502709093925719
+    second: stylish_furnitureset_withshadow_559
+  - first:
+      213: -796266592042196415
+    second: stylish_furnitureset_withshadow_560
+  - first:
+      213: 2662750780389500051
+    second: stylish_furnitureset_withshadow_561
+  - first:
+      213: -5590524404389700464
+    second: stylish_furnitureset_withshadow_562
+  - first:
+      213: 1724383428701940200
+    second: stylish_furnitureset_withshadow_563
+  - first:
+      213: 2652356000597987746
+    second: stylish_furnitureset_withshadow_564
+  - first:
+      213: -6296211030808873628
+    second: stylish_furnitureset_withshadow_565
+  - first:
+      213: -9131067489822015190
+    second: stylish_furnitureset_withshadow_566
+  - first:
+      213: -5822323914780142894
+    second: stylish_furnitureset_withshadow_567
+  - first:
+      213: 775322691635816428
+    second: stylish_furnitureset_withshadow_568
+  - first:
+      213: -2891157431825912270
+    second: stylish_furnitureset_withshadow_569
+  - first:
+      213: -2497857638828261015
+    second: stylish_furnitureset_withshadow_570
+  - first:
+      213: -4354238527726916683
+    second: stylish_furnitureset_withshadow_571
+  - first:
+      213: 1929416046657751796
+    second: stylish_furnitureset_withshadow_572
+  - first:
+      213: 1093867563694509655
+    second: stylish_furnitureset_withshadow_573
+  - first:
+      213: 821562638276911734
+    second: stylish_furnitureset_withshadow_574
+  - first:
+      213: 1742940456695079108
+    second: stylish_furnitureset_withshadow_575
+  - first:
+      213: -7479548227602214210
+    second: stylish_furnitureset_withshadow_576
+  - first:
+      213: 1719796944835456836
+    second: stylish_furnitureset_withshadow_577
+  - first:
+      213: -1875013054663117537
+    second: stylish_furnitureset_withshadow_578
+  - first:
+      213: -4205067496481414092
+    second: stylish_furnitureset_withshadow_579
+  - first:
+      213: 2344127123149787171
+    second: stylish_furnitureset_withshadow_580
+  - first:
+      213: -777141114954042284
+    second: stylish_furnitureset_withshadow_581
+  - first:
+      213: 9086617202821310033
+    second: stylish_furnitureset_withshadow_582
+  - first:
+      213: -2691686595315202974
+    second: stylish_furnitureset_withshadow_583
+  - first:
+      213: 4097526752575608717
+    second: stylish_furnitureset_withshadow_584
+  - first:
+      213: 3667677978414883461
+    second: stylish_furnitureset_withshadow_585
+  - first:
+      213: 1813282984177332370
+    second: stylish_furnitureset_withshadow_586
+  - first:
+      213: 7486995991846335701
+    second: stylish_furnitureset_withshadow_587
+  - first:
+      213: -1088071188692997885
+    second: stylish_furnitureset_withshadow_588
+  - first:
+      213: -903396832137825435
+    second: stylish_furnitureset_withshadow_589
+  - first:
+      213: 9085223532272873557
+    second: stylish_furnitureset_withshadow_590
+  - first:
+      213: 8104574306369093285
+    second: stylish_furnitureset_withshadow_591
+  - first:
+      213: 1483793464573621178
+    second: stylish_furnitureset_withshadow_592
+  - first:
+      213: -4947757362774960813
+    second: stylish_furnitureset_withshadow_593
+  - first:
+      213: -8463708387375272640
+    second: stylish_furnitureset_withshadow_594
+  - first:
+      213: -3687234422979858813
+    second: stylish_furnitureset_withshadow_595
+  - first:
+      213: -1071697956280141727
+    second: stylish_furnitureset_withshadow_596
+  - first:
+      213: 1969240819104761728
+    second: stylish_furnitureset_withshadow_597
+  - first:
+      213: -843277998103288123
+    second: stylish_furnitureset_withshadow_598
+  - first:
+      213: 1431423360293204138
+    second: stylish_furnitureset_withshadow_599
+  - first:
+      213: 3149190498245313466
+    second: stylish_furnitureset_withshadow_600
+  - first:
+      213: 1604354681701153766
+    second: stylish_furnitureset_withshadow_601
+  - first:
+      213: 1240151391965371686
+    second: stylish_furnitureset_withshadow_602
+  - first:
+      213: 2486594815340807914
+    second: stylish_furnitureset_withshadow_603
+  - first:
+      213: 3259314370675837104
+    second: stylish_furnitureset_withshadow_604
+  - first:
+      213: -5234905027694955610
+    second: stylish_furnitureset_withshadow_605
+  - first:
+      213: -5713498665139244835
+    second: stylish_furnitureset_withshadow_606
+  - first:
+      213: 8468235866468472547
+    second: stylish_furnitureset_withshadow_607
+  - first:
+      213: -7484287648343643203
+    second: stylish_furnitureset_withshadow_608
+  - first:
+      213: -4048283500802335844
+    second: stylish_furnitureset_withshadow_609
+  - first:
+      213: -3575323117619084689
+    second: stylish_furnitureset_withshadow_610
+  - first:
+      213: 3269319852652571352
+    second: object_stylish_furnitureset_withshadow_0
+  - first:
+      213: -9114397992011539436
+    second: object_stylish_furnitureset_withshadow_1
+  - first:
+      213: 418335252300880414
+    second: object_stylish_furnitureset_withshadow_2
+  - first:
+      213: 5279635123289907313
+    second: object_stylish_furnitureset_withshadow_3
+  - first:
+      213: -6692909532451382081
+    second: object_stylish_furnitureset_withshadow_4
+  - first:
+      213: 770784067000741808
+    second: object_stylish_furnitureset_withshadow_5
+  - first:
+      213: 3930309792859311368
+    second: object_stylish_furnitureset_withshadow_6
+  - first:
+      213: 7550764955959282268
+    second: object_stylish_furnitureset_withshadow_7
+  - first:
+      213: 7498971363027537298
+    second: object_stylish_furnitureset_withshadow_8
+  - first:
+      213: -1259790300624570296
+    second: object_stylish_furnitureset_withshadow_9
+  - first:
+      213: -8564263344925153194
+    second: object_stylish_furnitureset_withshadow_10
+  - first:
+      213: -3048094464042893279
+    second: object_stylish_furnitureset_withshadow_11
+  - first:
+      213: -5596853209113115868
+    second: object_stylish_furnitureset_withshadow_12
+  - first:
+      213: -6654510484120332232
+    second: object_stylish_furnitureset_withshadow_13
+  - first:
+      213: 1313742079370724513
+    second: object_stylish_furnitureset_withshadow_14
+  - first:
+      213: 7153205502369334994
+    second: object_stylish_furnitureset_withshadow_15
+  - first:
+      213: -7399776085586414894
+    second: object_stylish_furnitureset_withshadow_16
+  - first:
+      213: 9182426769200549600
+    second: object_stylish_furnitureset_withshadow_17
+  - first:
+      213: -7541388739380787947
+    second: object_stylish_furnitureset_withshadow_18
+  - first:
+      213: 6046314444473421777
+    second: object_stylish_furnitureset_withshadow_19
+  - first:
+      213: -1876062343051304012
+    second: object_stylish_furnitureset_withshadow_20
+  - first:
+      213: -3906625436980640995
+    second: object_stylish_furnitureset_withshadow_21
+  - first:
+      213: -3902806154788800897
+    second: object_stylish_furnitureset_withshadow_22
+  - first:
+      213: -6372097044814053821
+    second: object_stylish_furnitureset_withshadow_23
+  - first:
+      213: 6818053271464618880
+    second: object_stylish_furnitureset_withshadow_24
+  - first:
+      213: -4206567210825027843
+    second: object_stylish_furnitureset_withshadow_25
+  - first:
+      213: -692157306331396126
+    second: object_stylish_furnitureset_withshadow_26
+  - first:
+      213: 4281430390725514398
+    second: object_stylish_furnitureset_withshadow_27
+  - first:
+      213: 2422199414759579947
+    second: object_stylish_furnitureset_withshadow_28
+  - first:
+      213: -2460467457827624345
+    second: object_stylish_furnitureset_withshadow_29
+  - first:
+      213: -9191465129074796405
+    second: object_stylish_furnitureset_withshadow_30
+  - first:
+      213: -4032401454290978558
+    second: object_stylish_furnitureset_withshadow_31
+  - first:
+      213: 1138551493113354718
+    second: object_stylish_furnitureset_withshadow_32
+  - first:
+      213: -230909695700490194
+    second: object_stylish_furnitureset_withshadow_33
+  - first:
+      213: 5060411362421296492
+    second: object_stylish_furnitureset_withshadow_34
+  - first:
+      213: -5736818149047698791
+    second: object_stylish_furnitureset_withshadow_35
+  - first:
+      213: 2968221449460516209
+    second: object_stylish_furnitureset_withshadow_36
+  - first:
+      213: 3357111044610972482
+    second: object_stylish_furnitureset_withshadow_37
+  - first:
+      213: 3974908632313003208
+    second: object_stylish_furnitureset_withshadow_38
+  - first:
+      213: -5272687071364280337
+    second: object_stylish_furnitureset_withshadow_39
+  - first:
+      213: -3328917570681721931
+    second: object_stylish_furnitureset_withshadow_40
+  - first:
+      213: 3832832837483598696
+    second: object_stylish_furnitureset_withshadow_41
+  - first:
+      213: 4797291027329957776
+    second: object_stylish_furnitureset_withshadow_42
+  - first:
+      213: 782793903842767135
+    second: object_stylish_furnitureset_withshadow_43
+  - first:
+      213: -4286066666479909708
+    second: object_stylish_furnitureset_withshadow_44
+  - first:
+      213: -8930312152071028404
+    second: object_stylish_furnitureset_withshadow_45
+  - first:
+      213: -7841478962315400198
+    second: object_stylish_furnitureset_withshadow_46
+  - first:
+      213: 4932353434918597379
+    second: object_stylish_furnitureset_withshadow_47
+  - first:
+      213: 645447083157759211
+    second: object_stylish_furnitureset_withshadow_48
+  - first:
+      213: -1868614573436685153
+    second: object_stylish_furnitureset_withshadow_49
+  - first:
+      213: -6114288048967635359
+    second: object_stylish_furnitureset_withshadow_50
+  - first:
+      213: -4549870191397200050
+    second: object_stylish_furnitureset_withshadow_51
+  - first:
+      213: 3147750877362889464
+    second: object_stylish_furnitureset_withshadow_52
+  - first:
+      213: -8311315713648327639
+    second: object_stylish_furnitureset_withshadow_53
+  - first:
+      213: -336983210302418577
+    second: object_stylish_furnitureset_withshadow_54
+  - first:
+      213: -6281814538893595490
+    second: object_stylish_furnitureset_withshadow_55
+  - first:
+      213: -4942088341916438677
+    second: object_stylish_furnitureset_withshadow_56
+  - first:
+      213: -559071911368040917
+    second: object_stylish_furnitureset_withshadow_57
+  - first:
+      213: 3245678225200790360
+    second: object_stylish_furnitureset_withshadow_58
+  - first:
+      213: 6045226144535378190
+    second: object_stylish_furnitureset_withshadow_59
+  - first:
+      213: 1795844605747245570
+    second: object_stylish_furnitureset_withshadow_60
+  - first:
+      213: 2622355075256131105
+    second: object_stylish_furnitureset_withshadow_61
+  - first:
+      213: 4774934600457315483
+    second: object_stylish_furnitureset_withshadow_62
+  - first:
+      213: -45759764131666095
+    second: object_stylish_furnitureset_withshadow_63
+  - first:
+      213: 997977588479438969
+    second: object_stylish_furnitureset_withshadow_64
+  - first:
+      213: 704273163987887454
+    second: object_stylish_furnitureset_withshadow_65
+  - first:
+      213: -6853949504186244527
+    second: object_stylish_furnitureset_withshadow_66
+  - first:
+      213: -6963051627407061673
+    second: object_stylish_furnitureset_withshadow_67
+  - first:
+      213: -1883517530463678148
+    second: object_stylish_furnitureset_withshadow_68
+  - first:
+      213: 2088290138621515551
+    second: object_stylish_furnitureset_withshadow_69
+  - first:
+      213: -3577373869886047114
+    second: object_stylish_furnitureset_withshadow_70
+  - first:
+      213: -6346157062774334169
+    second: object_stylish_furnitureset_withshadow_71
+  - first:
+      213: 8175354512711883476
+    second: object_stylish_furnitureset_withshadow_72
+  - first:
+      213: -3648411545237958488
+    second: object_stylish_furnitureset_withshadow_73
+  - first:
+      213: -4537423405861992868
+    second: object_stylish_furnitureset_withshadow_74
+  - first:
+      213: 4828328861676007559
+    second: object_stylish_furnitureset_withshadow_75
+  - first:
+      213: 989649710234750508
+    second: object_stylish_furnitureset_withshadow_76
+  - first:
+      213: 4265258276677715253
+    second: object_stylish_furnitureset_withshadow_77
+  - first:
+      213: -8919455359831253592
+    second: object_stylish_furnitureset_withshadow_78
+  - first:
+      213: 8552618681698949788
+    second: object_stylish_furnitureset_withshadow_79
+  - first:
+      213: -5638513972275426106
+    second: object_stylish_furnitureset_withshadow_80
+  - first:
+      213: -5157884980949491239
+    second: object_stylish_furnitureset_withshadow_81
+  - first:
+      213: 2588788551835182462
+    second: object_stylish_furnitureset_withshadow_82
+  - first:
+      213: -616269521114451165
+    second: object_stylish_furnitureset_withshadow_83
+  - first:
+      213: 9059137993840499357
+    second: object_stylish_furnitureset_withshadow_84
+  - first:
+      213: -3496907752423401049
+    second: object_stylish_furnitureset_withshadow_85
+  - first:
+      213: -7758552916560508953
+    second: object_stylish_furnitureset_withshadow_86
+  - first:
+      213: -6478253475247648063
+    second: object_stylish_furnitureset_withshadow_87
+  - first:
+      213: 1471606875620120772
+    second: object_stylish_furnitureset_withshadow_88
+  - first:
+      213: -6830392844665395760
+    second: object_stylish_furnitureset_withshadow_89
+  - first:
+      213: 3419646987271429609
+    second: object_stylish_furnitureset_withshadow_90
+  - first:
+      213: 6596226201055120460
+    second: object_stylish_furnitureset_withshadow_91
+  - first:
+      213: -8263513398766266088
+    second: object_stylish_furnitureset_withshadow_92
+  - first:
+      213: -6895338254282019302
+    second: object_stylish_furnitureset_withshadow_93
+  - first:
+      213: 9126866219350867498
+    second: object_stylish_furnitureset_withshadow_94
+  - first:
+      213: 5397131511219666519
+    second: object_stylish_furnitureset_withshadow_95
+  - first:
+      213: 433099950256002940
+    second: object_stylish_furnitureset_withshadow_96
+  - first:
+      213: -6774291639190282862
+    second: object_stylish_furnitureset_withshadow_97
+  - first:
+      213: -5868950221254603181
+    second: object_stylish_furnitureset_withshadow_98
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 402
+        width: 38
+        height: 41
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da2d7a9515fe5d20800000000000000
+      internalID: 3269319852652571352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 402
+        width: 38
+        height: 41
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c5e900157238180800000000000000
+      internalID: -9114397992011539436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 402
+        width: 32
+        height: 40
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ada6e02b93ec500800000000000000
+      internalID: 418335252300880414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 402
+        width: 70
+        height: 41
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170ee530c28054940800000000000000
+      internalID: 5279635123289907313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_4
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 402
+        width: 70
+        height: 41
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcd864ad320e13a0800000000000000
+      internalID: -6692909532451382081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_5
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 384
+        width: 29
+        height: 64
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf2c10760062ba00800000000000000
+      internalID: 770784067000741808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 377
+        width: 40
+        height: 71
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d4e94dee34b8630800000000000000
+      internalID: 3930309792859311368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_7
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 386
+        width: 56
+        height: 52
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5acb66c8b4b9c860800000000000000
+      internalID: 7550764955959282268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 357
+        width: 38
+        height: 27
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d451239b2b11860800000000000000
+      internalID: 7498971363027537298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 358
+        width: 22
+        height: 42
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8483acf6563548ee0800000000000000
+      internalID: -1259790300624570296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_10
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 353
+        width: 26
+        height: 24
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65866dafcdf952980800000000000000
+      internalID: -8564263344925153194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_11
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 353
+        width: 19
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12083e40c3ef2b5d0800000000000000
+      internalID: -3048094464042893279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_12
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 321
+        width: 16
+        height: 79
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423cec2e8abf352b0800000000000000
+      internalID: -5596853209113115868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_13
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 321
+        width: 44
+        height: 62
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83815e7c8fd66a3a0800000000000000
+      internalID: -6654510484120332232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 321
+        width: 16
+        height: 79
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4006fe5795b3210800000000000000
+      internalID: 1313742079370724513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_15
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 321
+        width: 44
+        height: 57
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6081e418a454360800000000000000
+      internalID: 7153205502369334994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 320
+        width: 16
+        height: 41
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2f0391bd6be4990800000000000000
+      internalID: -7399776085586414894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_17
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 353
+        width: 13
+        height: 29
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee8c3afe788e6f70800000000000000
+      internalID: 9182426769200549600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_18
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 353
+        width: 13
+        height: 29
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515c314c5ea975790800000000000000
+      internalID: -7541388739380787947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_19
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 321
+        width: 16
+        height: 45
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dfc627d3f2d8e350800000000000000
+      internalID: 6046314444473421777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 257
+        width: 54
+        height: 70
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3a0f12d33e6f5e0800000000000000
+      internalID: -1876062343051304012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_21
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 320
+        width: 15
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13834efcd0e8c9c0800000000000000
+      internalID: -3906625436980640995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_22
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 320
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76fa9cea7276d9c0800000000000000
+      internalID: -3902806154788800897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_23
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 321
+        width: 16
+        height: 22
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34eba81af73c197a0800000000000000
+      internalID: -6372097044814053821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_24
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 321
+        width: 10
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08ba659a3579e9e50800000000000000
+      internalID: 6818053271464618880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_25
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 321
+        width: 10
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfee7fab8654f95c0800000000000000
+      internalID: -4206567210825027843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_26
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 257
+        width: 54
+        height: 63
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e70d6bd896f466f0800000000000000
+      internalID: -692157306331396126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 257
+        width: 64
+        height: 60
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9491c1a142ba6b30800000000000000
+      internalID: 4281430390725514398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_28
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 258
+        width: 62
+        height: 36
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2167ebc8816d9120800000000000000
+      internalID: 2422199414759579947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_29
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 258
+        width: 62
+        height: 36
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76aa6ca12e9aaddd0800000000000000
+      internalID: -2460467457827624345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_30
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 241
+        width: 20
+        height: 63
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b885b10e92b517080800000000000000
+      internalID: -9191465129074796405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_31
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 278
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209b73ded380a08c0800000000000000
+      internalID: -4032401454290978558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_32
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 278
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed91389fc82fccf00800000000000000
+      internalID: 1138551493113354718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_33
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 209
+        width: 44
+        height: 37
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28249cead4abccf0800000000000000
+      internalID: -230909695700490194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_34
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 209
+        width: 44
+        height: 37
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6dc87aa2513a3640800000000000000
+      internalID: 5060411362421296492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 209
+        width: 44
+        height: 37
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a7ff4d94ab260b0800000000000000
+      internalID: -5736818149047698791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_36
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 193
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1750ac59ead313920800000000000000
+      internalID: 2968221449460516209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_37
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 193
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bd39555bad69e20800000000000000
+      internalID: 3357111044610972482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_38
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 193
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc76a35756b92730800000000000000
+      internalID: 3974908632313003208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_39
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 243
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef89836b07a3d6b0800000000000000
+      internalID: -5272687071364280337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_40
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 243
+        width: 18
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bba5f85b1f4dc1d0800000000000000
+      internalID: -3328917570681721931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_41
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 194
+        width: 9
+        height: 28
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86399a19825f03530800000000000000
+      internalID: 3832832837483598696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_42
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 193
+        width: 38
+        height: 27
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09fbb20b5c6639240800000000000000
+      internalID: 4797291027329957776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_43
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 197
+        width: 28
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11b3ea78ea0dda00800000000000000
+      internalID: 782793903842767135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_44
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 145
+        width: 16
+        height: 52
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b482dc4315d484c0800000000000000
+      internalID: -4286066666479909708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_45
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 145
+        width: 25
+        height: 52
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41c37a9968211480800000000000000
+      internalID: -8930312152071028404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_46
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 145
+        width: 25
+        height: 52
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbed710e687d2390800000000000000
+      internalID: -7841478962315400198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_47
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 145
+        width: 44
+        height: 37
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303300bf05d337440800000000000000
+      internalID: 4932353434918597379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 113
+        width: 16
+        height: 74
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be42ee0d3b615f800800000000000000
+      internalID: 645447083157759211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_49
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 113
+        width: 29
+        height: 74
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94303022f85116e0800000000000000
+      internalID: -1868614573436685153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_50
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 129
+        width: 40
+        height: 63
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e2ed21a6fa52ba0800000000000000
+      internalID: -6114288048967635359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 177
+        width: 16
+        height: 12
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f91abca2d9bd0c0800000000000000
+      internalID: -4549870191397200050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_52
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 162
+        width: 14
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2a3a6debe0fab20800000000000000
+      internalID: 3147750877362889464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_53
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 162
+        width: 14
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9248ed7c46648ac80800000000000000
+      internalID: -8311315713648327639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_54
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 161
+        width: 30
+        height: 30
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6157ae3e8bc25bf0800000000000000
+      internalID: -336983210302418577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_55
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 161
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9cec5895f282d8a0800000000000000
+      internalID: -6281814538893595490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_56
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 128
+        width: 20
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fa87b56dc2a6bb0800000000000000
+      internalID: -4942088341916438677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_57
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 128
+        width: 20
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e52070f07cd38f0800000000000000
+      internalID: -559071911368040917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_58
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 130
+        width: 12
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b30544627fa0d20800000000000000
+      internalID: 3245678225200790360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_59
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 131
+        width: 7
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e097fe34625f4e350800000000000000
+      internalID: 6045226144535378190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_60
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 131
+        width: 7
+        height: 18
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202bd55772f1ce810800000000000000
+      internalID: 1795844605747245570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_61
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 129
+        width: 44
+        height: 29
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e959f0c0a746420800000000000000
+      internalID: 2622355075256131105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 13
+        height: 13
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94eafd68b9f34240800000000000000
+      internalID: 4774934600457315483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_63
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 112
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1572de9acbd6d5ff0800000000000000
+      internalID: -45759764131666095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_64
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 112
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9703e17445789dd00800000000000000
+      internalID: 997977588479438969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_65
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 113
+        width: 13
+        height: 13
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55a65416b416c900800000000000000
+      internalID: 704273163987887454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_66
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 97
+        width: 26
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152a38e5d31e1e0a0800000000000000
+      internalID: -6853949504186244527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_67
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 97
+        width: 26
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d42bbcf654e5f90800000000000000
+      internalID: -6963051627407061673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_68
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 97
+        width: 26
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31dd7c09c66cd5e0800000000000000
+      internalID: -1883517530463678148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_69
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 97
+        width: 12
+        height: 26
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f179c7c11d81bfc10800000000000000
+      internalID: 2088290138621515551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_70
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 97
+        width: 12
+        height: 26
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c7da84b6d9a5ec0800000000000000
+      internalID: -3577373869886047114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_71
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 65
+        width: 22
+        height: 36
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ddf7856cbede7a0800000000000000
+      internalID: -6346157062774334169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_72
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 65
+        width: 18
+        height: 38
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da141b4d91b47170800000000000000
+      internalID: 8175354512711883476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_73
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 65
+        width: 22
+        height: 36
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a058ab970d3e5dc0800000000000000
+      internalID: -3648411545237958488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_74
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 65
+        width: 22
+        height: 39
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c568d02e375d701c0800000000000000
+      internalID: -4537423405861992868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_75
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 65
+        width: 23
+        height: 34
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780f6f2a48ba10340800000000000000
+      internalID: 4828328861676007559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_76
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 65
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e4c960b21fbbd00800000000000000
+      internalID: 989649710234750508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_77
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5358ba8edcd313b30800000000000000
+      internalID: 4265258276677715253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_78
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 64
+        width: 46
+        height: 32
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8addd478b9ab73480800000000000000
+      internalID: -8919455359831253592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_79
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 65
+        width: 16
+        height: 27
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a1906906101b670800000000000000
+      internalID: 8552618681698949788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_80
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 65
+        width: 21
+        height: 27
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc42759a69ffb1b0800000000000000
+      internalID: -5638513972275426106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_81
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 65
+        width: 14
+        height: 47
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1ee2effe28b68b0800000000000000
+      internalID: -5157884980949491239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_82
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 65
+        width: 14
+        height: 47
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75ebbec8793de320800000000000000
+      internalID: 2588788551835182462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_83
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 32
+        height: 96
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323b21cb2229277f0800000000000000
+      internalID: -616269521114451165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_84
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 33
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a9b1e020688bd70800000000000000
+      internalID: 9059137993840499357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_85
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 33
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a95e743dec787fc0800000000000000
+      internalID: -3496907752423401049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_86
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 33
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7075d9a35145490800000000000000
+      internalID: -7758552916560508953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_87
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 33
+        width: 22
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c29cea99ce9816a0800000000000000
+      internalID: -6478253475247648063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_88
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 33
+        width: 18
+        height: 29
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c81c5e08a23c6410800000000000000
+      internalID: 1471606875620120772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_89
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 33
+        width: 22
+        height: 25
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5695195e19531a0800000000000000
+      internalID: -6830392844665395760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_90
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 3
+        width: 64
+        height: 42
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed5c8d11d6057f20800000000000000
+      internalID: 3419646987271429609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_91
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1
+        width: 62
+        height: 62
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cc30418c08a8b50800000000000000
+      internalID: 6596226201055120460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_92
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1
+        width: 46
+        height: 62
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8191bd5885a125d80800000000000000
+      internalID: -8263513398766266088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_93
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1eab5b0466de40a0800000000000000
+      internalID: -6895338254282019302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_94
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1
+        width: 18
+        height: 28
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ebbe4687429ae70800000000000000
+      internalID: 9126866219350867498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_95
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1
+        width: 22
+        height: 23
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75eb054a38676ea40800000000000000
+      internalID: 5397131511219666519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_96
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c779f3f2c1ea20600800000000000000
+      internalID: 433099950256002940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_97
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1
+        width: 18
+        height: 26
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d1a2955a1ecf1a0800000000000000
+      internalID: -6774291639190282862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: object_stylish_furnitureset_withshadow_98
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1
+        width: 22
+        height: 22
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e4ba96edc4d8ea0800000000000000
+      internalID: -5868950221254603181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
