@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: HeadChef_3_PhoneCall
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speaker: Player
+    text: Hello, who's this?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: I need to tell you something.  Its not him either.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: "That night \u2026 I followed her. I was worried, after everything with
+      the breakup."
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: You followed her?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: I saw her pick something up near his building. Didn't get a good look.
+      Then I heard the scream.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: And?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: "She ran. Still had it on her. When I caught up, she made me swear not
+      to say anything\u2026 Especially not to the police. Said no one would believe
+      her over a cop."
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: A cop?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: That's all she said. Wouldn't look at me after that.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Why tell me now?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Marco
+    text: Because she's the one locked up. Not me. She wouldn't have gotten rid of
+      something with her prints on it, she's probably still got it. Check her room.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

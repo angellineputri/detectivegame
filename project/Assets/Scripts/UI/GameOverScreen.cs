@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Serialization;
 
 public class GameOverScreen : MonoBehaviour
 {
@@ -7,8 +8,17 @@ public class GameOverScreen : MonoBehaviour
 
     [SerializeField] GameObject panel;
     [SerializeField] Button retrySceneButton;
-    [SerializeField] Button returnToDinerButton;
+
+    [FormerlySerializedAs("returnToDinerButton")]
     [SerializeField] Button restartGameButton;
+
+    [FormerlySerializedAs("restartGameButton")]
+    [SerializeField] Button mainMenuButton;
+
+    [Header("Back to Main Menu confirmation")]
+    [SerializeField] GameObject confirmPanel;
+    [SerializeField] Button confirmYesButton;
+    [SerializeField] Button confirmNoButton;
 
     void Awake()
     {
@@ -21,9 +31,13 @@ public class GameOverScreen : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         panel.SetActive(false);
+        if (confirmPanel != null) confirmPanel.SetActive(false);
+
         retrySceneButton?.onClick.AddListener(OnRetryScene);
-        returnToDinerButton?.onClick.AddListener(OnReturnToDiner);
         restartGameButton?.onClick.AddListener(OnRestartGame);
+        mainMenuButton?.onClick.AddListener(OnBackToMainMenu);
+        confirmYesButton?.onClick.AddListener(OnConfirmMainMenuYes);
+        confirmNoButton?.onClick.AddListener(OnConfirmMainMenuNo);
     }
 
     public void Show()
@@ -42,18 +56,37 @@ public class GameOverScreen : MonoBehaviour
         GameManager.Instance?.ReloadCurrentScene();
     }
 
-    void OnReturnToDiner()
-    {
-        panel.SetActive(false);
-        ClearAllProgress();
-        GameManager.Instance?.LoadScene("Diner");
-    }
-
     void OnRestartGame()
     {
         panel.SetActive(false);
         ClearAllProgress();
-        GameManager.Instance?.LoadScene("Diner");
+        GameManager.Instance?.LoadScene("VictimApartment");
+    }
+
+    void OnBackToMainMenu()
+    {
+        if (confirmPanel != null)
+        {
+            confirmPanel.SetActive(true);
+        }
+        else
+        {
+
+            OnConfirmMainMenuYes();
+        }
+    }
+
+    void OnConfirmMainMenuYes()
+    {
+        if (confirmPanel != null) confirmPanel.SetActive(false);
+        panel.SetActive(false);
+        ClearAllProgress();
+        GameManager.Instance?.LoadScene("MainMenu");
+    }
+
+    void OnConfirmMainMenuNo()
+    {
+        if (confirmPanel != null) confirmPanel.SetActive(false);
     }
 
     void ClearAllProgress()

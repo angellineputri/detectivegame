@@ -204,6 +204,11 @@ public class Interactable : MonoBehaviour
 
     public void TriggerInteract()
     {
+        if (interactionLocked)
+        {
+            return;
+        }
+
         if (!IsActiveThisPlaythrough())
         {
             return;

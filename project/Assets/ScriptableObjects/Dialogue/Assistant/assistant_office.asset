@@ -13,11 +13,19 @@ MonoBehaviour:
   m_Name: assistant_office
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Detective
+  - speaker: Player
     text: Dennis?? What are you doing here you're a suspect
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Assistant
     text: I know but I can't just skip work
-  - speaker: Detective
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
     text: I suppose I can't send you away but you're not allowed at your desk
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Assistant
     text: Fine.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

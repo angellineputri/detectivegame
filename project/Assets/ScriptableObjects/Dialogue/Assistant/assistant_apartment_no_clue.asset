@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: assistant_apartment_no_clue
   m_EditorClassIdentifier: 
   lines:
+  - speaker: Player
+    text: So you're the victim's assistant? How close are you?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Assistant
-    text: can i help you detective?
-  - speaker: Detective
-    text: Still looking around.
-  - speaker: Assistant
-    text: all right.
+    text: I help him with pretty much everything from getting his laundry to scheduling
+      his meetings.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

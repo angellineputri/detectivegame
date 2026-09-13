@@ -15,7 +15,7 @@ MonoBehaviour:
   outcomes:
   - clueID: apartment_meeting_note
     outcomeType: 2
-    targetScene: office
+    targetScene: Assistant_Office
     dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
       objectID:

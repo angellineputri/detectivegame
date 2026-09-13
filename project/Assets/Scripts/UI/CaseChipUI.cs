@@ -11,7 +11,6 @@ public class CaseChipUI : MonoBehaviour
     [SerializeField] Image    iconImage;
     [SerializeField] TMP_Text label;
 
-
     [Header("Icon Sprites (optional — colour tint used as fallback)")]
     [SerializeField] Sprite pinSprite;
     [SerializeField] Sprite tickSprite;

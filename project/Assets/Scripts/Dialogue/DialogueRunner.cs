@@ -15,7 +15,6 @@ public class DialogueRunner : MonoBehaviour
     [SerializeField] GameObject dialogueDimOverlay;
     [SerializeField] Image speakerPortraitImage;
 
-
     DialogueLine[] _lines;
     int _index;
     Action _onComplete;
@@ -101,6 +100,9 @@ public class DialogueRunner : MonoBehaviour
             onComplete?.Invoke();
             return;
         }
+
+        if (PlayerController.Instance != null)
+            PlayerController.Instance.CanMove = false;
 
         _lines = data.lines;
         _index = 0;

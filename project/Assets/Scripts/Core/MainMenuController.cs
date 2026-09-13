@@ -24,7 +24,12 @@ public class MainMenuController : MonoBehaviour
         creditsButton?.onClick.AddListener(OnCredits);
     }
 
-    public void OnStartClicked()  => Load(caseBriefingScene);
+    public void OnStartClicked()
+    {
+
+        BagUI.Instance?.ClearBag();
+        Load(caseBriefingScene);
+    }
     public void OnEndings()       => Load(endingsScene);
     public void OnSettings()      => Load(settingsScene);
     public void OnCredits()       => Load(creditsScene);

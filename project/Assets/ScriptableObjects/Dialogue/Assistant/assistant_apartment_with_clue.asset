@@ -13,8 +13,36 @@ MonoBehaviour:
   m_Name: assistant_apartment_with_clue
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Detective
-    text: there are no signs of forced entry, do you have any means of entering the
-      apartment yourself?
+  - speaker: Player
+    text: You're the one who found him and report the case right? What exactly happened
+      that night?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Assistant
-    text: i have a spare key, but i didn't do anythin i swear!
+    text: "I  was coming to fetch him with the driver, but when i knocked on the
+      door there was no answer. \n"
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Assistant
+    text: So I opened the door and found him- yeah..
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: 'There''s no sign of forced entry, you have access to his apartment?
+
+'
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Assistant
+    text: "Of course. \n"
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Assistant
+    text: He gave me the keys so that if there was any situation where he needed
+      something from home, I can pick it up for him.
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
+    text: Interesting. Hand me over the key, would you?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

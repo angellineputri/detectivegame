@@ -29,6 +29,7 @@ public class CourtSceneController : MonoBehaviour
         CaseBoardManager.Instance?.ExGf_P1_Arrest();
 
         yield return new WaitUntil(() => CaseBoardUI.Instance == null || !CaseBoardUI.Instance.IsBoardVisible);
+        yield return new WaitForSeconds(0.5f);
 
         if (marcusClosingDialogue != null)
         {

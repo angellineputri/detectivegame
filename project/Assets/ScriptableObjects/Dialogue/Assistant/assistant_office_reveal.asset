@@ -13,11 +13,19 @@ MonoBehaviour:
   m_Name: assistant_office_reveal
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Detective
+  - speaker: Player
     text: Dennis, care to explain this email?
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Assistant
     text: Wha... how did you.
-  - speaker: Detective
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
+  - speaker: Player
     text: Dennis you're under arrest for the murder of Julian Reyes.
+    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}
   - speaker: Assistant
     text: Wait please I didn't have a choice...
+    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
+      type: 3}

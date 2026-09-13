@@ -132,21 +132,26 @@ public class CaseBoardUI : MonoBehaviour
 
     IEnumerator RefreshDiagram(CaseBoardManager bm)
     {
-        int sA     = bm.stageA;
-        int sB     = bm.stageB;
-        int sFinal = bm.stageFinal;
+        int sA = bm.stageA;
+        int sB = bm.stageB;
 
-        bool merged        = sFinal >= 1;
-        bool slot3AVisible = sA >= 5 && !merged;
-        bool slot3BVisible = sB >= 5 && !merged;
+        bool exGfDead = sA >= 5;
+
+        bool asstDead = bm.assistantP1CourtDone;
+
+        bool merged          = exGfDead && asstDead;
+        bool culpritRevealed = bm.p3Done;
+
+        bool slot3AVisible = exGfDead && !merged;
+        bool slot2BDead    = asstDead && !merged;
 
         _lnStartA.Set(sA >= 1, true);
-        _lnStartB.Set(sB >= 1, true);
         _lnA12.Set(sA >= 3, sA >= 3);
-        _lnB12.Set(sB >= 3, sB >= 3);
-
         _lnA23.Set(true, slot3AVisible);
-        _lnB23.Set(true, slot3BVisible);
+
+        _lnStartB.Set(sB >= 1, true);
+        _lnB12.Set(sB >= 3, slot2BDead);
+        _lnB23.Set(false, false);
 
         _lnMergeA.Set(true, merged);
         _lnMergeB.Set(true, merged);
@@ -184,33 +189,24 @@ public class CaseBoardUI : MonoBehaviour
                          : bm.assistantChain?.stage1SuspectName);
 
         bool was2B = _slot2B.IsVisible;
-        _slot2B.SetActive(sB >= 3);
-        if (sB >= 3)
+        _slot2B.SetActive(slot2BDead);
+        if (slot2BDead)
         {
-            _slot2B.ShowNode(sB >= 4,
-                sB >= 4 ? bm.assistantChain?.stage2ArrestedName
-                         : bm.assistantChain?.stage2SuspectName);
+            _slot2B.ShowDeadEnd();
             if (!was2B) yield return StartCoroutine(Reveal(_slot2B.cg));
         }
 
-        bool was3B = _slot3B.IsVisible;
-        _slot3B.SetActive(slot3BVisible);
-        if (slot3BVisible)
-        {
-            _slot3B.ShowDeadEnd();
-            if (!was3B) yield return StartCoroutine(Reveal(_slot3B.cg));
-        }
+        _slot3B.SetActive(false);
 
         bool wasMerged = _merged.IsVisible;
         _merged.SetActive(merged);
         if (merged)
         {
-            bool revealed = sFinal >= 2;
-            _merged.ShowMerged(revealed, revealed ? bm.culpritName : "???");
+            _merged.ShowMerged(culpritRevealed, culpritRevealed ? bm.culpritName : "???");
             if (!wasMerged) yield return StartCoroutine(Reveal(_merged.cg));
         }
 
-        RecenterDiagram(sA, sB, sFinal);
+        RecenterDiagram(merged, slot3AVisible, sA >= 3 || slot2BDead);
     }
 
     void DismissBoard()
@@ -262,13 +258,10 @@ public class CaseBoardUI : MonoBehaviour
         rt.localScale = Vector3.one;
     }
 
-    void RecenterDiagram(int sA, int sB, int sFinal)
+    void RecenterDiagram(bool merged, bool slot3Visible, bool slot2Visible)
     {
         if (diagramRoot == null) return;
-        bool merged = sFinal >= 1;
-        bool slot3  = (sA >= 5 || sB >= 5) && !merged;
-        bool slot2  = sA >= 3 || sB >= 3;
-        float rightEdge = merged ? 1506f : slot3 ? 1236f : slot2 ? 921f : 561f;
+        float rightEdge = merged ? 1506f : slot3Visible ? 1236f : slot2Visible ? 921f : 561f;
         float scale = diagramRoot.localScale.x;
         float cx = (30f + rightEdge) * 0.5f * scale;
         float cy = 300f * scale;
@@ -297,8 +290,8 @@ public class CaseBoardUI : MonoBehaviour
         _lnB12    = MakeBezierLine("LineB12",    new Vector2(555,435), new Vector2(637.5f,447),     new Vector2(720,435));
         _lnA23    = MakeBezierLine("LineA23",    new Vector2(915,150), new Vector2(997.5f,132),     new Vector2(1080,150));
         _lnB23    = MakeBezierLine("LineB23",    new Vector2(915,435), new Vector2(997.5f,453),     new Vector2(1080,435));
-        _lnMergeA = MakeBezierLine("LineMergeA", new Vector2(915,150), new Vector2(1140,195),       new Vector2(1290,307.5f));
-        _lnMergeB = MakeBezierLine("LineMergeB", new Vector2(915,435), new Vector2(1140,390),       new Vector2(1290,315));
+        _lnMergeA = MakeBezierLine("LineMergeA", new Vector2(915,150), new Vector2(1140,195),      new Vector2(1290,307.5f));
+        _lnMergeB = MakeBezierLine("LineMergeB", new Vector2(555,435), new Vector2(920,390),       new Vector2(1290,315));
 
         MakeStartCard(30, 270, 165, 96, 1f, body);
 
@@ -312,6 +305,8 @@ public class CaseBoardUI : MonoBehaviour
 
         _merged  = MakeNodeCard("Merged", 1290, 255, 216, 108, 1f,  head, body);
 
+        if (_merged.value != null) _merged.value.enableWordWrapping = true;
+
         _slot1A.ShowPlaceholder(); _slot1B.ShowPlaceholder();
         _slot2A.SetActive(false);  _slot2B.SetActive(false);
         _slot3A.SetActive(false);  _slot3B.SetActive(false);
@@ -323,7 +318,7 @@ public class CaseBoardUI : MonoBehaviour
         _lnMergeA.Set(false, false); _lnMergeB.Set(false, false);
 
         diagramRoot.localScale = new Vector3(1.1f, 1.1f, 1f);
-        RecenterDiagram(0, 0, 0);
+        RecenterDiagram(false, false, false);
     }
 
     NodeCard MakeNodeCard(string name, float x, float y, float w, float h, float cssRotateDeg,

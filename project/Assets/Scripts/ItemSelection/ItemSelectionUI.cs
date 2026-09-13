@@ -20,6 +20,7 @@ public class ItemSelectionUI : MonoBehaviour
 
     public static System.Action<string, System.Action> PreDialogueWalkHandler;
     public static System.Action<string, System.Action> SceneLoadInterceptHandler;
+    public static System.Action<string> PostDialogueHandler;
 
     void Awake()
     {
@@ -164,6 +165,19 @@ public class ItemSelectionUI : MonoBehaviour
 
     public void ExecuteOutcome(ClueOutcome outcome)
     {
+        if (outcome.requirementClues != null)
+        {
+            foreach (string req in outcome.requirementClues)
+            {
+                if (!string.IsNullOrEmpty(req) &&
+                    !GameManager.Instance.HasClue(req))
+                {
+                    GameOverScreen.Instance?.Show();
+                    return;
+                }
+            }
+        }
+
         switch (outcome.outcomeType)
         {
             case OutcomeType.ShowPopup:
@@ -238,6 +252,8 @@ public class ItemSelectionUI : MonoBehaviour
                     BagUI.Instance?.RegisterClueDisplayName(grant.objectID, grant.displayName);
                     GameManager.Instance?.AddClue(grant.objectID);
                 }
+
+                PostDialogueHandler?.Invoke(outcome.clueID);
 
                 if (!string.IsNullOrEmpty(outcome.targetScene))
                 {

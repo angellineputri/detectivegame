@@ -13,17 +13,19 @@ MonoBehaviour:
   m_Name: VictimApartmentAssistant
   m_EditorClassIdentifier: Assembly-CSharp::ClueOutcomeTable
   outcomes:
-  - clueID: bedroom_drawer
-    outcomeType: 1
-    targetScene: 
+  - clueID: phone
+    outcomeType: 3
+    targetScene:
     dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
-      objectID: 
-      displayName: 
-      clueDescription: 
-    flagKey: 
+      objectID:
+      displayName:
+      clueDescription:
+    flagKey:
     flagValue: 0
-    popupText: 
+    popupText:
+    requirementClues:
+    - apartment_entrance
   - clueID: apartment_entrance
     outcomeType: 1
     targetScene: 
@@ -37,7 +39,7 @@ MonoBehaviour:
     popupText: 
   - clueID: assistant_keys
     outcomeType: 2
-    targetScene: office
+    targetScene: Assistant_Office
     dialogue: {fileID: 0}
     itemToGrantAfterDialogue:
       objectID: 

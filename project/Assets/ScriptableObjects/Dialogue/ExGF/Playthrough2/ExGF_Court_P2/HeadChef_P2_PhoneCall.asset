@@ -14,47 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speaker: Player
-    text: Hello, who's this?
+    text: Well hello there, sorry about it. I messed up.
     speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
   - speaker: Marco
-    text: "I need to tell you something. That night … I followed her. I was
-      worried, after everything with the breakup."
+    text: You still do. Please, trust me it's not us.
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Player
-    text: You followed her?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
   - speaker: Marco
-    text: "I saw her pick something up near his building. Didn't get a good look.
-      Then I heard the scream."
+    text: Argh I can't say anything here but I'll contact you again. Please, recheck
+      his room, retrace his step.
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Player
-    text: "And?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
   - speaker: Marco
-    text: "She ran. Still had it on her. When I caught up, she made me swear not
-      to say anything… Especially not to the police. Said no one would believe
-      her over a cop."
+    text: Do anything...
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Player
-    text: A cop?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
   - speaker: Marco
-    text: "That's all she said. Wouldn't look at me after that."
+    text: Please it's not her...
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}
-  - speaker: Player
-    text: Why tell me now?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
   - speaker: Marco
-    text: "Because she's the one locked up. Not me. She wouldn't have gotten rid
-      of something with her prints on it, she's probably still got it. Check her room."
+    text: I gotta go, people better not see us interact. You're our only hope..
     speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
       type: 3}

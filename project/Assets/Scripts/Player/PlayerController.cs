@@ -10,10 +10,13 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D _rb;
     Animator _animator;
     Vector2 _input;
+    Vector2 _autoMoveVelocity;
     float _lastMoveX = 0f;
     float _lastMoveY = -1f;
 
     public bool CanMove { get; set; } = true;
+
+    public void SetAutoMoveVelocity(Vector2 v) { _autoMoveVelocity = v; }
 
     void Awake()
     {
@@ -39,11 +42,15 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        float inputMagnitude = _input.magnitude;
+        Vector2 animInput = _autoMoveVelocity != Vector2.zero
+            ? _autoMoveVelocity.normalized
+            : _input;
+        float inputMagnitude = animInput.magnitude;
+
         if (inputMagnitude > 0f)
         {
-            _lastMoveX = _input.x;
-            _lastMoveY = _input.y;
+            _lastMoveX = animInput.x;
+            _lastMoveY = animInput.y;
         }
 
         if (_animator != null)
@@ -62,6 +69,7 @@ public class PlayerController : MonoBehaviour
         foreach (Interactable interactable in FindObjectsOfType<Interactable>())
         {
             if (!interactable.IsActiveThisPlaythrough()) continue;
+            if (interactable.interactionLocked) continue;
 
             Collider2D col = interactable.GetComponent<Collider2D>();
             float dist = col != null
@@ -97,6 +105,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        _rb.velocity = _input * moveSpeed;
+        if (!CanMove && _autoMoveVelocity != Vector2.zero)
+            _rb.velocity = _autoMoveVelocity;
+        else
+            _rb.velocity = _input * moveSpeed;
     }
 }

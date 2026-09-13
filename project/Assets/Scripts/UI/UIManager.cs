@@ -12,7 +12,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] Button closeButton;
     [SerializeField] GameObject clueDimOverlay;
 
-
     string _revealText;
     System.Action _onComplete;
     bool _showingReveal;

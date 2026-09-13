@@ -9,7 +9,6 @@ public class CaseBriefingController : MonoBehaviour
     [SerializeField] TMP_Text infoText;
     [SerializeField] TMP_Text objectivesText;
 
-
     [Header("Evidence photo — assign sprite in Inspector")]
     [Tooltip("Assign your evidence photo sprite here. The Image is already framed with a mat and tilted backing card.")]
     [SerializeField] Image evidencePhoto;

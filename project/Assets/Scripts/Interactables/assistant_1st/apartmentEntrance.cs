@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class apartmentEntrance : Interactable
+public class ApartmentEntrance : Interactable
 {
     void Reset()
     {

@@ -50,6 +50,8 @@ public class GameManager : MonoBehaviour
         CurrentPlaythrough = 1;
         FoundClues.Clear();
         _flags.Clear();
+
+        CaseBoardManager.Instance?.ResetForNewCase();
         Debug.Log("[GameManager] Case selected: " + caseID);
     }
 

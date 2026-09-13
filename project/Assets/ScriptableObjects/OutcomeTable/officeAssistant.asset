@@ -15,15 +15,15 @@ MonoBehaviour:
   outcomes:
   - clueID: assistant_computer
     outcomeType: 3
-    targetScene: 
-    dialogue: {fileID: 0}
+    targetScene:
+    dialogue: {fileID: 11400000, guid: b4c7d2e1f0a3b5c8d9e2f4a6b1c3d5e7, type: 2}
     itemToGrantAfterDialogue:
-      objectID: 
-      displayName: 
-      clueDescription: 
-    flagKey: 
+      objectID:
+      displayName:
+      clueDescription:
+    flagKey:
     flagValue: 0
-    popupText: 
+    popupText:
   - clueID: IT_permission
     outcomeType: 1
     targetScene: 

@@ -6,11 +6,17 @@ public class CourtP2SceneController : MonoBehaviour
     [SerializeField] DialogueData chiefInspectorDialogue;
     [SerializeField] DialogueData headChefCallDialogue;
 
-    [Header("Post-Call — Assistant Path Not Yet Visited")]
-    [Tooltip("Plays after the case board dead-end ??? closes (only when assistant path not yet started).")]
+    [Header("Post-Call — Player Thinking")]
+    [Tooltip("Plays after the head chef phone call, before the case board dead-end ??? appears.")]
     [SerializeField] DialogueData thinkingDialogue;
-    [Tooltip("Scene to load after the thinking dialogue when assistant path has not been visited.")]
+    [Tooltip("Delay before the thinking dialogue starts (after the phone call ends).")]
+    [SerializeField] float pauseBeforeThinking = 0.5f;
+
+    [Header("Scene Navigation")]
+    [Tooltip("Loaded when the assistant path has NOT been played yet.")]
     [SerializeField] string revisitSceneName = "VictimApartmentRevisitForAssistant";
+    [Tooltip("Loaded when the assistant path has already been played (both paths done).")]
+    [SerializeField] string finalSceneName = "VictimApartmentRevisitFinal";
 
     [SerializeField] float pauseBetweenBeats = 1f;
 
@@ -35,6 +41,7 @@ public class CourtP2SceneController : MonoBehaviour
         CaseBoardManager.Instance?.ExGf_P2_Arrest();
 
         yield return new WaitUntil(() => CaseBoardUI.Instance == null || !CaseBoardUI.Instance.IsBoardVisible);
+        yield return new WaitForSeconds(0.5f);
 
         if (chiefInspectorDialogue != null)
         {
@@ -60,30 +67,35 @@ public class CourtP2SceneController : MonoBehaviour
             Debug.LogWarning("[CourtP2SceneController] headChefCallDialogue is not assigned.");
         }
 
+        yield return new WaitForSeconds(pauseBeforeThinking);
+
+        if (thinkingDialogue != null)
+        {
+            bool done = false;
+            DialogueRunner.Instance.Play(thinkingDialogue, () => done = true);
+            yield return new WaitUntil(() => done);
+        }
+        else
+        {
+            Debug.LogWarning("[CourtP2SceneController] thinkingDialogue is not assigned.");
+        }
+
         CaseBoardManager.Instance?.ExGf_P2_CourtDone();
 
         yield return new WaitUntil(() => CaseBoardUI.Instance == null || !CaseBoardUI.Instance.IsBoardVisible);
+        yield return new WaitForSeconds(0.5f);
 
         bool assistantNotStarted = CaseBoardManager.Instance == null
             || CaseBoardManager.Instance.assistantStage == PathStage.NotStarted;
 
-        if (assistantNotStarted)
+        string nextScene = assistantNotStarted ? revisitSceneName : finalSceneName;
+        if (!string.IsNullOrEmpty(nextScene))
         {
-            if (thinkingDialogue != null)
-            {
-                bool done = false;
-                DialogueRunner.Instance.Play(thinkingDialogue, () => done = true);
-                yield return new WaitUntil(() => done);
-            }
-            else
-            {
-                Debug.LogWarning("[CourtP2SceneController] thinkingDialogue is not assigned.");
-            }
-
-            if (!string.IsNullOrEmpty(revisitSceneName))
-            {
-                GameManager.Instance?.LoadScene(revisitSceneName);
-            }
+            GameManager.Instance?.LoadScene(nextScene);
+        }
+        else
+        {
+            Debug.LogWarning("[CourtP2SceneController] next scene name is empty.");
         }
     }
 }

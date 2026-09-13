@@ -40,6 +40,11 @@ public class NPCInteractable : Interactable
     [Tooltip("If true, the NPC GameObject is disabled after giving the reward.")]
     public bool deactivateSelfOnComplete;
 
+    [HideInInspector] public DialogueData overrideDialogue;
+    [HideInInspector] public System.Action onOverrideDialogueComplete;
+
+    [HideInInspector] public System.Action onCompletionCallback;
+
     protected override void Start()
     {
         addToBag = false;
@@ -49,12 +54,14 @@ public class NPCInteractable : Interactable
 
     public override void RefreshActiveState()
     {
+        bool active = IsActiveThisPlaythrough();
+
         Collider2D col = GetComponent<Collider2D>();
 
         if (col != null)
         {
-            col.enabled = true;
-            col.isTrigger = false;
+            col.enabled = active;
+            if (active) col.isTrigger = false;
         }
     }
 
@@ -78,6 +85,11 @@ public class NPCInteractable : Interactable
             return;
         }
 
+        if (interactionLocked)
+        {
+            return;
+        }
+
         if (!IsActiveThisPlaythrough())
         {
             return;
@@ -95,6 +107,25 @@ public class NPCInteractable : Interactable
     {
         if (HasCompletedReward())
         {
+            return;
+        }
+
+        if (overrideDialogue != null)
+        {
+            DialogueData toPlay = overrideDialogue;
+            System.Action callback = onOverrideDialogueComplete;
+            overrideDialogue = null;
+            onOverrideDialogueComplete = null;
+
+            if (PlayerController.Instance != null)
+                PlayerController.Instance.CanMove = false;
+
+            DialogueRunner.Instance?.Play(toPlay, () =>
+            {
+                if (PlayerController.Instance != null)
+                    PlayerController.Instance.CanMove = true;
+                callback?.Invoke();
+            });
             return;
         }
 
@@ -192,6 +223,8 @@ public class NPCInteractable : Interactable
             GiveReward();
 
             SetCompletionFlag();
+
+            onCompletionCallback?.Invoke();
 
             if (deactivateSelfOnComplete)
             {

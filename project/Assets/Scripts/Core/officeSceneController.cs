@@ -2,16 +2,20 @@ using System.Collections;
 using System.Diagnostics;
 using UnityEngine;
 
-public class officeSceneController : MonoBehaviour
+public class OfficeSceneController : MonoBehaviour
 {
     [Header("Outcome Table")]
     [Tooltip("Outcome table used by the Bag UI for the office.")]
     [SerializeField] ClueOutcomeTable apartmentOutcomeTable;
 
-    [Header("Assistant")]
-    [Tooltip("Assistant NPC in the apartment.")]
+    [Header("NPCs")]
+    [Tooltip("Assistant NPC in the office.")]
     [SerializeField] NPCInteractable npc_assistant;
     [SerializeField] NPCInteractable npc_IT_head;
+
+    [Header("Office Computer")]
+    [Tooltip("The assistant's computer interactable. Locked until IT head is talked to.")]
+    [SerializeField] Interactable officeComputer;
 
     [Header("Decision Panel")]
     [Tooltip("Title shown when the player is asked to decide what evidence to use.")]
@@ -25,8 +29,8 @@ public class officeSceneController : MonoBehaviour
     [SerializeField] float openingDialogueDelay = 0.5f;
 
     [Header("Scene Navigation")]
-    [Tooltip("Scene loaded when the apartment sequence is completed.")]
-    [SerializeField] string nextSceneName = "office";
+    [Tooltip("Scene loaded after the assistant's dialogue ends.")]
+    [SerializeField] string courtSceneName = "court";
 
     [Header("Debug")]
     [SerializeField] bool debugLogs = true;
@@ -34,30 +38,15 @@ public class officeSceneController : MonoBehaviour
     bool _decisionStarted;
     bool _apartmentCompleted;
 
-
-    // ---------------------------------------------------------
-    // INITIALISATION
-    // ---------------------------------------------------------
-
     void Awake()
     {
         BagUI.Instance?.ClearBag();
     }
 
-
     void Start()
     {
-        // -----------------------------------------------------
-        // Mark Assistant P1 as the active case.
-        // -----------------------------------------------------
 
         CaseBoardManager.Instance?.Assistant_P1_Pin();
-
-
-        // -----------------------------------------------------
-        // Give the Bag UI this scene's outcome table.
-        // This is the same system used by DinerSceneController.
-        // -----------------------------------------------------
 
         if (BagUI.Instance != null)
         {
@@ -65,25 +54,20 @@ public class officeSceneController : MonoBehaviour
             BagUI.Instance.SetHudVisible(true);
         }
 
-
-        // -----------------------------------------------------
-        // Refresh interactables so clue requirements are checked.
-        // -----------------------------------------------------
-
         RefreshInteractables();
+        StartCoroutine(LateApplyOfficeGating());
 
+        if (npc_assistant != null)
+        {
+            npc_assistant.sceneToLoadOnComplete = courtSceneName;
+        }
 
-        // -----------------------------------------------------
-        // Restore the player's position if this scene was entered
-        // using a pending spawn position.
-        // -----------------------------------------------------
+        if (npc_IT_head != null)
+        {
+            npc_IT_head.onCompletionCallback = OnITHeadTalkedTo;
+        }
 
         RestorePendingSpawn();
-
-
-        // -----------------------------------------------------
-        // Optional opening dialogue.
-        // -----------------------------------------------------
 
         if (openingDialogue != null)
         {
@@ -94,22 +78,16 @@ public class officeSceneController : MonoBehaviour
             EnablePlayerMovement();
         }
 
-
         Log("Assistant apartment scene started.");
     }
 
-
     void OnEnable()
     {
-        // -----------------------------------------------------
-        // Allow ItemSelectionUI to intercept scene loads if
-        // the outcome table requires special handling.
-        // -----------------------------------------------------
-
         ItemSelectionUI.SceneLoadInterceptHandler =
             HandleSceneLoadIntercept;
+        ItemSelectionUI.PostDialogueHandler =
+            HandlePostDialogue;
     }
-
 
     void OnDisable()
     {
@@ -118,12 +96,13 @@ public class officeSceneController : MonoBehaviour
         {
             ItemSelectionUI.SceneLoadInterceptHandler = null;
         }
+
+        if (ItemSelectionUI.PostDialogueHandler ==
+            HandlePostDialogue)
+        {
+            ItemSelectionUI.PostDialogueHandler = null;
+        }
     }
-
-
-    // ---------------------------------------------------------
-    // OPENING SEQUENCE
-    // ---------------------------------------------------------
 
     IEnumerator OpeningSequence()
     {
@@ -150,7 +129,6 @@ public class officeSceneController : MonoBehaviour
         EnablePlayerMovement();
     }
 
-
     void EnablePlayerMovement()
     {
         if (PlayerController.Instance != null)
@@ -158,11 +136,6 @@ public class officeSceneController : MonoBehaviour
             PlayerController.Instance.CanMove = true;
         }
     }
-
-
-    // ---------------------------------------------------------
-    // OUTCOME TABLE
-    // ---------------------------------------------------------
 
     public void SetOutcomeTable()
     {
@@ -176,11 +149,6 @@ public class officeSceneController : MonoBehaviour
 
         Log("Assistant apartment outcome table assigned.");
     }
-
-
-    // ---------------------------------------------------------
-    // DECISION SYSTEM
-    // ---------------------------------------------------------
 
     public void StartDecision()
     {
@@ -207,7 +175,6 @@ public class officeSceneController : MonoBehaviour
         }
     }
 
-
     void OnDecisionComplete()
     {
         Log("Apartment evidence decision completed.");
@@ -216,12 +183,53 @@ public class officeSceneController : MonoBehaviour
         CheckApartmentCompletion();
     }
 
+    public void OnComputerUsed()
+    {
+        Log("Computer used — unlocking assistant.");
+        ApplyOfficeGating();
+    }
 
-    // ---------------------------------------------------------
-    // CLUE HANDLING
-    // ---------------------------------------------------------
+    public void OnITHeadTalkedTo()
+    {
+        Log("IT head dialogue done — unlocking computer.");
+        ApplyOfficeGating();
+    }
 
-    void RefreshInteractables()
+    void HandlePostDialogue(string clueID)
+    {
+        if (clueID == "assistant_computer")
+        {
+            Log("assistant_computer bag move done — unlocking assistant.");
+            ApplyOfficeGating();
+        }
+    }
+
+    IEnumerator LateApplyOfficeGating()
+    {
+        yield return null;
+        ApplyOfficeGating();
+    }
+
+    void ApplyOfficeGating()
+    {
+        bool hasITPermission =
+            GameManager.Instance?.HasClue("IT_permission") ?? false;
+        bool hasComputerClue =
+            GameManager.Instance?.HasClue("assistant_computer") ?? false;
+
+        SetLocked(officeComputer, !hasITPermission);
+        SetLocked(npc_assistant, !hasComputerClue);
+
+        Log($"Office gating — computer locked: {!hasITPermission}, assistant locked: {!hasComputerClue}");
+    }
+
+    void SetLocked(Interactable target, bool locked)
+    {
+        if (target == null) return;
+        target.interactionLocked = locked;
+    }
+
+    public void RefreshInteractables()
     {
         Interactable[] interactables =
             FindObjectsOfType<Interactable>();
@@ -235,7 +243,6 @@ public class officeSceneController : MonoBehaviour
         }
     }
 
-
     void CheckApartmentCompletion()
     {
         if (_apartmentCompleted)
@@ -248,8 +255,6 @@ public class officeSceneController : MonoBehaviour
             return;
         }
 
-        // The Assistant gives the keys after the required clue
-        // has been found and their dialogue has completed.
         if (GameManager.Instance.GetFlag("assistant_keys_given"))
         {
             _apartmentCompleted = true;
@@ -258,18 +263,12 @@ public class officeSceneController : MonoBehaviour
         }
     }
 
-
-    // ---------------------------------------------------------
-    // SCENE LOAD INTERCEPT
-    // ---------------------------------------------------------
-
     void HandleSceneLoadIntercept(
         string clueID,
         System.Action proceedWithLoad)
     {
         Log("Scene load requested by outcome: " + clueID);
 
-        // Save the player's position before leaving the scene.
         if (PlayerController.Instance != null &&
             GameManager.Instance != null)
         {
@@ -280,11 +279,6 @@ public class officeSceneController : MonoBehaviour
 
         proceedWithLoad?.Invoke();
     }
-
-
-    // ---------------------------------------------------------
-    // NAVIGATION
-    // ---------------------------------------------------------
 
     public bool CanLeave()
     {
@@ -298,7 +292,6 @@ public class officeSceneController : MonoBehaviour
         );
     }
 
-
     public void GoToNextScene()
     {
         if (!CanLeave())
@@ -307,7 +300,7 @@ public class officeSceneController : MonoBehaviour
             return;
         }
 
-        if (string.IsNullOrEmpty(nextSceneName))
+        if (string.IsNullOrEmpty(courtSceneName))
         {
             UnityEngine.Debug.LogWarning(
                 "[ApartmentSceneController] " +
@@ -319,11 +312,10 @@ public class officeSceneController : MonoBehaviour
 
         SavePlayerPosition();
 
-        Log("Loading next Assistant scene: " + nextSceneName);
+        Log("Loading next Assistant scene: " + courtSceneName);
 
-        GameManager.Instance.LoadScene(nextSceneName);
+        GameManager.Instance.LoadScene(courtSceneName);
     }
-
 
     void SavePlayerPosition()
     {
@@ -337,11 +329,6 @@ public class officeSceneController : MonoBehaviour
             PlayerController.Instance.transform.position
         );
     }
-
-
-    // ---------------------------------------------------------
-    // SPAWN
-    // ---------------------------------------------------------
 
     void RestorePendingSpawn()
     {
@@ -366,11 +353,6 @@ public class officeSceneController : MonoBehaviour
         GameManager.Instance.ConsumePendingSpawn();
     }
 
-
-    // ---------------------------------------------------------
-    // HELPER FUNCTIONS
-    // ---------------------------------------------------------
-
     public bool HasApartmentEntranceClue()
     {
         return GameManager.Instance != null &&
@@ -379,15 +361,13 @@ public class officeSceneController : MonoBehaviour
                );
     }
 
-
-    public bool HasBedroomDrawerClue()
+    public bool HasPhoneClue()
     {
         return GameManager.Instance != null &&
                GameManager.Instance.HasClue(
-                   "bedroom_drawer"
+                   "phone"
                );
     }
-
 
     public bool HasAssistantKeys()
     {
@@ -397,7 +377,6 @@ public class officeSceneController : MonoBehaviour
                );
     }
 
-
     public bool HasReceivedAssistantKeys()
     {
         return GameManager.Instance != null &&
@@ -405,7 +384,6 @@ public class officeSceneController : MonoBehaviour
                    "assistant_keys_given"
                );
     }
-
 
     void Log(string message)
     {

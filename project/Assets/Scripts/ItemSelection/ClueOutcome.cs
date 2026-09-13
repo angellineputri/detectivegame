@@ -19,6 +19,9 @@ public class ClueOutcome
 
     public OutcomeType outcomeType;
 
+    [Tooltip("Clues the player must already have for this outcome to execute. Missing any → Game Over.")]
+    public string[] requirementClues;
+
     [Tooltip("Scene to load for LoadScene / TriggerDialogue / AdvancePlaythrough outcomes.")]
     public string targetScene;
 

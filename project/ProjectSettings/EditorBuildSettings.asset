@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/CityOfLies/ExGF/Playthrough2/ExGF_Court_P2.unity
     guid: 42513cca638164fa8a6c75a9cc410987
   - enabled: 1
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough3/ExGF_ExRoom_P3.unity
+    guid: 1e4707448485542029d39b39aace230e
+  - enabled: 1
     path: Assets/Scenes/Core/MainMenu.unity
     guid: ad39c8751fdb645599a129c36dbb71f6
   - enabled: 1
@@ -45,21 +48,24 @@ EditorBuildSettings:
     path: Assets/Scenes/CityOfLies/Victim/VictimApartment.unity
     guid: 4c09e759a5bc4b0282224b2732fbbc62
   - enabled: 1
-    path: Assets/Scenes/CityOfLies/Assistant/1st/apartment.unity
+    path: Assets/Scenes/CityOfLies/Assistant/Assistant_Apartment.unity
     guid: 36aa113d1f702344c89294228e39a91a
   - enabled: 1
-    path: Assets/Scenes/CityOfLies/Assistant/1st/office.unity
+    path: Assets/Scenes/CityOfLies/Assistant/Assistant_Office.unity
     guid: 88f0574bba604ac4799eee325c5fcdfa
   - enabled: 1
-    path: Assets/Scenes/CityOfLies/Assistant/2nd/apartment_2nd.unity
-    guid: 582f7d14a3c0b234f8946cec67e8164a
-  - enabled: 1
-    path: Assets/Scenes/CityOfLies/Assistant/2nd/EBPapartment.unity
-    guid: a0040d02a1858c542bc4498fb71e9782
+    path: Assets/Scenes/CityOfLies/Assistant/Assistant_Court.unity
+    guid: e92e0ccc9e2894eb19dce77cf22186a9
   - enabled: 1
     path: Assets/Scenes/CityOfLies/Victim/VictimApartmentRevisitForAssistant.unity
     guid: 7dd882c344e434400a9de87c241c2574
   - enabled: 1
     path: Assets/Scenes/CityOfLies/Victim/VictimApartmentRevisitForExGF.unity
     guid: 1df47d3796df1405a8e1d00b65540529
+  - enabled: 1
+    path: Assets/Scenes/CityOfLies/Victim/VictimApartmentRevisitFinal.unity
+    guid: 8d562e601ac3840fe8f4381797d8845b
+  - enabled: 1
+    path: Assets/Scenes/CityOfLies/ExGF/Playthrough3/ExGF_Court_P3.unity
+    guid: d1e2f3a4b5c6172839405a6b7c8d9e05
   m_configObjects: {}
