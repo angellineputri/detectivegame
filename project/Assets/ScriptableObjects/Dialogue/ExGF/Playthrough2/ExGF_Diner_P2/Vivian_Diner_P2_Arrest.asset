@@ -13,59 +13,47 @@ MonoBehaviour:
   m_Name: Vivian_Diner_P2_Arrest
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: "Well hi again, so I took the knife to the lab just now. Guess what I found."
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
+  - speaker: You
+    text: Well hi again, so I took the knife to the lab just now. Guess what I found.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
     text: W-what?
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "It says here that you held the knife. Thought you couldn't cook? Lying again?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "I-I couldn't, I'm not lying."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: It says here that you held the knife. Thought you couldn't cook? Lying
+      again?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: I-I couldn't, I'm not lying.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
     text: Then why are you holding that knife?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "I— that was days before. He was teaching me. Just once. I told you I
-      can't cook, that doesn't mean I've never touched a knife in my life!"
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "There's only two possibilities here since there were only two fingerprints
-      found. It's either you or him. Answer me, which one is it?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "N-None. It's not both of us."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "He will do anything to protect you, even replacing your position in jail.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: I... that was days before. He was teaching me. Just once. I told you I
+      can't cook, that doesn't mean I've never touched a knife in my life!
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: There's only two possibilities here since there were only two fingerprints
+      found. It's either you or him. Answer me, which one is it?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: N-None. It's not both of us.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: He will do anything to protect you, even replacing your position in jail.
       But I won't let it happen. On the other hand, there's you, who have been lying
-      since the very beginning even up until now."
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+      since the very beginning even up until now.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: You
     text: Lying about where you were really puts you in the toughest spot here.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "Its the honest truth. Ask him yourself."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "He's not exactly free to answer right now, is he?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "..."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: It's the honest truth. Ask him yourself.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: He's not exactly free to answer right now, is he?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: ...
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}

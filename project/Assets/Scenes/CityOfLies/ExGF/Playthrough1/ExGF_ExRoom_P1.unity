@@ -3367,6 +3367,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1
   visualRoot: {fileID: 0}
 --- !u!61 &493536384
@@ -3544,6 +3545,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1
   visualRoot: {fileID: 0}
 --- !u!61 &783087327
@@ -5443,6 +5445,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 2
   visualRoot: {fileID: 0}
 --- !u!61 &1173458145
@@ -5575,9 +5578,12 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 2
   visualRoot: {fileID: 0}
-  dialogue: {fileID: 11400000, guid: 49afbad81fae42a0adcfacaeeb1ec64b, type: 2}
+  dialogueBeforeRequirement: {fileID: 0}
+  dialogueAfterRequirement: {fileID: 0}
+  requiredClueToGrant: 
   flagToSetOnComplete: 
   itemToGrantOnComplete:
     objectID: 
@@ -5585,6 +5591,7 @@ MonoBehaviour:
     clueDescription: 
   sceneToLoadOnComplete: 
   deactivateSelfOnComplete: 0
+  overrideDialogue: {fileID: 0}
 --- !u!61 &1260722992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5601,7 +5608,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.25}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.8125, y: 1.0625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -5650,9 +5657,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 6476020496741556544, guid: c85d738b315fd4d10b5c9dd511660ebb,
+  m_Sprite: {fileID: -2523350320817545202, guid: 7d8b363dfe5024207931d92638b7851d,
     type: 3}
-  m_Color: {r: 1, g: 0.7294118, b: 0.9098039, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5686,7 +5693,7 @@ Animator:
   m_GameObject: {fileID: 1260722990}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d840aa5a616f341d1a8c63160119b587, type: 2}
+  m_Controller: {fileID: 9100000, guid: c57e280ccd3ea4374909ccde71c7d42f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5926,6 +5933,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1.5
   visualRoot: {fileID: 0}
 --- !u!61 &1357504647

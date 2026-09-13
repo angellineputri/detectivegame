@@ -25,7 +25,6 @@ public class KitchenP2SceneController : MonoBehaviour
 
     void Start()
     {
-        Debug.Log($"[KitchenP2] Start — CurrentPlaythrough={GameManager.Instance?.CurrentPlaythrough}");
 
         BagUI.Instance?.SetOutcomeTable(kitchenP2OutcomeTable);
 
@@ -117,9 +116,7 @@ public class KitchenP2SceneController : MonoBehaviour
             ? doorCol.ClosestPoint(player.transform.position)
             : (Vector2)kitchenDoor.transform.position;
 
-        Debug.Log($"[KitchenP2] WalkToDoorAndExit — player={player.transform.position}, doorCenter={kitchenDoor.transform.position}, doorTarget={doorTarget}");
-
-        if (GridPathfinder.Instance != null)
+if (GridPathfinder.Instance != null)
         {
             List<Vector2> path = GridPathfinder.Instance.FindPath(player.transform.position, doorTarget);
             yield return StartCoroutine(CharacterMover.WalkPath(player.transform, path, characterWalkSpeed));

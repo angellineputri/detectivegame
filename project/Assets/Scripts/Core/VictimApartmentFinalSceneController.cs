@@ -113,7 +113,5 @@ public class VictimApartmentFinalSceneController : MonoBehaviour
 
         if (!string.IsNullOrEmpty(nextSceneName))
             GameManager.Instance?.LoadScene(nextSceneName);
-        else
-            Debug.LogWarning("[VictimApartmentFinalSceneController] nextSceneName is empty.");
     }
 }

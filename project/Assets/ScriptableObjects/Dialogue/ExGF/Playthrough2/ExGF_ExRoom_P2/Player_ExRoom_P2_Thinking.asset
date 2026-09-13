@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Player_ExRoom_P2_Thinking
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: "This room is rather empty\u2026 There's not really much I could do here\u2026
-      Everything seems to be reasonable and not suspicious\u2026"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: This room is pretty empty... there's not really much I can do here... everything
+      seems pretty normal...
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

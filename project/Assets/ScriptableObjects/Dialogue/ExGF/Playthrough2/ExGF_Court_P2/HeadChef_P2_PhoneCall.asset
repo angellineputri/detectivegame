@@ -13,28 +13,22 @@ MonoBehaviour:
   m_Name: HeadChef_P2_PhoneCall
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
+  - speaker: You
     text: Well hello there, sorry about it. I messed up.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
     text: You still do. Please, trust me it's not us.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: Head Chef Marco
     text: Argh I can't say anything here but I'll contact you again. Please, recheck
       his room, retrace his step.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: Head Chef Marco
     text: Do anything...
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: Head Chef Marco
     text: Please it's not her...
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: Head Chef Marco
     text: I gotta go, people better not see us interact. You're our only hope..
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}

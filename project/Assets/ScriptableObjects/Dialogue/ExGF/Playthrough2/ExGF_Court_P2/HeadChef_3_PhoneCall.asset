@@ -13,52 +13,41 @@ MonoBehaviour:
   m_Name: HeadChef_3_PhoneCall
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
+  - speaker: You
     text: Hello, who's this?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
-    text: I need to tell you something.  Its not him either.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
-    text: "That night \u2026 I followed her. I was worried, after everything with
-      the breakup."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
+    text: I need to tell you something. It's not him either.
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: Head Chef Marco
+    text: That night ... I followed her. I was worried, after everything with the
+      breakup.
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
     text: You followed her?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
     text: I saw her pick something up near his building. Didn't get a good look.
       Then I heard the scream.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
     text: And?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
-    text: "She ran. Still had it on her. When I caught up, she made me swear not
-      to say anything\u2026 Especially not to the police. Said no one would believe
-      her over a cop."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
+    text: She ran. Still had it on her. When I caught up, she made me swear not to
+      say anything... Especially not to the police. Said no one would believe her
+      over a cop.
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
     text: A cop?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
     text: That's all she said. Wouldn't look at me after that.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
     text: Why tell me now?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
     text: Because she's the one locked up. Not me. She wouldn't have gotten rid of
       something with her prints on it, she's probably still got it. Check her room.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}

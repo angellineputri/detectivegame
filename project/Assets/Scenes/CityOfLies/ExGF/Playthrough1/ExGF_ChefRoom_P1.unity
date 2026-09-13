@@ -2293,6 +2293,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 3
   visualRoot: {fileID: 0}
 --- !u!1 &430239085
@@ -2424,6 +2425,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1
   visualRoot: {fileID: 0}
 --- !u!1 &856260376
@@ -3215,6 +3217,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1
   visualRoot: {fileID: 0}
 --- !u!1 &1198295830
@@ -3252,8 +3255,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.25}
-    oldSize: {x: 0.6875, y: 1.0625}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 1.125}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3301,9 +3304,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: -6119387374007233121, guid: c85d738b315fd4d10b5c9dd511660ebb,
+  m_Sprite: {fileID: -762444119825910668, guid: 6c1208cf6d7c34fb9887db005f235afe,
     type: 3}
-  m_Color: {r: 0.8156863, g: 0.85882354, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3337,7 +3340,7 @@ Animator:
   m_GameObject: {fileID: 1198295830}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d840aa5a616f341d1a8c63160119b587, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5fc17f8fda0a240d39f5fa9f1103ebdc, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -8380,6 +8383,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 2
   visualRoot: {fileID: 0}
   playthrough2NoticeText: "The computer is still on \u2014 there's a new email visible."
@@ -8585,6 +8589,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1
   visualRoot: {fileID: 0}
 --- !u!1 &1935042724
@@ -8625,6 +8630,7 @@ MonoBehaviour:
   addToBag: 1
   requiredPlaythrough: 0
   requiredFlag: 
+  requiredClue: 
   interactRange: 1
   visualRoot: {fileID: 0}
 --- !u!61 &1935042726

@@ -45,12 +45,17 @@ public class CaseBriefingController : MonoBehaviour
         confirmButton?.onClick.AddListener(OnConfirm);
     }
 
-    public void OnBack() => Load(backScene);
+    public void OnBack()
+    {
+        AudioManager.Instance?.PlayButtonClick();
+        Load(backScene);
+    }
 
-    public void OnComingSoon() => Debug.Log("[CaseBriefing] Coming soon!");
+    public void OnComingSoon() { }
 
     public void OnConfirm()
     {
+        AudioManager.Instance?.PlayButtonClick();
         GameManager.Instance?.SelectCase("city_of_lies");
         Load(confirmScene);
     }

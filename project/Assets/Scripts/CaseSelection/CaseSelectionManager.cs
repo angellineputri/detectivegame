@@ -63,6 +63,7 @@ public class CaseSelectionManager : MonoBehaviour
 
     void OnCaseSelected(CaseData caseData)
     {
+        AudioManager.Instance?.PlayButtonClick();
         _selectedCase = caseData;
 
         foreach (CaseEntryUI entry in _entries)
@@ -88,6 +89,7 @@ public class CaseSelectionManager : MonoBehaviour
         if (_selectedCase == null || !_selectedCase.isUnlocked) return;
         if (!CheckGameManager()) return;
 
+        AudioManager.Instance?.PlayButtonClick();
         GameManager.Instance.SelectCase(_selectedCase.caseID);
         GameManager.Instance.LoadScene(_selectedCase.startingScene);
     }
@@ -96,14 +98,13 @@ public class CaseSelectionManager : MonoBehaviour
     {
         if (!CheckGameManager()) return;
 
+        AudioManager.Instance?.PlayButtonClick();
         GameManager.Instance.LoadScene("MainMenu");
     }
 
     bool CheckGameManager()
     {
         if (GameManager.Instance != null) return true;
-        Debug.LogWarning("[CaseSelectionManager] GameManager.Instance is null — scene load skipped. " +
-                         "Make sure a GameManager GameObject exists in the scene or was loaded from MainMenu.");
         return false;
     }
 }

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: Vivian_Diner_P2_KnifeConfirm
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: "Where's the bloody knife? Is it still in the same place I found last time?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "No one dares to move it except the head chef, so yeah… Still in the same place."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: Where's the bloody knife? Is it still in the same place I found last time?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: No one dares to move it except the head chef, so yeah... Still in the same
+      place.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}

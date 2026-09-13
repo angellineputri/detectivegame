@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     float _lastMoveX = 0f;
     float _lastMoveY = -1f;
 
+    const float FootstepInterval = 0.35f;
+    float _footstepTimer;
+
     public bool CanMove { get; set; } = true;
 
     public void SetAutoMoveVelocity(Vector2 v) { _autoMoveVelocity = v; }
@@ -39,6 +42,25 @@ public class PlayerController : MonoBehaviour
             if (!uiConsumed && !Interactable.GlobalInteractionLocked)
             {
                 TryInteractWithNearest();
+            }
+        }
+
+        float speedMag = _input.magnitude > 0f ? _input.magnitude : _autoMoveVelocity.magnitude;
+        if (speedMag > 0.1f)
+        {
+            _footstepTimer -= Time.deltaTime;
+            if (_footstepTimer <= 0f)
+            {
+                _footstepTimer = FootstepInterval;
+                AudioManager.Instance?.PlayFootstep();
+            }
+        }
+        else
+        {
+            if (_footstepTimer != 0f)
+            {
+                _footstepTimer = 0f;
+                AudioManager.Instance?.StopFootstep();
             }
         }
 

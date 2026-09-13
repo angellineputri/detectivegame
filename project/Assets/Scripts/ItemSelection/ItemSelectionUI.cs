@@ -131,6 +131,7 @@ public class ItemSelectionUI : MonoBehaviour
 
     void OnClueSelected(string clueID)
     {
+        AudioManager.Instance?.PlayItemSelect();
         panel.SetActive(false);
         ClearButtons();
         _onDecline = null;
@@ -238,13 +239,11 @@ public class ItemSelectionUI : MonoBehaviour
 
     void ExecuteTriggerDialogue(ClueOutcome outcome)
     {
-        Debug.Log("[ItemSelectionUI] ExecuteTriggerDialogue: clueID='" + outcome.clueID + "'");
 
         if (outcome.dialogue != null && DialogueRunner.Instance != null)
         {
             DialogueRunner.Instance.Play(outcome.dialogue, () =>
             {
-                Debug.Log("[ItemSelectionUI] Dialogue complete for '" + outcome.clueID + "'");
 
                 ItemGrant grant = outcome.itemToGrantAfterDialogue;
                 if (!string.IsNullOrEmpty(grant?.objectID))
@@ -276,11 +275,9 @@ public class ItemSelectionUI : MonoBehaviour
         {
             if (outcome.dialogue == null)
             {
-                Debug.LogError("[ItemSelectionUI] TriggerDialogue outcome for '" + outcome.clueID + "' has no DialogueData assigned.");
             }
             if (DialogueRunner.Instance == null)
             {
-                Debug.LogError("[ItemSelectionUI] DialogueRunner.Instance is null — is PersistentSystems in the scene?");
             }
             if (PlayerController.Instance != null)
             {

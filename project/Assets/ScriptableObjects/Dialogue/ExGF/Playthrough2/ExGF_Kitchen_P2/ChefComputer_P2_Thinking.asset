@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: ChefComputer_P2_Thinking
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: "That's right\u2026 he didn't even read it... then who sent this? Is there
-      something I miss?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "He said he was just protecting her, looking out for her\u2026 Is it actually
-      her?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: That's right... he didn't even read it... then who sent this? Is there
+      something I'm missing?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: You
+    text: He said he was just protecting her, looking out for her... is it actually
+      her?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

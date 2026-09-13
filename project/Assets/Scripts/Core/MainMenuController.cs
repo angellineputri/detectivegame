@@ -26,16 +26,17 @@ public class MainMenuController : MonoBehaviour
 
     public void OnStartClicked()
     {
-
+        AudioManager.Instance?.PlayButtonClick();
         BagUI.Instance?.ClearBag();
         Load(caseBriefingScene);
     }
-    public void OnEndings()       => Load(endingsScene);
-    public void OnSettings()      => Load(settingsScene);
-    public void OnCredits()       => Load(creditsScene);
+    public void OnEndings()  { AudioManager.Instance?.PlayButtonClick(); Load(endingsScene); }
+    public void OnSettings() { AudioManager.Instance?.PlayButtonClick(); Load(settingsScene); }
+    public void OnCredits()  { AudioManager.Instance?.PlayButtonClick(); Load(creditsScene); }
 
     public void OnQuitClicked()
     {
+        AudioManager.Instance?.PlayButtonClick();
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

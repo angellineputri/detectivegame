@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
 
     public void Open()
     {
+        AudioManager.Instance?.PlayDoorOpen();
         if (spriteRenderer != null && openSprite != null)
         {
             spriteRenderer.sprite = openSprite;

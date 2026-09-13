@@ -84,13 +84,11 @@ public class Interactable : MonoBehaviour
         {
             _spriteRenderer.color = Color.Lerp(_originalColor, Color.red, 0.6f);
             _isHighlighted = true;
-            Debug.Log("Highlight ON: " + gameObject.name);
         }
         else if (!shouldHighlight && _isHighlighted)
         {
             _spriteRenderer.color = _originalColor;
             _isHighlighted = false;
-            Debug.Log("Highlight OFF: " + gameObject.name);
         }
     }
 
@@ -240,6 +238,7 @@ public class Interactable : MonoBehaviour
 
     protected virtual void OnInteract()
     {
+        AudioManager.Instance?.PlayInteract();
         if (!string.IsNullOrEmpty(noticeText))
         {
             UIManager.Instance?.ShowCluePopup(

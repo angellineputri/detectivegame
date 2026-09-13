@@ -22,7 +22,6 @@ public class CourtSceneController : MonoBehaviour
     {
         if (DialogueRunner.Instance == null)
         {
-            Debug.LogError("[CourtSceneController] DialogueRunner.Instance is null. Is the PersistentSystems prefab in this scene?");
             yield break;
         }
 
@@ -39,7 +38,6 @@ public class CourtSceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[CourtSceneController] marcusClosingDialogue is not assigned.");
         }
 
         yield return new WaitForSeconds(pauseBeforeReveal);
@@ -52,7 +50,6 @@ public class CourtSceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[CourtSceneController] headChefRevealDialogue is not assigned.");
         }
 
         GameManager.Instance?.AdvancePlaythrough();

@@ -13,33 +13,26 @@ MonoBehaviour:
   m_Name: Marco_Diner_First
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Marco
-    text: "Who are you and what\u2019s your business with Vivian?"
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "I\u2019m the detective on this case, don\u2019t worry I\u2019m just out
-      here investigating. You run the kitchen here?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
-    text: Since day one. She built this place, I made sure the food matched it and
+  - speaker: Head Chef Marco
+    text: Who are you and what's your business with Vivian?
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
+    text: I'm the detective on this case, don't worry I'm just out here investigating.
+      You run the kitchen here?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
+    text: Since day one. She built this place, I made sure the food matched it. Gotta
       do her justice.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
     text: Close with her, I assume?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
-    text: "Well someone\u2019s got to look out for her."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
+    text: Well someone's got to look out for her.
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speaker: You
     text: Permission to further inspect the kitchen?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Marco
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Head Chef Marco
     text: Follow me.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}

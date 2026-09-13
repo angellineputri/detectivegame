@@ -13,32 +13,24 @@ MonoBehaviour:
   m_Name: Vivian_Diner_First
   m_EditorClassIdentifier: 
   lines:
-  - speaker: Player
-    text: Ms. Vivian? I got a few questions about Julian.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
+  - speaker: You
+    text: Vivian? I got a few questions about Julian.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
     text: Figured someone would come by. We broke up the night before he died, he
       has nothing to do with me anymore.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
     text: What happened?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "He said things were \u2018getting complicated\u2019. Wouldn\u2019t explain.
-      I didn\u2019t push it, should\u2019ve though."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "Seems like it\u2019s a busy afternoon, where can I reach you if I have
-      more questions?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "I live above the bakery two blocks from here. Door\u2019s always open
-      for the police, I suppose. Stop by when I reach home, here\u2019s the full
-      address."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: He said things were 'getting complicated'. Wouldn't explain. I didn't push
+      it, should've though.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: It's a busy afternoon. Where can I reach you if I have more questions?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: I live above the bakery two blocks from here. Door's always open for the
+      police, I suppose. Stop by when I reach home, here's the full address.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}

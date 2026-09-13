@@ -14,11 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speaker: Chief Inspector Marcus
-    text: Congrats rookie, ur first ever case, i brought u here to the victim's apartment!
-      Press Enter or Space to continue
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Congrats rookie, your first ever case! I brought you here to the victim's
+      apartment. Press Enter or Space to continue.
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
   - speaker: Chief Inspector Marcus
-    text: Try moving around with WASD and see what u can find here!
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Try moving around with WASD and see what you can find!
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}

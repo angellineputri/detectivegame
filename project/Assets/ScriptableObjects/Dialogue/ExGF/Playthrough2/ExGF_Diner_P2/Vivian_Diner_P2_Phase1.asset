@@ -13,58 +13,44 @@ MonoBehaviour:
   m_Name: Vivian_Diner_P2_Phase1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
+  - speaker: You
     text: You told me you were home all night. But I found this note in your room.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "...where did you \u2026 that's private."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: ...where did you ... that's private.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
     text: Private or not, it puts you somewhere other than home. Care to explain?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "Fine. I went. I wanted to talk to him, one last time, before it was really
-      over. That's all. I didn\u2019t like the fact that I didn\u2019t try to keep
-      us \u2026"
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: Fine. I went. I wanted to talk to him, one last time, before it was really
+      over. That's all. I didn't like the fact that I didn't try to keep us ...
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
     text: You didn't think that was worth mentioning?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "Don\u2019t you think I look stupid for going after him after he dump me?
-      I looked very desperate, is it something worth admitting?"
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: Don't you think I look stupid for going after him after he dumped me? I
+      was desperate, is that something worth admitting?
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
     text: It's looking worse now that you hid it.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
     text: ... I know.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: Anyways, hows everything going around here, after Marco is gone?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: Anyways, how's everything going around here, now that Marco's gone?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
     text: Not great, no one here knows how to cook like he did.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "You opened the diner, why didn\u2019t you take over?"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
-    text: "I can\u2019t cook, I just simply love foods."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: Well thats new. Good luck around here!
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: You opened the diner, why didn't you take over?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: Vivian Rose
+    text: I can't cook, I just love food.
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: You
+    text: Well that's new. Good luck around here!
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

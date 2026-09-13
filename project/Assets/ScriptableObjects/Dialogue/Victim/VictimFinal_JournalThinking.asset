@@ -13,15 +13,13 @@ MonoBehaviour:
   m_Name: VictimFinal_JournalThinking
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: wait.. ci.. its the assistant initial..
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: is this why he was planning to fire the assistant?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: i shouldn't have wasted my time trying to trust him, he's not forced. he is the culprit.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: Wait.. CI.. it's the assistant's initial..
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: You
+    text: Is this why he was planning to fire the assistant?
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speaker: You
+    text: I shouldn't have wasted my time trying to trust him. He's not forced. He
+      is the culprit.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

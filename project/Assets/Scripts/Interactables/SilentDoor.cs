@@ -32,6 +32,7 @@ public class SilentDoor : Interactable
 
     public void Interact()
     {
+        AudioManager.Instance?.PlayDoorOpen();
         OpenVisual();
         GameManager.Instance?.LoadScene(targetScene);
     }

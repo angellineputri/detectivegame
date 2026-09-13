@@ -32,10 +32,7 @@ public class OfficeSceneController : MonoBehaviour
     [Tooltip("Scene loaded after the assistant's dialogue ends.")]
     [SerializeField] string courtSceneName = "court";
 
-    [Header("Debug")]
-    [SerializeField] bool debugLogs = true;
-
-    bool _decisionStarted;
+bool _decisionStarted;
     bool _apartmentCompleted;
 
     void Awake()
@@ -78,7 +75,6 @@ public class OfficeSceneController : MonoBehaviour
             EnablePlayerMovement();
         }
 
-        Log("Assistant apartment scene started.");
     }
 
     void OnEnable()
@@ -141,13 +137,11 @@ public class OfficeSceneController : MonoBehaviour
     {
         if (BagUI.Instance == null)
         {
-            Log("BagUI is not available.");
             return;
         }
 
         BagUI.Instance.SetOutcomeTable(apartmentOutcomeTable);
 
-        Log("Assistant apartment outcome table assigned.");
     }
 
     public void StartDecision()
@@ -166,18 +160,15 @@ public class OfficeSceneController : MonoBehaviour
                 OnDecisionComplete
             );
 
-            Log("Apartment evidence decision opened.");
         }
         else
         {
-            Log("BagUI is missing. Cannot open decision panel.");
             _decisionStarted = false;
         }
     }
 
     void OnDecisionComplete()
     {
-        Log("Apartment evidence decision completed.");
 
         _decisionStarted = false;
         CheckApartmentCompletion();
@@ -185,13 +176,11 @@ public class OfficeSceneController : MonoBehaviour
 
     public void OnComputerUsed()
     {
-        Log("Computer used — unlocking assistant.");
         ApplyOfficeGating();
     }
 
     public void OnITHeadTalkedTo()
     {
-        Log("IT head dialogue done — unlocking computer.");
         ApplyOfficeGating();
     }
 
@@ -199,7 +188,6 @@ public class OfficeSceneController : MonoBehaviour
     {
         if (clueID == "assistant_computer")
         {
-            Log("assistant_computer bag move done — unlocking assistant.");
             ApplyOfficeGating();
         }
     }
@@ -220,7 +208,6 @@ public class OfficeSceneController : MonoBehaviour
         SetLocked(officeComputer, !hasITPermission);
         SetLocked(npc_assistant, !hasComputerClue);
 
-        Log($"Office gating — computer locked: {!hasITPermission}, assistant locked: {!hasComputerClue}");
     }
 
     void SetLocked(Interactable target, bool locked)
@@ -259,7 +246,6 @@ public class OfficeSceneController : MonoBehaviour
         {
             _apartmentCompleted = true;
 
-            Log("Assistant apartment sequence completed.");
         }
     }
 
@@ -267,7 +253,6 @@ public class OfficeSceneController : MonoBehaviour
         string clueID,
         System.Action proceedWithLoad)
     {
-        Log("Scene load requested by outcome: " + clueID);
 
         if (PlayerController.Instance != null &&
             GameManager.Instance != null)
@@ -296,25 +281,18 @@ public class OfficeSceneController : MonoBehaviour
     {
         if (!CanLeave())
         {
-            Log("Cannot leave apartment yet.");
             return;
         }
 
         if (string.IsNullOrEmpty(courtSceneName))
         {
-            UnityEngine.Debug.LogWarning(
-                "[ApartmentSceneController] " +
-                "No next scene has been assigned."
-            );
 
             return;
         }
 
         SavePlayerPosition();
 
-        Log("Loading next Assistant scene: " + courtSceneName);
-
-        GameManager.Instance.LoadScene(courtSceneName);
+GameManager.Instance.LoadScene(courtSceneName);
     }
 
     void SavePlayerPosition()
@@ -347,7 +325,6 @@ public class OfficeSceneController : MonoBehaviour
             PlayerController.Instance.transform.position =
                 GameManager.Instance.PendingSpawnPosition;
 
-            Log("Restored player pending spawn position.");
         }
 
         GameManager.Instance.ConsumePendingSpawn();
@@ -385,14 +362,4 @@ public class OfficeSceneController : MonoBehaviour
                );
     }
 
-    void Log(string message)
-    {
-        if (debugLogs)
-        {
-            UnityEngine.Debug.Log(
-                "[ApartmentSceneController] " +
-                message
-            );
-        }
-    }
 }

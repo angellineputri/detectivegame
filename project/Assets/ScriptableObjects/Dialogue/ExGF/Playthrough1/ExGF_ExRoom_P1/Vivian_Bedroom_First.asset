@@ -13,15 +13,12 @@ MonoBehaviour:
   m_Name: Vivian_Bedroom_First
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Vivian
+  - speaker: Vivian Rose
     text: There's nothing here for you, detective.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: Vivian Rose
     text: I already told you everything at the diner.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Vivian
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
+  - speaker: Vivian Rose
     text: It's late already, you should probably leave.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}

@@ -14,7 +14,6 @@ public class ScenePortal : Interactable
     {
         if (string.IsNullOrEmpty(targetScene))
         {
-            Debug.LogWarning("[ScenePortal] No target scene set on " + gameObject.name);
             return;
         }
 

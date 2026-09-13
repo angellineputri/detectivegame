@@ -52,14 +52,12 @@ public class GameManager : MonoBehaviour
         _flags.Clear();
 
         CaseBoardManager.Instance?.ResetForNewCase();
-        Debug.Log("[GameManager] Case selected: " + caseID);
     }
 
     public void AdvancePlaythrough()
     {
         CurrentPlaythrough++;
         ClearClues();
-        Debug.Log("[GameManager] Playthrough advanced to " + CurrentPlaythrough);
         OnPlaythroughAdvanced?.Invoke();
     }
 
@@ -72,8 +70,8 @@ public class GameManager : MonoBehaviour
     {
         if (FoundClues.Add(clueID))
         {
-            Debug.Log("[GameManager] Clue added: " + clueID);
             OnClueAdded?.Invoke(clueID);
+            AudioManager.Instance?.PlayClueAdded();
         }
     }
 
@@ -90,7 +88,6 @@ public class GameManager : MonoBehaviour
     public void SetFlag(string key, bool value)
     {
         _flags[key] = value;
-        Debug.Log("[GameManager] Flag set: " + key + " = " + value);
     }
 
     public bool GetFlag(string key)

@@ -14,47 +14,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speaker: Chief Inspector Marcus
-    text: Uh kid the results have came in.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    text: Uh kid, the results came in.
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
     text: What does it say there chief?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Chief Inspector Marcus
-    text: "It in fact has the blood of Julian and \u2026"
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    text: It does have Julian's blood and...
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
     text: Yes?
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Chief Inspector Marcus
-    text: "There\u2019s 2 fingerprint marks found on it. Marco and Vivian."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: "Vivian? But she has no business in the kitchen or even touching the knife,
-      she told me she can\u2019t cook."
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: There's 2 fingerprints found on it. Head Chef Marco and Vivian Rose.
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
+    text: Vivian Rose? But she has no business in the kitchen or even touching the
+      knife. She told me she can't cook.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Chief Inspector Marcus
-    text: "Exactly, one of them must take part in the killing, but if you\u2019re
-      very sure that it wasn\u2019t Marco, then it only puts Vivian in the equation..
-      No other fingerprint were found."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: This mission is successful, we caught the real culprit.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Exactly, one of them must have been involved. If you're sure it wasn't
+      Marco, then it only puts Vivian Rose in the picture... no other fingerprints
+      were found.
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
+    text: We caught the real culprit.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Chief Inspector Marcus
-    text: "I\u2019d say don\u2019t straightaway jump to conclusion.. Try confronting
-      her first see what she has to say.. Perhaps it is Marco who did this. But you
-      know better kid. Good luck."
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: Thanks for that chief.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: I'd say don't jump to conclusions just yet... try confronting her first,
+      see what she has to say. Maybe it is Marco after all. But you know better,
+      kid. Good luck.
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
+    text: Thanks, chief.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

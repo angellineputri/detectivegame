@@ -61,9 +61,7 @@ public class DinerP2SceneController : MonoBehaviour
         bool isConfronted  = GameManager.Instance != null && GameManager.Instance.GetFlag(ConfrontedNoteFlag);
         bool phoneCallDone = GameManager.Instance != null && GameManager.Instance.GetFlag(PhoneCallCompletedFlag);
 
-        Debug.Log($"[DinerP2] Start — hasLabResults={hasLabResults}, confronted={isConfronted}, phoneCallDone={phoneCallDone} | vivianPhase2Confirm={(vivianPhase2Confirm == null ? "NULL" : vivianPhase2Confirm.name)}, vivianPhase2={(vivianPhase2 == null ? "NULL" : vivianPhase2.name)}");
-
-        if (isConfronted && vivianPhase1 != null)
+if (isConfronted && vivianPhase1 != null)
         {
             vivianPhase1.interactionLocked = true;
         }
@@ -80,26 +78,22 @@ public class DinerP2SceneController : MonoBehaviour
 
         if (phoneCallDone)
         {
-            Debug.Log("[DinerP2] BRANCH: Phase 2B (arrest) — AutoWalkToVivianPhase2");
             _phase2Started     = true;
             _phase1PanelOpened = true;
             StartCoroutine(AutoWalkToVivianPhase2());
         }
         else if (hasLabResults)
         {
-            Debug.Log($"[DinerP2] BRANCH: Phase 2A (confirm) — AutoWalkToVivianPhase2Confirm | vivianPhase2Confirm is {(vivianPhase2Confirm == null ? "NULL — NPC not in scene, coroutine will immediately yield break" : "assigned")}");
             _confirmPhaseActive = true;
             _phase1PanelOpened  = true;
             StartCoroutine(AutoWalkToVivianPhase2Confirm());
         }
         else if (isConfronted)
         {
-            Debug.Log("[DinerP2] BRANCH: Phase 1 free-roam (already confronted, player explores diner / uses kitchen door)");
             _phase1PanelOpened = true;
         }
         else
         {
-            Debug.Log("[DinerP2] BRANCH: Phase 1 entry — AutoWalkToVivianPhase1");
             StartCoroutine(AutoWalkToVivianPhase1());
         }
 

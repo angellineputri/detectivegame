@@ -2682,8 +2682,6 @@ MonoBehaviour:
     type: 2}
   phoneChiefClosingDialogue: {fileID: 11400000, guid: ea813c53492c4ce39c1b4ee79e3c3417,
     type: 2}
-  assistantWalkSpeed: 3
-  assistantStopOffset: 1
   debugLogs: 1
 --- !u!1 &235974176
 GameObject:
@@ -2976,7 +2974,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -2994,6 +2992,26 @@ Tilemap:
   m_GameObject: {fileID: 480349651}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -6, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 4
+      m_TileSpriteIndex: 4
+      m_TileMatrixIndex: 1
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -5, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 1
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: -2, y: 1, z: 0}
     second:
       serializedVersion: 2
@@ -3032,10 +3050,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 34b53565071464214992caf61b9f8c33, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: 7d24e48fe64444551888e59ee6ea2883, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 2bd72cb5d9b26498cac9d9a78112e35d, type: 2}
   - m_RefCount: 1
@@ -3049,10 +3067,12 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -2806204960688363320, guid: a2a6e82628d73481f90b0a07577fe34d,
+      type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: -3502960101480220249, guid: a2a6e82628d73481f90b0a07577fe34d,
+      type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 3188031406789526056, guid: a2a6e82628d73481f90b0a07577fe34d,
       type: 3}
@@ -3080,7 +3100,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 0
+  - m_RefCount: 2
     m_Data:
       e00: 1
       e01: 0
@@ -3117,7 +3137,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 3
+  - m_RefCount: 5
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -6345,6 +6365,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1975143502, guid: 5e99a6c6b81b74dbba9c4506949f30dc, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a49d06f21f9fa4d11a4fa231bdc2ff20, type: 2}
     - target: {fileID: 746129664185917811, guid: 5e99a6c6b81b74dbba9c4506949f30dc,
         type: 3}
       propertyPath: m_RootOrder
@@ -6400,6 +6424,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1092491688940553062, guid: 5e99a6c6b81b74dbba9c4506949f30dc,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6126317000422299962, guid: 594d2cde541274619a2bff212ae871d1,
+        type: 3}
     - target: {fileID: 8361400208713146576, guid: 5e99a6c6b81b74dbba9c4506949f30dc,
         type: 3}
       propertyPath: m_Name
@@ -8073,9 +8103,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 6476020496741556544, guid: c85d738b315fd4d10b5c9dd511660ebb,
+  m_Sprite: {fileID: -6595338624050070266, guid: 5140aac73a2004110966face883a683e,
     type: 3}
-  m_Color: {r: 0.5509968, g: 0.7735849, b: 0.64701515, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8115,7 +8145,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.25}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 0.8125, y: 1.0625}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
@@ -8159,3 +8189,4 @@ MonoBehaviour:
     clueDescription: 'a spare key belonging to [victim]''s assistant '
   sceneToLoadOnComplete: 
   deactivateSelfOnComplete: 0
+  overrideDialogue: {fileID: 0}

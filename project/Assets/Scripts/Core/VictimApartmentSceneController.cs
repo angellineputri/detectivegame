@@ -189,7 +189,6 @@ public class VictimApartmentSceneController : MonoBehaviour
 
         if (canvas == null)
         {
-            Debug.LogWarning("[VictimApartment] Could not find PersistentSystems canvas for overlay.");
             return;
         }
 

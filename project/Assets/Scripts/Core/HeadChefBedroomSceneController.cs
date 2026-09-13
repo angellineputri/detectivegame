@@ -117,11 +117,8 @@ public class HeadChefBedroomSceneController : MonoBehaviour
 
         Vector3 destination = new Vector3(headChef.position.x, destY, player.transform.position.z);
 
-        Debug.Log("[HeadChefBedroomSceneController] Walking player to HeadChef at " + destination);
+yield return StartCoroutine(CharacterMover.Walk(player.transform, destination, characterWalkSpeed, sceneObstacles, obstacleRadius));
 
-        yield return StartCoroutine(CharacterMover.Walk(player.transform, destination, characterWalkSpeed, sceneObstacles, obstacleRadius));
-
-        Debug.Log("[HeadChefBedroomSceneController] Walk complete.");
         CharacterMover.FaceEachOther(player.transform, headChef);
         onArrived?.Invoke();
     }

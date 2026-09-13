@@ -272,7 +272,6 @@ public class CaseBoardUI : MonoBehaviour
     {
         if (diagramRoot == null)
         {
-            Debug.LogWarning("[CaseBoardUI] diagramRoot not assigned — run Tools → City of Lies UI → Build Case Board.");
             return;
         }
 
@@ -520,11 +519,7 @@ public class CaseBoardUI : MonoBehaviour
 
     static TMP_FontAsset TryLoadFont(string path)
     {
-        var f = Resources.Load<TMP_FontAsset>(path);
-        if (f == null)
-            Debug.LogWarning($"[CaseBoardUI] Font not found at Resources/{path}. " +
-                             "Import a TMP SDF asset into Assets/TextMesh Pro/Resources/Fonts & Materials/.");
-        return f;
+        return Resources.Load<TMP_FontAsset>(path);
     }
 
     struct LineGroup

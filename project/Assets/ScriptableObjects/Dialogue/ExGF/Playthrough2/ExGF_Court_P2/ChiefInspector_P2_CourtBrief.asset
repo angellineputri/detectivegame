@@ -15,9 +15,7 @@ MonoBehaviour:
   lines:
   - speaker: Chief Inspector Marcus
     text: Good work, kid. Sometimes the answer's simpler than we think.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: ...Right. Thanks, chief..
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
+    text: ...right. Thanks, chief.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

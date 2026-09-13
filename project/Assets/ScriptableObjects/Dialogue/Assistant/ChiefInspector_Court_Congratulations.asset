@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce1d3326426d8413f86dce414ff780b1, type: 3}
+  m_Name: ChiefInspector_Court_Congratulations
+  m_EditorClassIdentifier: 
+  lines:
+  - speaker: Chief Inspector Marcus
+    text: Well done kid, I knew you could do it!
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
+    text: Thank you, chief.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

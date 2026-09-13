@@ -42,8 +42,6 @@ public class ExGFCourtP3SceneController : MonoBehaviour
 
         if (!string.IsNullOrEmpty(mainMenuScene))
             GameManager.Instance?.LoadScene(mainMenuScene);
-        else
-            Debug.LogWarning("[ExGFCourtP3SceneController] mainMenuScene is empty.");
     }
 
     IEnumerator Play(DialogueData dialogue)

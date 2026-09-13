@@ -267,11 +267,9 @@ public class DinerSceneController : MonoBehaviour
 
         if (doorExitPoint == null)
         {
-            Debug.LogError("[DinerSceneController] doorExitPoint is not assigned.");
         }
         else if (characterWalkSpeed <= 0f)
         {
-            Debug.LogError("[DinerSceneController] characterWalkSpeed is 0 or negative.");
         }
         else if (useWalkAnimations)
         {

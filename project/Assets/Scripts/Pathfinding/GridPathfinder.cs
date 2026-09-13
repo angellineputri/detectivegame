@@ -50,7 +50,6 @@ public class GridPathfinder : MonoBehaviour
 
         if (obstacleMaps.Count == 0)
         {
-            Debug.LogWarning("[GridPathfinder] No obstacle Tilemaps found (expected 'Walls' child under 'WallsAndFloors' and children of 'BordersAndFurnitures'). Pathfinding disabled.");
             return;
         }
 
@@ -103,7 +102,6 @@ public class GridPathfinder : MonoBehaviour
                     }
                 }
             }
-            Debug.Log("[GridPathfinder] Tilemap '" + tm.gameObject.name + "' blocked " + tilesBlocked + " cells (cellBounds " + b.min + " to " + b.max + ")");
         }
 
         int tileBlockedCount = 0;
@@ -118,9 +116,7 @@ public class GridPathfinder : MonoBehaviour
             }
         }
 
-        Debug.Log("[GridPathfinder] Tile-based blocked: " + tileBlockedCount + " / " + (_gridWidth * _gridHeight));
-
-        _walkableOverridden = new bool[_gridWidth, _gridHeight];
+_walkableOverridden = new bool[_gridWidth, _gridHeight];
         int overrideCount = 0;
 
         GameObject walkablePathGO = GameObject.Find("WalkablePath");
@@ -156,13 +152,11 @@ public class GridPathfinder : MonoBehaviour
                 }
             }
 
-            Debug.Log("[GridPathfinder] WalkablePath overrode " + overrideCount + " cells to walkable.");
         }
 
         PunchCollisionHoles(obstacleMaps);
 
         _ready = true;
-        Debug.Log("[GridPathfinder] Grid built: " + _gridWidth + "x" + _gridHeight + " cells, origin (" + _originX + ", " + _originY + "). Effective blocked: " + (tileBlockedCount - overrideCount) + " / " + (_gridWidth * _gridHeight));
     }
 
     void PunchCollisionHoles(List<Tilemap> obstacleMaps)
@@ -200,7 +194,6 @@ public class GridPathfinder : MonoBehaviour
             if (holesCount > 0 && composite != null)
             {
                 compositesToRebake.Add(composite);
-                Debug.Log("[GridPathfinder] Punched " + holesCount + " collision holes in '" + tm.gameObject.name + "'.");
             }
         }
 
@@ -214,34 +207,28 @@ public class GridPathfinder : MonoBehaviour
     {
         if (!_ready)
         {
-            Debug.LogWarning("[GridPathfinder] Grid not ready — returning direct path.");
             return new List<Vector2> { start, end };
         }
 
         Vector2Int startCell = WorldToGrid(start);
         Vector2Int endCell = WorldToGrid(end);
 
-        Debug.Log("[GridPathfinder] FindPath: start=" + start + " → cell=" + startCell + " | end=" + end + " → cell=" + endCell);
-
-        startCell.x = Mathf.Clamp(startCell.x, 0, _gridWidth - 1);
+startCell.x = Mathf.Clamp(startCell.x, 0, _gridWidth - 1);
         startCell.y = Mathf.Clamp(startCell.y, 0, _gridHeight - 1);
         endCell.x = Mathf.Clamp(endCell.x, 0, _gridWidth - 1);
         endCell.y = Mathf.Clamp(endCell.y, 0, _gridHeight - 1);
 
         bool startWalkable = _walkable[startCell.x, startCell.y];
         bool endWalkable = _walkable[endCell.x, endCell.y];
-        Debug.Log("[GridPathfinder] Cells: start=" + startCell + " walkable=" + startWalkable + " | end=" + endCell + " walkable=" + endWalkable);
 
         if (!startWalkable)
         {
             startCell = FindNearestWalkable(startCell);
-            Debug.Log("[GridPathfinder] Start snapped to nearest walkable: " + startCell);
         }
 
         if (!endWalkable)
         {
             endCell = FindNearestWalkable(endCell);
-            Debug.Log("[GridPathfinder] End snapped to nearest walkable: " + endCell);
         }
 
         bool dynamicBlocked = false;
@@ -260,10 +247,8 @@ public class GridPathfinder : MonoBehaviour
         }
 
         List<Vector2> rawPath = RunAStar(startCell, endCell);
-        Debug.Log("[GridPathfinder] A* returned " + rawPath.Count + " waypoints");
 
         List<Vector2> simplified = SimplifyPath(rawPath);
-        Debug.Log("[GridPathfinder] SimplifyPath: " + rawPath.Count + " → " + simplified.Count + " waypoints");
 
         if (startWalkable && simplified.Count > 0)
         {
@@ -277,7 +262,6 @@ public class GridPathfinder : MonoBehaviour
 
         if (simplified.Count == 2)
         {
-            Debug.LogWarning("[GridPathfinder] Path collapsed to direct line " + simplified[0] + " → " + simplified[1] + ". If NPC walks through obstacles, the grid may not be blocking those cells.");
         }
 
         if (dynamicBlocked)
@@ -361,7 +345,6 @@ public class GridPathfinder : MonoBehaviour
             }
         }
 
-        Debug.LogWarning("[GridPathfinder] No path found from " + start + " to " + end + " — returning direct path.");
         return new List<Vector2> { GridToWorld(start.x, start.y), GridToWorld(end.x, end.y) };
     }
 

@@ -13,18 +13,17 @@ MonoBehaviour:
   m_Name: SpeakerPortraitLibrary
   m_EditorClassIdentifier: 
   entries:
-  - speakerName: Player
-    portrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speakerName: Vivian
-    portrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speakerName: You
+    portrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
+  - speakerName: Vivian Rose
+    portrait: {fileID: 21300000, guid: b772191a5b62c4213af7d916d4de6f18, type: 3}
   - speakerName: Chief Inspector Marcus
-    portrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speakerName: Marco
-    portrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speakerName: Assistant
-    portrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    portrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speakerName: Head Chef Marco
+    portrait: {fileID: 21300000, guid: ab462b1b295b0465dad541ade8b6b05b, type: 3}
+  - speakerName: Charles Isaac
+    portrait: {fileID: 21300000, guid: 3c349057a58ca43e19e15f91ffe3cbfb, type: 3}
+  - speakerName: Head of IT
+    portrait: {fileID: 21300000, guid: 4bb2adc2ab29f4dc6bb99eae343a0ab6, type: 3}
+  - speakerName: Police
+    portrait: {fileID: 21300000, guid: 4a8657028dee24bd3ac29419c9169c7c, type: 3}

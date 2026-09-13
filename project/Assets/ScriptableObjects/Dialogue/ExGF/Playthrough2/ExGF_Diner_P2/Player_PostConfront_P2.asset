@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Player_PostConfront_P2
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: She spend most of her days here.. Maybe there are things I missed when
-      inspecting the diner and kitchen..
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: She spends most of her days here.. maybe there are things I missed when
+      I searched the diner and kitchen..
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

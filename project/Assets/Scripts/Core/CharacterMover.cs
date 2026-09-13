@@ -32,7 +32,6 @@ public static class CharacterMover
         Vector2 posA = (Vector2)a.position;
         Vector2 posB = (Vector2)b.position;
         Vector2 aToB = (posB - posA).normalized;
-        Debug.Log($"[FaceEachOther] '{a.name}' @ {posA}  '{b.name}' @ {posB}  aToB={aToB}");
         if (aToB == Vector2.zero) return;
         FaceToward(a,  aToB);
         FaceToward(b, -aToB);
@@ -83,7 +82,6 @@ public static class CharacterMover
             waypoints[i] = new Vector3(path[i].x, path[i].y, obj.position.z);
 
         float startDelta = Vector2.Distance((Vector2)obj.position, path[0]);
-        Debug.Log("[CharacterMover] WalkPath '" + obj.name + "': actual=" + (Vector2)obj.position + " first waypoint=" + path[0] + " delta=" + startDelta.ToString("F3") + "u");
 
         yield return ExecutePath(obj, waypoints, speed);
     }
@@ -108,7 +106,6 @@ public static class CharacterMover
 
     static IEnumerator ExecutePath(Transform obj, Vector3[] waypoints, float speed)
     {
-        Debug.Log("[CharacterMover] ExecutePath '" + obj.name + "' — " + (waypoints.Length - 1) + " segment(s)");
 
         Animator animator = obj.GetComponent<Animator>();
         Vector2 lastDirection = Vector2.zero;
@@ -153,7 +150,6 @@ public static class CharacterMover
             animator.SetFloat("Speed", 0f);
         }
 
-        Debug.Log("[CharacterMover] ExecutePath '" + obj.name + "' done.");
     }
 
     static Vector3[] ComputePath(Vector3 start, Vector3 destination, Obstacle[] obstacles)
@@ -342,9 +338,7 @@ public static class CharacterMover
             }
         }
 
-        Debug.LogWarning("[CharacterMover] No clear path found — using best available.");
-
-        if (leastBad != null) return leastBad;
+if (leastBad != null) return leastBad;
         return new Vector3[] { start, destination };
     }
 

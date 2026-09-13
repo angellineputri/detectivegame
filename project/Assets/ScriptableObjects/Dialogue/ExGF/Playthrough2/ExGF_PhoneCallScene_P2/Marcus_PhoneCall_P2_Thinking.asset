@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: Marcus_PhoneCall_P2_Thinking
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: "I’m certain that it’s Vivian, Marco was being really protective
-      of her."
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: I'm certain it's Vivian Rose. Marco was being really protective of her.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

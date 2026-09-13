@@ -63,7 +63,5 @@ public class ExGFExRoomP3SceneController : MonoBehaviour
 
         if (!string.IsNullOrEmpty(nextSceneName))
             GameManager.Instance?.LoadScene(nextSceneName);
-        else
-            Debug.LogWarning("[ExGFExRoomP3SceneController] nextSceneName is empty.");
     }
 }

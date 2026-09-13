@@ -34,7 +34,6 @@ public class CourtP2SceneController : MonoBehaviour
     {
         if (DialogueRunner.Instance == null)
         {
-            Debug.LogError("[CourtP2SceneController] DialogueRunner.Instance is null. Is the PersistentSystems prefab in this scene?");
             yield break;
         }
 
@@ -51,7 +50,6 @@ public class CourtP2SceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[CourtP2SceneController] chiefInspectorDialogue is not assigned.");
         }
 
         yield return new WaitForSeconds(pauseBetweenBeats);
@@ -64,7 +62,6 @@ public class CourtP2SceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[CourtP2SceneController] headChefCallDialogue is not assigned.");
         }
 
         yield return new WaitForSeconds(pauseBeforeThinking);
@@ -77,7 +74,6 @@ public class CourtP2SceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[CourtP2SceneController] thinkingDialogue is not assigned.");
         }
 
         CaseBoardManager.Instance?.ExGf_P2_CourtDone();
@@ -95,7 +91,6 @@ public class CourtP2SceneController : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[CourtP2SceneController] next scene name is empty.");
         }
     }
 }

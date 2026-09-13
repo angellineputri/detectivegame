@@ -196,11 +196,6 @@ public class NPCInteractable : Interactable
 
         if (DialogueRunner.Instance == null)
         {
-            UnityEngine.Debug.LogWarning(
-                "[NPCInteractable] '" +
-                gameObject.name +
-                "' tried to play dialogue but DialogueRunner.Instance is null."
-            );
 
             return;
         }

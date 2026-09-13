@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Player_ExRoom_P2_StickyNote
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speaker: Player
-    text: "Right\u2026 why didn't I find this suspicious before\u2026 She said she's
-      at home the whole night but there's this note here\u2026"
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+  - speaker: You
+    text: Right... why didn't I find this suspicious before... She said she was home
+      all night but there's this note here...
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

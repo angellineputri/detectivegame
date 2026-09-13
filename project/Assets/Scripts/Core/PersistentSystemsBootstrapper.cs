@@ -10,7 +10,6 @@ public class PersistentSystemsBootstrapper : MonoBehaviour
 
         if (prefab == null)
         {
-            Debug.LogError("PersistentSystems prefab not found in the Resources folder.");
             return;
         }
 
@@ -27,9 +26,7 @@ public class PersistentSystemsBootstrapper : MonoBehaviour
                         || scene.name == "ExGF_PhoneCallScene_P2"
                         || scene.name == "ExGF_Court_P2";
 
-        Debug.Log("[Bootstrapper] Scene loaded: " + scene.name + " | isMenuScene: " + isMenuScene);
-
-        if (BagUI.Instance != null)
+if (BagUI.Instance != null)
         {
             BagUI.Instance.SetHudVisible(!isMenuScene);
         }

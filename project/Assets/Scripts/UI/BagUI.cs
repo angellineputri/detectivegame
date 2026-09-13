@@ -179,6 +179,7 @@ public class BagUI : MonoBehaviour
 
     void OnBagButtonClicked()
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) return;
         if (_forcedDecisionMode) return;
 
@@ -200,6 +201,7 @@ public class BagUI : MonoBehaviour
 
     void CloseReviewPanel()
     {
+        AudioManager.Instance?.PlayButtonClick();
         if (_hudPinned && DialogueRunner.Instance != null && DialogueRunner.Instance.IsPlaying)
             DialogueRunner.Instance.ForceComplete();
 
@@ -210,11 +212,13 @@ public class BagUI : MonoBehaviour
 
     void OnMakeAMoveClicked()
     {
+        AudioManager.Instance?.PlayButtonClick();
         ForceOpenForDecision(makeAMoveTitle, null);
     }
 
     void OnKeepExploringClicked()
     {
+        AudioManager.Instance?.PlayButtonClick();
         System.Action cb = _onKeepExploring;
         ExitForcedDecision();
         CloseReviewPanel();
@@ -334,7 +338,6 @@ public class BagUI : MonoBehaviour
 
         if (_currentTable == null)
         {
-            Debug.LogWarning("[BagUI] No outcome table set for this scene.");
             ExitForcedDecision();
             return;
         }

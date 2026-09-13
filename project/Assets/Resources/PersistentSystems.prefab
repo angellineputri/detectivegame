@@ -1545,6 +1545,7 @@ GameObject:
   - component: {fileID: 1307154255622178365}
   - component: {fileID: 8815083451532471061}
   - component: {fileID: 2013059828616825612}
+  - component: {fileID: 2503315686130537715}
   m_Layer: 0
   m_Name: PersistentSystems
   m_TagString: Untagged
@@ -1652,8 +1653,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panel: {fileID: 1307154254997746997}
   retrySceneButton: {fileID: 1307154255789555152}
-  returnToDinerButton: {fileID: 1307154256519525126}
   restartGameButton: {fileID: 1307154256505631502}
+  mainMenuButton: {fileID: 1307154256505631502}
+  confirmPanel: {fileID: 0}
+  confirmYesButton: {fileID: 0}
+  confirmNoButton: {fileID: 0}
 --- !u!114 &1307154255622178365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1706,6 +1710,30 @@ MonoBehaviour:
     stage2SuspectName: EBP
     stage2ArrestedName: EBP
   _culpritName: Detective Chief Inspector
+--- !u!114 &2503315686130537715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307154255622178366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d1213c36bda4790a278f86a049c1eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxButtonClick: {fileID: 8300000, guid: 04195681619174331b3f6655bbf7eb4c, type: 3}
+  sfxInteract: {fileID: 8300000, guid: 658be7058ea154e08a62b5c2e783c3c7, type: 3}
+  sfxClueAdded: {fileID: 8300000, guid: 9633ee2253af9493cb51efa3e17f2ce1, type: 3}
+  sfxDialogueAdvance: {fileID: 8300000, guid: 49c649101970f424c803c9d1ce8870b7, type: 3}
+  sfxDoorOpen: {fileID: 8300000, guid: bb24199cd49424424bbba13789bfe14d, type: 3}
+  sfxFootstep: {fileID: 8300000, guid: 6c7c56590ce9e43cfb86946f10136fed, type: 3}
+  sfxItemSelect: {fileID: 8300000, guid: 1900401e71e884f809efe366e78dde7c, type: 3}
+  musMainMenu: {fileID: 8300000, guid: 09f62a7c684ad42fd8ee8f745d1ef630, type: 3}
+  musInvestigation: {fileID: 8300000, guid: 726638e0b66464f8d87cf8e89f398e47, type: 3}
+  sfxVolume: 1
+  musicVolume: 0.208
+  dialogueAdvanceVolume: 1
 --- !u!1 &1307154255626637017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,12 +1814,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96

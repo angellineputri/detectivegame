@@ -37,10 +37,7 @@ public class ApartmentSceneController : MonoBehaviour
     [Tooltip("Chief and Player closing exchange after the assistant dialogue.")]
     [SerializeField] DialogueData phoneChiefClosingDialogue;
 
-    [Header("Debug")]
-    [SerializeField] bool debugLogs = true;
-
-    bool _decisionStarted;
+bool _decisionStarted;
     bool _apartmentCompleted;
     bool _chainStarted;
 
@@ -73,7 +70,6 @@ public class ApartmentSceneController : MonoBehaviour
             EnablePlayerMovement();
         }
 
-        Log("Assistant apartment scene started.");
     }
 
     void OnEnable()
@@ -136,13 +132,11 @@ public class ApartmentSceneController : MonoBehaviour
     {
         if (BagUI.Instance == null)
         {
-            Log("BagUI is not available.");
             return;
         }
 
         BagUI.Instance.SetOutcomeTable(apartmentOutcomeTable);
 
-        Log("Assistant apartment outcome table assigned.");
     }
 
     public void StartDecision()
@@ -161,18 +155,15 @@ public class ApartmentSceneController : MonoBehaviour
                 OnDecisionComplete
             );
 
-            Log("Apartment evidence decision opened.");
         }
         else
         {
-            Log("BagUI is missing. Cannot open decision panel.");
             _decisionStarted = false;
         }
     }
 
     void OnDecisionComplete()
     {
-        Log("Apartment evidence decision completed.");
 
         _decisionStarted = false;
         CheckApartmentCompletion();
@@ -208,7 +199,6 @@ public class ApartmentSceneController : MonoBehaviour
         {
             _apartmentCompleted = true;
 
-            Log("Assistant apartment sequence completed.");
         }
     }
 
@@ -216,7 +206,6 @@ public class ApartmentSceneController : MonoBehaviour
         string clueID,
         System.Action proceedWithLoad)
     {
-        Log("Scene load requested by outcome: " + clueID);
 
         if (PlayerController.Instance != null &&
             GameManager.Instance != null)
@@ -245,25 +234,18 @@ public class ApartmentSceneController : MonoBehaviour
     {
         if (!CanLeave())
         {
-            Log("Cannot leave apartment yet.");
             return;
         }
 
         if (string.IsNullOrEmpty(nextSceneName))
         {
-            UnityEngine.Debug.LogWarning(
-                "[ApartmentSceneController] " +
-                "No next scene has been assigned."
-            );
 
             return;
         }
 
         SavePlayerPosition();
 
-        Log("Loading next Assistant scene: " + nextSceneName);
-
-        GameManager.Instance.LoadScene(nextSceneName);
+GameManager.Instance.LoadScene(nextSceneName);
     }
 
     void SavePlayerPosition()
@@ -296,7 +278,6 @@ public class ApartmentSceneController : MonoBehaviour
             PlayerController.Instance.transform.position =
                 GameManager.Instance.PendingSpawnPosition;
 
-            Log("Restored player pending spawn position.");
         }
 
         GameManager.Instance.ConsumePendingSpawn();
@@ -368,7 +349,6 @@ public class ApartmentSceneController : MonoBehaviour
             yield return new WaitUntil(() => done);
         }
 
-        Log("Phone dialogue chain complete — loading " + nextSceneName);
         GameManager.Instance?.LoadScene(nextSceneName);
     }
 
@@ -404,14 +384,4 @@ public class ApartmentSceneController : MonoBehaviour
                );
     }
 
-    void Log(string message)
-    {
-        if (debugLogs)
-        {
-            UnityEngine.Debug.Log(
-                "[ApartmentSceneController] " +
-                message
-            );
-        }
-    }
 }

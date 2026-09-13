@@ -15,22 +15,16 @@ MonoBehaviour:
   lines:
   - speaker: Chief Inspector Marcus
     text: Well done kid, I knew you could do it!
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
     text: Thank you, chief. Couldn't have done it without your help.
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Chief Inspector Marcus
-    text: Naah, you deserve all the credit! You don't need me guiding you anymore!
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: Thank you, chief!
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Nah, you deserve all the credit! You don't need me guiding you anymore!
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}
+  - speaker: You
+    text: Thanks, chief!
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Chief Inspector Marcus
-    text: I'll be here for you when you need me, in the mean time off you go kid.
-      Your next case awaits you.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: I'll be here when you need me. Off you go, kid - your next case awaits!
+    speakerPortrait: {fileID: 21300000, guid: 59d60445be5554d98850a2453f40d9ed, type: 3}

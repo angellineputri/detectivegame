@@ -14,23 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speaker: Police
-    text: yup, it checks out, he is the one.
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Yup, it checks out. He's the one.
+    speakerPortrait: {fileID: 21300000, guid: 4a8657028dee24bd3ac29419c9169c7c, type: 3}
   - speaker: Police
-    text: fingerprint matches, bloody knife fingerprint also matches
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: so he lied before..
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Fingerprints match. The bloody knife fingerprint also matches.
+    speakerPortrait: {fileID: 21300000, guid: 4a8657028dee24bd3ac29419c9169c7c, type: 3}
+  - speaker: You
+    text: So he lied the whole time..
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}
   - speaker: Police
-    text: yeah.. thanks for the journal tho.. the victim would've been happy that
-      the truth unveils itself at the very end because of his work
-    speakerPortrait: {fileID: 3584525341705306422, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
-  - speaker: Player
-    text: yeah.. too bad he's not here to see this..
-    speakerPortrait: {fileID: 3425749645153845377, guid: ac50471ca89a74434a48e415d7b77f9d,
-      type: 3}
+    text: Yeah... thanks for the journal though. The victim would've been happy knowing
+      the truth finally came out because of his own work.
+    speakerPortrait: {fileID: 21300000, guid: 4a8657028dee24bd3ac29419c9169c7c, type: 3}
+  - speaker: You
+    text: Yeah... too bad he's not here to see this.
+    speakerPortrait: {fileID: 21300000, guid: 035e10dcc6ffb4506b2d69f521460b1b, type: 3}

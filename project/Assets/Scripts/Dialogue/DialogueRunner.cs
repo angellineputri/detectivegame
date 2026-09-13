@@ -139,6 +139,7 @@ public class DialogueRunner : MonoBehaviour
 
     void Advance()
     {
+        AudioManager.Instance?.PlayDialogueAdvance();
         _index++;
         if (_index < _lines.Length)
         {
